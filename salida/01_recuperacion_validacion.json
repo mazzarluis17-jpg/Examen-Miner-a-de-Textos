@@ -1,0 +1,11 @@
+{
+  "pasajes": 127739,
+  "hash_pasajes": "2c92857b452350ef130e5598c2d508717aac5f1cafbc105991733a452822fff5",
+  "hash_historico": "2c92857b452350ef130e5598c2d508717aac5f1cafbc105991733a452822fff5",
+  "coincide": true,
+  "ranking_filas_verificadas": 400,
+  "sha256_corpus": "e42531f24c64f61eea10660aede0b67f8d67b0fd66c953d4bdc83701f0a0c80d",
+  "revision_dataset": "2c463bb3d5bf58742b4d842917da1211c44d2e18",
+  "suite_completa": "152 passed",
+  "pruebas_pool": "12 passed"
+}
