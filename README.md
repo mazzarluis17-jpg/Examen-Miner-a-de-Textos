@@ -31,6 +31,19 @@ make test       # pruebas rápidas, sin red
 
 ## Documentos de referencia
 
+La aplicación de juicios de H3 arranca con:
+
+```bash
+uv run --no-sync streamlit run src/mtx/app/app.py
+```
+
+También se puede usar `make app`. Lee los insumos locales sin red ni modelos NER.
+La anotación permanece bloqueada hasta aprobar explícitamente
+`config/criterios_relevancia.md` y registrar su hash. No se generan respuestas por
+defecto. Guarda después de cada acción, permite reanudar y rechaza sesiones
+desactualizadas. Ver [prueba manual y recuperación](docs/pruebas_app.md).
+
+
 | Archivo | Qué es |
 | --- | --- |
 | `PRD_unificado_examen1_mineria_textos.md` | Especificación completa (v3.0, 4 de noviembre de 2026). Fuente de verdad del proyecto |

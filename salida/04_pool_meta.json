@@ -3,7 +3,7 @@
   "hash_pasajes": "2c92857b452350ef130e5598c2d508717aac5f1cafbc105991733a452822fff5",
   "sha256_corpus": "e42531f24c64f61eea10660aede0b67f8d67b0fd66c953d4bdc83701f0a0c80d",
   "pares": 176,
-  "criterio_presente": false,
+  "criterio_presente": true,
   "fuentes": {
     "data/corpus_meta.json": "ce8bc42d7daf413d46181de5db3ef5d13c8ca622921ede73d09cd513b1f86338",
     "data/consultas.csv": "37377bcbeccede92aa2d99a9ca2d4f064d7f230f344b66836903d117e5a3e3b1",
@@ -16,6 +16,7 @@
     "src/mtx/indice.py": "dc2b45c73e7ab5cea312fd2453b1adef57cefe854d1a44b688f5cf2931780ede",
     "src/mtx/ranking.py": "c7192545e09cdbfa24e27b8e46be8e3de9674d102b3eb4977fcb2a6a02f6eb2d",
     "src/mtx/pool.py": "6ad066123a2052abb9e76157936f5960a85380c89f8328eb49d3df43530953d9",
-    "scripts/04_pool.py": "18e11337763eec52a6cd301bece85860e2fcc695ad672582099781edcd2f83ef"
+    "scripts/04_pool.py": "18e11337763eec52a6cd301bece85860e2fcc695ad672582099781edcd2f83ef",
+    "config/criterios_relevancia.md": "ae67ac2b0f1066dd71293c9ca8075aae9473ff1a9956e028c759ee6158fe9f87"
   }
 }

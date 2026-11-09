@@ -1,0 +1,19 @@
+{
+  "fecha": "2026-11-09",
+  "base": "23dbefb",
+  "h2_pool_kit_ranking_real": {
+    "comando": ".venv/bin/pytest tests/test_pool.py tests/test_contratos_kit.py tests/test_ranking_real.py -q -m 'lento or not lento'",
+    "passed": 61
+  },
+  "suite_completa": {
+    "comando": ".venv/bin/pytest -q -m 'lento or not lento'",
+    "passed": 170,
+    "segundos": 21.62
+  },
+  "pruebas_app_incluidas": 18,
+  "ruff": "All checks passed!",
+  "juicios_reales_generados": false,
+  "criterio_aprobado": false,
+  "arranque_real": "AppTest sin errores, bloqueado por criterio pendiente",
+  "prueba_manual_en_navegador": "pendiente del alumno"
+}

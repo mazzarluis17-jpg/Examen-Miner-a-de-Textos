@@ -18,6 +18,22 @@
 
 ## Decisiones posteriores
 
+- (2026-11-09) H3 técnico: se implementan las vistas Estado/Juicios y componentes
+  compartidos conforme a D19. Gold y Gazetteer muestran su estado pendiente; no
+  leen predicciones ni escriben datos. Se prepara el criterio por autorización
+  explícita del usuario, con estado pendiente; no se declara aprobado ni se inicia
+  ninguna anotación. Tras aprobación humana se registrará el hash final en
+  `config/criterios_relevancia_aprobacion.json` (`sha256_criterio`, `aprobado_por`,
+  `fecha`) y en esta bitácora; el manifiesto del pool debe contener ese mismo hash.
+- (2026-11-09) Persistencia de juicios: mantener las cuatro columnas exactas del CSV;
+  revisión y huellas en `anotaciones/juicios_relevancia_estado.json`, respaldos en
+  `anotaciones/historial_juicios/`. Diario preparado antes del reemplazo del CSV
+  permite distinguir una interrupción del guardado completado. `flock` y comparación
+  de revisión/hash evitan carreras; cambios de insumos o CSV externo bloquean sin
+  sobrescribir. Solo se ignora el cerrojo local `.juicios.lock`; datos y revisiones
+  permanecen versionables. Omitir conserva decisiones existentes y deja vacío un
+  pendiente. La alternativa CLI y las funciones H5/H6 no se consideran implementadas.
+
 - (2026-11-09) Continuación individual en `desarrollo-luis` desde `0e52244`.
   Recuperación H1 autorizada por el usuario: corpus y pasajes reconstruidos en `/tmp`
   y copiados a las rutas ignoradas solo tras coincidir con las huellas históricas.

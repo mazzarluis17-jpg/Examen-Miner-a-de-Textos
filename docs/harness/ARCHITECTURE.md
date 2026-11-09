@@ -71,6 +71,15 @@ en `salida/` o `data/`.
 
 ### 2.2 Zonas del repositorio por quién las produce y quién las puede tocar
 
+Estado H3 (2026-11-09): `app/app.py` registra vistas; `vista_estado.py` y
+`vista_juicios.py` están implementadas. `componentes.py` centraliza contratos,
+resaltado, aprobación por hash y persistencia atómica. El CSV de juicios conserva
+su esquema; revisión y huellas van en `anotaciones/juicios_relevancia_estado.json`
+y respaldos en `anotaciones/historial_juicios/`. La anotación solo se habilita con
+criterio aprobado explícitamente y hash vigente en el manifiesto del pool.
+Gold/Gazetteer son avisos pendientes de H5/H6; no leen predicciones. Ver
+`docs/pruebas_app.md` para protocolo de aprobación, reanudación e interrupciones.
+
 | Zona | Productor | ¿La toca el asistente? | Notas |
 | --- | --- | --- | --- |
 | `kit/` | Profesor | **Nunca** | Hashes SHA-256 en `docs/contratos_kit.md`; adaptaciones en `adaptadores_kit.py` |

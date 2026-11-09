@@ -5,6 +5,9 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
+# Cerrojo local sin anotaciones (los CSV, respaldos y revisiones sí se versionan).
+anotaciones/.juicios.lock
+
 # Datos regenerables (PRD §9)
 data/*.parquet
 data/*.pkl

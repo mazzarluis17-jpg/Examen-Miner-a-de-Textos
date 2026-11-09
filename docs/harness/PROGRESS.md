@@ -2,6 +2,15 @@
 
 ## Completado
 
+- H3 técnico (2026-11-09): aplicación Streamlit en `src/mtx/app/`, vistas Estado y
+  Juicios, texto completo con resaltado por offsets y ocultación de procedencia.
+  Persistencia atómica, respaldos, diario de revisión y exclusión mutua con detección
+  de dos sesiones; validación parcial y de cobertura, IDs y huellas vigentes.
+  Propuesta de criterio preparada por autorización del alumno, sin aprobación.
+  App bloqueada hasta aprobación explícita ligada al hash. Suite completa:
+  170 passed (18 pruebas de app, incluida integración real sin escribir juicios);
+  ruff y diff-check limpios. Evidencia en `salida/04_pruebas_h3.json`.
+
 - Continuación individual (2026-11-09, rama `desarrollo-luis`): H1 recuperado desde
   la revisión autorizada en `/tmp`, con Parquet del corpus idéntico al histórico,
   127,739 pasajes y hash de contenido histórico idéntico. Verificadas las 400 filas
@@ -22,9 +31,11 @@
 
 ## Pendiente
 
-1. H3: alumno escribe y aprueba `config/criterios_relevancia.md` `[VALIDAR]`;
-   regenerar manifiesto del pool con su hash antes del primer juicio. Construir la
-   app de juicios (`app-anotacion`, pendiente), sin sugerir relevancia.
+1. H3 humano: revisar y aprobar o corregir la propuesta completa de
+   `config/criterios_relevancia.md` `[VALIDAR]`. Tras aprobación explícita registrar
+   decisión y constancia SHA-256 según `docs/pruebas_app.md`; ejecutar `make pool`
+   y recargar la app. El alumno captura los juicios; la cobertura total habilita H4.
+   No hay aprobación ni archivos de juicios reales al cierre de esta sesión.
 2. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
 3. Luego H4 a H9 (PRD §12.2).
 
@@ -34,7 +45,8 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 
 ## Bloqueos
 
-- Ninguno de Daniel por ahora; H3 (juicios) es trabajo suyo y bloqueará H4 en adelante.
+- H3 humano pendiente del usuario actual: aprobación del criterio y captura de juicios;
+  bloquea H4. Se conserva la procedencia histórica del trabajo previo de Daniel.
 - Stopwords resueltas: `config/stopwords_es.txt` existe y el preprocesador usa la copia versionada.
 - Índice, tokens y TF-IDF no se han reconstruido en Debian; no son necesarios para
   construir el pool desde los rankings históricos y pasajes verificados.
