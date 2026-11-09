@@ -2,6 +2,16 @@
 
 ## Completado
 
+- Continuación individual (2026-11-09, rama `desarrollo-luis`): H1 recuperado desde
+  la revisión autorizada en `/tmp`, con Parquet del corpus idéntico al histórico,
+  127,739 pasajes y hash de contenido histórico idéntico. Verificadas las 400 filas
+  del ranking y sus fragmentos/metadatos. Corpus y pasajes en rutas de trabajo
+  ignoradas; referencias originales intactas. Ver `docs/recuperacion_h1.md`.
+- H2 técnico (2026-11-09): `pool.py`, `04_pool.py`, T07/T08 y manifiesto de fuentes.
+  Pool de 176 pares reproducible byte por byte en dos ejecuciones; avisos Q5/Q7/Q8
+  por tamaño inferior al esperado, sin alterar la unión de cuatro variantes.
+  Suite completa, incluidas las lentas: 152 passed; ruff limpio. No hay juicios ni gold.
+
 - Arnés (`/harnesser`): CLAUDE.md, AGENTS.md, 17 skills, `docs/harness/`.
 - H0 cerrado (2026-11-04): entorno `uv` (Python 3.11, torch CPU, plotly y kaleido), `Makefile`, kit copiado a `kit/` con hashes, `src/mtx/adaptadores_kit.py`, 42 pruebas de contrato, `docs/contratos_kit.md`, `docs/decisiones.md`. Alumno: Daniel Gonzalez. Plazo: entrega y presentación el 11 de noviembre de 2026, presentación a las 20:00 (CDMX). Repo de entrega: este GitLab.
 - H1 (2026-11-04): `src/mtx/corpus.py` (limpieza, canonización de marcas, fechas, duplicados, segmentación), `config/limpieza.yaml`, `scripts/01_corpus_y_pasajes.py`, `make corpus` verde: 127,739 pasajes, 5 discursos excluidos, 10 fechas reparadas. Descubrimiento de Q9 y Q10 (`make explorar`, `salida/00_candidatos_q9q10.md`). `data/consultas.csv` con Q9 y Q10 en borrador (`make consultas`). 79 pruebas rápidas verdes.
@@ -12,7 +22,9 @@
 
 ## Pendiente
 
-1. `pool.py` y `04_pool.py` (skill `pool-juicios-ir`): pool de las 4 variantes sin juicios. Después H3 (Daniel): `config/criterios_relevancia.md` `[VALIDAR]` y juicios en la app (`app-anotacion`, aún sin escribir).
+1. H3: alumno escribe y aprueba `config/criterios_relevancia.md` `[VALIDAR]`;
+   regenerar manifiesto del pool con su hash antes del primer juicio. Construir la
+   app de juicios (`app-anotacion`, pendiente), sin sugerir relevancia.
 2. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
 3. Luego H4 a H9 (PRD §12.2).
 
@@ -23,5 +35,7 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 ## Bloqueos
 
 - Ninguno de Daniel por ahora; H3 (juicios) es trabajo suyo y bloqueará H4 en adelante.
-- NLTK no descarga stopwords aquí (validación de rutas); `preproceso.py` debe usar `config/stopwords_es.txt`, que hay que crear versionado en H2.
+- Stopwords resueltas: `config/stopwords_es.txt` existe y el preprocesador usa la copia versionada.
+- Índice, tokens y TF-IDF no se han reconstruido en Debian; no son necesarios para
+  construir el pool desde los rankings históricos y pasajes verificados.
 - Kaleido necesita el Chrome que instala `plotly_get_chrome` (`make setup` lo hace); los Chromium de snap fallan.

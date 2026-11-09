@@ -18,6 +18,20 @@
 
 ## Decisiones posteriores
 
+- (2026-11-09) Continuación individual en `desarrollo-luis` desde `0e52244`.
+  Recuperación H1 autorizada por el usuario: corpus y pasajes reconstruidos en `/tmp`
+  y copiados a las rutas ignoradas solo tras coincidir con las huellas históricas.
+  Se conservan intactos `corpus_meta.json`, `indice_meta.json`, las salidas históricas
+  y los rankings. Evidencia: `salida/01_recuperacion_validacion.json` y
+  `docs/recuperacion_h1.md`.
+- (2026-11-09) Pool técnico autorizado antes de los criterios humanos: se implementan
+  D06, T07 y T08 y manifiesto de fuentes en `salida/04_pool_meta.json`. La anotación
+  permanece bloqueada hasta que el alumno escriba y apruebe los criterios; después
+  se actualiza el manifiesto antes del primer juicio. Q5, Q7 y Q8 generan avisos por
+  tamaño inferior al intervalo esperado; se mantiene la unión exacta sin recortar
+  variantes. No se producen juicios ni gold. La identidad histórica de Daniel se
+  conserva; falta confirmar los datos completos de Luis para la entrega individual.
+
 - (2026-11-04) Entorno: `pyproject.toml` con `requires-python >=3.11,<3.13`, build `hatchling` con layout `src/mtx`, torch CPU desde el índice de PyTorch en Linux y Windows. `uv.lock` versionado.
 - (2026-11-04) `make setup` no falla si NLTK no descarga las stopwords (NLTK bloquea su carpeta por validación de rutas); se usará `config/stopwords_es.txt` como respaldo versionado, según PRD §9.
 - (2026-11-04) Gráficas con `plotly` exportadas a PNG con `kaleido`, en lugar de `matplotlib`, por indicación del profesor. `cufflinks` no se usa: es un envoltorio sin mantenimiento sobre plotly. Kaleido necesita Chrome; `make setup` ejecuta `plotly_get_chrome` (los Chromium del sistema, de snap, fallan). PRD §2.2, §6.6 y §11.1 y tres skills se actualizaron para reflejarlo.
