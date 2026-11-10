@@ -1,0 +1,39 @@
+{
+  "fecha": "2026-11-10",
+  "commit_codigo": "3f0987e81e3ad88cdf654533dae261d5e519aac3",
+  "revision_juicios": 197,
+  "sha256_juicios": "cb3e4769ff430228bb78b3d06ce83272aa7b4a9a19e3ca72c48aec987b8a2860",
+  "filas_resultados": 44,
+  "juicios": 176,
+  "relevantes": 113,
+  "no_relevantes": 63,
+  "no_juzgados": 0,
+  "reproduccion_oficial_identica": true,
+  "reproduccion_complementaria_identica": true,
+  "insumos_congelados_sin_cambios": true,
+  "asociaciones_ganador": 100,
+  "pasajes_unicos_ganador": 99,
+  "pytest": {
+    "passed": 183,
+    "skipped": 1,
+    "segundos": 20.74
+  },
+  "ruff": "All checks passed!",
+  "figuras": {
+    "ir_con_vs_sin_filtro.png": {
+      "ancho": 2200,
+      "alto": 1100,
+      "sha256": "5aeb0174177f6cc6cafc16e16712a4461a114a71d04d129f40bd583cc392a04b"
+    },
+    "ir_map_por_modelo.png": {
+      "ancho": 2200,
+      "alto": 1100,
+      "sha256": "dae20db6577040427119c3d6000a8e818e8dcb61700b61bcdaa3f5389c925bad"
+    },
+    "ir_ap_por_consulta.png": {
+      "ancho": 2200,
+      "alto": 1100,
+      "sha256": "e8318915f2b7c8248fd48910f89fdc646cf2ddcb93a5412f6ac003b61e0c9271"
+    }
+  }
+}

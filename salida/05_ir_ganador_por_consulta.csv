@@ -1,0 +1,11 @@
+query_id,tokens,longitud_tokens,mediana_longitud,longitud,n_terminos_df_alto,umbral_df_alto,siglas_heuristica,nombre_propio_heuristica,sinonimos_conocidos,df_terminos,AP_tfidf_con_filtro,AP_bm25_con_filtro,diferencia_bm25_menos_tfidf,ganador_AP,empate_exacto
+Q1,avanc|construccion|tren|may,4,4.5,corta,0,0.1,False,True,,"{""avanc"": 4741, ""construccion"": 5648, ""may"": 6504, ""tren"": 5261}",0.1545,0.9091,0.7546,bm25_con_filtro,False
+Q2,lleg|aplic|vacun|covid-19,4,4.5,corta,1,0.1,True,False,,"{""aplic"": 6637, ""covid-19"": 1006, ""lleg"": 21262, ""vacun"": 4552}",0.1667,0.4641,0.2974,bm25_con_filtro,False
+Q3,refin|dos|boc|tabasc,4,4.5,corta,1,0.1,False,True,Dos Bocas ↔ refinería Olmeca,"{""boc"": 1243, ""dos"": 25300, ""refin"": 2069, ""tabasc"": 3433}",0.1762,0.1903,0.0141,bm25_con_filtro,False
+Q4,aeropuert|felip|angel|sant|luc,5,4.5,larga,0,0.1,False,True,AIFA ↔ Santa Lucía ↔ Felipe Ángeles,"{""aeropuert"": 3643, ""angel"": 2010, ""felip"": 2602, ""luc"": 1005, ""sant"": 2262}",0.3095,0.9094,0.5999,bm25_con_filtro,False
+Q5,program|sembr|vid|apoy|campesin,5,4.5,larga,2,0.1,False,True,,"{""apoy"": 18238, ""campesin"": 2352, ""program"": 12803, ""sembr"": 2011, ""vid"": 10468}",0.608,0.7692,0.1612,bm25_con_filtro,False
+Q6,combat|huachicol|rob|combust,4,4.5,corta,0,0.1,False,False,huachicol ↔ robo de combustible,"{""combat"": 2842, ""combust"": 2993, ""huachicol"": 714, ""rob"": 5984}",0.3043,0.2785,-0.0258,tfidf_con_filtro,False
+Q7,pension|universal|adult|mayor,4,4.5,corta,1,0.1,False,False,adultos mayores ↔ pensión del Bienestar,"{""adult"": 4125, ""mayor"": 15615, ""pension"": 3332, ""universal"": 2161}",1.0,0.975,-0.025,tfidf_con_filtro,False
+Q8,aument|salari|minim|acuerd|empresari,5,4.5,larga,1,0.1,False,False,,"{""acuerd"": 13558, ""aument"": 6098, ""empresari"": 3302, ""minim"": 1885, ""salari"": 2909}",0.4794,0.4917,0.0123,bm25_con_filtro,False
+Q9,oper|apertur|sucursal|banc|bienest,5,4.5,larga,0,0.1,False,True,,"{""apertur"": 492, ""banc"": 3914, ""bienest"": 7828, ""oper"": 7891, ""sucursal"": 1127}",0.4431,0.3752,-0.0679,tfidf_con_filtro,False
+Q10,construccion|oper|tren|interocean|istmo|tehuantepec,6,4.5,larga,0,0.1,False,True,,"{""construccion"": 5648, ""interocean"": 288, ""istmo"": 1241, ""oper"": 7891, ""tehuantepec"": 461, ""tren"": 5261}",0.3566,0.7876,0.431,bm25_con_filtro,False

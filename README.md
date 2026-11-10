@@ -9,15 +9,22 @@ preentrenado para español.
 
 ## Estado
 
-Hitos H0 (preparación) y H1 (datos) hechos; Q9 y Q10 aprobadas por el alumno. H2
-(recuperación) hecho en lo técnico: preprocesamiento, índice invertido a mano,
-TF-IDF y BM25 probados, y `ranking.csv` generado con las cuatro variantes. Ya
-corren `make setup`, `make contratos`, `make corpus`, `make consultas`,
-`make explorar`, `make indice`, `make ranking` y `make test` (`make test-lento`
-añade los criterios bloqueantes de IR sobre el corpus real). Siguen el pool de
-juicios, H3 y H6 (juicios y gold, trabajo humano) y el resto hasta H9. Este README se reemplaza en H9 por el
-README de 10 secciones que exige el enunciado (instalación desde cero,
-reproducción de resultados, flujo completo, uso de IA).
+H0 a H4 implementados; H3 confirmado visualmente por Luis. Corpus y pasajes
+recuperados con las huellas históricas; rankings y pool congelados. La evaluación
+oficial seleccionó BM25 con filtro para toda IE (D08); métricas en
+[`salida/resultados_ir.csv`](salida/resultados_ir.csv) y decisión versionada en
+[`data/mejor_modelo.json`](data/mejor_modelo.json).
+
+`make evaluar-ir` valida y evalúa sin recalcular rankings ni modificar juicios.
+Produce resultados oficiales, vista temporal complementaria, auditorías y figuras.
+Ver [procedimiento y resultados H4](docs/h4_evaluacion_ir.md). Los juicios fueron
+realizados personalmente en Excel y transferidos con autorización a Streamlit;
+no se atribuyen a captura íntegra directa en la interfaz.
+
+Siguen H5 a H9: extracción, gold humano, evaluación IE, respuestas y entrega.
+El README final de diez secciones y la declaración completa de uso de IA siguen
+pendientes de H9. La suite rápida no usa red; `make test-lento` incluye los
+contratos sobre los datos reales recuperados.
 
 Uso mínimo hoy (Linux, Python 3.11 y `uv`):
 

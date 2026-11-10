@@ -18,6 +18,17 @@
 
 ## Decisiones posteriores
 
+- (2026-11-10) Luis confirmó visualmente los juicios de H3 y autorizó H4. Se evalúa
+  exclusivamente la revisión 197 y los rankings congelados, mediante el adaptador
+  del kit intacto. D08 fija `bm25_con_filtro` por mayor MAP oficial entre variantes
+  con filtro; fuentes, hashes y métricas en `salida/05_validacion_h4.json` y
+  `data/mejor_modelo.json`. La vista con ventana es complementaria y no interviene
+  en la selección. Las etiquetas descriptivas de consultas usan DF/N >= 0.10 y
+  longitud superior a la mediana, sin modificar el ranking. Siglas y nombres son
+  heurísticas auditables. Las equivalencias de PRD §6.6 se usan solo para describir.
+  Se conservan resultados distintos si existiesen, sin sobrescribir cifras previas.
+  Exportación gráfica local verificada fuera del sandbox, sin descargas.
+
 - (2026-11-09) H3 técnico: se implementan las vistas Estado/Juicios y componentes
   compartidos conforme a D19. Gold y Gazetteer muestran su estado pendiente; no
   leen predicciones ni escriben datos. Se prepara el criterio por autorización

@@ -1,0 +1,11 @@
+query_id,consulta,desde,hasta,pregunta_extraccion,pasajes,discursos_distintos,pasajes_reporteros,modelo_global,MAP_global_oficial,estado_extraccion_y_respuesta
+Q1,avances en la construcción del Tren Maya,2020-01-01,2023-12-31,"Qué dependencias y empresas participan, en qué estados y con qué montos",10,9,0,bm25_con_filtro,0.615,pendiente H5–H8; sin inferir relaciones
+Q2,llegada y aplicación de vacunas contra el COVID-19,2020-12-01,2021-12-31,"Qué farmacéuticas, qué funcionarios y qué fechas y cantidades de dosis",10,9,3,bm25_con_filtro,0.615,pendiente H5–H8; sin inferir relaciones
+Q3,refinería de Dos Bocas en Tabasco,2019-01-01,2022-12-31,"Qué organizaciones, qué personas responsables y qué montos de inversión",10,10,2,bm25_con_filtro,0.615,pendiente H5–H8; sin inferir relaciones
+Q4,aeropuerto Felipe Ángeles en Santa Lucía,2019-01-01,2022-06-30,"Qué dependencia construye, qué lugares se mencionan y qué costos",10,7,0,bm25_con_filtro,0.615,pendiente H5–H8; sin inferir relaciones
+Q5,programa Sembrando Vida y apoyo a campesinos,2019-01-01,2024-12-31,"Qué secretaría lo opera, en qué estados y con qué monto por beneficiario",10,10,0,bm25_con_filtro,0.615,pendiente H5–H8; sin inferir relaciones
+Q6,combate al huachicol y robo de combustible,2018-12-01,2019-06-30,"Qué lugares, qué organizaciones y qué cifras de pérdidas o litros",10,9,0,bm25_con_filtro,0.615,pendiente H5–H8; sin inferir relaciones
+Q7,pensión universal para adultos mayores,2018-12-01,2024-12-31,"Qué montos bimestrales, qué institución paga y qué fechas de aumento",10,10,0,bm25_con_filtro,0.615,pendiente H5–H8; sin inferir relaciones
+Q8,aumento al salario mínimo y acuerdo con empresarios,2018-12-01,2024-01-31,"Qué organizaciones empresariales, qué porcentajes y qué montos diarios",10,10,0,bm25_con_filtro,0.615,pendiente H5–H8; sin inferir relaciones
+Q9,operación y apertura de sucursales del Banco del Bienestar,2019-01-01,2023-12-31,"Qué institución, cuántas sucursales, en qué estados y con qué montos",10,10,0,bm25_con_filtro,0.615,pendiente H5–H8; sin inferir relaciones
+Q10,construcción y operación del Tren Interoceánico del Istmo de Tehuantepec,2020-01-01,2024-06-30,"Qué dependencias y empresas, qué lugares conecta, qué montos y fechas de inauguración",10,9,0,bm25_con_filtro,0.615,pendiente H5–H8; sin inferir relaciones

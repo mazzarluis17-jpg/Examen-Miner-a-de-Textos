@@ -1,0 +1,11 @@
+{
+  "modelo": "bm25_con_filtro",
+  "MAP": 0.615,
+  "alternativa": "tfidf_con_filtro",
+  "MAP_alternativa": 0.3998,
+  "diferencia_menor_0.01": false,
+  "empate_exacto": false,
+  "criterio": "mayor MAP oficial con filtro; empate a BM25",
+  "sha256_ranking": "2da7bd09e1a590b00c720266d5ec082ce0a71188f23784fad2052521fa312c4e",
+  "sha256_juicios": "cb3e4769ff430228bb78b3d06ce83272aa7b4a9a19e3ca72c48aec987b8a2860"
+}

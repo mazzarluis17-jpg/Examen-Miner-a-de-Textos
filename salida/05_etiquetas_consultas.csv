@@ -1,0 +1,11 @@
+query_id,tokens,longitud_tokens,mediana_longitud,longitud,n_terminos_df_alto,umbral_df_alto,siglas_heuristica,nombre_propio_heuristica,sinonimos_conocidos,df_terminos
+Q1,avanc|construccion|tren|may,4,4.5,corta,0,0.1,False,True,,"{""avanc"": 4741, ""construccion"": 5648, ""may"": 6504, ""tren"": 5261}"
+Q2,lleg|aplic|vacun|covid-19,4,4.5,corta,1,0.1,True,False,,"{""aplic"": 6637, ""covid-19"": 1006, ""lleg"": 21262, ""vacun"": 4552}"
+Q3,refin|dos|boc|tabasc,4,4.5,corta,1,0.1,False,True,Dos Bocas ↔ refinería Olmeca,"{""boc"": 1243, ""dos"": 25300, ""refin"": 2069, ""tabasc"": 3433}"
+Q4,aeropuert|felip|angel|sant|luc,5,4.5,larga,0,0.1,False,True,AIFA ↔ Santa Lucía ↔ Felipe Ángeles,"{""aeropuert"": 3643, ""angel"": 2010, ""felip"": 2602, ""luc"": 1005, ""sant"": 2262}"
+Q5,program|sembr|vid|apoy|campesin,5,4.5,larga,2,0.1,False,True,,"{""apoy"": 18238, ""campesin"": 2352, ""program"": 12803, ""sembr"": 2011, ""vid"": 10468}"
+Q6,combat|huachicol|rob|combust,4,4.5,corta,0,0.1,False,False,huachicol ↔ robo de combustible,"{""combat"": 2842, ""combust"": 2993, ""huachicol"": 714, ""rob"": 5984}"
+Q7,pension|universal|adult|mayor,4,4.5,corta,1,0.1,False,False,adultos mayores ↔ pensión del Bienestar,"{""adult"": 4125, ""mayor"": 15615, ""pension"": 3332, ""universal"": 2161}"
+Q8,aument|salari|minim|acuerd|empresari,5,4.5,larga,1,0.1,False,False,,"{""acuerd"": 13558, ""aument"": 6098, ""empresari"": 3302, ""minim"": 1885, ""salari"": 2909}"
+Q9,oper|apertur|sucursal|banc|bienest,5,4.5,larga,0,0.1,False,True,,"{""apertur"": 492, ""banc"": 3914, ""bienest"": 7828, ""oper"": 7891, ""sucursal"": 1127}"
+Q10,construccion|oper|tren|interocean|istmo|tehuantepec,6,4.5,larga,0,0.1,False,True,,"{""construccion"": 5648, ""interocean"": 288, ""istmo"": 1241, ""oper"": 7891, ""tehuantepec"": 461, ""tren"": 5261}"

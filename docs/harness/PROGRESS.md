@@ -2,6 +2,14 @@
 
 ## Completado
 
+- H4 (2026-11-10): Luis confirmó visualmente H3 y autorizó evaluar los rankings
+  congelados. Evaluador oficial: ganador global `bm25_con_filtro`, MAP 0.6150
+  frente a 0.3998 de TF-IDF con filtro, sin desempate. Sin pasajes no juzgados.
+  Vista temporal separada, tablas/auditorías para H8, cien asociaciones del ganador
+  (99 IDs únicos), manifiestos y tres figuras PNG generados. Fuentes y métricas:
+  `salida/05_validacion_h4.json`, `docs/h4_evaluacion_ir.md`. Suite: 183 passed,
+  1 skipped; Ruff limpio. Juicios revisión 197 e insumos históricos intactos.
+
 - H3 técnico (2026-11-09): aplicación Streamlit en `src/mtx/app/`, vistas Estado y
   Juicios, texto completo con resaltado por offsets y ocultación de procedencia.
   Persistencia atómica, respaldos, diario de revisión y exclusión mutua con detección
@@ -31,13 +39,11 @@
 
 ## Pendiente
 
-1. H3 humano: revisar y aprobar o corregir la propuesta completa de
-   `config/criterios_relevancia.md` `[VALIDAR]`. Tras aprobación explícita registrar
-   decisión y constancia SHA-256 según `docs/pruebas_app.md`; ejecutar `make pool`
-   y recargar la app. El alumno captura los juicios; la cobertura total habilita H4.
-   No hay aprobación ni archivos de juicios reales al cierre de esta sesión.
+1. H5: reglas y gazetteers, revisión humana de siglas, criterios IE `[VALIDAR]`,
+   NER técnico fijado y congelación antes de abrir gold. Usar solo los pasajes del
+   ganador global registrado en `data/mejor_modelo.json`.
 2. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
-3. Luego H4 a H9 (PRD §12.2).
+3. Luego H6 a H9 (PRD §12.2); gold y valoraciones siguen siendo trabajo humano.
 
 ## Decisiones
 
@@ -45,8 +51,8 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 
 ## Bloqueos
 
-- H3 humano pendiente del usuario actual: aprobación del criterio y captura de juicios;
-  bloquea H4. Se conserva la procedencia histórica del trabajo previo de Daniel.
+- H3 confirmado visualmente por Luis y H4 cerrado. H5 requiere revisión humana de
+  siglas y aprobación de criterios IE antes de la congelación y del gold.
 - Stopwords resueltas: `config/stopwords_es.txt` existe y el preprocesador usa la copia versionada.
 - Índice, tokens y TF-IDF no se han reconstruido en Debian; no son necesarios para
   construir el pool desde los rankings históricos y pasajes verificados.
