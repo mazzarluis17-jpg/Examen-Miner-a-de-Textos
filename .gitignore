@@ -29,3 +29,8 @@ reporte/*.toc
 # Editor / sistema
 .DS_Store
 *.swp
+
+# Cerrojo local de revisión; decisiones e historial sí se versionan.
+config/.gazetteer.lock
+
+anotaciones/.muestra.lock

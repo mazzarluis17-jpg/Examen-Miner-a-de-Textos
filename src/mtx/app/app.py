@@ -4,7 +4,7 @@ from pathlib import Path
 import streamlit as st
 
 from mtx import config
-from mtx.app import componentes, vista_estado, vista_juicios
+from mtx.app import componentes, preparacion_gold, vista_estado, vista_gazetteer, vista_juicios
 
 
 @st.cache_resource(show_spinner="Verificando insumos locales…")
@@ -15,6 +15,12 @@ def contexto(raiz: str, firma: tuple):
 def main():
     st.set_page_config(page_title="Anotación humana · Minería de Textos", layout="wide")
     st.title("Anotación humana de relevancia")
+    if st.sidebar.toggle("Abrir revisión Gazetteer (sin cargar juicios)"):
+        vista_gazetteer.mostrar(config.RAIZ)
+        return
+    if st.sidebar.toggle("Abrir preparación Gold (sin cargar juicios)"):
+        preparacion_gold.mostrar(config.RAIZ)
+        return
     if st.sidebar.button("Recargar desde disco"):
         st.session_state.clear()
         contexto.clear()
@@ -43,9 +49,9 @@ def main():
     with juicios_tab:
         vista_juicios.mostrar(ctx, estado)
     with gold_tab:
-        st.info("Pendiente H5/H6. No se cargan ni muestran predicciones.")
+        preparacion_gold.mostrar(config.RAIZ)
     with gazetteer_tab:
-        st.info("Pendiente H5. No hay escritura de gazetteer en esta etapa.")
+        vista_gazetteer.mostrar(config.RAIZ)
 
 
 if __name__ == "__main__":
