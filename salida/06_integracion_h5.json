@@ -1,0 +1,35 @@
+{
+  "protegidos_identicos": 254,
+  "nuevos_archivos_humanos": 0,
+  "worktree_h5": "sin cambios",
+  "ambito_h5_asociaciones": 100,
+  "pasajes_unicos": 99,
+  "h6_iniciado": false,
+  "pruebas_rapidas": {
+    "passed": 276,
+    "deselected": 9
+  },
+  "offsets_reglas_reales": {
+    "passed": 1,
+    "deselected": 86
+  },
+  "ruff": "All checks passed!",
+  "destino_previo": "c69581c6b3affc0805aec03937cea4d997a51d5e",
+  "origen_integrado": "e164ca6c9f1d9934ebb66234ac7fc071d7442fb9",
+  "base_comun": "4cd65f1b30b66d7fb39cbb70304d9eea8a3e7dea",
+  "respaldo_h3": "/home/luis/Documentos/MineriaTextos/Examen/Respaldos/h3_antes_merge.tar.gz",
+  "sha256_respaldo_h3": "76ba22d4289f1030f8405d894d870212677a15a26310f3facac8d1e210b40e26",
+  "archivos_respaldo_verificados": 208,
+  "copia_documentacion_local": "/tmp/mtx-merge-h5-20261110-013248",
+  "conflictos_git": [
+    "docs/harness/PROGRESS.md"
+  ],
+  "resolucion": "H4 cerrado y H5 técnico conservados; documentación local reconciliada sin perder procedencia ni aprobaciones legítimas.",
+  "app_arranque": "verificado sin errores ni acciones humanas",
+  "revision_juicios": 197,
+  "sha256_juicios": "cb3e4769ff430228bb78b3d06ce83272aa7b4a9a19e3ca72c48aec987b8a2860",
+  "sha256_aprobacion_h3": "cefb1b2329b83aa3a13ba77b579b58f2466f7f9bedc2db575aca1b36f1adce4e",
+  "sha256_protegidos": "2884b8dcee614c1e13dbaa5ede33de257852aefc172aab688bea9c1cdc34c2ba",
+  "evaluaciones_h3_h4_repetidas": false,
+  "archivos_protegidos_modificados": []
+}

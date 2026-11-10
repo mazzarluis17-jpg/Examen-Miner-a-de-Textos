@@ -1,0 +1,43 @@
+{
+  "fecha": "2026-11-09",
+  "rama": "desarrollo-h5",
+  "entorno": "Python 3.11 del entorno existente de desarrollo-luis; PYTHONPATH=src del worktree H5; sin cambios de dependencias",
+  "pruebas_rapidas": {
+    "comando": "PYTHONPATH=src /home/luis/Documentos/MineriaTextos/Examen/text-mining-ir-er/.venv/bin/python -m pytest -q",
+    "aprobadas": 262,
+    "deseleccionadas_lentas": 9,
+    "segundos": 21.06
+  },
+  "pruebas_h5_incluida_integracion": {
+    "comando": "pytest tests/test_h5_infraestructura.py tests/test_reglas.py tests/test_ner_posproceso.py -q -m \"lento or not lento\"",
+    "aprobadas": 101,
+    "segundos": 7.15,
+    "pasajes_reales_offsets": 200,
+    "semilla": 42
+  },
+  "ruff": {
+    "comando": "ruff check src tests scripts --fix",
+    "estado": "limpio"
+  },
+  "diff_check": "limpio",
+  "gazetteer_base_entradas": 76,
+  "siglas_candidatas": 1505,
+  "revision_humana_siglas": "pendiente; ninguna decision generada",
+  "h4": "ausente; scripts 06/07 se detienen con codigo 1",
+  "congelacion": "bloqueada por ausencia de aprobacion humana; no se creo etiqueta",
+  "p06": "salida/07_verificacion_ner.json",
+  "protegidos_modificados": [],
+  "alcance": "H5 tecnico; sin evaluacion gold ni F1, sin extraccion final, sin merge ni push",
+  "huellas": {
+    "src/mtx/reglas.py": "00a3be321c1f32a70b17d5a13e6e025961db2af6b020d72068745d9bdecddae7",
+    "src/mtx/ner_modelo.py": "1e5f5c30f847e026d84457b5aa8dc4e5b66e12440638d6c0c5ab7e7df9748a8d",
+    "config/ner.yaml": "2a7072936a8409a4a6faea74b0a993c324aabb9f4856fe45ac5e4f048fcd62cd",
+    "salida/06_siglas_candidatas.csv": "3fb31e24042e46ba49b1c38c0a4ab514d84245ed6d8bbbdcc45f0dc62af701b8"
+  },
+  "verificacion_posterior_formato": {
+    "reglas_incluida_integracion_aprobadas": 87,
+    "segundos": 2.53,
+    "ruff": "limpio",
+    "motivo": "Normalizacion de LF y espacios de extremos en contextos de candidatos; no se alteran textos canonicos ni offsets"
+  }
+}

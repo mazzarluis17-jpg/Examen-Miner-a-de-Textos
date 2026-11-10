@@ -18,6 +18,17 @@
 
 ## Decisiones posteriores
 
+- (2026-11-10) Integración autorizada de `desarrollo-h5` (`e164ca6`) sobre
+  `desarrollo-luis` (`c69581c`) mediante merge real, sin squash ni rebase. Respaldo
+  externo H3 íntegro y comparado con los archivos actuales; documentación local
+  apartada en `/tmp/mtx-merge-h5-20261110-013248/` y reconciliada después. Se combinan
+  las decisiones de ambas ramas, incluidas procedencia y aprobaciones legítimas
+  de H3; no se crea un commit separado de transferencia. El único conflicto Git
+  fue `docs/harness/PROGRESS.md`, resuelto conservando H4 completado y H5 técnico,
+  con pendientes humanos actualizados. Archivos humanos y congelados sin cambios
+  de contenido; rama/worktree H5 intactos. No se regenera H3/H4, se cambia el remote,
+  se hace push ni se avanza a H6. Auditoría: `salida/06_integracion_h5.json`.
+
 - (2026-11-10) Luis confirmó visualmente los juicios de H3 y autorizó H4. Se evalúa
   exclusivamente la revisión 197 y los rankings congelados, mediante el adaptador
   del kit intacto. D08 fija `bm25_con_filtro` por mayor MAP oficial entre variantes
@@ -28,6 +39,31 @@
   heurísticas auditables. Las equivalencias de PRD §6.6 se usan solo para describir.
   Se conservan resultados distintos si existiesen, sin sobrescribir cifras previas.
   Exportación gráfica local verificada fuera del sandbox, sin descargas.
+
+- (2026-11-10) Transferencia explícitamente autorizada por Luis de sus 176 juicios
+  humanos realizados en Excel, desde
+  `/home/luis/Descargas/juicios_humanos_excel_para_validacion.csv` (SHA-256
+  `dc42015ef38a69ca0215ac24573249432c212e581a83ecaf67dbe95b2e144134`).
+  Luis ratificó los cinco valores discrepantes del CSV como definitivos: se
+  actualizaron esos cinco, se conservaron 17 coincidencias y se incorporaron 154
+  pares faltantes mediante `componentes.guardar_accion()`, sin inferir etiquetas.
+  Las revisiones pasaron de 38 a 197, con respaldos del CSV y del estado previos y
+  el historial atómico habitual. Procedencia y verificaciones detalladas en
+  `anotaciones/historial_juicios/transferencia_excel_2026-11-10T00-50-08-06-00_procedencia.json`.
+  La procedencia es importación asistida desde Excel, no captura directa de todos
+  los juicios en la interfaz de Streamlit. Coincidencia exacta con el CSV:
+  113 relevantes, 63 no relevantes, cero pendientes; validador sin errores ni avisos.
+  AppTest verificó 176/176 en Estado y las diez consultas, y reapertura sin pérdida.
+  No se ejecutó H4 ni se exportaron juicios a la raíz. H4 espera confirmación visual
+  de Luis. No se realizaron operaciones de escritura en Git.
+
+- (2026-11-09, 17:19 CDMX) Luis aprobó explícitamente, sin modificaciones, el texto
+  de `config/criterios_relevancia.md` presentado en conversación. SHA-256 aprobado:
+  `ae67ac2b0f1066dd71293c9ca8075aae9473ff1a9956e028c759ee6158fe9f87`.
+  Constancia: `config/criterios_relevancia_aprobacion.json`. Se conserva el archivo
+  aprobado byte por byte, incluido su encabezado histórico de propuesta; el estado
+  vigente lo determina la constancia ligada al hash. Pool verificado sin cambios;
+  aplicación habilitada para decisiones personales de Luis. No se generan etiquetas.
 
 - (2026-11-09) H3 técnico: se implementan las vistas Estado/Juicios y componentes
   compartidos conforme a D19. Gold y Gazetteer muestran su estado pendiente; no
@@ -72,3 +108,54 @@
 - (2026-11-04) `data/consultas.csv` generado con el kit literal más Q9 y Q10 en borrador. No se generan rankings hasta que el alumno apruebe o corrija la redacción de Q9 y Q10.
 - (2026-11-08) **Q9 y Q10 aprobadas por el alumno** sin cambios: Q9 "operación y apertura de sucursales del Banco del Bienestar" (2019-01-01 a 2023-12-31); Q10 "construcción y operación del Tren Interoceánico del Istmo de Tehuantepec" (2020-01-01 a 2024-06-30); preguntas de extracción como en `config/consultas_q9q10.yaml`. Se levanta el bloqueo de rankings. El mismo día el alumno confirmó que el profesor tiene acceso al repo de GitLab.
 - (2026-11-08) H2: `indice.py` y `ranking.py` probados (T03 a T06). Memoria del índice a mano medida: pico de 1.3 GB, `indice.pkl` 43.5 MB (`salida/02_memoria.json`). `rank_bm25` difiere del BM25 propio en todos los términos (no solo df > N/2) porque su idf es `ln(x)` y el propio `ln(1+x)`; la prueba usa una subclase con el idf propio.
+
+- (2026-11-09) H5 técnico aislado en `desarrollo-h5`, worktree separado desde
+  `4cd65f1`, por autorización de Luis. Se implementan componentes independientes
+  de juicios y H4; la extracción final exige `data/mejor_modelo.json` con campo
+  `modelo` igual a una variante con filtro. No se consultan juicios H3, gold ni
+  selección; no se modifican kit, rankings, pool, criterios ni metadatos históricos.
+- (2026-11-09) Gazetteers: las entradas expresamente enumeradas en PRD §6.7.4/D14
+  se guardan en `config/gazetteer_prescrito.csv`; los lugares de §6.7.5 en
+  `config/gazetteer_loc.csv`. Se distingue así contenido prescrito de revisión
+  humana de candidatos; `config/gazetteer_extendido.csv` solo lo produce el alumno
+  con la app. No hay candidatos aceptados automáticamente. La minería cuenta
+  ocurrencias en cuerpos de pasajes con ventanas; no son frecuencias por discurso.
+- (2026-11-09) Normalización prudente: años de dos dígitos sin regla de siglo
+  permanecen sin resolver; fechas relativas e intervalos se detectan sin inventar
+  ISO; día imposible tiene estado `fecha_invalida`. `1.200` es ambiguo; billón
+  español equivale a 10**12; `$` sin denominación conserva valor pero no presupone
+  MXN. Los spans permanecen intactos. Reglas no cubren números completamente en
+  palabras, como `quince` o `trescientos cincuenta`, según PRD §6.7.
+- (2026-11-09) P06: se verifica el principal prescrito
+  `mrm8488/bert-spanish-cased-finetuned-ner`, revisión
+  `b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7`, con pesos fuera del repo en `/tmp`.
+  Se informó modelo, tamaño aproximado y motivo antes de descargar. Cabeza de
+  clasificación de tokens y mapa BIO reales; tokenizador rápido, offsets y CPU
+  comprobados con frases sintéticas. `salida/07_verificacion_ner.json` conserva
+  medición y resultados. `data/modelo_ner.json` es provisional con criterio
+  técnico D09, F1 nulos y sin selección humana simulada. No se compara segundo
+  NER (P1) mientras hay P0 pendientes; no se cambia el entorno ni dependencias.
+- (2026-11-09) Fragmentación NER: ventanas de subtokens de capacidad real menos
+  especiales, solapamiento explícito, verificación de cobertura y retokenización.
+  Se rechaza un fragmento que exceda capacidad; nunca se trunca silenciosamente.
+  Caché cruda con clave versionada y carga perezosa; posproceso separado, con
+  uniones auditadas. MISC/OTH se cuentan. No se produce caché real sin ganador H4.
+- (2026-11-09) App H5: accesos independientes de Gazetteer y preparación Gold sin
+  cargar juicios. Persistencia de revisión con cerrojo, revisión, respaldos y diario
+  previo a publicación. Una interrupción entre diario/CSV bloquea para revisión
+  explícita; conserva decisiones y respaldos. `make congelar` ahora exige hashes
+  de aprobaciones humanas de criterios y gazetteer y P06, además de pruebas.
+  No se crea etiqueta ni aprobación en esta sesión. Muestreo global reproducible
+  probado con fixtures; la app solo podrá escribir el manifiesto real tras H4,
+  congelación, protocolo y confirmación de no haber visto predicciones. CLI solo
+  valida: no escribe en `anotaciones/`. Anotación, sustitución y cierre son H6.
+- (2026-11-09) Luis indica entrega oficial en GitHub antes del 11 de noviembre a
+  las 20:00. Esto reemplaza el destino de entrega histórico GitLab para su proyecto
+  individual, sin reescribir el historial previo. No se modifica remote, publica,
+  hace merge ni push; preparar repositorio personal y comprobar acceso del profesor
+  queda para integración en `desarrollo-luis`.
+
+- (2026-11-09) Cierre H5: se normalizan a LF los CSV prescritos nuevos y se
+  recortan espacios de extremos solo en los contextos de candidatos minados.
+  No se modifica texto canónico ni offsets; minería regenerada y T11 con 200
+  pasajes reales nuevamente verde. No hay congelación ni decisiones humanas.

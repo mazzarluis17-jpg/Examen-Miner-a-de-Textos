@@ -2,6 +2,17 @@
 
 ## Completado
 
+- Integración H5 (2026-11-10): merge real de `desarrollo-h5` (`e164ca6`) sobre
+  `desarrollo-luis` (`c69581c`), conservando los commits y el worktree de origen.
+  Único conflicto Git: este registro de progreso; se combinan H4 cerrado, H5
+  técnico y notas locales legítimas de H3. Documentación local recuperada desde
+  copia externa verificada. Los 254 archivos protegidos mantienen sus hashes;
+  no hay cambios ni altas de archivos humanos. Pruebas rápidas: 276 passed,
+  9 deselected; offsets reales de reglas: 1 passed; Ruff limpio. App integrada
+  arranca sin errores y conserva respuestas, sin pulsar acciones humanas. Evidencia:
+  `salida/06_integracion_h5.json`. No se repitieron evaluaciones reales H3/H4 ni
+  se inició H6, se ejecutó inferencia o se aprobó ningún criterio nuevo.
+
 - H4 (2026-11-10): Luis confirmó visualmente H3 y autorizó evaluar los rankings
   congelados. Evaluador oficial: ganador global `bm25_con_filtro`, MAP 0.6150
   frente a 0.3998 de TF-IDF con filtro, sin desempate. Sin pasajes no juzgados.
@@ -9,6 +20,31 @@
   (99 IDs únicos), manifiestos y tres figuras PNG generados. Fuentes y métricas:
   `salida/05_validacion_h4.json`, `docs/h4_evaluacion_ir.md`. Suite: 183 passed,
   1 skipped; Ruff limpio. Juicios revisión 197 e insumos históricos intactos.
+
+- H5 técnico (2026-11-09, rama/worktree `desarrollo-h5`): reglas de cinco tipos,
+  auxiliares y normalización prudente; gazetteers prescritos separados de revisión
+  humana; candidatos minados sin aceptar. NER principal con revisión fija verificado
+  en CPU mediante frases sintéticas; fragmentación, caché cruda perezosa y posproceso
+  auditado probados offline. App de revisión Gazetteer con persistencia protegida,
+  guardas de congelación y preparación del manifiesto desde la app. Muestreo global
+  probado sin generar muestra real. Contratos y límites en `docs/h5_infraestructura.md`.
+  Verificación: 262 pruebas rápidas aprobadas y 101 de H5 incluida integración
+  con 200 pasajes reales; Ruff limpio. Evidencia en `salida/06_pruebas_h5.json`.
+  No se accedió a juicios, gold ni selección; no se ejecutó extracción final sin H4.
+
+- (2026-11-10) H3: incorporados los 176 juicios humanos de Luis realizados en Excel,
+  por transferencia expresamente autorizada y con precedencia ratificada del CSV
+  ante los cinco conflictos. Conservados 17, actualizados 5, añadidos 154;
+  revisión final 197. Persistencia oficial con respaldos: 113 relevantes,
+  63 no relevantes y cero pendientes. Validación nativa sin errores ni avisos;
+  AppTest reconoce 176/176, todas las consultas completas y reapertura correcta.
+  Pruebas de pool y app: 29 passed, 1 skipped (criterio real ya aprobado).
+  Procedencia real documentada en el historial; no se atribuye a captura íntegra
+  directa en Streamlit. Sin commits, push, cambios de interfaz ni ejecución de H4.
+
+- (2026-11-09, 17:19 CDMX) Luis aprobó explícitamente el criterio sin cambios.
+  Constancia por SHA-256 y decisión registradas; pool real verificado sin cambios.
+  Aplicación habilitada para comenzar captura humana; no hay juicios generados.
 
 - H3 técnico (2026-11-09): aplicación Streamlit en `src/mtx/app/`, vistas Estado y
   Juicios, texto completo con resaltado por offsets y ocultación de procedencia.
@@ -39,11 +75,15 @@
 
 ## Pendiente
 
-1. H5: reglas y gazetteers, revisión humana de siglas, criterios IE `[VALIDAR]`,
-   NER técnico fijado y congelación antes de abrir gold. Usar solo los pasajes del
-   ganador global registrado en `data/mejor_modelo.json`.
-2. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
-3. Luego H6 a H9 (PRD §12.2); gold y valoraciones siguen siendo trabajo humano.
+1. Completar H5 humano: revisar los candidatos íntegros en Gazetteer y cerrar la
+   aprobación por hash; escribir y aprobar `config/criterios_anotacion.md` y su
+   constancia `[VALIDAR]`. P06 técnico y reglas están integrados; no hay aprobación
+   de siglas ni criterios IE, ni etiqueta `reglas-congeladas` todavía.
+2. Congelar solo tras lo anterior y un árbol registrado. No crear muestra real,
+   ejecutar inferencia ni abrir anotación H6 durante esta integración.
+3. Después: preparación de manifiesto ciego desde la app, H6 humano y H7–H9 según
+   el PRD. Usar `data/mejor_modelo.json` de H4; no seleccionar un ganador nuevo.
+4. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
 
 ## Decisiones
 
@@ -51,9 +91,12 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 
 ## Bloqueos
 
-- H3 confirmado visualmente por Luis y H4 cerrado. H5 requiere revisión humana de
-  siglas y aprobación de criterios IE antes de la congelación y del gold.
-- Stopwords resueltas: `config/stopwords_es.txt` existe y el preprocesador usa la copia versionada.
-- Índice, tokens y TF-IDF no se han reconstruido en Debian; no son necesarios para
-  construir el pool desde los rankings históricos y pasajes verificados.
-- Kaleido necesita el Chrome que instala `plotly_get_chrome` (`make setup` lo hace); los Chromium de snap fallan.
+- H3 confirmado por Luis y H4 cerrado; no son bloqueos pendientes de la rama H5.
+- H5 requiere revisión humana del gazetteer, criterios IE aprobados y congelación.
+  BETO sigue siendo el principal provisional por criterio técnico; no hay F1 ni
+  selección humana simulada. La anotación y cierre Gold corresponden a H6.
+- Entrega individual en GitHub según decisión documentada en H5. Publicación y
+  acceso del profesor pendientes; no se cambia el remote ni se hace push aquí.
+- Índice, tokens y TF-IDF no se han reconstruido en Debian; no se requieren para
+  integrar las reglas y NER ni para conservar los resultados de H4.
+- Stopwords resueltas con copia versionada; figuras H4 ya exportadas con Chrome local.

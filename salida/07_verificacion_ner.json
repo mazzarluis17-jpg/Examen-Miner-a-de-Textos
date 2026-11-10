@@ -1,0 +1,145 @@
+{
+  "modelo": "mrm8488/bert-spanish-cased-finetuned-ner",
+  "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+  "id2label": {
+    "0": "B-LOC",
+    "1": "B-MISC",
+    "2": "B-ORG",
+    "3": "B-PER",
+    "4": "I-LOC",
+    "5": "I-MISC",
+    "6": "I-ORG",
+    "7": "I-PER",
+    "8": "O"
+  },
+  "tokenizador_rapido": true,
+  "max_length_real": 512,
+  "segundos": 11.639648331998615,
+  "memoria_pico_kib": 988680,
+  "ejemplos_sinteticos": [
+    {
+      "texto": "María López trabaja en la Secretaría de Salud en México.",
+      "crudo": [
+        {
+          "tipo": "PER",
+          "texto": "María López",
+          "inicio": 0,
+          "fin": 11,
+          "confianza": 0.9995708465576172,
+          "cortada": false
+        },
+        {
+          "tipo": "ORG",
+          "texto": "Secretaría de Salud",
+          "inicio": 26,
+          "fin": 45,
+          "confianza": 0.9996612071990967,
+          "cortada": false
+        },
+        {
+          "tipo": "LOC",
+          "texto": "México",
+          "inicio": 49,
+          "fin": 55,
+          "confianza": 0.9996503591537476,
+          "cortada": false
+        }
+      ],
+      "unido": [
+        {
+          "tipo": "PER",
+          "texto": "María López",
+          "inicio": 0,
+          "fin": 11,
+          "confianza": 0.9995708465576172,
+          "cortada": false
+        },
+        {
+          "tipo": "ORG",
+          "texto": "Secretaría de Salud",
+          "inicio": 26,
+          "fin": 45,
+          "confianza": 0.9996612071990967,
+          "cortada": false
+        },
+        {
+          "tipo": "LOC",
+          "texto": "México",
+          "inicio": 49,
+          "fin": 55,
+          "confianza": 0.9996503591537476,
+          "cortada": false
+        }
+      ],
+      "descartadas": 0,
+      "uniones": []
+    },
+    {
+      "texto": "El Banco Mundial visitó Madrid con Juan Pérez.",
+      "crudo": [
+        {
+          "tipo": "ORG",
+          "texto": "Banco Mundial",
+          "inicio": 3,
+          "fin": 16,
+          "confianza": 0.9997143745422363,
+          "cortada": false
+        },
+        {
+          "tipo": "LOC",
+          "texto": "Madrid",
+          "inicio": 24,
+          "fin": 30,
+          "confianza": 0.9998733997344971,
+          "cortada": false
+        },
+        {
+          "tipo": "PER",
+          "texto": "Juan Pérez",
+          "inicio": 35,
+          "fin": 45,
+          "confianza": 0.9995440244674683,
+          "cortada": false
+        }
+      ],
+      "unido": [
+        {
+          "tipo": "ORG",
+          "texto": "Banco Mundial",
+          "inicio": 3,
+          "fin": 16,
+          "confianza": 0.9997143745422363,
+          "cortada": false
+        },
+        {
+          "tipo": "LOC",
+          "texto": "Madrid",
+          "inicio": 24,
+          "fin": 30,
+          "confianza": 0.9998733997344971,
+          "cortada": false
+        },
+        {
+          "tipo": "PER",
+          "texto": "Juan Pérez",
+          "inicio": 35,
+          "fin": 45,
+          "confianza": 0.9995440244674683,
+          "cortada": false
+        }
+      ],
+      "descartadas": 0,
+      "uniones": []
+    }
+  ],
+  "estado": "verificacion_tecnica; no seleccion humana",
+  "dependencias": {
+    "transformers": "5.22.1",
+    "torch": "2.15.0+cpu"
+  },
+  "descarga": {
+    "directorio": "/tmp/mtx-hf",
+    "revision_fijada": true,
+    "pesos_en_repo": false
+  }
+}

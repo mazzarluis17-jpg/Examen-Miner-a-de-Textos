@@ -35,8 +35,8 @@ reglas:
 
 # Etiqueta git que debe preceder a cualquier commit del gold (PRD D15).
 congelar:
-	@git diff --quiet && git diff --cached --quiet || { echo "Hay cambios sin commitear: haz commit antes de congelar."; exit 1; }
-	git tag -a reglas-congeladas -m "Reglas, gazetteers y convenciones congelados antes del gold"
+	uv run pytest tests/test_reglas.py tests/test_ner_posproceso.py -q
+	$(PY) scripts/06b_congelar.py
 
 ner:
 	$(PY) scripts/07_ner.py
@@ -76,3 +76,7 @@ limpiar:
 	@echo "Se borrarán: data/*.parquet data/*.pkl data/*.npz y salida/"
 	rm -f data/*.parquet data/*.pkl data/*.npz
 	rm -rf salida/*
+
+.PHONY: minar-siglas
+minar-siglas: data/pasajes.parquet
+	$(PY) scripts/06_reglas.py --minar

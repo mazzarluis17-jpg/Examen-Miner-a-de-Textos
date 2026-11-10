@@ -77,7 +77,16 @@ resaltado, aprobación por hash y persistencia atómica. El CSV de juicios conse
 su esquema; revisión y huellas van en `anotaciones/juicios_relevancia_estado.json`
 y respaldos en `anotaciones/historial_juicios/`. La anotación solo se habilita con
 criterio aprobado explícitamente y hash vigente en el manifiesto del pool.
-Gold/Gazetteer son avisos pendientes de H5/H6; no leen predicciones. Ver
+H5 técnico (2026-11-09, `desarrollo-h5`): `reglas.py`, `normalizacion.py`,
+`ner_modelo.py` y `ambito_ie.py` implementan extracción independiente de juicios;
+`config/gazetteer_prescrito.csv` distingue entradas obligatorias de las minadas.
+`app/gazetteer.py` y `vista_gazetteer.py` permiten revisión humana y cierre por hash,
+con acceso independiente que no carga H3. `app/preparacion_gold.py` prepara solo
+el manifiesto tras H4/D15; la anotación y el cierre Gold siguen pendientes H6.
+`muestreo.py` usa emparejamiento global y `congelacion.py` verifica aprobaciones.
+`make minar-siglas` prepara candidatos sin aceptarlos; `make reglas` y `make ner`
+exigen el ganador H4. Ninguna de estas vistas lee predicciones. Ver
+`docs/h5_infraestructura.md` para contratos y bloqueos. Ver
 `docs/pruebas_app.md` para protocolo de aprobación, reanudación e interrupciones.
 
 | Zona | Productor | ¿La toca el asistente? | Notas |
