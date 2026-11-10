@@ -1,0 +1,9 @@
+{
+  "modelo": "mrm8488/bert-spanish-cased-finetuned-ner",
+  "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+  "f1_seleccion": null,
+  "f1_seleccion_alternativa": null,
+  "criterio": "tecnico",
+  "estado": "provisional_P06; pendiente congelacion D15; sin evaluacion humana",
+  "evidencia": "salida/07_verificacion_ner.json"
+}
