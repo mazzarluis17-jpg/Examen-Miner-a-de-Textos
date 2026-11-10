@@ -2,6 +2,16 @@
 
 ## Completado
 
+- Preparación prioritaria H5/H6 (2026-11-10): propuesta de alcance de once candidatos
+  con coincidencias adicionales en cuerpos del ámbito ganador; originales 1,505
+  intactos y exclusiones auditadas, sin convertirlas en rechazos humanos. Alcance
+  bloqueado hasta aprobación por hash. Criterios IE completos y protocolo preparados
+  como propuesta, sin constancias de aprobación. Captura Gold ciega y validador
+  implementados: búsqueda con desambiguación, tokens, corrección/borrado, cierre
+  vacío, reanudación, guardas D15, persistencia y cierre global. Sin muestra ni gold
+  reales, sin congelación. Ver `docs/h5_revision_acotada.md`, `docs/h6_anotacion.md`
+  y `salida/06_preparacion_h6_pruebas.json` para evidencia y pruebas.
+
 - Integración H5 (2026-11-10): merge real de `desarrollo-h5` (`e164ca6`) sobre
   `desarrollo-luis` (`c69581c`), conservando los commits y el worktree de origen.
   Único conflicto Git: este registro de progreso; se combinan H4 cerrado, H5
@@ -75,10 +85,9 @@
 
 ## Pendiente
 
-1. Completar H5 humano: revisar los candidatos íntegros en Gazetteer y cerrar la
-   aprobación por hash; escribir y aprobar `config/criterios_anotacion.md` y su
-   constancia `[VALIDAR]`. P06 técnico y reglas están integrados; no hay aprobación
-   de siglas ni criterios IE, ni etiqueta `reglas-congeladas` todavía.
+1. Aprobar o corregir el alcance de once candidatos y la propuesta íntegra de
+   `config/criterios_anotacion.md`. Tras aprobación, registrar constancias por hash;
+   el alumno revisa los once y cierra Gazetteer. P06 técnico y reglas están listos.
 2. Congelar solo tras lo anterior y un árbol registrado. No crear muestra real,
    ejecutar inferencia ni abrir anotación H6 durante esta integración.
 3. Después: preparación de manifiesto ciego desde la app, H6 humano y H7–H9 según
@@ -94,7 +103,8 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 - H3 confirmado por Luis y H4 cerrado; no son bloqueos pendientes de la rama H5.
 - H5 requiere revisión humana del gazetteer, criterios IE aprobados y congelación.
   BETO sigue siendo el principal provisional por criterio técnico; no hay F1 ni
-  selección humana simulada. La anotación y cierre Gold corresponden a H6.
+  selección humana simulada. La app y cierre Gold están preparados, pero bloqueados
+  hasta completar H5 y crear el manifiesto ciego. No hay gold real.
 - Entrega individual en GitHub según decisión documentada en H5. Publicación y
   acceso del profesor pendientes; no se cambia el remote ni se hace push aquí.
 - Índice, tokens y TF-IDF no se han reconstruido en Debian; no se requieren para

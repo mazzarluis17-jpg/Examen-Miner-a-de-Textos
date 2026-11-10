@@ -4,7 +4,7 @@ from pathlib import Path
 import streamlit as st
 
 from mtx import config
-from mtx.app import componentes, preparacion_gold, vista_estado, vista_gazetteer, vista_juicios
+from mtx.app import componentes, vista_estado, vista_gazetteer, vista_gold, vista_juicios
 
 
 @st.cache_resource(show_spinner="Verificando insumos locales…")
@@ -19,7 +19,7 @@ def main():
         vista_gazetteer.mostrar(config.RAIZ)
         return
     if st.sidebar.toggle("Abrir preparación Gold (sin cargar juicios)"):
-        preparacion_gold.mostrar(config.RAIZ)
+        vista_gold.mostrar(config.RAIZ)
         return
     if st.sidebar.button("Recargar desde disco"):
         st.session_state.clear()
@@ -49,7 +49,7 @@ def main():
     with juicios_tab:
         vista_juicios.mostrar(ctx, estado)
     with gold_tab:
-        preparacion_gold.mostrar(config.RAIZ)
+        vista_gold.mostrar(config.RAIZ)
     with gazetteer_tab:
         vista_gazetteer.mostrar(config.RAIZ)
 

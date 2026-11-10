@@ -24,15 +24,16 @@ la reapertura; Luis confirmó visualmente el resultado y H4 quedó completado.
    no asigna etiquetas; Recargar desde disco descarta solo el estado de la sesión.
 6. Abrir dos sesiones, responder en una y guardar desde la otra: se rechaza la
    sesión antigua con aviso de recargar. Las decisiones anteriores se conservan.
-7. En H6 (pendiente), comprobar búsqueda Gold y selección entre apariciones
-   repetidas. Gold permite preparar el manifiesto solo tras H4/D15 y confirmación de modo
-   ciego; no muestra predicciones ni permite anotar aún.
+7. En Gold, tras aprobar H5 y D15, preparar manifiesto ciego y comprobar búsqueda
+   exacta con elección explícita entre apariciones repetidas. La captura ya está
+   implementada; no carga ni muestra predicciones.
 8. En H6 (pendiente), comprobar selección por tokens con `$`, duplicados y offsets
    Unicode. H3 prueba escape HTML y resaltado sobre offsets con emoji, `<` y `&`.
-9. En H5, ejecutar `make minar-siglas` y abrir revisión Gazetteer desde la barra
-   lateral sin cargar juicios. Revisar evidencia; aceptar/corregir con nombre/tipo
+9. En H5, usar los candidatos ya minados y el alcance aprobado por hash; abrir
+   Gazetteer desde la barra lateral sin cargar juicios. Revisar evidencia; aceptar/corregir con nombre/tipo
    explícitos o descartar. Reabrir y verificar revisión/respaldos; otra sesión
-   desfasada debe bloquearse. El cierre exige revisar todos los candidatos.
+   desfasada debe bloquearse. El cierre exige revisar todos los candidatos del
+   alcance aprobado; los excluidos técnicamente no son rechazos humanos.
    Tras `reglas-congeladas`, comprobar que se impide toda escritura.
 10. En H6 (pendiente), comprobar cierre del gold y habilitación posterior de
     predicciones. H3 no lee entidades ni caché NER, aunque esos archivos existan.
@@ -66,6 +67,6 @@ El archivo `.juicios.lock` es un cerrojo local, sin contenido de anotación.
 
 La validación parcial permite retomar pendientes; la cobertura total se verifica
 con `pool.validar_juicios()` y se presenta en Estado. No se exportan juicios a la raíz
-ni se ejecuta la evaluación IR durante H3. La alternativa CLI y anotación/cierre Gold
-quedan para H6. La revisión Gazetteer y la preparación del manifiesto están
-implementadas en H5; ver `docs/h5_infraestructura.md`.
+ni se ejecuta la evaluación IR durante H3. Captura, corrección y cierre Gold están
+implementados y bloqueados hasta sus prerrequisitos. La alternativa CLI sigue
+pendiente; el flujo principal es Streamlit. Ver `docs/h6_anotacion.md`.

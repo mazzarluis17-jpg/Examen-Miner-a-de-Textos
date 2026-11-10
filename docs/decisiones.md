@@ -18,6 +18,22 @@
 
 ## Decisiones posteriores
 
+- (2026-11-10) Por instrucción de Luis se propone alcance acotado antes de D15,
+  pendiente de aprobación explícita. Se conservan 1,505 candidatos; se proponen los
+  once con coincidencias adicionales de sigla/nombre minado en cuerpos de los 99
+  pasajes únicos del ganador, descontando coincidencias contenidas en aliases de
+  base/prescritos/LOC. Se auditan presencia completa y marcas; las exclusiones de
+  alcance no son rechazos humanos. No se usan gold ni predicciones para seleccionar.
+  Política, cobertura y hashes en `salida/06_revision_alcance.json` y
+  `docs/h5_revision_acotada.md`. La app exige la aprobación por hash del alcance
+  antes de permitir decisiones y exige revisar el subconjunto completo para cerrar.
+- (2026-11-10) Criterios IE y protocolo preparados como borrador autorizado, no
+  aprobados. Gold se implementa con validación de D15, muestra reproducible y fuentes,
+  tipos/spans y cierre de los veinte IDs, incluido cero entidades. Diario y CSV
+  separados mantienen columnas contractuales y detectan interrupciones/concurrencia;
+  no se recuperan ni reescriben silenciosamente anotaciones. Todo ejemplo de prueba
+  es sintético en temporales. No se crean muestras, aprobaciones ni gold reales.
+
 - (2026-11-10) Integración autorizada de `desarrollo-h5` (`e164ca6`) sobre
   `desarrollo-luis` (`c69581c`) mediante merge real, sin squash ni rebase. Respaldo
   externo H3 íntegro y comparado con los archivos actuales; documentación local

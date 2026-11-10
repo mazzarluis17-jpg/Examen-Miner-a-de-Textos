@@ -6,6 +6,8 @@ Trabajo aislado en `desarrollo-h5`, desde `4cd65f1`. Commits de implementación:
 No se consultan juicios H3 ni anotaciones gold. No se ejecuta H4 por delegación.
 Estas notas describen el trabajo aislado original; el estado integrado actual
 se registra en la sección Integración y en `docs/harness/PROGRESS.md`.
+Para el alcance acotado propuesto y la captura Gold ya implementada, ver
+`docs/h5_revision_acotada.md` y `docs/h6_anotacion.md`; las aprobaciones siguen pendientes.
 
 ## Componentes y contratos
 

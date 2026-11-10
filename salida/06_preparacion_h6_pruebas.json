@@ -1,0 +1,26 @@
+{
+  "entradas_H4_verificadas": 21,
+  "archivos_humanos_verificados": 205,
+  "original_candidatos_intacto": true,
+  "revision_juicios": 197,
+  "propuesta_reproducible": true,
+  "fecha": "2026-11-10",
+  "base": "6987fda",
+  "estado": "Preparado; alcance y criterios IE pendientes de aprobación explícita",
+  "pruebas_rapidas": {
+    "passed": 294,
+    "deselected": 9,
+    "segundos": 18.75
+  },
+  "pruebas_nuevas": {
+    "alcance": 4,
+    "gold": 14
+  },
+  "ruff": "All checks passed!",
+  "smoke_real": "App arranca sin errores; H3 176/176; alcance bloqueado; Gold sin muestra",
+  "gold_real_generado": false,
+  "congelacion_ejecutada": false,
+  "aprobaciones_creadas": false,
+  "sha256_criterios_propuestos": "3ae1e19e1ff5032708fc6f6269792d3e31239c3314a3ad0108f67a15bd2ccb47",
+  "sha256_protocolo": "3dda620cbcbc994f52a1eb1cb9718206e3465b8dc24f71b79b3756986e7fac4f"
+}

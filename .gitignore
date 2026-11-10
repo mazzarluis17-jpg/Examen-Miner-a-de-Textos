@@ -34,3 +34,4 @@ reporte/*.toc
 config/.gazetteer.lock
 
 anotaciones/.muestra.lock
+anotaciones/.gold.lock

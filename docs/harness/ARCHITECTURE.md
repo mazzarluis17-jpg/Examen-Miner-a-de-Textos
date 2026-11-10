@@ -71,6 +71,14 @@ en `salida/` o `data/`.
 
 ### 2.2 Zonas del repositorio por quién las produce y quién las puede tocar
 
+Preparación H5/H6: `alcance_gazetteer.py` y `06c_alcance_gazetteer.py` producen
+propuesta y auditorías léxicas sin decisiones humanas. Gazetteer usa el alcance
+solo tras aprobación explícita por hash; conserva exclusiones fuera de los rechazos.
+`gold.py` centraliza validación de manifiestos, offsets y persistencia ciega;
+`app/vista_gold.py` captura únicamente las decisiones humanas y no carga extractores.
+El diario `anotaciones/gold_revision.json` y `historial_gold/` acompañan los CSV
+contractuales. D15 y aprobaciones bloquean el trabajo real hasta cerrar H5.
+
 Estado H3 (2026-11-09): `app/app.py` registra vistas; `vista_estado.py` y
 `vista_juicios.py` están implementadas. `componentes.py` centraliza contratos,
 resaltado, aprobación por hash y persistencia atómica. El CSV de juicios conserva
