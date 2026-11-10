@@ -1,0 +1,49 @@
+{
+  "estado": "propuesta_pendiente_aprobacion",
+  "politica": "Revisar todos los candidatos con alguna coincidencia literal adicional EN EL CUERPO (sigla o nombre minado), no contenida en un alias del gazetteer base/prescrito/LOC, dentro del ámbito IR ganador. Coincidencias exclusivas de marca quedan auditadas fuera del alcance. Sin umbral de frecuencia ni clasificación automática.",
+  "medida": "Cobertura léxica potencial; no mide entidades correctas, recall ni F1. Incluye marcas y cuerpo.",
+  "pasajes_ambito": 99,
+  "originales": 1505,
+  "propuestos": 11,
+  "siglas_propuestas": [
+    "COVID",
+    "AMLO",
+    "III",
+    "MELINA",
+    "VEGA",
+    "IVA",
+    "SARS",
+    "UMAS",
+    "VACUNA",
+    "VII",
+    "VIII"
+  ],
+  "excluidos_por_motivo": {
+    "sin_coincidencias_en_ambito": 1456,
+    "adicionales_solo_en_marca": 32,
+    "coincidencias_ya_cubiertas": 6
+  },
+  "ocurrencias_total": 369,
+  "ocurrencias_ya_cubiertas": 14,
+  "ocurrencias_adicionales_propuestas": 27,
+  "ocurrencias_adicionales_fuera_revision": 328,
+  "adicionales_cuerpo_total": 25,
+  "adicionales_cuerpo_fuera_revision": 0,
+  "adicionales_marca_total": 330,
+  "pasajes_con_coincidencias": 97,
+  "pasajes_con_coincidencias_adicionales": 96,
+  "pasajes_cuerpo_adicional": 16,
+  "rechazados_humanos": 0,
+  "fuentes": {
+    "kit/gazetteer_dependencias.csv": "11e0fa1b32e6b1fb8baf304a0efb4815806a6b3dd944c49891978e8528b6b243",
+    "config/gazetteer_prescrito.csv": "69a7726f8a5e781eff50421bfca15a8600096f43e36cefa37368015c19eadfe2",
+    "config/gazetteer_loc.csv": "35bafe2f4f8f35628863f27f11cdac3cfe75b02aabe4c568810f27155fe56244",
+    "salida/06_siglas_candidatas.csv": "3fb31e24042e46ba49b1c38c0a4ab514d84245ed6d8bbbdcc45f0dc62af701b8",
+    "data/mejor_modelo.json": "bf4d694fe867b70b99b4dedbb94d6ac09536d10e464ad7e7aa242fa1f4fc71c0",
+    "salida/ranking.csv": "2da7bd09e1a590b00c720266d5ec082ce0a71188f23784fad2052521fa312c4e",
+    "data/pasajes.parquet": "766859a1ab322a449b6ce3ef9e25d15b95f275d140804f3935db7c1de632af0d"
+  },
+  "sha256_subconjunto": "3165cb09043e8e476e24c08f5a927d5849c8c5f5d059476b40dcbf3160462475",
+  "sha256_auditoria": "3e64701eb4d35ab8d9d109bd27c9ce0e0d4a7cab34291277f12b3d6172b43521",
+  "sha256_ocurrencias": "7e601b5162c0b8d6c7d64edf9f2b2b6c3403f47e806997ce5a1e697f52f9165f"
+}

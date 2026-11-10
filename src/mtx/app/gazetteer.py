@@ -41,7 +41,37 @@ def fuentes(raiz):
         "config/gazetteer_prescrito.csv",
         "config/gazetteer_loc.csv",
     ]
-    return {p: digest((raiz / p).read_bytes()) for p in rutas}
+    propuesta = raiz / "salida/06_revision_alcance.json"
+    if propuesta.exists():
+        candidatos_revision(raiz)  # bloquea si falta aprobación explícita o hay hashes obsoletos
+        datos = json.loads(propuesta.read_text())
+        rutas.extend(["salida/06_revision_alcance.json", "salida/06_revision_alcance.csv",
+                      "salida/06_revision_auditoria.csv", "salida/06_revision_ocurrencias.csv",
+                      "config/alcance_gazetteer_aprobacion.json", *datos["fuentes"]])
+    return {p: digest((raiz / p).read_bytes()) for p in sorted(set(rutas))}
+
+
+def candidatos_revision(raiz):
+    """Alcance aprobado; las exclusiones técnicas nunca se convierten en rechazos."""
+    propuesta = raiz / "salida/06_revision_alcance.json"
+    if not propuesta.exists():
+        return list(csv.DictReader((raiz / "salida/06_siglas_candidatas.csv").open()))
+    try:
+        datos = json.loads(propuesta.read_text())
+        aprobado = json.loads((raiz / "config/alcance_gazetteer_aprobacion.json").read_text())
+        if (not aprobado.get("aprobado_por") or not aprobado.get("fecha") or
+                aprobado.get("sha256_propuesta") != digest(propuesta.read_bytes())):
+            raise ErrorAnotacion("Alcance sin aprobación vigente")
+        for ruta, clave in [("06_revision_alcance.csv", "sha256_subconjunto"),
+                            ("06_revision_auditoria.csv", "sha256_auditoria"),
+                            ("06_revision_ocurrencias.csv", "sha256_ocurrencias")]:
+            if digest((raiz/"salida"/ruta).read_bytes()) != datos[clave]:
+                raise ErrorAnotacion("Alcance obsoleto: conservar revisión")
+        if any(digest((raiz/p).read_bytes()) != h for p, h in datos["fuentes"].items()):
+            raise ErrorAnotacion("Fuentes del alcance obsoletas")
+        return list(csv.DictReader((raiz / "salida/06_revision_alcance.csv").open()))
+    except FileNotFoundError as exc:
+        raise ErrorAnotacion("Pendiente aprobación explícita del alcance de revisión") from exc
 
 
 def exportar(decisiones):
@@ -86,7 +116,7 @@ def guardar(raiz, estado, huellas, sigla, accion, nombre="", etiqueta="", varian
             not ruta.exists() or digest(ruta.read_bytes()) != actual["sha256_exportacion"]
         ):
             raise ErrorAnotacion("Exportación modificada o guardado interrumpido: revisar respaldo")
-        candidatos = list(csv.DictReader((raiz / "salida/06_siglas_candidatas.csv").open()))
+        candidatos = candidatos_revision(raiz)
         candidato = next((c for c in candidatos if c["sigla"] == sigla), None)
         if candidato is None:
             raise ErrorAnotacion("Sigla fuera de candidatos")
@@ -96,7 +126,7 @@ def guardar(raiz, estado, huellas, sigla, accion, nombre="", etiqueta="", varian
             "nombre": nombre.strip(),
             "etiqueta": etiqueta,
             "variantes": variantes,
-            "evidencia": candidato["ejemplo"],
+            "evidencia": candidato.get("ejemplo_ambito") or candidato["ejemplo"],
         }
         contenido = exportar(decisiones)
         nuevo = {
@@ -130,7 +160,7 @@ def cerrar_revision(raiz, estado, huellas, persona):
             or estado.get("fuentes") != huellas
         ):
             raise ErrorAnotacion("Estado cambiado o congelado: recarga")
-        candidatos = list(csv.DictReader((raiz / "salida/06_siglas_candidatas.csv").open()))
+        candidatos = candidatos_revision(raiz)
         if {c["sigla"] for c in candidatos} != set(estado["decisiones"]) or not persona.strip():
             raise ErrorAnotacion("Faltan candidatos por revisar o nombre del revisor")
         ruta = raiz / "config/gazetteer_extendido.csv"
@@ -141,6 +171,9 @@ def cerrar_revision(raiz, estado, huellas, persona):
             "fecha": datetime.now(UTC).isoformat(),
             "fuentes": huellas,
             "sha256_extendido": digest(ruta.read_bytes()),
+            "candidatos_revisados": len(estado["decisiones"]),
+            "fuera_alcance_no_rechazados": len(list(csv.DictReader(
+                (raiz / "salida/06_siglas_candidatas.csv").open()))) - len(candidatos),
         }
         atomico(
             raiz / "config/gazetteer_aprobacion.json",
