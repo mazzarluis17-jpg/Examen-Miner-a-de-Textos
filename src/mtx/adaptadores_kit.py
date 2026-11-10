@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import hashlib
 import importlib.util
+import json
 import re
 import subprocess
 import sys
@@ -38,7 +39,7 @@ def cargar_modulo_corpus(dir_kit: Path = DIR_KIT) -> ModuleType:
 
 
 def ejecutar_evaluador(modo: str, referencia: Path, prediccion: Path, destino: Path,
-                       dir_kit: Path = DIR_KIT) -> Path:
+                       dir_kit: Path = DIR_KIT, registro: Path | None = None) -> Path:
     """Ejecuta `kit/evaluar.py ir|ie` y devuelve la ruta del CSV de resultados en `destino`.
 
     `referencia` son los juicios (modo `ir`) o el gold (modo `ie`); `prediccion` es
@@ -53,6 +54,14 @@ def ejecutar_evaluador(modo: str, referencia: Path, prediccion: Path, destino: P
          str(Path(referencia).resolve()), str(Path(prediccion).resolve())],
         cwd=destino, capture_output=True, text=True, check=False,
     )
+    if registro is not None:
+        Path(registro).write_text(json.dumps({
+            "comando": proceso.args, "directorio": str(destino.resolve()),
+            "codigo_salida": proceso.returncode, "stdout": proceso.stdout,
+            "stderr": proceso.stderr,
+            "sha256_referencia": sha256_archivo(referencia),
+            "sha256_prediccion": sha256_archivo(prediccion),
+        }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if proceso.returncode != 0:
         raise RuntimeError(f"evaluar.py {modo} falló (código {proceso.returncode}):\n"
                            f"{proceso.stderr[-2000:]}")
