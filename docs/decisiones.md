@@ -61,3 +61,49 @@
 - (2026-11-04) `data/consultas.csv` generado con el kit literal más Q9 y Q10 en borrador. No se generan rankings hasta que el alumno apruebe o corrija la redacción de Q9 y Q10.
 - (2026-11-08) **Q9 y Q10 aprobadas por el alumno** sin cambios: Q9 "operación y apertura de sucursales del Banco del Bienestar" (2019-01-01 a 2023-12-31); Q10 "construcción y operación del Tren Interoceánico del Istmo de Tehuantepec" (2020-01-01 a 2024-06-30); preguntas de extracción como en `config/consultas_q9q10.yaml`. Se levanta el bloqueo de rankings. El mismo día el alumno confirmó que el profesor tiene acceso al repo de GitLab.
 - (2026-11-08) H2: `indice.py` y `ranking.py` probados (T03 a T06). Memoria del índice a mano medida: pico de 1.3 GB, `indice.pkl` 43.5 MB (`salida/02_memoria.json`). `rank_bm25` difiere del BM25 propio en todos los términos (no solo df > N/2) porque su idf es `ln(x)` y el propio `ln(1+x)`; la prueba usa una subclase con el idf propio.
+
+- (2026-11-09) H5 técnico aislado en `desarrollo-h5`, worktree separado desde
+  `4cd65f1`, por autorización de Luis. Se implementan componentes independientes
+  de juicios y H4; la extracción final exige `data/mejor_modelo.json` con campo
+  `modelo` igual a una variante con filtro. No se consultan juicios H3, gold ni
+  selección; no se modifican kit, rankings, pool, criterios ni metadatos históricos.
+- (2026-11-09) Gazetteers: las entradas expresamente enumeradas en PRD §6.7.4/D14
+  se guardan en `config/gazetteer_prescrito.csv`; los lugares de §6.7.5 en
+  `config/gazetteer_loc.csv`. Se distingue así contenido prescrito de revisión
+  humana de candidatos; `config/gazetteer_extendido.csv` solo lo produce el alumno
+  con la app. No hay candidatos aceptados automáticamente. La minería cuenta
+  ocurrencias en cuerpos de pasajes con ventanas; no son frecuencias por discurso.
+- (2026-11-09) Normalización prudente: años de dos dígitos sin regla de siglo
+  permanecen sin resolver; fechas relativas e intervalos se detectan sin inventar
+  ISO; día imposible tiene estado `fecha_invalida`. `1.200` es ambiguo; billón
+  español equivale a 10**12; `$` sin denominación conserva valor pero no presupone
+  MXN. Los spans permanecen intactos. Reglas no cubren números completamente en
+  palabras, como `quince` o `trescientos cincuenta`, según PRD §6.7.
+- (2026-11-09) P06: se verifica el principal prescrito
+  `mrm8488/bert-spanish-cased-finetuned-ner`, revisión
+  `b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7`, con pesos fuera del repo en `/tmp`.
+  Se informó modelo, tamaño aproximado y motivo antes de descargar. Cabeza de
+  clasificación de tokens y mapa BIO reales; tokenizador rápido, offsets y CPU
+  comprobados con frases sintéticas. `salida/07_verificacion_ner.json` conserva
+  medición y resultados. `data/modelo_ner.json` es provisional con criterio
+  técnico D09, F1 nulos y sin selección humana simulada. No se compara segundo
+  NER (P1) mientras hay P0 pendientes; no se cambia el entorno ni dependencias.
+- (2026-11-09) Fragmentación NER: ventanas de subtokens de capacidad real menos
+  especiales, solapamiento explícito, verificación de cobertura y retokenización.
+  Se rechaza un fragmento que exceda capacidad; nunca se trunca silenciosamente.
+  Caché cruda con clave versionada y carga perezosa; posproceso separado, con
+  uniones auditadas. MISC/OTH se cuentan. No se produce caché real sin ganador H4.
+- (2026-11-09) App H5: accesos independientes de Gazetteer y preparación Gold sin
+  cargar juicios. Persistencia de revisión con cerrojo, revisión, respaldos y diario
+  previo a publicación. Una interrupción entre diario/CSV bloquea para revisión
+  explícita; conserva decisiones y respaldos. `make congelar` ahora exige hashes
+  de aprobaciones humanas de criterios y gazetteer y P06, además de pruebas.
+  No se crea etiqueta ni aprobación en esta sesión. Muestreo global reproducible
+  probado con fixtures; la app solo podrá escribir el manifiesto real tras H4,
+  congelación, protocolo y confirmación de no haber visto predicciones. CLI solo
+  valida: no escribe en `anotaciones/`. Anotación, sustitución y cierre son H6.
+- (2026-11-09) Luis indica entrega oficial en GitHub antes del 11 de noviembre a
+  las 20:00. Esto reemplaza el destino de entrega histórico GitLab para su proyecto
+  individual, sin reescribir el historial previo. No se modifica remote, publica,
+  hace merge ni push; preparar repositorio personal y comprobar acceso del profesor
+  queda para integración en `desarrollo-luis`.

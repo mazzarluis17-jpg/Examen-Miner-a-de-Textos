@@ -1,0 +1,37 @@
+{
+  "fecha": "2026-11-09",
+  "rama": "desarrollo-h5",
+  "entorno": "Python 3.11 del entorno existente de desarrollo-luis; PYTHONPATH=src del worktree H5; sin cambios de dependencias",
+  "pruebas_rapidas": {
+    "comando": "PYTHONPATH=src /home/luis/Documentos/MineriaTextos/Examen/text-mining-ir-er/.venv/bin/python -m pytest -q",
+    "aprobadas": 262,
+    "deseleccionadas_lentas": 9,
+    "segundos": 21.06
+  },
+  "pruebas_h5_incluida_integracion": {
+    "comando": "pytest tests/test_h5_infraestructura.py tests/test_reglas.py tests/test_ner_posproceso.py -q -m \"lento or not lento\"",
+    "aprobadas": 101,
+    "segundos": 7.15,
+    "pasajes_reales_offsets": 200,
+    "semilla": 42
+  },
+  "ruff": {
+    "comando": "ruff check src tests scripts --fix",
+    "estado": "limpio"
+  },
+  "diff_check": "limpio",
+  "gazetteer_base_entradas": 76,
+  "siglas_candidatas": 1505,
+  "revision_humana_siglas": "pendiente; ninguna decision generada",
+  "h4": "ausente; scripts 06/07 se detienen con codigo 1",
+  "congelacion": "bloqueada por ausencia de aprobacion humana; no se creo etiqueta",
+  "p06": "salida/07_verificacion_ner.json",
+  "protegidos_modificados": [],
+  "alcance": "H5 tecnico; sin evaluacion gold ni F1, sin extraccion final, sin merge ni push",
+  "huellas": {
+    "src/mtx/reglas.py": "223de76b43f84ed1d02e36703bfc65a1fedbf90e67d97e190349bbedfeebe404",
+    "src/mtx/ner_modelo.py": "1e5f5c30f847e026d84457b5aa8dc4e5b66e12440638d6c0c5ab7e7df9748a8d",
+    "config/ner.yaml": "2a7072936a8409a4a6faea74b0a993c324aabb9f4856fe45ac5e4f048fcd62cd",
+    "salida/06_siglas_candidatas.csv": "90ccd8d1184a657f033d6bba0413aa00f1321c0438202e192fd2bec3611567a6"
+  }
+}

@@ -2,6 +2,17 @@
 
 ## Completado
 
+- H5 técnico (2026-11-09, rama/worktree `desarrollo-h5`): reglas de cinco tipos,
+  auxiliares y normalización prudente; gazetteers prescritos separados de revisión
+  humana; candidatos minados sin aceptar. NER principal con revisión fija verificado
+  en CPU mediante frases sintéticas; fragmentación, caché cruda perezosa y posproceso
+  auditado probados offline. App de revisión Gazetteer con persistencia protegida,
+  guardas de congelación y preparación del manifiesto desde la app. Muestreo global
+  probado sin generar muestra real. Contratos y límites en `docs/h5_infraestructura.md`.
+  Verificación: 262 pruebas rápidas aprobadas y 101 de H5 incluida integración
+  con 200 pasajes reales; Ruff limpio. Evidencia en `salida/06_pruebas_h5.json`.
+  No se accedió a juicios, gold ni selección; no se ejecutó extracción final sin H4.
+
 - H3 técnico (2026-11-09): aplicación Streamlit en `src/mtx/app/`, vistas Estado y
   Juicios, texto completo con resaltado por offsets y ocultación de procedencia.
   Persistencia atómica, respaldos, diario de revisión y exclusión mutua con detección
@@ -31,6 +42,15 @@
 
 ## Pendiente
 
+- Integrar los commits de `desarrollo-h5` en `desarrollo-luis`, conservando sus
+  aprobaciones y cambios posteriores. La rama H5 no hizo merge ni push.
+- Tras H4, revisar candidatos íntegros en Gazetteer y cerrar aprobación humana;
+  escribir/fijar criterios de anotación y su constancia por hash. Después congelar,
+  preparar muestra desde la app y ejecutar extracción del ámbito. No hay etiqueta
+  `reglas-congeladas`, revisión de siglas ni criterios de anotación aprobados aquí.
+- H6: completar app de anotación Gold, sustitución y cierre; H7: fusión/evaluación.
+  Segundo NER/selección (P1) no iniciado mientras hay P0 pendientes.
+
 1. H3 humano: revisar y aprobar o corregir la propuesta completa de
    `config/criterios_relevancia.md` `[VALIDAR]`. Tras aprobación explícita registrar
    decisión y constancia SHA-256 según `docs/pruebas_app.md`; ejecutar `make pool`
@@ -44,6 +64,12 @@
 Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de marcas que el PRD (parser propio); acotaciones por lista y no por mayúsculas (se conservan siglas como `(IMSS)`); candidatas de fecha fuera de rango se descartan; el 65 % de las intervenciones de reporteros queda bajo 40 palabras y el reporte debe discutirlo (costo de D02); plotly en lugar de matplotlib por indicación del profesor.
 
 ## Bloqueos
+
+- H5 no puede cerrarse oficialmente sin H4, revisión humana de gazetteer, criterios
+  de anotación aprobados y congelación. P06 técnico está documentado y el principal
+  es provisional; no hay F1 ni decisión humana simulados.
+- Entrega individual de Luis requiere GitHub según instrucción actual; resolver
+  publicación y acceso al integrar, sin alterar remote histórico de esta rama.
 
 - H3 humano pendiente del usuario actual: aprobación del criterio y captura de juicios;
   bloquea H4. Se conserva la procedencia histórica del trabajo previo de Daniel.

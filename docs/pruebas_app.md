@@ -21,11 +21,15 @@ no han comenzado; falta aprobar `config/criterios_relevancia.md`.
 6. Abrir dos sesiones, responder en una y guardar desde la otra: se rechaza la
    sesión antigua con aviso de recargar. Las decisiones anteriores se conservan.
 7. En H6 (pendiente), comprobar búsqueda Gold y selección entre apariciones
-   repetidas. Actualmente Gold informa pendiente y no muestra predicciones.
+   repetidas. Gold permite preparar el manifiesto solo tras H4/D15 y confirmación de modo
+   ciego; no muestra predicciones ni permite anotar aún.
 8. En H6 (pendiente), comprobar selección por tokens con `$`, duplicados y offsets
    Unicode. H3 prueba escape HTML y resaltado sobre offsets con emoji, `<` y `&`.
-9. En H5 (pendiente), comprobar aceptar/corregir/descartar gazetteer y bloqueo tras
-   congelación. Actualmente la pestaña no escribe datos de ese hito.
+9. En H5, ejecutar `make minar-siglas` y abrir revisión Gazetteer desde la barra
+   lateral sin cargar juicios. Revisar evidencia; aceptar/corregir con nombre/tipo
+   explícitos o descartar. Reabrir y verificar revisión/respaldos; otra sesión
+   desfasada debe bloquearse. El cierre exige revisar todos los candidatos.
+   Tras `reglas-congeladas`, comprobar que se impide toda escritura.
 10. En H6 (pendiente), comprobar cierre del gold y habilitación posterior de
     predicciones. H3 no lee entidades ni caché NER, aunque esos archivos existan.
 
@@ -57,5 +61,6 @@ El archivo `.juicios.lock` es un cerrojo local, sin contenido de anotación.
 
 La validación parcial permite retomar pendientes; la cobertura total se verifica
 con `pool.validar_juicios()` y se presenta en Estado. No se exportan juicios a la raíz
-ni se ejecuta la evaluación IR durante H3. La alternativa CLI, Gold y Gazetteer
-quedan para las etapas correspondientes; no se implementan funciones ficticias.
+ni se ejecuta la evaluación IR durante H3. La alternativa CLI y anotación/cierre Gold
+quedan para H6. La revisión Gazetteer y la preparación del manifiesto están
+implementadas en H5; ver `docs/h5_infraestructura.md`.
