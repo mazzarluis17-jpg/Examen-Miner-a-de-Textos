@@ -241,7 +241,7 @@ def minar_siglas(pasajes, stoplist=()):
             "sigla": s,
             "nombre_propuesto": nombres.get(s, ""),
             "frecuencia": conteos[s],
-            "ejemplo": ejemplos[s],
+            "ejemplo": ejemplos[s].strip(),
         }
         for s in sorted(conteos, key=lambda s: (-conteos[s], s))
     ]

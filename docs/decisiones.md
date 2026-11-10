@@ -107,3 +107,8 @@
   individual, sin reescribir el historial previo. No se modifica remote, publica,
   hace merge ni push; preparar repositorio personal y comprobar acceso del profesor
   queda para integración en `desarrollo-luis`.
+
+- (2026-11-09) Cierre H5: se normalizan a LF los CSV prescritos nuevos y se
+  recortan espacios de extremos solo en los contextos de candidatos minados.
+  No se modifica texto canónico ni offsets; minería regenerada y T11 con 200
+  pasajes reales nuevamente verde. No hay congelación ni decisiones humanas.
