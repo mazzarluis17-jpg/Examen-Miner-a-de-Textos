@@ -8,11 +8,12 @@
   externo /tmp/mtx-h9-respaldo-humano.tar.gz de 442 archivos verificado. Ninguno
   alterado. Scripts de recuperación fijada y demo local, README de diez secciones,
   esqueleto PDF de cuatro páginas y cinco láminas preparados. Suite completa
-  393 passed/1 skipped (incluye pruebas lentas locales); Ruff limpio; Streamlit
+  394 passed/1 skipped (incluye pruebas lentas locales); Ruff limpio; Streamlit
   abre sin excepciones. Prosa del reporte pendiente del primer corte obligatorio:
   se solicitó aprobación y no se inventó. También faltan aprobación de láminas/
-  guion y ensayo humano medido, reconstrucción desde clon sin cachés y destino/
-  acceso GitHub. No hay push ni etiqueta de entrega final.
+  guion y ensayo humano medido y destino/acceso GitHub. Reconstrucción de cifras
+  desde clon 6176a5f, sin entorno ni cachés previos, completada: 55 CSV idénticos;
+  reconstrucción adicional de índice/rankings con hashes de tokens e índice idénticos. No hay push ni etiqueta de entrega final.
 
 
 - (2026-11-10) Interfaz rápida de valoraciones H8 implementada en Streamlit:
@@ -165,13 +166,15 @@
 
 ## Pendiente
 
-1. Luis abre Streamlit y activa «Abrir valoraciones H8 (sin cargar juicios)»;
-   revisa cada consulta, escribe personalmente y pulsa Guardar valoración y continuar.
-2. Al completar diez, la app valida e incorpora las opiniones a las tablas sin
-   cambiar evidencia; después versionar YAML, revisiones, respaldos y cierre técnico
-   reales. El código no realiza commits automáticos ni fabrica opiniones.
-3. Solo después, H9 con los cortes de aprobación humana del PRD. No iniciado.
-4. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
+1. Aprobar el primer corte de reporte/reporte.pdf (esqueleto de cuatro páginas).
+   Se solicitó aprobación explícita; no se ha recibido. Después, redactar y validar
+   sección por sección, y pasar el tercer corte de PDF final de 4–6 páginas.
+2. Revisión personal de las cinco láminas y guion; ensayo humano cronometrado de
+   ocho minutos o menos. Las latencias de la demo no acreditan ese ensayo.
+3. Completar make entrega estricto con los cierres académicos vigentes. La
+   reproducción de cifras desde un clon sin entorno ni cachés ya pasó (55 CSV).
+4. Luis revisa y autoriza el destino personal GitHub; comprobar acceso del profesor,
+   registrar hora real y crear v1.0-entrega al finalizar. No hacer push sin permiso.
 
 ## Decisiones
 
@@ -179,13 +182,12 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 
 ## Bloqueos
 
-- H3 confirmado por Luis y H4 cerrado; no son bloqueos pendientes de la rama H5.
-- H8 técnico completo y reproducible; faltan exclusivamente las diez
-  valoraciones personales para completar H8/R08. No existe
-  `anotaciones/valoraciones.yaml`; no se fabrican opiniones ni aprobaciones.
-  H9 no iniciado. H6/H7, Gold cerrado y selección técnica NER intactos.
-- Entrega individual en GitHub según decisión documentada en H5. Publicación y
-  acceso del profesor pendientes; no se cambia el remote ni se hace push aquí.
-- Índice, tokens y TF-IDF no se han reconstruido en Debian; no se requieren para
-  integrar las reglas y NER ni para conservar los resultados de H4.
-- Stopwords resueltas con copia versionada; figuras H4 ya exportadas con Chrome local.
+- El PRD y las skills requieren aprobación humana de los tres cortes de prosa y
+  de láminas/guion. El primer corte está preparado; no se inventan aprobaciones.
+- Ensayo humano medido y acceso al futuro GitHub pendientes. No hay etiqueta final
+  ni publicación. Ver docs/publicacion_github.md para las instrucciones autorizables.
+- H8 humano completo y versionado en 245b1fc; no faltan valoraciones. H3–H7,
+  aprobaciones y Gold cerrado mantienen sus hashes.
+- Las cifras se reproducen desde el clon 6176a5f con instalación y descarga fijadas.
+  No se midió el tiempo total de la descarga; no se estima. El índice no fue
+  recalculado porque se usan rankings congelados, conforme al alcance de H9.

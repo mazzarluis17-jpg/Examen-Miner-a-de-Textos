@@ -59,6 +59,8 @@ def reporte():
                "Extracción con reglas y con modelo", "Evaluación de IE y análisis de errores",
                "Tablas de respuesta", "Uso de IA, limitaciones y reproducibilidad"]
     md = destino / "reporte.md"
+    if md.exists() and md.read_text().count("[VALIDAR: primer corte, sin prosa]") != 8:
+        raise ValueError("Hay contenido humano o prosa nueva: no sustituir el PDF por el esqueleto")
     if not md.exists():
         md.write_text("# Examen 1 — Minería de Textos\n\n" + AUTOR
                       + "\n\nUNAM — FES Acatlán · Licenciatura en Ciencia de Datos"

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import tempfile
 from pathlib import Path
 
@@ -42,7 +43,10 @@ def validar_csv(ruta: Path, nombre: str):
         raise ValueError(f"Columnas incorrectas: {nombre}")
     if df.duplicated(CLAVES[nombre]).any():
         raise ValueError(f"Clave duplicada: {nombre}")
-    if "tipo" in df and not set(df.tipo) <= {"PER", "ORG", "LOC", "FECHA", "MONTO", "TODOS"}:
+    tipos = {"PER", "ORG", "LOC", "FECHA", "MONTO"}
+    if nombre == "resultados_ie.csv":
+        tipos.add("TODOS")
+    if "tipo" in df and not set(df.tipo) <= tipos:
         raise ValueError(f"Tipo desconocido: {nombre}")
     if nombre == "entidades.csv" and not set(df.metodo) <= {"regla", "modelo", "ambos"}:
         raise ValueError("Método de extracción desconocido")
@@ -54,6 +58,12 @@ def validar_csv(ruta: Path, nombre: str):
 def verificar(raiz=RAIZ):
     """Retorna resultados comprobados y pendientes humanos explícitos."""
     raiz = Path(raiz)
+    problemas_kit = adaptadores_kit.verificar_hashes(raiz / "kit", raiz / "docs/contratos_kit.md")
+    if problemas_kit:
+        raise ValueError("; ".join(problemas_kit))
+    originales = pd.read_csv(raiz / "kit/consultas.csv").head(8)
+    propias = pd.read_csv(raiz / "data/consultas.csv").head(8)
+    pd.testing.assert_frame_equal(originales, propias[list(originales.columns)])
     tablas = {n: validar_csv(raiz / n, n) for n in ESQUEMAS}
     for nombre in ESQUEMAS:
         subdir = "anotaciones" if nombre in {"gold_entidades.csv", "juicios_relevancia.csv"} else "salida"
@@ -68,6 +78,9 @@ def verificar(raiz=RAIZ):
                 raise ValueError(f"Offset inválido: {nombre}, {e.passage_id}")
     ranking = tablas["ranking.csv"]
     consultas = pd.read_csv(raiz / "data/consultas.csv").set_index("query_id")
+    modelos = {"bm25_con_filtro", "bm25_sin_filtro", "tfidf_con_filtro", "tfidf_sin_filtro"}
+    if set(ranking.modelo) != modelos or set(ranking.query_id) != set(consultas.index):
+        raise ValueError("Modelos o consultas de ranking incorrectos")
     if len(ranking) != 400 or ranking.groupby(["query_id", "modelo"]).ngroups != 40:
         raise ValueError("Cobertura de ranking incorrecta")
     if not np.isfinite(ranking.puntaje).all() or ranking.duplicated(
@@ -82,6 +95,8 @@ def verificar(raiz=RAIZ):
                 or str(r.posicion) != str(p.loc[r.passage_id, "posicion"])
                 or str(r.fecha) != str(p.loc[r.passage_id, "fecha"])[:10]):
             raise ValueError(f"Ranking incompatible con corpus: {r.passage_id}")
+        if r.variante != r.modelo.split("_", 1)[1]:
+            raise ValueError("Variante incoherente con modelo")
         if r.modelo.endswith("_con_filtro"):
             q = consultas.loc[r.query_id]
             if not q.desde <= r.fecha <= q.hasta:
@@ -126,18 +141,55 @@ def verificar(raiz=RAIZ):
     historico = json.loads((raiz / "salida/01_limpieza.json").read_text())
     if corpus.hash_pasajes(pasajes) != historico["hash_pasajes"]:
         raise ValueError("Hash canónico de pasajes distinto")
+    readme = (raiz / "README.md").read_text()
+    if any(f"## {n}. " not in readme for n in range(1, 11)) or "Uso de IA" not in readme:
+        raise ValueError("README incompleto")
+    with tempfile.TemporaryDirectory(prefix="mtx-lock-") as tmp:
+        salida_uv = subprocess.run(
+            ["uv", "export", "--locked", "--offline", "--cache-dir", tmp,
+             "--no-dev", "--format", "requirements-txt"], cwd=raiz,
+            capture_output=True, text=True, check=True).stdout
+        contenido = lambda t: "\n".join(l for l in t.splitlines() if not l.startswith("#"))
+        if contenido(salida_uv) != contenido((raiz / "requirements.txt").read_text()):
+            raise ValueError("requirements.txt distinto de uv.lock")
     paginas = len(PdfReader(raiz / "reporte/reporte.pdf").pages)
     diapositivas = len(Presentation(raiz / "laminas/laminas.pptx").slides)
     if not 4 <= paginas <= 6 or not 1 <= diapositivas <= 5:
         raise ValueError("Límites del examen incumplidos")
-    return {"csv": {n: {"filas": len(t), "sha256": sha(raiz / n)}
+    prueba_clon = raiz / "salida/11_reproducibilidad_clon.json"
+    reproducido = False
+    if prueba_clon.exists():
+        prueba = json.loads(prueba_clon.read_text())
+        reproducido = (prueba.get("codigo_salida") == 0 and prueba.get("csv_distintos") == []
+                       and len(prueba.get("hashes_csv", {})) >= 6
+                       and all(sha(raiz / r) == h for r, h in prueba["hashes_csv"].items()))
+    pendientes = ["Tres cortes de aprobación humana del reporte",
+                 "Aprobación de láminas y guion; ensayo humano medido ≤8 minutos",
+                 "Destino GitHub y acceso del profesor; publicación no autorizada",
+                 "Etiqueta v1.0-entrega después de todos los cierres"]
+    if not reproducido:
+        pendientes.append("Reconstrucción completa desde clon sin entorno ni cachés")
+    condiciones = {
+        "1_kit_consultas": "verificado",
+        "2_seis_csv": "verificado",
+        "3_ranking": "verificado",
+        "4_juicios": "verificado",
+        "5_ir_oficial": "verificado",
+        "6_entidades": "verificado",
+        "7_gold_cerrado": "verificado",
+        "8_ie_oficial_complementaria": "verificado",
+        "9_respuestas_valoraciones": "verificado",
+        "10_snapshot": "verificado",
+        "11_reporte": "pendiente: primer corte sin prosa aprobada",
+        "12_laminas_guion": "pendiente: aprobación y ensayo humano",
+        "13_pruebas_clon": "verificado" if reproducido else "pendiente: reproducción desde cero",
+        "14_readme_dependencias": "verificado",
+        "15_publicacion": "pendiente: destino, acceso y etiqueta final",
+    }
+    return {"condiciones": condiciones, "csv": {n: {"filas": len(t), "sha256": sha(raiz / n)}
                     for n, t in tablas.items()},
             "paginas": paginas, "diapositivas": diapositivas,
             "valoraciones": len(valoradas), "gold": len(tablas["gold_entidades.csv"]),
             "evaluadores_oficiales": "idénticos byte a byte",
             "hash_pasajes": historico["hash_pasajes"],
-            "pendiente": ["Tres cortes de aprobación humana del reporte",
-                          "Aprobación de láminas y guion; ensayo humano medido ≤8 minutos",
-                          "Reconstrucción completa desde clon sin entorno ni cachés",
-                          "Destino GitHub y acceso del profesor; publicación no autorizada",
-                          "Etiqueta v1.0-entrega después de todos los cierres"]}
+            "pendiente": pendientes}

@@ -45,3 +45,10 @@ def test_metricas_del_reporte_usan_promedios_oficiales():
 def test_escape_tex_conserva_tildes_y_protege_sintaxis():
     assert tex("A&B_é 15%") == r"A\&B\_é 15\%"
     assert Path(RAIZ).is_dir()
+
+
+def test_rechaza_tipo_resumen_como_entidad(tmp_path):
+    ruta = tmp_path / "gold.csv"
+    ruta.write_text("passage_id,tipo,texto,inicio,fin\n1_0,TODOS,x,0,1\n")
+    with pytest.raises(ValueError, match="Tipo desconocido"):
+        validar_csv(ruta, "gold_entidades.csv")

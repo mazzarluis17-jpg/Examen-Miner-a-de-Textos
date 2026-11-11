@@ -128,6 +128,10 @@ Los Excel auxiliares personales no pertenecen al repositorio ni a los entregable
 | tests/ | contratos y pruebas, con fixtures sintéticas |
 | docs/ | decisiones, contratos, arquitectura, progreso y defensa |
 
+La reproducción en clon sin entorno ni cachés previos fue comprobada, incluida
+la descarga fijada, reconstrucción del índice y rankings y comparación de 55 CSV.
+Los tiempos y hashes medidos constan en salida/11_reproducibilidad_clon.json.
+
 Los seis CSV oficiales se entregan en la raíz y deben ser idénticos a sus fuentes
 en salida/ o anotaciones/. Se excluyen entornos, pesos, datos reconstruibles,
 cerrojos y archivos auxiliares de TeX; las cachés crudas NER **sí** son obligatorias.

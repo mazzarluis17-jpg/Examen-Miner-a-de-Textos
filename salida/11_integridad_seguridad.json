@@ -4,5 +4,7 @@
   "versionados_mayores_50MiB": [],
   "auxiliares_personales_versionados": [],
   "patrones_credenciales_en_archivos": [],
-  "alcance": "Escaneo de patrones y archivos actuales, no certificación de ausencia en todo el historial"
+  "alcance": "Patrones de tokens y claves en archivos actuales y commits alcanzables; no certifica ausencia de todo secreto posible",
+  "commits_escaneados": 49,
+  "coincidencias_historicas_solo_rutas": []
 }

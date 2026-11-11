@@ -1,4 +1,21 @@
 {
+  "condiciones": {
+    "1_kit_consultas": "verificado",
+    "2_seis_csv": "verificado",
+    "3_ranking": "verificado",
+    "4_juicios": "verificado",
+    "5_ir_oficial": "verificado",
+    "6_entidades": "verificado",
+    "7_gold_cerrado": "verificado",
+    "8_ie_oficial_complementaria": "verificado",
+    "9_respuestas_valoraciones": "verificado",
+    "10_snapshot": "verificado",
+    "11_reporte": "pendiente: primer corte sin prosa aprobada",
+    "12_laminas_guion": "pendiente: aprobación y ensayo humano",
+    "13_pruebas_clon": "verificado",
+    "14_readme_dependencias": "verificado",
+    "15_publicacion": "pendiente: destino, acceso y etiqueta final"
+  },
   "csv": {
     "ranking.csv": {
       "filas": 400,
@@ -34,7 +51,6 @@
   "pendiente": [
     "Tres cortes de aprobación humana del reporte",
     "Aprobación de láminas y guion; ensayo humano medido ≤8 minutos",
-    "Reconstrucción completa desde clon sin entorno ni cachés",
     "Destino GitHub y acceso del profesor; publicación no autorizada",
     "Etiqueta v1.0-entrega después de todos los cierres"
   ]

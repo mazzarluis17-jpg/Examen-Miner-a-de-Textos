@@ -418,3 +418,21 @@ históricas, sin reescribir kit, metadatos, juicios, Gold o cachés NER. El vali
 H9 utiliza carpetas temporales para las evaluaciones oficiales y no copia sobre
 exportaciones distintas. El manifiesto histórico H7 se conserva; las verificaciones
 de entrega se registran aparte en salida/11_*.
+
+## 2026-11-11 — Reproducción independiente de cifras de H9
+
+Desde el clon local 6176a5f se instaló uv.lock con un entorno nuevo y caché uv
+vacía: 93 paquetes preparados en 33.56 s e instalados en 0.233 s, mediciones del
+instalador. Se recuperó la revisión fijada con caché HF vacía y se reconstruyeron
+los dos parquet ignorados, coincidiendo sus hashes binarios y el hash canónico.
+make resultados finalizó con código 0: 55 CSV comparados idénticos byte a byte.
+No se midió el tiempo total de descarga/procesamiento y no se estima. El comando
+make entrega estricto continúa pendiente de las aprobaciones académicas y del
+ensayo, sin confundir reproducción técnica con aceptación humana.
+
+Pruebas completas: 394 passed, 1 skipped en 39.38 s; la omisión es el escenario
+histórico de app bloqueada cuando los criterios todavía no estaban aprobados.
+Ruff sin hallazgos. Streamlit abrió sin excepciones ni escritura de etiquetas.
+El escaneo por patrones de credenciales y los archivos personales/grandes se
+registra en salida/11_integridad_seguridad.json. Sus comprobaciones no se
+presentan como una garantía universal de ausencia de secretos.

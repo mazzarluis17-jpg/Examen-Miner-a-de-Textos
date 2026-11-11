@@ -43,10 +43,15 @@ ventanas, coberturas, revisiones, fuentes congeladas y hashes del corpus.
 
 Las latencias reales de la demo se registran en salida/11_demo_tiempos.json.
 No representan un ensayo oral. Los resultados completos de la validación están
-en salida/11_validacion_entrega.json. La reconstrucción completa en un clon sin
-entorno ni cachés es una comprobación independiente pendiente, hasta ejecutarla
-y registrar sus tiempos reales. No se afirma una instalación desde cero a partir
-de una prueba que reutilice el entorno o los datos locales.
+en salida/11_validacion_entrega.json. La reconstrucción se ejecutó en /tmp/mtx-h9-clon-6176a5f desde el commit
+6176a5f, sin entorno ni cachés uv/HF previos. uv preparó 93 paquetes en 33.56 s
+e instaló en 0.233 s (mediciones del instalador). Se descargó exclusivamente
+la revisión fijada y se reconstruyeron los datos ignorados con todos sus hashes
+originales. make resultados terminó con código 0; los 55 CSV comparados son
+idénticos byte a byte. El tiempo total de descarga/procesamiento no se registró
+y no se estima. El detalle está en salida/11_reproducibilidad_clon.json.
+make entrega estricto sigue pendiente del reporte aprobado y del ensayo humano;
+no se confunde la reproducción de cifras con el cierre académico de H9.
 
 ## Publicación personal, todavía no realizada
 
@@ -55,3 +60,15 @@ No cambiar origin ni publicar en GitLab. Una vez que Luis revise y autorice la U
 crear un repositorio personal GitHub, conservar ambas ramas históricas y la
 etiqueta de congelación. No crear v1.0-entrega ni afirmar una entrega final antes
 de los cierres humanos y del acceso verificado exigidos por el PRD.
+
+
+## Verificación de índice y rankings sin alterar referencias
+
+También se ejecutó make indice ranking dentro del clon temporal, con el entorno
+nuevo y los mismos parámetros congelados. Los 400 resultados y los 55 CSV
+comparados resultaron idénticos. Los hashes binarios de tokens e índice coinciden;
+únicamente la fecha construido de indice_meta.json difiere, como corresponde a
+una construcción nueva. El índice tardó 36.7 s en esa ejecución. Los valores y
+huellas están en salida/11_reproducibilidad_clon.json. Esta prueba debe realizarse
+en una copia desechable para no sustituir la marca histórica del proyecto de entrega.
+No se volvió a inferir BETO ni se usó Gold para ajustar el sistema.
