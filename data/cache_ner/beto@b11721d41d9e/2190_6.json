@@ -1,0 +1,52 @@
+{
+  "clave": "83bf39d67e995f30522d9cfbba65af71a09d7686c408c68560d1eff4a7c5ad2c",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "2a429dac9a90de7a8e26b7c72a6fb6025840a1729e173bdda20d2df14d9b02ae",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.7591212391853333,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Corte",
+      "inicio": 84,
+      "fin": 89,
+      "confianza": 0.9397497177124023,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ciudad de México",
+      "inicio": 983,
+      "fin": 999,
+      "confianza": 0.9987058043479919,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.4609182009999131,
+  "version_transformers": "5.22.1"
+}

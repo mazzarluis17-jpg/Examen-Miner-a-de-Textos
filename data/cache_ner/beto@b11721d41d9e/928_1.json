@@ -1,0 +1,124 @@
+{
+  "clave": "364968d9e9d58d253768ef01574273fa9c4ccd08869bd535d5df62a69f237a6c",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "eff9421e18b0649549096aa9e0f2e5e76192b3145951dc5a1941cb4407764df5",
+  "crudas": [
+    {
+      "tipo": "ORG",
+      "texto": "AN",
+      "inicio": 0,
+      "fin": 2,
+      "confianza": 0.48261958360671997,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "A",
+      "inicio": 2,
+      "fin": 3,
+      "confianza": 0.6386054158210754,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "ELIZABETH",
+      "inicio": 4,
+      "fin": 13,
+      "confianza": 0.4539526402950287,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 232,
+      "fin": 238,
+      "confianza": 0.9996709823608398,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 604,
+      "fin": 615,
+      "confianza": 0.9994828701019287,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 717,
+      "fin": 728,
+      "confianza": 0.9993900656700134,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 932,
+      "fin": 943,
+      "confianza": 0.9992945194244385,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "‘Felipe Ángeles’",
+      "inicio": 1041,
+      "fin": 1057,
+      "confianza": 0.8891393542289734,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Torre de Pisa",
+      "inicio": 1102,
+      "fin": 1115,
+      "confianza": 0.9944924712181091,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Italia",
+      "inicio": 1120,
+      "fin": 1126,
+      "confianza": 0.99980229139328,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "‘Felipe",
+      "inicio": 1162,
+      "fin": 1169,
+      "confianza": 0.986562967300415,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ángeles",
+      "inicio": 1171,
+      "fin": 1178,
+      "confianza": 0.9872174859046936,
+      "cortada": false
+    }
+  ],
+  "descartadas": 3,
+  "segundos": 0.41965700500009007,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,108 @@
+{
+  "clave": "01be177d621cb60ff104eff902d97554542ee36978a201f7bf7bc63328e94f42",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "f1c50d364c416465516c9ff64e711d48f78b98186498553fb4445a19e2b5d25a",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.889096736907959,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ec",
+      "inicio": 100,
+      "fin": 102,
+      "confianza": 0.9968956708908081,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "atepec",
+      "inicio": 102,
+      "fin": 108,
+      "confianza": 0.6939190626144409,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Estado de México",
+      "inicio": 121,
+      "fin": 137,
+      "confianza": 0.861483097076416,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Delfina Gómez Álvarez",
+      "inicio": 339,
+      "fin": 360,
+      "confianza": 0.9340039491653442,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Estado",
+      "inicio": 397,
+      "fin": 403,
+      "confianza": 0.7896437048912048,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "de México",
+      "inicio": 404,
+      "fin": 413,
+      "confianza": 0.7094005346298218,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Delfina",
+      "inicio": 473,
+      "fin": 480,
+      "confianza": 0.9774297475814819,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ec",
+      "inicio": 678,
+      "fin": 680,
+      "confianza": 0.9985495209693909,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "atepec",
+      "inicio": 680,
+      "fin": 686,
+      "confianza": 0.6128515005111694,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 0.3728109629998926,
+  "version_transformers": "5.22.1"
+}

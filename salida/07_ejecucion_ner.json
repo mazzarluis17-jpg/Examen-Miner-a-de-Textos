@@ -1,0 +1,28 @@
+{
+  "version_posproceso": "2-vacios-auditados",
+  "descartes_vacios": 1,
+  "modelo": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "pasajes": 99,
+  "cacheados": 99,
+  "inferidos": 0,
+  "descartadas_misc_oth": 243,
+  "segundos": 0.07760031999987405
+}

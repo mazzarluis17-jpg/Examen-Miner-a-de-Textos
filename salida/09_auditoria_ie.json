@@ -1,0 +1,86 @@
+{
+  "pasajes_kit": 19,
+  "pasajes_complementaria": 20,
+  "pasajes_gold_vacios": [
+    "1133_87"
+  ],
+  "alertas": [
+    "F1 perfecto: revisar trazabilidad; cierre humano anterior a inferencia"
+  ],
+  "categorias": {
+    "entidad_partida": {
+      "observado": true,
+      "ejemplo": [
+        {
+          "passage_id": "1458_12",
+          "tipo": "LOC",
+          "texto_gold": "Istmo de Tehuantepec",
+          "texto_pred": "Is | de | huantepec",
+          "inicio": 377,
+          "fin": 397,
+          "metodo": "modelo",
+          "categoria": "entidad_partida",
+          "fuente": "sin_prediccion",
+          "contexto": "eles’, la refinería, el Tren Maya y las obras del Istmo de Tehuantepec se van a presentar todos los lunes para ir avanza"
+        }
+      ]
+    },
+    "sigla_no_reconocida": {
+      "observado": true,
+      "ejemplo": [
+        {
+          "passage_id": "326_25",
+          "tipo": "ORG",
+          "texto_gold": "SEDENA",
+          "texto_pred": "",
+          "inicio": 73,
+          "fin": 79,
+          "metodo": "modelo",
+          "categoria": "sigla_no_reconocida",
+          "fuente": "sin_prediccion",
+          "contexto": "GENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión principal se"
+        }
+      ]
+    },
+    "monto_sin_unidad": {
+      "observado": false,
+      "ejemplo": []
+    },
+    "obra_LOC_vs_ORG": {
+      "observado": true,
+      "ejemplo": [
+        {
+          "passage_id": "228_7",
+          "tipo": "ORG",
+          "texto_gold": "Corredor Interoceánico del Istmo de Tehuantepec",
+          "texto_pred": "Corredor Interoceánico del Istmo de Tehuantepec",
+          "inicio": 340,
+          "fin": 387,
+          "metodo": "regla",
+          "categoria": "obra_LOC_vs_ORG",
+          "fuente": "sin_prediccion",
+          "contexto": "anos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Co"
+        }
+      ]
+    },
+    "en_marca": {
+      "observado": true,
+      "ejemplo": [
+        {
+          "passage_id": "1277_28",
+          "tipo": "PER",
+          "texto_gold": "",
+          "texto_pred": "SERVIDORA DE LA NACIÓN",
+          "inicio": 17,
+          "fin": 39,
+          "metodo": "regla",
+          "categoria": "en_marca",
+          "fuente": "marca",
+          "contexto": "CAROLINA VARGAS, SERVIDORA DE LA NACIÓN: de hoy nos encontramos en la tercera y última jo"
+        }
+      ]
+    }
+  },
+  "nota": "en_marca describe ubicación; no prueba efecto causal de mayúsculas",
+  "comparacion_ner": "no realizada: modelo principal fijado por criterio técnico antes del Gold"
+}

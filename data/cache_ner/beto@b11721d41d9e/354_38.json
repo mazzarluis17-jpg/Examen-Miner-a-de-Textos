@@ -1,0 +1,116 @@
+{
+  "clave": "f591f55617604438317c6d856375897b2722826899220418cce475bd1ced783e",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "fdc8f1767522270bc9c2bcb339d40902706c2fceadab62227c4225e5f27d3005",
+  "crudas": [
+    {
+      "tipo": "LOC",
+      "texto": "Istmo de Tehuantepec",
+      "inicio": 43,
+      "fin": 63,
+      "confianza": 0.9905982613563538,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Co",
+      "inicio": 236,
+      "fin": 238,
+      "confianza": 0.9994958639144897,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "atzacoalcos",
+      "inicio": 238,
+      "fin": 249,
+      "confianza": 0.9928970336914062,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Sali",
+      "inicio": 252,
+      "fin": 256,
+      "confianza": 0.9985257983207703,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "na Cruz",
+      "inicio": 256,
+      "fin": 263,
+      "confianza": 0.9703515768051147,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Pacífico",
+      "inicio": 575,
+      "fin": 583,
+      "confianza": 0.8189991116523743,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Atlántico",
+      "inicio": 591,
+      "fin": 600,
+      "confianza": 0.8491293787956238,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Asia",
+      "inicio": 784,
+      "fin": 788,
+      "confianza": 0.9995008707046509,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Estados Unidos",
+      "inicio": 848,
+      "fin": 862,
+      "confianza": 0.9637802243232727,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Centro",
+      "inicio": 921,
+      "fin": 927,
+      "confianza": 0.9993278980255127,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Sudamérica",
+      "inicio": 930,
+      "fin": 940,
+      "confianza": 0.9994239807128906,
+      "cortada": false
+    }
+  ],
+  "descartadas": 9,
+  "segundos": 0.466980293000006,
+  "version_transformers": "5.22.1"
+}

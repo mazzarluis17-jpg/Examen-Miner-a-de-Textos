@@ -1,0 +1,100 @@
+{
+  "clave": "39ef2014a078589d2e204f6c3f07701b211a7e0efa73fccc19aa2f322dffe37f",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "f293aeb134f1bf16267be9e854f081d9b30e2bfec65f26678a451f80f64a9136",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.7327548265457153,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 398,
+      "fin": 407,
+      "confianza": 0.9988368153572083,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Sonda de Campeche",
+      "inicio": 610,
+      "fin": 627,
+      "confianza": 0.983893871307373,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tabasco",
+      "inicio": 668,
+      "fin": 675,
+      "confianza": 0.9863515496253967,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Veracruz",
+      "inicio": 680,
+      "fin": 688,
+      "confianza": 0.9996806383132935,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 716,
+      "fin": 725,
+      "confianza": 0.9981897473335266,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 738,
+      "fin": 747,
+      "confianza": 0.9984468817710876,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 908,
+      "fin": 917,
+      "confianza": 0.9947348237037659,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "…",
+      "inicio": 1085,
+      "fin": 1086,
+      "confianza": 0.9690811634063721,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.38547535400016386,
+  "version_transformers": "5.22.1"
+}

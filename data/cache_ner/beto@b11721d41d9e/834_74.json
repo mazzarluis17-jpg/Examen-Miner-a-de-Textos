@@ -1,0 +1,84 @@
+{
+  "clave": "ed251b98abc861581b48e9eea85366fab5f029a67506db856114e2507a97ff67",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "567290e9ca4053b33dcd00d80f190dcfc609a133ce9f996179069c7a63f23562",
+  "crudas": [
+    {
+      "tipo": "ORG",
+      "texto": "INTER",
+      "inicio": 0,
+      "fin": 5,
+      "confianza": 0.5770972371101379,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "LO",
+      "inicio": 5,
+      "fin": 7,
+      "confianza": 0.371509313583374,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Veracruz",
+      "inicio": 183,
+      "fin": 191,
+      "confianza": 0.9997614026069641,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 279,
+      "fin": 288,
+      "confianza": 0.9992477297782898,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Grupo Cantón",
+      "inicio": 347,
+      "fin": 359,
+      "confianza": 0.9996182918548584,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 743,
+      "fin": 752,
+      "confianza": 0.9988420605659485,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tabasco",
+      "inicio": 757,
+      "fin": 764,
+      "confianza": 0.9759101271629333,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 0.31203661800009286,
+  "version_transformers": "5.22.1"
+}

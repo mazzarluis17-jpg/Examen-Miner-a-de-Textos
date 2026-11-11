@@ -1,0 +1,769 @@
+query_id,doc_id,passage_id,tipo,texto,inicio,fin,metodo
+Q2,1116,1116_10,PER,H,0,1,modelo
+Q2,1116,1116_10,PER,UGO LÓPEZ,1,10,modelo
+Q2,1116,1116_10,PER,GAT,11,14,modelo
+Q2,1116,1116_10,PER,ELL,14,17,modelo
+Q2,1116,1116_10,PER,Luis Cresencio Sandoval,384,407,modelo
+Q2,1116,1116_10,LOC,México,1264,1270,modelo
+Q8,1122,1122_3,PER,MAN,18,21,modelo
+Q8,1122,1122_3,PER,L,23,24,modelo
+Q8,1122,1122_3,LOC,Tec,95,98,modelo
+Q8,1122,1122_3,LOC,ate,98,101,modelo
+Q8,1122,1122_3,LOC,Tec,275,278,modelo
+Q8,1122,1122_3,LOC,ate,278,281,modelo
+Q8,1122,1122_3,LOC,América Latina,490,504,modelo
+Q8,1122,1122_3,LOC,Guatemala,737,746,modelo
+Q8,1122,1122_3,LOC,El Salvador,751,762,modelo
+Q8,1122,1122_3,LOC,Honduras,767,775,modelo
+Q10,1128,1128_40,PER,RA,5,7,modelo
+Q10,1128,1128_40,PER,EL OJEDA DURÁN,9,23,modelo
+Q10,1128,1128_40,ORG,Ejército Nacional,101,118,modelo
+Q10,1128,1128_40,LOC,El Vizcaíno,174,185,modelo
+Q10,1128,1128_40,LOC,Baja California Sur,190,209,modelo
+Q10,1128,1128_40,LOC,mo de Tehuantepec,290,307,modelo
+Q10,1128,1128_40,ORG,Secretaría de Marina,692,712,modelo
+Q10,1128,1128_40,ORG,Fiscalía General,717,733,modelo
+Q10,1128,1128_40,LOC,Oaxaca,748,754,modelo
+Q10,1128,1128_40,LOC,Istmo de Tehuantepec,793,813,modelo
+Q10,1128,1128_40,ORG,COVID,1163,1168,modelo
+Q2,1133,1133_87,PER,ME,0,2,modelo
+Q2,1133,1133_87,PER,LI,2,4,modelo
+Q2,1133,1133_87,PER,NA VEGA,4,11,modelo
+Q2,1133,1133_87,PER,ME,133,135,modelo
+Q2,1133,1133_87,PER,LI,135,137,modelo
+Q2,1133,1133_87,PER,NA VEGA,137,144,modelo
+Q2,1145,1145_65,LOC,Quintana Roo,196,208,modelo
+Q2,1145,1145_65,LOC,Quintana Roo,311,323,modelo
+Q2,1188,1188_80,LOC,México,36,42,modelo
+Q2,1188,1188_80,LOC,México,240,246,modelo
+Q2,1188,1188_80,PER,Andrés Manuel López Obrador,248,275,modelo
+Q2,1188,1188_80,ORG,Estados Unidos,282,296,modelo
+Q2,1188,1188_80,PER,Joseph Biden,298,310,modelo
+Q2,1188,1188_80,ORG,CanSino Biologics,476,493,modelo
+Q2,1188,1188_80,ORG,Pfizer,680,686,modelo
+Q2,1188,1188_80,ORG,BioNTech,687,695,modelo
+Q2,1188,1188_80,ORG,AstraZeneca,697,708,modelo
+Q2,1188,1188_80,ORG,SinoVac,710,717,modelo
+Q2,1188,1188_80,ORG,Sputnik V,719,728,modelo
+Q2,1188,1188_80,ORG,Centro Nacional de Investigación de Epidemiología,734,783,modelo
+Q2,1188,1188_80,ORG,Microbiología Gamaleya,786,808,modelo
+Q2,1188,1188_80,ORG,CanSino Biologics,814,831,modelo
+Q2,1188,1188_80,ORG,ugmex,932,937,modelo
+Q2,1188,1188_80,LOC,Querétaro,941,950,modelo
+Q2,1188,1188_80,LOC,México,1186,1192,modelo
+Q8,1216,1216_44,PER,MANUEL LÓPEZ,18,30,modelo
+Q8,1216,1216_44,ORG,Estado,611,617,modelo
+Q2,1219,1219_83,LOC,Jalisco,98,105,modelo
+Q2,1219,1219_83,LOC,Tla,182,185,modelo
+Q2,1219,1219_83,LOC,quepaque,185,193,modelo
+Q2,1219,1219_83,LOC,Tonalá,224,230,modelo
+Q2,1219,1219_83,LOC,Los Altos de Jalisco,314,334,modelo
+Q2,1253,1253_5,ORG,Gobierno de México,58,76,modelo
+Q2,1253,1253_5,LOC,México,418,424,modelo
+Q4,1259,1259_59,PER,MANUEL,18,24,modelo
+Q4,1259,1259_59,LOC,Ciudad de México,46,62,modelo
+Q4,1259,1259_59,LOC,Santa Lucía,71,82,modelo
+Q4,1259,1259_59,LOC,Ciudad de México,163,179,modelo
+Q4,1259,1259_59,LOC,Base Aérea de Santa Lucía,185,210,modelo
+Q4,1259,1259_59,LOC,Santa Lucía,230,241,modelo
+Q4,1259,1259_59,ORG,Mit,522,525,modelo
+Q4,1259,1259_59,ORG,re,525,527,modelo
+Q4,1259,1259_59,LOC,Ángeles,664,671,modelo
+Q4,1259,1259_59,LOC,Felipe Ángeles,761,775,modelo
+Q4,1259,1259_59,LOC,Toluca,813,819,modelo
+Q4,1259,1259_59,LOC,lago de Texcoco,1137,1152,modelo
+Q10,1272,1272_17,LOC,huantepec,120,129,modelo
+Q10,1272,1272_17,LOC,Media,167,172,modelo
+Q10,1272,1272_17,LOC,s Aguas,172,179,modelo
+Q10,1272,1272_17,LOC,Salina Cruz,182,193,modelo
+Q10,1272,1272_17,ORG,Gobierno de México,432,450,modelo
+Q2,1277,1277_28,PER,CAR,0,3,modelo
+Q2,1277,1277_28,PER,OLINA VARGAS,3,15,modelo
+Q2,1277,1277_28,ORG,Brigada Correcaminos,137,157,modelo
+Q2,1277,1277_28,PER,Edgar Jesús Zitle García,663,687,modelo
+Q2,1277,1277_28,ORG,IMSS,722,726,modelo
+Q2,1277,1277_28,LOC,Son,730,733,modelo
+Q2,1277,1277_28,LOC,ora,733,736,modelo
+Q2,1290,1290_42,PER,Shaila Rosagel,63,77,modelo
+Q2,1290,1290_42,ORG,Grupo Healy,95,106,modelo
+Q2,1290,1290_42,ORG,El Imparcial,108,120,modelo
+Q2,1290,1290_42,LOC,Son,125,128,modelo
+Q2,1290,1290_42,LOC,ora,128,131,modelo
+Q2,1290,1290_42,ORG,La Crónica,133,143,modelo
+Q2,1290,1290_42,LOC,Mexicali,148,156,modelo
+Q2,1290,1290_42,ORG,Frontera,160,168,modelo
+Q2,1290,1290_42,LOC,Tijuana,173,180,modelo
+Q2,1290,1290_42,LOC,Baja California,258,273,modelo
+Q2,1290,1290_42,LOC,Son,278,281,modelo
+Q2,1290,1290_42,LOC,ora,281,284,modelo
+Q2,1290,1290_77,PER,JORGE ALCOCER VARELA,0,20,modelo
+Q2,1290,1290_77,ORG,P,240,241,modelo
+Q2,1290,1290_77,ORG,fi,241,243,modelo
+Q2,1290,1290_77,ORG,zer,243,246,modelo
+Q2,1290,1290_77,ORG,P,430,431,modelo
+Q2,1290,1290_77,ORG,fi,431,433,modelo
+Q2,1290,1290_77,ORG,zer,433,436,modelo
+Q2,1290,1290_77,ORG,BioNTech,437,445,modelo
+Q9,1293,1293_76,PER,MANUEL LÓPEZ,18,30,modelo
+Q9,1293,1293_76,ORG,Banco de Bienestar,303,321,modelo
+Q9,1293,1293_76,LOC,México,346,352,modelo
+Q9,1293,1293_76,ORG,Banco del Bienestar,938,957,modelo
+Q2,1297,1297_31,PER,Gatell,267,273,modelo
+Q2,1297,1297_31,ORG,Pfizer,733,739,modelo
+Q2,1297,1297_31,ORG,AstraZeneca,751,762,modelo
+Q1,1298,1298_13,ORG,IN,288,290,modelo
+Q1,1298,1298_13,ORG,AH,290,292,modelo
+Q1,1298,1298_13,ORG,Cu,974,976,modelo
+Q1,1298,1298_13,ORG,xtal,976,980,modelo
+Q5,1310,1310_37,PER,MAN,18,21,modelo
+Q5,1310,1310_37,PER,UEL LÓPEZ,21,30,modelo
+Q5,1310,1310_37,LOC,Guerrero,254,262,modelo
+Q4,1316,1316_37,PER,MANUEL LÓPEZ,18,30,modelo
+Q4,1316,1316_37,LOC,Texcoco,54,61,modelo
+Q4,1316,1316_37,LOC,Texcoco,181,188,modelo
+Q4,1316,1316_37,LOC,Santa Lucía,245,256,modelo
+Q4,1316,1316_37,LOC,Toluca,441,447,modelo
+Q4,1316,1316_37,LOC,Ciudad de México,470,486,modelo
+Q8,1318,1318_22,PER,MAN,18,21,modelo
+Q8,1318,1318_22,PER,UEL LÓPEZ,21,30,modelo
+Q8,1318,1318_22,LOC,México,428,434,modelo
+Q8,1318,1318_22,LOC,América Latina,496,510,modelo
+Q8,1318,1318_22,LOC,México,556,562,modelo
+Q8,1318,1318_22,PER,Carlos Pozos,1000,1012,modelo
+Q10,1342,1342_19,ORG,eánico,30,36,modelo
+Q10,1342,1342_19,ORG,pec,58,61,modelo
+Q10,1342,1342_19,LOC,Coatzacoalcos,133,146,modelo
+Q10,1342,1342_19,LOC,Laguna de Pajaritos,522,541,modelo
+Q10,1342,1342_19,LOC,Salina Cruz,593,604,modelo
+Q10,1342,1342_19,LOC,huantepec,975,984,modelo
+Q1,1395,1395_0,PER,MANUEL,18,24,modelo
+Q1,1395,1395_0,LOC,Yucatán,58,65,modelo
+Q1,1395,1395_0,LOC,Yucatán,658,665,modelo
+Q1,1395,1395_0,LOC,Tin,689,692,modelo
+Q1,1395,1395_0,LOC,um,692,694,modelo
+Q1,1395,1395_0,LOC,U,700,701,modelo
+Q1,1395,1395_0,LOC,ayma,701,705,modelo
+Q1,1395,1395_0,LOC,Tin,748,751,modelo
+Q1,1395,1395_0,LOC,um,751,753,modelo
+Q1,1395,1395_0,LOC,Yucatán,755,762,modelo
+Q1,1395,1395_0,LOC,Tin,766,769,modelo
+Q1,1395,1395_0,LOC,um,769,771,modelo
+Q1,1395,1395_0,LOC,Yucatán,773,780,modelo
+Q1,1395,1395_0,ORG,Grupo ICA,1123,1132,modelo
+Q1,1395,1395_0,PER,Andrés Manuel López,1253,1272,modelo
+Q5,1415,1415_16,ORG,MAN,18,21,modelo
+Q5,1415,1415_16,LOC,Veracruz,250,258,modelo
+Q5,1415,1415_16,LOC,Veracruz,276,284,modelo
+Q5,1415,1415_16,LOC,Veracruz,943,951,modelo
+Q5,1415,1415_16,LOC,Veracruz,983,991,modelo
+Q1,1458,1458_12,PER,MAN,18,21,modelo
+Q1,1458,1458_12,PER,UEL LÓPEZ,21,30,modelo
+Q1,1458,1458_12,LOC,Is,377,379,modelo
+Q1,1458,1458_12,LOC,de,383,385,modelo
+Q1,1458,1458_12,LOC,huantepec,388,397,modelo
+Q10,1458,1458_12,PER,MAN,18,21,modelo
+Q10,1458,1458_12,PER,UEL LÓPEZ,21,30,modelo
+Q10,1458,1458_12,LOC,Is,377,379,modelo
+Q10,1458,1458_12,LOC,de,383,385,modelo
+Q10,1458,1458_12,LOC,huantepec,388,397,modelo
+Q3,1527,1527_0,PER,MANUEL LÓPEZ,18,30,modelo
+Q3,1527,1527_0,LOC,México,249,255,modelo
+Q3,1527,1527_0,LOC,Sali,318,322,modelo
+Q3,1527,1527_0,LOC,na Cruz,322,329,modelo
+Q3,1527,1527_0,ORG,Ref,806,809,modelo
+Q3,1527,1527_0,ORG,Dos Bocas,816,825,modelo
+Q3,1527,1527_0,LOC,Paraíso,833,840,modelo
+Q3,1527,1527_0,LOC,Tabasco,842,849,modelo
+Q3,1527,1527_0,LOC,Paraíso,853,860,modelo
+Q3,1527,1527_0,LOC,Tabasco,862,869,modelo
+Q3,1527,1527_0,LOC,Bocas,927,932,modelo
+Q4,1606,1606_0,PER,ANDRÉS MANUEL LÓPEZ,11,30,modelo
+Q4,1606,1606_0,LOC,Santa Lucía,141,152,modelo
+Q4,1606,1606_0,LOC,Felipe Ángeles,168,182,modelo
+Q4,1606,1606_0,PER,Luis Cresencio Sandoval,208,231,modelo
+Q4,1606,1606_0,PER,José Rafael Ojeda Durán,272,295,modelo
+Q4,1606,1606_0,PER,Javier Jiménez Espriú,332,353,modelo
+Q4,1606,1606_0,PER,Ricardo Vallejo Suárez,423,445,modelo
+Q4,1606,1606_0,PER,Román Meyer,486,497,modelo
+Q4,1606,1606_0,LOC,Hidalgo,577,584,modelo
+Q4,1606,1606_0,PER,Omar Fayad,586,596,modelo
+Q4,1606,1606_0,LOC,Texcoco,958,965,modelo
+Q4,1606,1606_0,LOC,Santa Lucía Felipe Ángeles,1009,1035,modelo
+Q4,1606,1606_0,LOC,Felipe Ángeles,1078,1092,modelo
+Q4,1606,1606_0,PER,AMLO,1117,1121,modelo
+Q4,1606,1606_0,PER,Andrés Manuel López Obrador,1242,1269,modelo
+Q4,1606,1606_1,PER,MANUEL LÓPEZ,18,30,modelo
+Q4,1606,1606_1,LOC,Santa Lucía Felipe Ángeles,67,93,modelo
+Q4,1606,1606_1,LOC,Felipe Ángeles,136,150,modelo
+Q4,1606,1606_1,PER,AMLO,175,179,modelo
+Q4,1606,1606_1,PER,Andrés Manuel López Obrador,300,327,modelo
+Q4,1606,1606_1,LOC,Miércoles,331,340,modelo
+Q4,1606,1606_1,ORG,Secretaría de la Defensa,463,487,modelo
+Q4,1606,1606_1,ORG,Secretaría de la Defensa,550,574,modelo
+Q4,1606,1606_1,ORG,Secretaría de la Defensa,746,770,modelo
+Q4,1606,1606_1,LOC,Santa Lucía,915,926,modelo
+Q4,1606,1606_1,LOC,Santa Lucía,962,973,modelo
+Q4,1606,1606_1,LOC,Tol,994,997,modelo
+Q4,1606,1606_1,LOC,uca,997,1000,modelo
+Q4,1606,1606_1,LOC,Santa Lucía,1048,1059,modelo
+Q4,1606,1606_2,PER,MAN,18,21,modelo
+Q4,1606,1606_2,LOC,Santa Lucía,67,78,modelo
+Q4,1606,1606_2,LOC,Santa Lucía,114,125,modelo
+Q4,1606,1606_2,LOC,Tol,146,149,modelo
+Q4,1606,1606_2,LOC,uca,149,152,modelo
+Q4,1606,1606_2,LOC,Santa Lucía,200,211,modelo
+Q4,1606,1606_2,PER,Claudia Sheinbaum,359,376,modelo
+Q4,1606,1606_2,PER,Alfredo del Mazo,449,465,modelo
+Q4,1606,1606_2,ORG,Estado de México,471,487,modelo
+Q4,1606,1606_2,LOC,Santa Lucía,755,766,modelo
+Q4,1606,1606_2,LOC,Tol,927,930,modelo
+Q4,1606,1606_2,LOC,uca,930,933,modelo
+Q4,1606,1606_2,LOC,Ciudad de México,935,951,modelo
+Q4,1606,1606_2,LOC,Santa Lucía,954,965,modelo
+Q4,1606,1606_2,PER,Ricardo Vallejo Suárez,1089,1111,modelo
+Q4,1606,1606_2,LOC,Felipe Ángeles,1149,1163,modelo
+Q4,1606,1606_2,PER,Felipe Ángeles,1173,1187,modelo
+Q5,1626,1626_3,PER,MAN,18,21,modelo
+Q5,1626,1626_3,PER,UEL LÓPEZ,21,30,modelo
+Q7,1640,1640_5,PER,MAN,18,21,modelo
+Q7,1640,1640_5,PER,L LÓPEZ,23,30,modelo
+Q7,1640,1640_5,ORG,Is,275,277,modelo
+Q7,1640,1640_5,LOC,México,413,419,modelo
+Q7,1640,1640_5,ORG,Congreso,601,609,modelo
+Q7,1640,1640_5,LOC,Tama,1038,1042,modelo
+Q7,1640,1640_5,LOC,zu,1042,1044,modelo
+Q7,1640,1640_5,LOC,la,1044,1046,modelo
+Q8,1685,1685_4,PER,MAN,18,21,modelo
+Q8,1685,1685_4,PER,UEL LÓPEZ,21,30,modelo
+Q8,1685,1685_4,LOC,México,460,466,modelo
+Q5,1691,1691_3,PER,MANUEL LÓPEZ,18,30,modelo
+Q5,1691,1691_3,ORG,Organización Campesina Independiente Emiliano,416,461,modelo
+Q5,1691,1691_3,PER,Zapata,462,468,modelo
+Q5,1691,1691_3,LOC,Xagacía,993,1000,modelo
+Q8,1719,1719_37,PER,MANUEL LÓPEZ,18,30,modelo
+Q8,1733,1733_3,PER,MAN,18,21,modelo
+Q8,1733,1733_3,PER,UEL,21,24,modelo
+Q3,1787,1787_11,PER,Rocío Nahle,86,97,modelo
+Q3,1787,1787_11,LOC,Dos Bocas,186,195,modelo
+Q3,1787,1787_11,LOC,Tabasco,197,204,modelo
+Q4,1812,1812_0,PER,MANUEL LÓPEZ,18,30,modelo
+Q4,1812,1812_0,LOC,Base Aérea Militar de Santa Lucía,174,207,modelo
+Q4,1812,1812_0,LOC,Felipe Ángeles,282,296,modelo
+Q4,1812,1812_0,LOC,Base Aérea Militar de Santa Lucía,304,337,modelo
+Q4,1812,1812_0,LOC,Ciudad de México,466,482,modelo
+Q4,1812,1812_0,LOC,Ciudad de México,535,551,modelo
+Q4,1812,1812_0,LOC,lago de Texcoco,771,786,modelo
+Q4,1812,1812_0,LOC,',945,946,modelo
+Q4,1812,1812_0,LOC,Felipe Ángeles,954,968,modelo
+Q4,1812,1812_0,LOC,Base Aérea Militar Santa Lucía,976,1006,modelo
+Q4,1812,1812_0,LOC,Estado de México,1013,1029,modelo
+Q4,1812,1812_0,LOC,Ciudad de México,1126,1142,modelo
+Q4,1812,1812_0,LOC,Toluca,1167,1173,modelo
+Q5,1850,1850_6,PER,MANUEL LÓPEZ,18,30,modelo
+Q5,1850,1850_6,ORG,Asociación Campesina Independiente Emiliano Zapata,295,345,modelo
+Q5,1850,1850_6,ORG,Secretaría de la Defensa,971,995,modelo
+Q5,1870,1870_19,PER,MANUEL LÓPEZ,18,30,modelo
+Q5,1870,1870_19,LOC,Tama,998,1002,modelo
+Q5,1870,1870_19,LOC,uli,1002,1005,modelo
+Q5,1870,1870_19,LOC,pas,1005,1008,modelo
+Q5,1870,1870_19,LOC,Tama,1094,1098,modelo
+Q5,1870,1870_19,LOC,uli,1098,1101,modelo
+Q5,1870,1870_19,LOC,pas,1101,1104,modelo
+Q7,1943,1943_6,PER,MANUEL LÓPEZ,18,30,modelo
+Q7,1943,1943_6,ORG,Is,215,217,modelo
+Q7,1943,1943_6,LOC,Ciudad de México,541,557,modelo
+Q7,1943,1943_6,PER,Fox,560,563,modelo
+Q7,1943,1943_6,LOC,Ciudad de México,944,960,modelo
+Q5,1998,1998_12,PER,MANUEL LÓPEZ,18,30,modelo
+Q5,1998,1998_12,LOC,México,249,255,modelo
+Q5,1998,1998_12,LOC,Quinta,511,517,modelo
+Q5,1998,1998_12,LOC,na Roo,517,523,modelo
+Q5,1998,1998_12,LOC,Quintana Roo,904,916,modelo
+Q5,1998,1998_12,LOC,Yucatán,921,928,modelo
+Q5,1998,1998_12,LOC,Campeche,933,941,modelo
+Q5,1998,1998_12,LOC,Chiapas,946,953,modelo
+Q5,1998,1998_12,LOC,Tabasco,958,965,modelo
+Q5,1998,1998_12,LOC,Veracruz,970,978,modelo
+Q6,2008,2008_2,PER,MAN,18,21,modelo
+Q7,2030,2030_1,PER,MANUEL LÓPEZ,18,30,modelo
+Q7,2030,2030_1,LOC,México,43,49,modelo
+Q7,2030,2030_1,LOC,Col,340,343,modelo
+Q7,2030,2030_1,LOC,ima,343,346,modelo
+Q7,2030,2030_1,ORG,Issste,596,602,modelo
+Q7,2030,2030_1,ORG,Seguro,608,614,modelo
+Q3,2033,2033_3,PER,MAN,18,21,modelo
+Q3,2033,2033_3,PER,L LÓPEZ,23,30,modelo
+Q3,2033,2033_3,LOC,Dos Bocas,620,629,modelo
+Q3,2033,2033_3,LOC,Tabasco,650,657,modelo
+Q3,2033,2033_3,LOC,Dos Bocas,786,795,modelo
+Q3,2033,2033_3,LOC,Campeche,877,885,modelo
+Q3,2033,2033_3,LOC,Taba,891,895,modelo
+Q3,2033,2033_3,LOC,sco,895,898,modelo
+Q3,2033,2033_3,LOC,Dos Bocas,946,955,modelo
+Q3,2045,2045_9,ORG,Pe,318,320,modelo
+Q3,2045,2045_9,ORG,mex,320,323,modelo
+Q3,2045,2045_9,ORG,Pe,370,372,modelo
+Q3,2045,2045_9,ORG,mex,372,375,modelo
+Q3,2045,2045_9,LOC,Dos Bocas,955,964,modelo
+Q3,2045,2045_9,LOC,Paraíso,966,973,modelo
+Q3,2045,2045_9,LOC,Tabasco,975,982,modelo
+Q3,2045,2045_9,LOC,Dos Bocas,1034,1043,modelo
+Q3,2045,2045_9,LOC,Campeche,1133,1141,modelo
+Q3,2045,2045_9,LOC,Taba,1157,1161,modelo
+Q3,2045,2045_9,LOC,sco,1161,1164,modelo
+Q3,2045,2045_9,LOC,Dos Bocas,1210,1219,modelo
+Q4,2086,2086_10,PER,MANUEL LÓPEZ,18,30,modelo
+Q4,2086,2086_10,PER,Felipe Ángeles,111,125,modelo
+Q4,2086,2086_10,PER,Felipe Ángeles,182,196,modelo
+Q4,2086,2086_10,PER,Villa,207,212,modelo
+Q4,2086,2086_10,LOC,More,292,296,modelo
+Q4,2086,2086_10,LOC,los,296,299,modelo
+Q4,2086,2086_10,PER,Ángeles,503,510,modelo
+Q4,2086,2086_10,PER,Ángeles,644,651,modelo
+Q4,2086,2086_10,PER,Felipe Ángeles,799,813,modelo
+Q4,2086,2086_10,LOC,Santa Lucía,823,834,modelo
+Q4,2086,2086_10,LOC,Hidalgo,874,881,modelo
+Q4,2086,2086_10,PER,Felipe Ángeles,917,931,modelo
+Q4,2086,2086_10,LOC,Santa Lucía,1032,1043,modelo
+Q7,2088,2088_3,PER,MAN,18,21,modelo
+Q7,2088,2088_3,PER,L,23,24,modelo
+Q7,2088,2088_3,ORG,Is,408,410,modelo
+Q7,2088,2088_3,ORG,Is,582,584,modelo
+Q7,2088,2088_3,ORG,ste,585,588,modelo
+Q7,2088,2088_3,ORG,Seguro,595,601,modelo
+Q7,2088,2088_3,ORG,Pe,662,664,modelo
+Q7,2088,2088_3,ORG,mex,664,667,modelo
+Q7,2088,2088_3,ORG,Ejército,685,693,modelo
+Q7,2088,2088_3,ORG,Comisión Federal de Electricidad,713,745,modelo
+Q7,2088,2088_3,LOC,México,867,873,modelo
+Q7,2088,2088_3,LOC,Istmo,953,958,modelo
+Q6,2115,2115_4,PER,MANUEL LÓPEZ,18,30,modelo
+Q6,2115,2115_4,LOC,Mich,896,900,modelo
+Q6,2115,2115_4,LOC,oacán,900,905,modelo
+Q6,2115,2115_4,LOC,Mich,999,1003,modelo
+Q6,2115,2115_4,LOC,oacán,1003,1008,modelo
+Q6,2115,2115_5,PER,MAN,18,21,modelo
+Q6,2115,2115_5,LOC,Mich,132,136,modelo
+Q6,2115,2115_5,LOC,oacán,136,141,modelo
+Q6,2115,2115_5,LOC,Torre de Pemex,370,384,modelo
+Q3,2149,2149_27,PER,MANUEL LÓPEZ,18,30,modelo
+Q3,2149,2149_27,LOC,Dos Bocas,398,407,modelo
+Q3,2149,2149_27,LOC,Sonda de Campeche,610,627,modelo
+Q3,2149,2149_27,LOC,Tabasco,668,675,modelo
+Q3,2149,2149_27,LOC,Veracruz,680,688,modelo
+Q3,2149,2149_27,LOC,Dos Bocas,716,725,modelo
+Q3,2149,2149_27,LOC,Dos Bocas,738,747,modelo
+Q3,2149,2149_27,LOC,Dos Bocas,908,917,modelo
+Q3,2149,2149_27,PER,…,1085,1086,modelo
+Q10,216,216_81,PER,ÓSCAR,0,5,modelo
+Q10,216,216_81,PER,DA,6,8,modelo
+Q10,216,216_81,LOC,Istmo de Tehuantepec,609,629,modelo
+Q10,216,216_81,LOC,Palenque,674,682,modelo
+Q10,216,216_81,LOC,Palenque,823,831,modelo
+Q10,216,216_81,LOC,Esc,909,912,modelo
+Q10,216,216_81,LOC,árcega,912,918,modelo
+Q10,216,216_81,LOC,…,931,932,modelo
+Q10,216,216_81,LOC,Campeche,998,1006,modelo
+Q10,216,216_81,LOC,Pom,1022,1025,modelo
+Q10,216,216_81,LOC,uch,1025,1028,modelo
+Q10,216,216_81,LOC,Pom,1033,1036,modelo
+Q10,216,216_81,LOC,uch,1036,1039,modelo
+Q10,216,216_81,LOC,Poxilá,1120,1126,modelo
+Q10,216,216_81,LOC,Mérida,1149,1155,modelo
+Q8,2170,2170_1,PER,MANUEL LÓPEZ,18,30,modelo
+Q8,2170,2170_1,PER,DO,35,37,modelo
+Q8,2171,2171_28,PER,MANUEL LÓPEZ,18,30,modelo
+Q6,2190,2190_6,PER,MANUEL LÓPEZ,18,30,modelo
+Q6,2190,2190_6,ORG,Corte,84,89,modelo
+Q6,2190,2190_6,LOC,Ciudad de México,983,999,modelo
+Q6,2191,2191_4,PER,MANUEL,18,24,modelo
+Q6,2191,2191_4,LOC,Ciudad de México,861,877,modelo
+Q6,2191,2191_4,LOC,Hidalgo,1010,1017,modelo
+Q6,2199,2199_29,PER,MANUEL LÓPEZ,18,30,modelo
+Q6,2199,2199_29,LOC,Hidalgo,71,78,modelo
+Q6,2199,2199_29,LOC,México,288,294,modelo
+Q4,2202,2202_5,PER,MANUEL LÓPEZ,18,30,modelo
+Q4,2202,2202_5,LOC,Santa Lucía,109,120,modelo
+Q4,2202,2202_5,ORG,Fuerzas Armadas,479,494,modelo
+Q4,2202,2202_5,PER,Luis Cresencio,684,698,modelo
+Q4,2202,2202_5,LOC,Santa Lucía,750,761,modelo
+Q4,2202,2202_5,LOC,Santa Lucía,815,826,modelo
+Q4,2202,2202_5,PER,Salinas Carranza,861,877,modelo
+Q4,2202,2202_5,ORG,Fuerza Aérea,929,941,modelo
+Q4,2202,2202_5,LOC,Santa Lucía,972,983,modelo
+Q4,2202,2202_5,PER,Felipe Ángeles,1014,1028,modelo
+Q4,2202,2202_5,PER,Felipe Ángeles,1039,1053,modelo
+Q4,2202,2202_5,ORG,Colegio Militar,1112,1127,modelo
+Q4,2202,2202_5,ORG,Colegio Militar,1157,1172,modelo
+Q6,2208,2208_8,PER,MANUEL LÓPEZ,18,30,modelo
+Q6,2208,2208_8,ORG,Modelo,75,81,modelo
+Q6,2208,2208_8,ORG,Interven,83,91,modelo
+Q6,2208,2208_8,ORG,Corte,120,125,modelo
+Q7,2209,2209_3,PER,MANUEL LÓPEZ,18,30,modelo
+Q7,2209,2209_3,ORG,Is,233,235,modelo
+Q7,2209,2209_3,ORG,sste,235,239,modelo
+Q7,2209,2209_3,ORG,Seguro,245,251,modelo
+Q7,2209,2209_3,ORG,Pe,256,258,modelo
+Q7,2209,2209_3,ORG,mex,258,261,modelo
+Q7,2209,2209_3,ORG,Fuerzas Armadas,270,285,modelo
+Q7,2209,2209_3,LOC,Europa,1079,1085,modelo
+Q6,2250,2250_60,ORG,MAN,18,21,modelo
+Q6,2250,2250_60,LOC,Dos Bocas,78,87,modelo
+Q6,2259,2259_13,PER,MAN,18,21,modelo
+Q6,2259,2259_13,PER,L,23,24,modelo
+Q8,2265,2265_8,PER,MANUEL LÓPEZ,18,30,modelo
+Q8,2265,2265_8,LOC,España,544,550,modelo
+Q8,2265,2265_8,LOC,México,634,640,modelo
+Q8,2265,2265_8,LOC,España,674,680,modelo
+Q8,2265,2265_8,LOC,España,719,725,modelo
+Q8,2265,2265_8,LOC,Ciudad Juárez,1058,1071,modelo
+Q6,2274,2274_1,PER,MANUEL LÓPEZ,18,30,modelo
+Q6,2274,2274_1,LOC,México,368,374,modelo
+Q6,2274,2274_1,ORG,Pe,884,886,modelo
+Q6,2274,2274_1,ORG,mex,886,889,modelo
+Q6,2274,2274_1,ORG,Pe,906,908,modelo
+Q6,2274,2274_1,ORG,mex,908,911,modelo
+Q6,2274,2274_1,PER,Octavio Romero Oropeza,913,935,modelo
+Q6,2274,2274_1,PER,Luis Crescencio Sandoval,979,1003,modelo
+Q6,2274,2274_1,PER,Alejandro Gertz Manero,1032,1054,modelo
+Q10,228,228_7,LOC,México,27,33,modelo
+Q10,228,228_7,PER,Andrés Manuel López Obrador,208,235,modelo
+Q10,228,228_7,ORG,Estados Unidos Mexicanos,270,294,modelo
+Q10,228,228_7,ORG,Fuerzas Armadas,323,338,modelo
+Q10,228,228_7,LOC,México,405,411,modelo
+Q10,228,228_7,ORG,Secretaría de Marina,500,520,modelo
+Q10,228,228_7,ORG,"Empresa Multimodal Interoceánica, S.A",537,574,modelo
+Q10,228,228_7,ORG,C.V,579,582,modelo
+Q10,228,228_7,ORG,Portuario Nacional,632,650,modelo
+Q10,228,228_7,ORG,Asiponas,673,681,modelo
+Q10,228,228_7,LOC,Sali,686,690,modelo
+Q10,228,228_7,LOC,na Cruz,690,697,modelo
+Q10,228,228_7,LOC,Co,699,701,modelo
+Q10,228,228_7,LOC,atzacoalcos,701,712,modelo
+Q10,228,228_7,LOC,Dos Bocas,714,723,modelo
+Q10,228,228_7,LOC,Puerto Chiapas,726,740,modelo
+Q10,228,228_7,LOC,Is,769,771,modelo
+Q10,228,228_7,LOC,ntepec,783,789,modelo
+Q10,228,228_7,LOC,México,906,912,modelo
+Q10,228,228_7,LOC,Co,1144,1146,modelo
+Q10,228,228_7,LOC,atzacoalcos,1146,1157,modelo
+Q10,228,228_7,LOC,Sali,1247,1251,modelo
+Q10,228,228_7,LOC,na Cruz,1251,1258,modelo
+Q10,256,256_14,PER,RAFAEL OJEDA DURÁN,5,23,modelo
+Q10,256,256_14,ORG,MAR,39,42,modelo
+Q10,256,256_14,LOC,Sali,50,54,modelo
+Q10,256,256_14,LOC,na Cruz,54,61,modelo
+Q10,256,256_14,PER,1907,152,156,modelo
+Q10,256,256_14,ORG,Gobierno de México,230,248,modelo
+Q10,256,256_14,LOC,Co,442,444,modelo
+Q10,256,256_14,LOC,atzacoalcos,444,455,modelo
+Q10,256,256_14,LOC,Sali,458,462,modelo
+Q10,256,256_14,LOC,na Cruz,462,469,modelo
+Q10,256,256_14,LOC,Istmo de Tehuantepec,930,950,modelo
+Q10,256,256_14,LOC,pec,1111,1114,modelo
+Q10,256,256_14,PER,Morales Ángeles,1129,1144,modelo
+Q7,278,278_3,PER,MANUEL LÓPEZ,18,30,modelo
+Q7,278,278_3,ORG,Banco del Bienestar,682,701,modelo
+Q7,278,278_3,LOC,Sinaloa,857,864,modelo
+Q7,278,278_3,PER,Rubén,878,883,modelo
+Q7,278,278_3,LOC,Sinaloa,1014,1021,modelo
+Q7,278,278_3,LOC,Sinaloa,1102,1109,modelo
+Q1,326,326_25,ORG,Tren Maya,94,103,modelo
+Q7,343,343_2,PER,MANUEL LÓPEZ,18,30,modelo
+Q7,343,343_2,LOC,Ec,100,102,modelo
+Q7,343,343_2,LOC,atepec,102,108,modelo
+Q7,343,343_2,LOC,Estado de México,121,137,modelo
+Q7,343,343_2,PER,Delfina Gómez Álvarez,339,360,modelo
+Q7,343,343_2,ORG,Estado,397,403,modelo
+Q7,343,343_2,LOC,de México,404,413,modelo
+Q7,343,343_2,PER,Delfina,473,480,modelo
+Q7,343,343_2,LOC,Ec,678,680,modelo
+Q7,343,343_2,LOC,atepec,680,686,modelo
+Q9,347,347_71,PER,MANUEL LÓPEZ,18,30,modelo
+Q9,347,347_71,ORG,Banco del Bienestar,737,756,modelo
+Q10,354,354_33,PER,RA,0,2,modelo
+Q10,354,354_33,PER,ÁNGELES,17,24,modelo
+Q10,354,354_33,ORG,COR,47,50,modelo
+Q10,354,354_33,ORG,INTEROCEÁNICO,56,69,modelo
+Q10,354,354_33,LOC,TEHUANTEPEC,83,94,modelo
+Q10,354,354_33,ORG,CI,96,98,modelo
+Q10,354,354_33,ORG,Gobierno de México,261,279,modelo
+Q10,354,354_33,ORG,Ferrocarril del Istmo de Tehuantepec,442,478,modelo
+Q10,354,354_33,LOC,Sali,529,533,modelo
+Q10,354,354_33,LOC,na Cruz,533,540,modelo
+Q10,354,354_33,LOC,Co,542,544,modelo
+Q10,354,354_33,LOC,atzacoalcos,544,555,modelo
+Q10,354,354_33,LOC,Puerto Chiapas,557,571,modelo
+Q10,354,354_33,LOC,Dos Bocas,574,583,modelo
+Q10,354,354_33,LOC,Istmo de Tehuantepec,846,866,modelo
+Q10,354,354_33,LOC,Co,936,938,modelo
+Q10,354,354_33,LOC,atzacoalcos,938,949,modelo
+Q10,354,354_33,LOC,Sali,952,956,modelo
+Q10,354,354_33,LOC,na Cruz,956,963,modelo
+Q10,354,354_33,LOC,Co,1289,1291,modelo
+Q10,354,354_33,LOC,atzacoalcos,1291,1302,modelo
+Q10,354,354_33,LOC,Pale,1305,1309,modelo
+Q10,354,354_33,LOC,nque,1309,1313,modelo
+Q10,354,354_38,LOC,Istmo de Tehuantepec,43,63,modelo
+Q10,354,354_38,LOC,Co,236,238,modelo
+Q10,354,354_38,LOC,atzacoalcos,238,249,modelo
+Q10,354,354_38,LOC,Sali,252,256,modelo
+Q10,354,354_38,LOC,na Cruz,256,263,modelo
+Q10,354,354_38,LOC,Pacífico,575,583,modelo
+Q10,354,354_38,LOC,Atlántico,591,600,modelo
+Q10,354,354_38,LOC,Asia,784,788,modelo
+Q10,354,354_38,LOC,Estados Unidos,848,862,modelo
+Q10,354,354_38,LOC,Centro,921,927,modelo
+Q10,354,354_38,LOC,Sudamérica,930,940,modelo
+Q1,396,396_23,LOC,Mérida,409,415,modelo
+Q1,396,396_23,LOC,parque,460,466,modelo
+Q1,396,396_23,LOC,La Plancha,467,477,modelo
+Q1,396,396_23,LOC,Umán,666,670,modelo
+Q1,396,396_23,LOC,Teya,673,677,modelo
+Q1,396,396_23,LOC,Mérida,1068,1074,modelo
+Q1,396,396_23,ORG,Tren Maya,1155,1164,modelo
+Q1,396,396_24,LOC,Mérida,222,228,modelo
+Q1,396,396_24,ORG,Tren Maya,309,318,modelo
+Q9,419,419_11,PER,MAN,18,21,modelo
+Q9,419,419_11,PER,L LÓPEZ,23,30,modelo
+Q9,419,419_11,ORG,Banco del Bienestar,720,739,modelo
+Q9,419,419_11,LOC,Puebla,776,782,modelo
+Q9,419,419_11,ORG,Banco del Bienestar,815,834,modelo
+Q9,419,419_11,ORG,Banco del Bienestar,1034,1053,modelo
+Q9,419,419_11,LOC,Puebla,1093,1099,modelo
+Q9,419,419_11,ORG,Banco del Bienestar,1128,1147,modelo
+Q9,419,419_11,ORG,Banco del Bienestar,1212,1231,modelo
+Q9,420,420_10,PER,MAN,18,21,modelo
+Q9,420,420_10,PER,L LÓPEZ,23,30,modelo
+Q9,420,420_10,ORG,Banco del Bienestar,97,116,modelo
+Q9,420,420_10,ORG,Banco del Bienestar,452,471,modelo
+Q9,420,420_10,ORG,Banco del Bienestar,554,573,modelo
+Q9,420,420_10,LOC,Álamo,583,588,modelo
+Q9,420,420_10,ORG,Banco del Bienestar,717,736,modelo
+Q9,420,420_10,LOC,México,845,851,modelo
+Q9,420,420_10,ORG,Banco del Bienestar,856,875,modelo
+Q1,476,476_28,PER,EG,2,4,modelo
+Q1,476,476_28,PER,PRIETO HERNÁNDEZ,6,22,modelo
+Q1,476,476_28,ORG,IN,92,94,modelo
+Q1,476,476_28,LOC,Museo del Puuc,367,381,modelo
+Q1,476,476_28,LOC,Mérida,542,548,modelo
+Q1,476,476_28,LOC,Yucatán,550,557,modelo
+Q1,476,476_28,LOC,Dzibilchaltún,562,575,modelo
+Q1,476,476_28,LOC,de Atención a Visitantes,980,1004,modelo
+Q8,478,478_44,PER,MANUEL LÓPEZ,18,30,modelo
+Q8,478,478_44,PER,… Francisco,409,420,modelo
+Q8,478,478_44,LOC,Europa,1092,1098,modelo
+Q8,478,478_44,ORG,Ucrania,1174,1181,modelo
+Q1,487,487_29,PER,JOAO PEDRO PARREIRA,0,19,modelo
+Q1,487,487_29,LOC,EN,61,63,modelo
+Q1,487,487_29,LOC,GIL LATINOAMÉRICA,63,80,modelo
+Q1,487,487_29,LOC,Chiapas,162,169,modelo
+Q1,487,487_29,LOC,Palenque,197,205,modelo
+Q1,487,487_29,LOC,Chiapas,207,214,modelo
+Q1,487,487_29,LOC,Palenque,275,283,modelo
+Q1,487,487_29,LOC,El Triunfo,925,935,modelo
+Q1,487,487_29,LOC,Triunfo,1152,1159,modelo
+Q1,487,487_29,LOC,Tabasco,1161,1168,modelo
+Q9,490,490_61,LOC,Tu,93,95,modelo
+Q9,490,490_61,LOC,xtla,95,99,modelo
+Q9,490,490_61,LOC,Tu,167,169,modelo
+Q9,490,490_61,LOC,xtla Gutiérrez,169,183,modelo
+Q9,490,490_61,LOC,Chiapas,185,192,modelo
+Q9,490,490_61,LOC,Tu,212,214,modelo
+Q9,490,490_61,LOC,xtla Gutiérrez,214,228,modelo
+Q9,490,490_61,LOC,Chiapas,230,237,modelo
+Q9,490,490_61,ORG,Bancos del Bienestar,303,323,modelo
+Q9,490,490_61,ORG,Banco del Bienestar,329,348,modelo
+Q9,490,490_61,ORG,Bancos del Bienestar,472,492,modelo
+Q9,490,490_61,LOC,Chiapas,497,504,modelo
+Q9,490,490_61,ORG,Bancos del Bienestar,544,564,modelo
+Q9,490,490_61,LOC,Oaxaca,606,612,modelo
+Q9,490,490_61,LOC,Oaxaca,633,639,modelo
+Q9,490,490_61,ORG,Banco del Bienestar,719,738,modelo
+Q9,490,490_61,ORG,Banco del Bienestar,778,797,modelo
+Q9,490,490_61,LOC,Chiapas,812,819,modelo
+Q9,490,490_61,ORG,Banco del Bienestar,1115,1134,modelo
+Q9,490,490_61,LOC,Oaxaca,1161,1167,modelo
+Q9,499,499_68,PER,MANUEL LÓPEZ,18,30,modelo
+Q9,499,499_68,PER,Rosa Icela,121,131,modelo
+Q9,499,499_68,ORG,Banco del Bienestar,257,276,modelo
+Q9,499,499_68,ORG,Banco del Bienestar,412,431,modelo
+Q9,499,499_68,ORG,Banco del Bienestar,451,470,modelo
+Q9,499,499_68,LOC,Zacatecas,487,496,modelo
+Q9,499,499_68,ORG,Banco del Bienestar,685,704,modelo
+Q9,499,499_68,ORG,Azteca,1029,1035,modelo
+Q9,499,499_68,ORG,Azteca,1174,1180,modelo
+Q10,504,504_31,ORG,INAH,143,147,modelo
+Q10,504,504_31,ORG,Secretaría de Marina,730,750,modelo
+Q10,504,504_31,LOC,Palenque,904,912,modelo
+Q10,504,504_31,LOC,Campe,1033,1038,modelo
+Q10,504,504_31,LOC,che,1038,1041,modelo
+Q10,504,504_31,LOC,Progreso,1046,1054,modelo
+Q10,504,504_31,LOC,Mérida,1059,1065,modelo
+Q10,504,504_31,LOC,Cancún,1070,1076,modelo
+Q10,504,504_31,LOC,Chetumal,1082,1090,modelo
+Q10,504,504_31,ORG,leos Mexic,1223,1233,modelo
+Q10,504,504_31,ORG,Pemex,1257,1262,modelo
+Q9,507,507_44,PER,MAN,18,21,modelo
+Q9,507,507_44,PER,L,23,24,modelo
+Q9,507,507_44,ORG,Banco del Bienestar,261,280,modelo
+Q9,507,507_44,LOC,México,325,331,modelo
+Q9,507,507_44,ORG,Banco del Bienestar,440,459,modelo
+Q9,507,507_44,ORG,Banco del Bienestar,851,870,modelo
+Q9,507,507_44,ORG,Hacienda,1078,1086,modelo
+Q9,525,525_29,PER,MANUEL LÓPEZ,18,30,modelo
+Q9,525,525_29,ORG,Banco del Bienestar,400,419,modelo
+Q9,525,525_29,ORG,Banco del Bienestar,501,520,modelo
+Q9,525,525_29,ORG,Banco del Bienestar,636,655,modelo
+Q9,525,525_29,ORG,Banco del Bienestar,961,980,modelo
+Q9,525,525_29,ORG,Secretaría de la Defensa,1148,1172,modelo
+Q9,549,549_11,PER,MANUEL,18,24,modelo
+Q9,549,549_11,ORG,Banco del Bienestar,162,181,modelo
+Q9,549,549_11,LOC,Oaxaca,200,206,modelo
+Q9,549,549_11,LOC,Oaxaca,291,297,modelo
+Q9,549,549_11,LOC,México,303,309,modelo
+Q9,549,549_11,ORG,Banco del Bienestar,313,332,modelo
+Q9,549,549_11,LOC,Rusia,793,798,modelo
+Q9,549,549_11,LOC,Ucrania,801,808,modelo
+Q9,549,549_11,ORG,Banco del Bienestar,1052,1071,modelo
+Q9,549,549_11,LOC,Oaxaca,1075,1081,modelo
+Q1,578,578_0,PER,MANUEL LÓPEZ,18,30,modelo
+Q1,578,578_0,PER,Ánimo,53,58,modelo
+Q1,578,578_0,PER,Ricardo Mejía,274,287,modelo
+Q1,578,578_0,PER,Diego Prieto,311,323,modelo
+Q1,578,578_0,ORG,Instituto Nacional de Antropología e Historia,338,383,modelo
+Q1,578,578_0,PER,Ricardo,1022,1029,modelo
+Q9,630,630_73,PER,MANUEL LÓPEZ OB,18,33,modelo
+Q9,630,630_73,PER,DO,35,37,modelo
+Q9,630,630_73,ORG,Banco del Bienestar,93,112,modelo
+Q9,630,630_73,ORG,Bancos del Bienestar,202,222,modelo
+Q9,630,630_73,LOC,Ciudad de México,229,245,modelo
+Q9,630,630_73,PER,Claudia Sheinbaum,423,440,modelo
+Q9,630,630_73,PER,Sandoval,457,465,modelo
+Q9,630,630_73,LOC,Ciudad Deportiva,477,493,modelo
+Q9,630,630_73,LOC,Iztacalco,497,506,modelo
+Q9,630,630_73,ORG,Bancos del Bienestar,724,744,modelo
+Q9,630,630_73,ORG,Banco del Bienestar,921,940,modelo
+Q3,657,657_54,PER,Yesenia Peralta,45,60,modelo
+Q3,657,657_54,ORG,Business Energy,65,80,modelo
+Q3,657,657_54,LOC,Taba,82,86,modelo
+Q3,657,657_54,ORG,sco,86,89,modelo
+Q3,657,657_54,LOC,Dos Bocas,232,241,modelo
+Q3,657,657_54,LOC,Tabasco,388,395,modelo
+Q3,657,657_54,LOC,Dos Bocas,537,546,modelo
+Q3,657,657_54,LOC,Dos Bocas,671,680,modelo
+Q3,657,657_54,LOC,Paraíso,784,791,modelo
+Q3,657,657_54,LOC,Tabasco,877,884,modelo
+Q7,744,744_69,PER,MAN,18,21,modelo
+Q7,744,744_69,PER,UEL LÓPEZ,21,30,modelo
+Q7,744,744_69,ORG,UMA,334,337,modelo
+Q3,745,745_5,ORG,AN,0,2,modelo
+Q3,745,745_5,ORG,A ELIZABETH,2,13,modelo
+Q3,745,745_5,ORG,República,70,79,modelo
+Q3,745,745_5,LOC,México,151,157,modelo
+Q3,745,745_5,PER,Carlos Loret de Mola,188,208,modelo
+Q3,745,745_5,LOC,Dos Bocas,295,304,modelo
+Q3,745,745_5,LOC,Dos Bocas,433,442,modelo
+Q3,745,745_5,LOC,Paraíso,444,451,modelo
+Q3,745,745_5,LOC,Tabasco,453,460,modelo
+Q3,745,745_5,PER,Carlos Loret de Mola,462,482,modelo
+Q3,745,745_5,ORG,Latinus,552,559,modelo
+Q3,745,745_5,LOC,Dos Bocas,710,719,modelo
+Q3,745,745_5,ORG,W Radio,771,778,modelo
+Q3,745,745_5,PER,Loret,794,799,modelo
+Q3,745,745_5,LOC,Dos Bocas,829,838,modelo
+Q3,745,745_5,PER,Lor,1155,1158,modelo
+Q3,745,745_5,PER,et,1158,1160,modelo
+Q3,754,754_67,PER,MAN,18,21,modelo
+Q3,754,754_67,PER,UEL LÓPEZ,21,30,modelo
+Q3,754,754_67,LOC,Dos Bocas,173,182,modelo
+Q3,754,754_67,LOC,Dos Bocas,227,236,modelo
+Q5,771,771_54,PER,MAN,18,21,modelo
+Q5,771,771_54,PER,L LÓPEZ,23,30,modelo
+Q5,771,771_54,LOC,Guerrero,937,945,modelo
+Q5,771,771_54,LOC,More,1009,1013,modelo
+Q5,771,771_54,LOC,los,1013,1016,modelo
+Q5,771,771_54,LOC,Puebla,1020,1026,modelo
+Q5,771,771_54,LOC,Oaxaca,1028,1034,modelo
+Q5,771,771_54,LOC,Chiapas,1036,1043,modelo
+Q5,771,771_54,LOC,Zacatecas,1045,1054,modelo
+Q5,771,771_54,LOC,Duran,1056,1061,modelo
+Q5,771,771_54,LOC,go,1061,1063,modelo
+Q5,771,771_54,LOC,Na,1065,1067,modelo
+Q5,771,771_54,LOC,yar,1067,1070,modelo
+Q5,771,771_54,LOC,it,1070,1072,modelo
+Q5,771,771_54,LOC,Veracruz,1085,1093,modelo
+Q5,776,776_72,PER,MANUEL LÓPEZ,18,30,modelo
+Q5,776,776_72,LOC,Taba,541,545,modelo
+Q5,776,776_72,LOC,sco,545,548,modelo
+Q5,776,776_72,LOC,Chiapas,554,561,modelo
+Q5,786,786_90,PER,MAN,18,21,modelo
+Q5,786,786_90,PER,UEL LÓPEZ,21,30,modelo
+Q7,796,796_2,PER,MAN,18,21,modelo
+Q7,796,796_2,PER,L,23,24,modelo
+Q7,796,796_2,LOC,Chi,144,147,modelo
+Q7,796,796_2,LOC,huahua,147,153,modelo
+Q7,796,796_2,LOC,Son,159,162,modelo
+Q7,796,796_2,LOC,ora,162,165,modelo
+Q7,796,796_2,LOC,México,194,200,modelo
+Q7,796,796_2,LOC,Chi,723,726,modelo
+Q7,796,796_2,LOC,huahua,726,732,modelo
+Q7,796,796_2,LOC,Son,738,741,modelo
+Q7,796,796_2,LOC,ora,741,744,modelo
+Q3,834,834_74,ORG,INTER,0,5,modelo
+Q3,834,834_74,PER,LO,5,7,modelo
+Q3,834,834_74,LOC,Veracruz,183,191,modelo
+Q3,834,834_74,LOC,Dos Bocas,279,288,modelo
+Q3,834,834_74,ORG,Grupo Cantón,347,359,modelo
+Q3,834,834_74,LOC,Dos Bocas,743,752,modelo
+Q3,834,834_74,LOC,Tabasco,757,764,modelo
+Q7,845,845_12,PER,MANUEL LÓPEZ,18,30,modelo
+Q3,917,917_1,PER,AN,0,2,modelo
+Q3,917,917_1,PER,A ELIZABETH,2,13,modelo
+Q3,917,917_1,PER,VI,21,23,modelo
+Q3,917,917_1,ORG,HIS,25,28,modelo
+Q3,917,917_1,LOC,Dos Bocas,133,142,modelo
+Q3,917,917_1,LOC,Dos Bocas,274,283,modelo
+Q3,917,917_1,LOC,Tabasco,285,292,modelo
+Q3,917,917_1,ORG,Reforma,400,407,modelo
+Q3,917,917_1,ORG,Animal Político,409,424,modelo
+Q3,917,917_1,ORG,El Universal,426,438,modelo
+Q3,917,917_1,LOC,Dos Bocas,539,548,modelo
+Q3,917,917_1,ORG,Reforma,657,664,modelo
+Q3,917,917_1,ORG,Proceso,677,684,modelo
+Q3,917,917_1,ORG,Diario de Yucatán,686,703,modelo
+Q3,917,917_1,PER,Rocío Nahle,934,945,modelo
+Q4,928,928_1,ORG,AN,0,2,modelo
+Q4,928,928_1,PER,A,2,3,modelo
+Q4,928,928_1,ORG,ELIZABETH,4,13,modelo
+Q4,928,928_1,LOC,México,232,238,modelo
+Q4,928,928_1,LOC,Santa Lucía,604,615,modelo
+Q4,928,928_1,LOC,Santa Lucía,717,728,modelo
+Q4,928,928_1,LOC,Santa Lucía,932,943,modelo
+Q4,928,928_1,LOC,‘Felipe Ángeles’,1041,1057,modelo
+Q4,928,928_1,LOC,Torre de Pisa,1102,1115,modelo
+Q4,928,928_1,LOC,Italia,1120,1126,modelo
+Q4,928,928_1,LOC,‘Felipe,1162,1169,modelo
+Q4,928,928_1,LOC,Ángeles,1171,1178,modelo
+Q4,928,928_2,LOC,Santa Lucía,75,86,modelo
+Q4,928,928_2,LOC,‘Felipe Ángeles,184,199,modelo
+Q4,928,928_2,LOC,Torre de Pisa,245,258,modelo
+Q4,928,928_2,LOC,Italia,263,269,modelo
+Q4,928,928_2,LOC,‘Felipe ‘Ángeles,305,321,modelo
+Q4,928,928_2,LOC,Santa Lucía,601,612,modelo
+Q4,928,928_2,LOC,Santa Lucía,978,989,modelo
+Q4,928,928_2,PER,Felipe Calderón,1052,1067,modelo
+Q4,928,928_2,PER,Emilio Álvarez Icaza,1080,1100,modelo
+Q4,928,928_2,PER,Paola Migoya,1103,1115,modelo
+Q4,928,928_2,ORG,Frente Cívico Nacional,1131,1153,modelo
+Q1,972,972_21,LOC,San Pedro,167,176,modelo
+Q1,972,972_21,LOC,El Triunfo,179,189,modelo
+Q1,972,972_21,LOC,El Triunfo,219,229,modelo
+Q1,972,972_21,LOC,Po,340,342,modelo
+Q1,972,972_21,LOC,c Boc,342,347,modelo
+Q1,972,972_21,LOC,Hampolol,473,481,modelo
+Q1,972,972_21,LOC,Bec,550,553,modelo
+Q1,972,972_21,LOC,al,553,555,modelo
+Q1,972,972_21,LOC,Campeche,557,565,modelo
+Q1,972,972_21,LOC,Umán,784,788,modelo
+Q1,972,972_21,LOC,Yucatán,790,797,modelo

@@ -1,0 +1,76 @@
+{
+  "clave": "0873756aff687249933a00c88b6418f1107f304c72d889c9c7d2566a6af74dd6",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "eebb0c38ecf2c425b24c74aad525a13ada75fa11add762c6576f758bcb41c898",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.8472835421562195,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 682,
+      "fin": 701,
+      "confianza": 0.9996659755706787,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Sinaloa",
+      "inicio": 857,
+      "fin": 864,
+      "confianza": 0.9074094295501709,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Rubén",
+      "inicio": 878,
+      "fin": 883,
+      "confianza": 0.9991610050201416,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Sinaloa",
+      "inicio": 1014,
+      "fin": 1021,
+      "confianza": 0.8890675902366638,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Sinaloa",
+      "inicio": 1102,
+      "fin": 1109,
+      "confianza": 0.864284098148346,
+      "cortada": false
+    }
+  ],
+  "descartadas": 1,
+  "segundos": 0.4020599509999556,
+  "version_transformers": "5.22.1"
+}

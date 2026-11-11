@@ -1,0 +1,100 @@
+{
+  "clave": "983dde23392d6b4fe02f948d479c89241a18a81a25fc82a6a88a8bb29f281472",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "157f408f3a7e083decf8005d12625e88ead782db9b0490d15c4f071c2f795cb6",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.8374261260032654,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "L LÓPEZ",
+      "inicio": 23,
+      "fin": 30,
+      "confianza": 0.548889696598053,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 720,
+      "fin": 739,
+      "confianza": 0.9994675517082214,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Puebla",
+      "inicio": 776,
+      "fin": 782,
+      "confianza": 0.9990308284759521,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 815,
+      "fin": 834,
+      "confianza": 0.9994809031486511,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 1034,
+      "fin": 1053,
+      "confianza": 0.9993793964385986,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Puebla",
+      "inicio": 1093,
+      "fin": 1099,
+      "confianza": 0.9995701909065247,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 1128,
+      "fin": 1147,
+      "confianza": 0.9994786381721497,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 1212,
+      "fin": 1231,
+      "confianza": 0.9994783401489258,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.3764575810000679,
+  "version_transformers": "5.22.1"
+}

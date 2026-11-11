@@ -1,0 +1,36 @@
+{
+  "clave": "b146ea514fddda31fc8b05b0dcc09fb874b658c5a17251c29fe28f24d91b1b6a",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "4e10a5d62c56df778208ea221970f7ac73caa45206e9308ac884dd7cbdb65d4e",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.7903793454170227,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.5434026380000887,
+  "version_transformers": "5.22.1"
+}

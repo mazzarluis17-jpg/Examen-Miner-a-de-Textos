@@ -1,0 +1,60 @@
+{
+  "clave": "6924a1f901d581eb33df7a86c09f28fb4af89c4e23068ba0025979a0e93cdd30",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "ba27b0d624c922767013a5224d720f6a910bcb193a78abd2ec99fa35f5bc15cb",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.6358089447021484,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Modelo",
+      "inicio": 75,
+      "fin": 81,
+      "confianza": 0.5858170986175537,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Interven",
+      "inicio": 83,
+      "fin": 91,
+      "confianza": 0.4421461820602417,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Corte",
+      "inicio": 120,
+      "fin": 125,
+      "confianza": 0.9414612650871277,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.4112658179999471,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,100 @@
+{
+  "clave": "c0a548c23831dc52bcb636f09a07b24a50b7ee1794f7f2a8caa46deb1c240be6",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "e1af91702e56c4145491fb2fda0e025b1fa0ad81b02aff37ca7d6b883de92b81",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.7872694134712219,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Rosa Icela",
+      "inicio": 121,
+      "fin": 131,
+      "confianza": 0.9993299245834351,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 257,
+      "fin": 276,
+      "confianza": 0.9995840191841125,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 412,
+      "fin": 431,
+      "confianza": 0.9995782971382141,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 451,
+      "fin": 470,
+      "confianza": 0.9993204474449158,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Zacatecas",
+      "inicio": 487,
+      "fin": 496,
+      "confianza": 0.9997454285621643,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 685,
+      "fin": 704,
+      "confianza": 0.9992604851722717,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Azteca",
+      "inicio": 1029,
+      "fin": 1035,
+      "confianza": 0.9927234649658203,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Azteca",
+      "inicio": 1174,
+      "fin": 1180,
+      "confianza": 0.7549819946289062,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.33262420300002304,
+  "version_transformers": "5.22.1"
+}

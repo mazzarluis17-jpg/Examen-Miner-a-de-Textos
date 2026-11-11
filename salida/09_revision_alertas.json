@@ -1,0 +1,7 @@
+{
+  "alerta": "F1=1 con soporte >5 en MONTO para reglas y combinado",
+  "soporte_monto": 9,
+  "revision": "Cierre humano válido anterior a inferencia; etiqueta de reglas previa a Gold; hashes congelados intactos; extracción no ajustada con etiquetas Gold. Sin correcciones de Gold ni cambios de reglas. La coincidencia exacta observada no certifica calidad semántica ni ausencia de otros errores.",
+  "estado": "trazabilidad técnica comprobada, cifra conservada",
+  "version_posproceso": "2-vacios-auditados"
+}

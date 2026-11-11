@@ -1,0 +1,116 @@
+{
+  "clave": "5796c4b6b40b8a9387db461e8ef8aa6badc1cfde3c04aae5b190e92acf403e54",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "e63a4504424d54906681727e5c5b045fb336c6355dfecdd0cea2bb5bc54e368c",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ OB",
+      "inicio": 18,
+      "fin": 33,
+      "confianza": 0.5824024081230164,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "DO",
+      "inicio": 35,
+      "fin": 37,
+      "confianza": 0.5774261355400085,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 93,
+      "fin": 112,
+      "confianza": 0.9996399879455566,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Bancos del Bienestar",
+      "inicio": 202,
+      "fin": 222,
+      "confianza": 0.6871069073677063,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ciudad de México",
+      "inicio": 229,
+      "fin": 245,
+      "confianza": 0.9978863596916199,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Claudia Sheinbaum",
+      "inicio": 423,
+      "fin": 440,
+      "confianza": 0.9992814064025879,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Sandoval",
+      "inicio": 457,
+      "fin": 465,
+      "confianza": 0.9976658225059509,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ciudad Deportiva",
+      "inicio": 477,
+      "fin": 493,
+      "confianza": 0.9982442259788513,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Iztacalco",
+      "inicio": 497,
+      "fin": 506,
+      "confianza": 0.9226459860801697,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Bancos del Bienestar",
+      "inicio": 724,
+      "fin": 744,
+      "confianza": 0.8881340622901917,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 921,
+      "fin": 940,
+      "confianza": 0.9983177781105042,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 0.30350684099994396,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,60 @@
+{
+  "clave": "5d6d2168d0c51647c91666554d4add6716224b774a0894fec8a61afb05ce2497",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "f56322aa1d6087f29db5a6cb722d6ed4d2a63500e4b299eb79365bd9afafaa88",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.8886581063270569,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "… Francisco",
+      "inicio": 409,
+      "fin": 420,
+      "confianza": 0.9919286370277405,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Europa",
+      "inicio": 1092,
+      "fin": 1098,
+      "confianza": 0.9997788071632385,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Ucrania",
+      "inicio": 1174,
+      "fin": 1181,
+      "confianza": 0.7817214727401733,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 0.4139972549999129,
+  "version_transformers": "5.22.1"
+}

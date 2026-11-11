@@ -1,0 +1,164 @@
+{
+  "clave": "dc6a597b6e0f57444b774e21ba68f52dec5367933b3ac75b3cde630aafe4bc73",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "a03ebc1c45ddc38c069aad6eb7f6d08c96926166ddb0d6f47f0586bb020a4295",
+  "crudas": [
+    {
+      "tipo": "ORG",
+      "texto": "AN",
+      "inicio": 0,
+      "fin": 2,
+      "confianza": 0.8832935690879822,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "A ELIZABETH",
+      "inicio": 2,
+      "fin": 13,
+      "confianza": 0.5896424055099487,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "República",
+      "inicio": 70,
+      "fin": 79,
+      "confianza": 0.9783669114112854,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 151,
+      "fin": 157,
+      "confianza": 0.9998592138290405,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Carlos Loret de Mola",
+      "inicio": 188,
+      "fin": 208,
+      "confianza": 0.9996148943901062,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 295,
+      "fin": 304,
+      "confianza": 0.9984592795372009,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 433,
+      "fin": 442,
+      "confianza": 0.9987284541130066,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Paraíso",
+      "inicio": 444,
+      "fin": 451,
+      "confianza": 0.9993122816085815,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tabasco",
+      "inicio": 453,
+      "fin": 460,
+      "confianza": 0.9861655831336975,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Carlos Loret de Mola",
+      "inicio": 462,
+      "fin": 482,
+      "confianza": 0.9993904232978821,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Latinus",
+      "inicio": 552,
+      "fin": 559,
+      "confianza": 0.9947474598884583,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 710,
+      "fin": 719,
+      "confianza": 0.9974529147148132,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "W Radio",
+      "inicio": 771,
+      "fin": 778,
+      "confianza": 0.9992420673370361,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Loret",
+      "inicio": 794,
+      "fin": 799,
+      "confianza": 0.9458470344543457,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 829,
+      "fin": 838,
+      "confianza": 0.8139392733573914,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Lor",
+      "inicio": 1155,
+      "fin": 1158,
+      "confianza": 0.7375109791755676,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "et",
+      "inicio": 1158,
+      "fin": 1160,
+      "confianza": 0.5678011775016785,
+      "cortada": false
+    }
+  ],
+  "descartadas": 4,
+  "segundos": 0.43880602900003396,
+  "version_transformers": "5.22.1"
+}

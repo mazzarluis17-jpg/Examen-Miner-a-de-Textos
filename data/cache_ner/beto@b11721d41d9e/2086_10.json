@@ -1,0 +1,132 @@
+{
+  "clave": "63d2310e0ee8af003b96fbe0cfa58d2c77146166611f89c3c36f134f721aad58",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "85bc0f5669d7352bc77ed5d16c30cf769b748ff2e2320fe910f3013b2f97e1eb",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.5924373865127563,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Felipe Ángeles",
+      "inicio": 111,
+      "fin": 125,
+      "confianza": 0.9997150897979736,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Felipe Ángeles",
+      "inicio": 182,
+      "fin": 196,
+      "confianza": 0.9996858239173889,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Villa",
+      "inicio": 207,
+      "fin": 212,
+      "confianza": 0.9963194131851196,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "More",
+      "inicio": 292,
+      "fin": 296,
+      "confianza": 0.9993969202041626,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "los",
+      "inicio": 296,
+      "fin": 299,
+      "confianza": 0.9271975755691528,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Ángeles",
+      "inicio": 503,
+      "fin": 510,
+      "confianza": 0.9986151456832886,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Ángeles",
+      "inicio": 644,
+      "fin": 651,
+      "confianza": 0.9972856044769287,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Felipe Ángeles",
+      "inicio": 799,
+      "fin": 813,
+      "confianza": 0.9995396137237549,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 823,
+      "fin": 834,
+      "confianza": 0.999305248260498,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Hidalgo",
+      "inicio": 874,
+      "fin": 881,
+      "confianza": 0.9993155002593994,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Felipe Ángeles",
+      "inicio": 917,
+      "fin": 931,
+      "confianza": 0.9995508193969727,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 1032,
+      "fin": 1043,
+      "confianza": 0.9993781447410583,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.44407062100003714,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,148 @@
+{
+  "clave": "052e70124e222d86079a181d07bb13389557c84b74f428bb48fabb4e840c5a2b",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "3642b778e8ad46f144f0ef3e2fb76ba534abbb9c1c69f17366b3950b4c0fe11d",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.4979933202266693,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "L LÓPEZ",
+      "inicio": 23,
+      "fin": 30,
+      "confianza": 0.46354150772094727,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Guerrero",
+      "inicio": 937,
+      "fin": 945,
+      "confianza": 0.8056619167327881,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "More",
+      "inicio": 1009,
+      "fin": 1013,
+      "confianza": 0.999675989151001,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "los",
+      "inicio": 1013,
+      "fin": 1016,
+      "confianza": 0.9988227486610413,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Puebla",
+      "inicio": 1020,
+      "fin": 1026,
+      "confianza": 0.9998049139976501,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Oaxaca",
+      "inicio": 1028,
+      "fin": 1034,
+      "confianza": 0.9997926354408264,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Chiapas",
+      "inicio": 1036,
+      "fin": 1043,
+      "confianza": 0.9997809529304504,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Zacatecas",
+      "inicio": 1045,
+      "fin": 1054,
+      "confianza": 0.9998160004615784,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Duran",
+      "inicio": 1056,
+      "fin": 1061,
+      "confianza": 0.9997058510780334,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "go",
+      "inicio": 1061,
+      "fin": 1063,
+      "confianza": 0.6167381405830383,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Na",
+      "inicio": 1065,
+      "fin": 1067,
+      "confianza": 0.9995823502540588,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "yar",
+      "inicio": 1067,
+      "fin": 1070,
+      "confianza": 0.9043998718261719,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "it",
+      "inicio": 1070,
+      "fin": 1072,
+      "confianza": 0.5954874753952026,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Veracruz",
+      "inicio": 1085,
+      "fin": 1093,
+      "confianza": 0.9998465776443481,
+      "cortada": false
+    }
+  ],
+  "descartadas": 7,
+  "segundos": 0.4210099790000186,
+  "version_transformers": "5.22.1"
+}

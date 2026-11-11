@@ -1,0 +1,116 @@
+{
+  "clave": "638db13272ac9aef8d91b72c1a33bbcd3e52e6a023648ef26cf3f90753c7d8bc",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "5d596b1162fdbb46fe41d745e08da0a0d5e698c24d254f5eddb9dbcdb0f9b7be",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.7775523662567139,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "L",
+      "inicio": 23,
+      "fin": 24,
+      "confianza": 0.49283063411712646,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Chi",
+      "inicio": 144,
+      "fin": 147,
+      "confianza": 0.9992640614509583,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "huahua",
+      "inicio": 147,
+      "fin": 153,
+      "confianza": 0.9668977856636047,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Son",
+      "inicio": 159,
+      "fin": 162,
+      "confianza": 0.9992678761482239,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "ora",
+      "inicio": 162,
+      "fin": 165,
+      "confianza": 0.9850141406059265,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 194,
+      "fin": 200,
+      "confianza": 0.9997789263725281,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Chi",
+      "inicio": 723,
+      "fin": 726,
+      "confianza": 0.9993675351142883,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "huahua",
+      "inicio": 726,
+      "fin": 732,
+      "confianza": 0.9795929789543152,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Son",
+      "inicio": 738,
+      "fin": 741,
+      "confianza": 0.9993589520454407,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "ora",
+      "inicio": 741,
+      "fin": 744,
+      "confianza": 0.5855960845947266,
+      "cortada": false
+    }
+  ],
+  "descartadas": 1,
+  "segundos": 0.37884797600008824,
+  "version_transformers": "5.22.1"
+}

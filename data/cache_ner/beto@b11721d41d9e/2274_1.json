@@ -1,0 +1,100 @@
+{
+  "clave": "4d0f2c8ff5ecab794216d70d7cf7b039eef24794f1723e82a91be07e75775d6c",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "286a75ded7126f29e6fec4572e0d9e3d7a3d26ba76523cf5a12b931f62f861e6",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.910489559173584,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 368,
+      "fin": 374,
+      "confianza": 0.9997223019599915,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Pe",
+      "inicio": 884,
+      "fin": 886,
+      "confianza": 0.9996159076690674,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "mex",
+      "inicio": 886,
+      "fin": 889,
+      "confianza": 0.7988470792770386,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Pe",
+      "inicio": 906,
+      "fin": 908,
+      "confianza": 0.9995664954185486,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "mex",
+      "inicio": 908,
+      "fin": 911,
+      "confianza": 0.7814590930938721,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Octavio Romero Oropeza",
+      "inicio": 913,
+      "fin": 935,
+      "confianza": 0.9989786148071289,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Luis Crescencio Sandoval",
+      "inicio": 979,
+      "fin": 1003,
+      "confianza": 0.9996767640113831,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Alejandro Gertz Manero",
+      "inicio": 1032,
+      "fin": 1054,
+      "confianza": 0.9997428059577942,
+      "cortada": false
+    }
+  ],
+  "descartadas": 1,
+  "segundos": 0.346247829000049,
+  "version_transformers": "5.22.1"
+}

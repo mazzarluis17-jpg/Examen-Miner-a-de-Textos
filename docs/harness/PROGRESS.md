@@ -2,6 +2,15 @@
 
 ## Completado
 
+- (2026-11-10) H7 completo con corrección expresamente autorizada posterior D15:
+  `2-vacios-auditados`, un descarte de span vacío y cachés crudas intactas.
+  99 pasajes, 901 entidades únicas/909 asociaciones; evaluación literal del kit
+  y complementaria de veinte IDs, errores, efecto del posproceso y dos figuras.
+  Regla/modelo/combinado F1: 0.6017/0.6766/0.7066, fuentes en
+  `docs/h7_evaluacion_ie.md` y `salida/resultados_ie.csv`. La referencia v1 abortó,
+  sin F1 previo; diferencia posterior a D15 declarada. Suite: 336 passed,
+  9 deselected y Ruff limpio. H3–H6 protegidos, sin cambios ni push.
+
 - (2026-11-10) H6 cerrado personalmente por Luis y verificado por hashes:
   veinte pasajes revisados, 138 entidades, revisión 20; `1133_87` sin entidades.
   Persistencia y cierre oficiales versionados en `ae00990`, sin Excel auxiliar.
@@ -120,11 +129,9 @@
 
 ## Pendiente
 
-1. Resolver con Luis el bloqueo del posproceso congelado documentado en
-   `salida/07_bloqueo_ner.json`; no modificar D15 ni publicar métricas parciales.
-2. Tras decisión explícita, completar inferencia H7, fusión y evaluación oficial,
-   complementaria de veinte IDs, auditorías y figuras. No reajustar usando Gold.
-3. Después H8–H9 según PRD, conservando ganador H4 e insumos congelados.
+1. H8: tablas de respuesta y evidencia del ganador H4, sin nuevas selecciones.
+2. Luis redacta las valoraciones humanas requeridas para cada consulta.
+3. H9: reporte 4–6 páginas, presentación/demo, README y validación final.
 4. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
 
 ## Decisiones
@@ -134,10 +141,9 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 ## Bloqueos
 
 - H3 confirmado por Luis y H4 cerrado; no son bloqueos pendientes de la rama H5.
-- H6 cerrado y validado. H7 bloqueado: en `1812_0` BETO emite LOC
-  `[945:946]` con texto de una comilla; `posprocesar()` congelado aborta tras
-  recortarla. Se solicita autorización para una versión separada auditada;
-  no se modifica el congelado ni se evalúa una extracción incompleta.
+- H6 cerrado y H7 evaluado con v2 posterior a D15 autorizada. No quedan
+  bloqueos técnicos de extracción; pendientes las valoraciones humanas de H8
+  y aprobaciones de prosa/láminas H9. No hay selección NER simulada.
 - Entrega individual en GitHub según decisión documentada en H5. Publicación y
   acceso del profesor pendientes; no se cambia el remote ni se hace push aquí.
 - Índice, tokens y TF-IDF no se han reconstruido en Debian; no se requieren para

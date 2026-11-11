@@ -1,0 +1,108 @@
+{
+  "clave": "cf71b8ec658d1e3fc6d9bb8a25e45abf7297e3d8df8957e875a50dca566cf36b",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "ca0b5e81bc59394df0beb8b2f74fca1d7d669873e62dda54511da5edb7474200",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL",
+      "inicio": 18,
+      "fin": 24,
+      "confianza": 0.7642261385917664,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 162,
+      "fin": 181,
+      "confianza": 0.9996952414512634,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Oaxaca",
+      "inicio": 200,
+      "fin": 206,
+      "confianza": 0.9998382329940796,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Oaxaca",
+      "inicio": 291,
+      "fin": 297,
+      "confianza": 0.9998757839202881,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 303,
+      "fin": 309,
+      "confianza": 0.9998717308044434,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 313,
+      "fin": 332,
+      "confianza": 0.9997217059135437,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Rusia",
+      "inicio": 793,
+      "fin": 798,
+      "confianza": 0.997994065284729,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ucrania",
+      "inicio": 801,
+      "fin": 808,
+      "confianza": 0.9979197382926941,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Banco del Bienestar",
+      "inicio": 1052,
+      "fin": 1071,
+      "confianza": 0.9996772408485413,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Oaxaca",
+      "inicio": 1075,
+      "fin": 1081,
+      "confianza": 0.9998316764831543,
+      "cortada": false
+    }
+  ],
+  "descartadas": 1,
+  "segundos": 0.3880745010001192,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,376 @@
+passage_id,tipo,texto_gold,texto_pred,inicio,fin,metodo,categoria,fuente,contexto
+1277_28,ORG,Brigada Correcaminos,,137,157,regla,omision,sin_prediccion,"jornada de esta primera fase de vacunación con la Brigada Correcaminos, en la que estamos vacunando a personal de salud "
+1277_28,PER,Edgar Jesús Zitle García,,663,687,regla,omision,sin_prediccion,"vacuna. A continuación, cedo la palabra al doctor Edgar Jesús Zitle García, titular de la representación del IMSS en Sonora "
+1277_28,PER,,SERVIDORA DE LA NACIÓN,17,39,regla,en_marca,marca,"CAROLINA VARGAS, SERVIDORA DE LA NACIÓN: de hoy nos encontramos en la tercera y última jo"
+1277_28,PER,,SERVIDORA DE LA NACIÓN,17,39,regla,espuria,marca,"CAROLINA VARGAS, SERVIDORA DE LA NACIÓN: de hoy nos encontramos en la tercera y última jo"
+1318_22,LOC,México,,428,434,regla,omision,sin_prediccion,o de ver unas gráficas sobre el salario mínimo en México con relación a otros países y es realmente una ve
+1318_22,LOC,América Latina,,496,510,regla,omision,sin_prediccion,"n a otros países y es realmente una vergüenza. En América Latina es el salario más bajo, el salario mínimo de Méxi"
+1318_22,LOC,México,,556,562,regla,omision,sin_prediccion,"tina es el salario más bajo, el salario mínimo de México, aún con los dos años que llevamos de aumentos, q"
+1318_22,PER,Carlos Pozos,,1000,1012,regla,omision,sin_prediccion,"en su momento se va a dar a conocer. Después va a Carlos Pozos, que quedó pendiente."
+1318_22,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Eso está pendiente, estamos también dialogando s"
+1318_22,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Eso está pendiente, estamos también dialogando s"
+1458_12,FECHA,lunes próximo,,81,94,regla,omision,sin_prediccion,OBRADOR: Muy bien. Nada más informarles que ya el lunes próximo vamos a agregar el video del avance en las obras 
+1458_12,FECHA,15 días,,163,170,regla,omision,sin_prediccion, video del avance en las obras del Tren Maya y en 15 días se agrega también un video sobre el avance en la 
+1458_12,LOC,Ferrocarril del Istmo,,237,258,regla,omision,sin_prediccion,"n un video sobre el avance en la construcción del Ferrocarril del Istmo y los puertos; o sea, estos cuatro proyectos, aer"
+1458_12,LOC,aeropuerto ‘Felipe Ángeles’,,305,332,regla,omision,sin_prediccion,"tmo y los puertos; o sea, estos cuatro proyectos, aeropuerto ‘Felipe Ángeles’, la refinería, el Tren Maya y las obras del Istmo"
+1458_12,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Muy bien. Nada más informarles que ya el lunes p
+1458_12,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Muy bien. Nada más informarles que ya el lunes p
+1527_0,LOC,México,,249,255,regla,omision,sin_prediccion," manera absurda se dejaron de hacer refinerías en México. Como sabemos, la última refinería que se constru"
+1527_0,FECHA,hace 40 años,,330,342,regla,omision,sin_prediccion," refinería que se construyó fue la de Salina Cruz hace 40 años y durante todo este periodo se optó, se decidió p"
+1527_0,LOC,Refinería Dos Bocas,Dos Bocas,806,825,regla,frontera,sin_prediccion,"rar jugo de naranja. Evaluación de trabajos de la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraíso, Tabasco, supe"
+1527_0,LOC,Paraíso,,833,840,regla,omision,sin_prediccion,"ción de trabajos de la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraíso, Tabasco, supervisamos el ava"
+1527_0,LOC,Paraíso,,853,860,regla,omision,sin_prediccion,"la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraíso, Tabasco, supervisamos el avance de las obras de "
+1527_0,LOC,Refinería Dos Bocas,Dos Bocas,913,932,regla,frontera,sin_prediccion,"abasco, supervisamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la produ"
+1527_0,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho gusto estar aquí en"
+1527_0,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho gusto estar aquí en"
+1527_0,LOC,Refinería Dos Bocas,Dos Bocas,816,825,regla,frontera,gazetteer_loc,"e naranja. Evaluación de trabajos de la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraíso, Tabasco, supe"
+1527_0,LOC,Refinería Dos Bocas,Dos Bocas,923,932,regla,frontera,gazetteer_loc,"pervisamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la produ"
+1640_5,FECHA,este año,,138,146,regla,omision,sin_prediccion,"ro va a aumentar la pensión a los adultos mayores este año. Y es para todos, es universal, es para ricos, es"
+1640_5,ORG,Seguro,,287,293,regla,omision,sin_prediccion,"ensión, los que sí tenían pensión del Issste, del Seguro, es universal. Es una recompensa, pequeña recompe"
+1640_5,LOC,México,,413,419,regla,omision,sin_prediccion,yores por lo que han aportado en el desarrollo de México para que puedan vivir con un poco de holgura en e
+1640_5,ORG,Congreso,,601,609,regla,omision,sin_prediccion,"ucional, porque acabo de enviar una iniciativa al Congreso para que esta pensión, como la pensión a niñas, n"
+1640_5,LOC,Tamazula,,1038,1046,regla,omision,sin_prediccion,yos para personas con discapacidad. En el caso de Tamazula son 382 niños y niñas que están recibiendo esta p
+1640_5,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porque es bendito, pe"
+1640_5,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porque es bendito, pe"
+1685_4,LOC,México,,460,466,regla,omision,sin_prediccion,", que se quedó muy rezagado. El salario mínimo en México es todavía, a pesar de los aumentos, de los más b"
+1685_4,FECHA,años 80,,848,855,regla,omision,sin_prediccion,"alario. Nada más para que tengan una idea, en los años 80 un salario mínimo alcanzaba para comprar 50 kilos"
+1685_4,FECHA,este año,,1124,1132,regla,omision,sin_prediccion,"ínimo 16 por ciento, como nunca había sucedido, y este año aumenta el salario mínimo 20"
+1685_4,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Tres mil 748, que es el salario mínimo. Les voy "
+1685_4,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Tres mil 748, que es el salario mínimo. Les voy "
+1870_19,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: eso. Atención especial a los jóvenes. Y también 
+1870_19,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: eso. Atención especial a los jóvenes. Y también 
+2008_2,FECHA,año pasado,,65,75,regla,omision,sin_prediccion,"ÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pasado como 65 mil millones de pesos?, 800 pipas diarias"
+2008_2,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pasado como 65 mil 
+2008_2,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pasado como 65 mil 
+2030_1,LOC,México,,43,49,regla,omision,sin_prediccion,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: de México tiene hambre y sed de justicia’. Y eso es lo que 
+2030_1,ORG,Seguro,,608,614,regla,omision,sin_prediccion,"cluye a jubilados y a pensionados del Issste, del Seguro, que antes no eran tomados en cuenta, por eso hab"
+2030_1,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: de México tiene hambre y sed de justicia’. Y eso
+2030_1,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: de México tiene hambre y sed de justicia’. Y eso
+2149_27,FECHA,este año,,437,445,regla,omision,sin_prediccion,"finería de Dos Bocas. Y está en el presupuesto de este año, 50 mil millones de pesos están presupuestados co"
+2149_27,LOC,Sonda de Campeche,Campeche,610,627,regla,frontera,sin_prediccion,"ra utilizar todo el petróleo que se produce en la Sonda de Campeche y en los campos petroleros de tierra de Tabasco, "
+2149_27,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético, ahora tenemos qu"
+2149_27,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético, ahora tenemos qu"
+2149_27,LOC,Sonda de Campeche,Campeche,619,627,regla,frontera,gazetteer_loc,"ar todo el petróleo que se produce en la Sonda de Campeche y en los campos petroleros de tierra de Tabasco, "
+2202_5,ORG,Fuerzas Armadas,,479,494,regla,omision,sin_prediccion,"on la participación, el apoyo, el respaldo de las Fuerzas Armadas. Y les agradezco mucho el que estén ayudando, coo"
+2202_5,PER,Salinas Carranza,,861,877,regla,omision,sin_prediccion," de Santa Lucía, llevara el nombre del comandante Salinas Carranza, uno de los pilotos más importantes, pionero de l"
+2202_5,ORG,Fuerza Aérea,,929,941,regla,omision,sin_prediccion,"uno de los pilotos más importantes, pionero de la Fuerza Aérea; y que el aeropuerto civil de Santa Lucía llevara"
+2202_5,PER,Felipe Ángeles,,1014,1028,regla,omision,sin_prediccion,ivil de Santa Lucía llevara el nombre del general Felipe Ángeles. ¿Por qué Felipe Ángeles? Por ser un ejemplo a se
+2202_5,PER,Felipe Ángeles,,1039,1053,regla,omision,sin_prediccion,"ra el nombre del general Felipe Ángeles. ¿Por qué Felipe Ángeles? Por ser un ejemplo a seguir, un estudiante desta"
+2202_5,ORG,Colegio Militar,,1112,1127,regla,omision,sin_prediccion," un ejemplo a seguir, un estudiante destacado del Colegio Militar que llegó a ser director del Colegio Militar, que"
+2202_5,ORG,Colegio Militar,,1157,1172,regla,omision,sin_prediccion," del Colegio Militar que llegó a ser director del Colegio Militar, que escribió libros sobre artillería, que todaví"
+2202_5,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Se acudió a organismos internacionales para que 
+2202_5,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Se acudió a organismos internacionales para que 
+2250_60,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: mil, casi un millón está saliendo por Dos Bocas "
+2250_60,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: mil, casi un millón está saliendo por Dos Bocas "
+228_7,LOC,México,,27,33,regla,omision,sin_prediccion,VOZ HOMBRE: ‘Para servir a México debemos demostrar que la modernidad puede ser for
+228_7,PER,Andrés Manuel López Obrador,,208,235,regla,omision,sin_prediccion,"é ser contrario a la justicia social’, licenciado Andrés Manuel López Obrador, presidente constitucional de los Estados Unidos "
+228_7,LOC,Estados Unidos Mexicanos,Estados Unidos,270,294,regla,frontera,sin_prediccion,"l López Obrador, presidente constitucional de los Estados Unidos Mexicanos y comandante supremo de las Fuerzas Armadas. Corr"
+228_7,ORG,Fuerzas Armadas,,323,338,regla,omision,sin_prediccion,ados Unidos Mexicanos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec.
+228_7,ORG,Corredor Interoceánico del Istmo de Tehuantepec,Corredor Interoceánico del Istmo de Tehuantepec,340,387,regla,tipo,sin_prediccion,anos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Co
+228_7,ORG,Corredor Interoceánico del Istmo de Tehuantepec,Corredor Interoceánico del Istmo de Tehuantepec,340,387,regla,obra_LOC_vs_ORG,sin_prediccion,anos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Co
+228_7,LOC,México,,405,411,regla,omision,sin_prediccion,ceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Corredor Interoceánico del
+228_7,ORG,"Empresa Multimodal Interoceánica, S.A. de C.V.",,537,583,regla,omision,sin_prediccion,"orizado a la Secretaría de Marina, así se crea la Empresa Multimodal Interoceánica, S.A. de C.V., integrada por las administraciones del Sistema P"
+228_7,ORG,administraciones del Sistema Portuario Nacional,,603,650,regla,omision,sin_prediccion,"al Interoceánica, S.A. de C.V., integrada por las administraciones del Sistema Portuario Nacional, mejor conocidas como Asiponas, de Salina Cruz, C"
+228_7,ORG,Asiponas,,673,681,regla,omision,sin_prediccion," Sistema Portuario Nacional, mejor conocidas como Asiponas, de Salina Cruz, Coatzacoalcos, Dos Bocas y Puert"
+228_7,LOC,Puerto Chiapas,Chiapas,726,740,regla,frontera,sin_prediccion,"ponas, de Salina Cruz, Coatzacoalcos, Dos Bocas y Puerto Chiapas, además del ferrocarril del Istmo de Tehuantepec "
+228_7,LOC,Océano Pacífico,,844,859,regla,omision,sin_prediccion,con el sistema carretero nacional interconecta el Océano Pacífico con el Océano Atlántico a través del golfo de Méx
+228_7,LOC,Océano Atlántico,,867,883,regla,omision,sin_prediccion,"o nacional interconecta el Océano Pacífico con el Océano Atlántico a través del golfo de México, en conjunto con el "
+228_7,LOC,golfo de México,,897,912,regla,omision,sin_prediccion,"ano Pacífico con el Océano Atlántico a través del golfo de México, en conjunto con el establecimiento de 12 polos d"
+228_7,LOC,Estados Unidos Mexicanos,Estados Unidos,270,284,regla,frontera,gazetteer_loc,"l López Obrador, presidente constitucional de los Estados Unidos Mexicanos y comandante supremo de las Fuerzas Arm"
+228_7,LOC,Corredor Interoceánico del Istmo de Tehuantepec,Corredor Interoceánico del Istmo de Tehuantepec,340,387,regla,tipo,gazetteer_loc,anos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Co
+228_7,LOC,Corredor Interoceánico del Istmo de Tehuantepec,Corredor Interoceánico del Istmo de Tehuantepec,340,387,regla,obra_LOC_vs_ORG,gazetteer_loc,anos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Co
+228_7,LOC,Puerto Chiapas,Chiapas,733,740,regla,frontera,gazetteer_loc,"de Salina Cruz, Coatzacoalcos, Dos Bocas y Puerto Chiapas, además del ferrocarril del Istmo de Tehuantepec "
+228_7,LOC,,Istmo de Tehuantepec,769,789,regla,espuria,gazetteer_loc,"ocas y Puerto Chiapas, además del ferrocarril del Istmo de Tehuantepec que con el sistema carretero nacional interconect"
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,0,71,regla,frontera,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión prin"
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,0,71,regla,en_marca,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión prin"
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,38,71,regla,frontera,marca,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión prin"
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,38,71,regla,en_marca,marca,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión prin"
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,0,71,regla,frontera,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta u"
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,0,71,regla,en_marca,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta u"
+396_23,LOC,parque La Plancha,,460,477,regla,omision,sin_prediccion,"érida, en el centro de la ciudad, se construye el parque La Plancha, el cual será el primer punto al que los visitant"
+396_23,LOC,Umán,,666,670,regla,omision,sin_prediccion, eléctrico serán trasladados de las estaciones de Umán y Teya. La obra presenta un avance del 85.60 y se
+396_23,LOC,Teya,,673,677,regla,omision,sin_prediccion,ico serán trasladados de las estaciones de Umán y Teya. La obra presenta un avance del 85.60 y se tiene 
+396_23,FECHA,noviembre del presente año,,769,795,regla,omision,sin_prediccion,e tiene programada su inauguración para el mes de noviembre del presente año. Actualmente se ejecutan trabajos en el lago arti
+396_23,ORG,Tren Maya,Tren Maya,1155,1164,regla,tipo,sin_prediccion,"a la empresa de participación estatal mayoritaria Tren Maya. La obra presenta un avance de 45.43, se han gene"
+396_23,ORG,Tren Maya,Tren Maya,1155,1164,regla,obra_LOC_vs_ORG,sin_prediccion,"a la empresa de participación estatal mayoritaria Tren Maya. La obra presenta un avance de 45.43, se han gene"
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,38,71,regla,frontera,marca,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta u"
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,38,71,regla,en_marca,marca,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta u"
+396_23,LOC,Tren Maya,Tren Maya,1155,1164,regla,tipo,gazetteer_loc,"a la empresa de participación estatal mayoritaria Tren Maya. La obra presenta un avance de 45.43, se han gene"
+396_23,LOC,Tren Maya,Tren Maya,1155,1164,regla,obra_LOC_vs_ORG,gazetteer_loc,"a la empresa de participación estatal mayoritaria Tren Maya. La obra presenta un avance de 45.43, se han gene"
+420_10,LOC,Álamo,,583,588,regla,omision,sin_prediccion,"ya a la sucursal del Banco del Bienestar. Aquí en Álamo hay una sucursal, Víctor, ya construida y operand"
+420_10,PER,Víctor,,607,613,regla,omision,sin_prediccion,"co del Bienestar. Aquí en Álamo hay una sucursal, Víctor, ya construida y operando, en todos los municipio"
+420_10,LOC,México,,845,851,regla,omision,sin_prediccion,"io nacional, el banco más poderoso, más fuerte de México, el Banco del Bienestar. También va a continuar e"
+420_10,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a tener todos su tar
+420_10,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a tener todos su tar
+420_10,ORG,,Bienestar,314,323,regla,espuria,gazetteer_org,"embrando y está en el programa Producción para el Bienestar saca de ahí, del banco, lo que le corresponde; el"
+499_68,PER,Rosa Icela,,121,131,regla,omision,sin_prediccion,"trataciones, no sé exactamente, mañana, hoy mismo Rosa Icela puede informarnos. Pero ese es el propósito, que "
+499_68,FECHA,este año,,913,921,regla,omision,sin_prediccion,", en operación mil 500 sucursales y a mediados de este año vamos a llegar a dos mil 750 sucursales, va a ser"
+499_68,ORG,Azteca,,1029,1035,regla,omision,sin_prediccion,"o con más sucursales en todo el país. Actualmente Azteca tiene mil 900 sucursales, es el que más tiene de "
+499_68,ORG,Azteca,,1174,1180,regla,omision,sin_prediccion,"emos operando mil 500, y en dos meses rebasamos a Azteca y en julio"
+499_68,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Están llevándose a cabo las contrataciones, no s"
+499_68,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Están llevándose a cabo las contrataciones, no s"
+771_54,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están muy claros los o"
+771_54,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,regla,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están muy claros los o"
+771_54,ORG,,Bienestar,381,390,regla,espuria,gazetteer_org,"s programas de agricultura? El Producción para el Bienestar, eso va a dos millones de productores que reciben"
+928_2,LOC,aeropuerto ‘Felipe Ángeles’,,173,200,regla,omision,sin_prediccion,"ción falsa, indicando que la torre de control del aeropuerto ‘Felipe Ángeles’ estaba chueca, que estaba inclinada como la Torre"
+928_2,LOC,Torre de Pisa,,245,258,regla,omision,sin_prediccion,"eles’ estaba chueca, que estaba inclinada como la Torre de Pisa, en Italia. Es falso, la torre del aeropuerto ‘Fe"
+928_2,LOC,Italia,,263,269,regla,omision,sin_prediccion,"a, que estaba inclinada como la Torre de Pisa, en Italia. Es falso, la torre del aeropuerto ‘Felipe ‘Ángel"
+928_2,ORG,Frente Cívico Nacional,,1131,1153,regla,omision,sin_prediccion,"milio Álvarez Icaza y Paola Migoya promotores del Frente Cívico Nacional, entre otros. Segunda, por favor. Falso que las t"
+1133_87,PER,,MELINA VEGA,0,11,modelo,en_marca,modelo,"MELINA VEGA: Okey, vamos a aplicar su vacuna. El procedimient"
+1133_87,PER,,MELINA VEGA,0,11,modelo,espuria,modelo,"MELINA VEGA: Okey, vamos a aplicar su vacuna. El procedimient"
+1133_87,PER,,MELINA VEGA,133,144,modelo,espuria,modelo, que con su primera dosis. (APLICACIÓN DE VACUNA) MELINA VEGA: Es muy importante que nos haga saber si presenta
+1277_28,PER,,CAROLINA VARGAS,0,15,modelo,en_marca,modelo,"CAROLINA VARGAS, SERVIDORA DE LA NACIÓN: de hoy nos encontramos e"
+1277_28,PER,,CAROLINA VARGAS,0,15,modelo,espuria,modelo,"CAROLINA VARGAS, SERVIDORA DE LA NACIÓN: de hoy nos encontramos e"
+1318_22,PER,,MANUEL LÓPEZ,18,30,modelo,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Eso está pendiente, estamos también dial"
+1318_22,PER,,MANUEL LÓPEZ,18,30,modelo,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Eso está pendiente, estamos también dial"
+1458_12,FECHA,lunes próximo,,81,94,modelo,omision,sin_prediccion,OBRADOR: Muy bien. Nada más informarles que ya el lunes próximo vamos a agregar el video del avance en las obras 
+1458_12,LOC,Tren Maya,,148,157,modelo,omision,sin_prediccion,os a agregar el video del avance en las obras del Tren Maya y en 15 días se agrega también un video sobre el 
+1458_12,FECHA,15 días,,163,170,modelo,omision,sin_prediccion, video del avance en las obras del Tren Maya y en 15 días se agrega también un video sobre el avance en la 
+1458_12,LOC,Ferrocarril del Istmo,,237,258,modelo,omision,sin_prediccion,"n un video sobre el avance en la construcción del Ferrocarril del Istmo y los puertos; o sea, estos cuatro proyectos, aer"
+1458_12,LOC,aeropuerto ‘Felipe Ángeles’,,305,332,modelo,omision,sin_prediccion,"tmo y los puertos; o sea, estos cuatro proyectos, aeropuerto ‘Felipe Ángeles’, la refinería, el Tren Maya y las obras del Istmo"
+1458_12,LOC,Tren Maya,,351,360,modelo,omision,sin_prediccion,"os, aeropuerto ‘Felipe Ángeles’, la refinería, el Tren Maya y las obras del Istmo de Tehuantepec se van a pre"
+1458_12,LOC,Istmo de Tehuantepec,Is | de | huantepec,377,397,modelo,frontera,sin_prediccion,"eles’, la refinería, el Tren Maya y las obras del Istmo de Tehuantepec se van a presentar todos los lunes para ir avanza"
+1458_12,LOC,Istmo de Tehuantepec,Is | de | huantepec,377,397,modelo,entidad_partida,sin_prediccion,"eles’, la refinería, el Tren Maya y las obras del Istmo de Tehuantepec se van a presentar todos los lunes para ir avanza"
+1458_12,PER,,MANUEL LÓPEZ,18,30,modelo,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Muy bien. Nada más informarles que ya el
+1458_12,PER,,MANUEL LÓPEZ,18,30,modelo,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Muy bien. Nada más informarles que ya el
+1458_12,LOC,Istmo de Tehuantepec,Is,377,379,modelo,frontera,modelo,"eles’, la refinería, el Tren Maya y las obras del Istmo de Tehuantepec se van a presentar todos los lu"
+1458_12,LOC,Istmo de Tehuantepec,de,383,385,modelo,frontera,modelo," la refinería, el Tren Maya y las obras del Istmo de Tehuantepec se van a presentar todos los lunes pa"
+1458_12,LOC,Istmo de Tehuantepec,huantepec,388,397,modelo,frontera,modelo,"efinería, el Tren Maya y las obras del Istmo de Tehuantepec se van a presentar todos los lunes para ir avanza"
+1527_0,FECHA,hace 40 años,,330,342,modelo,omision,sin_prediccion," refinería que se construyó fue la de Salina Cruz hace 40 años y durante todo este periodo se optó, se decidió p"
+1527_0,LOC,Refinería Dos Bocas,Ref | Dos Bocas,806,825,modelo,solape_tipo_distinto,sin_prediccion,"rar jugo de naranja. Evaluación de trabajos de la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraíso, Tabasco, supe"
+1527_0,LOC,Refinería Dos Bocas,Bocas,913,932,modelo,frontera,sin_prediccion,"abasco, supervisamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la produ"
+1527_0,PER,,MANUEL LÓPEZ,18,30,modelo,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho gusto estar"
+1527_0,PER,,MANUEL LÓPEZ,18,30,modelo,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho gusto estar"
+1527_0,ORG,Refinería Dos Bocas,Ref,806,809,modelo,solape_tipo_distinto,modelo,"rar jugo de naranja. Evaluación de trabajos de la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraís"
+1527_0,ORG,Refinería Dos Bocas,Dos Bocas,816,825,modelo,solape_tipo_distinto,modelo,"e naranja. Evaluación de trabajos de la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraíso, Tabasco, supe"
+1527_0,LOC,Refinería Dos Bocas,Bocas,927,932,modelo,frontera,modelo,"isamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la produ"
+1640_5,FECHA,este año,,138,146,modelo,omision,sin_prediccion,"ro va a aumentar la pensión a los adultos mayores este año. Y es para todos, es universal, es para ricos, es"
+1640_5,ORG,Issste,Is,275,281,modelo,frontera,sin_prediccion," no tenían pensión, los que sí tenían pensión del Issste, del Seguro, es universal. Es una recompensa, peq"
+1640_5,ORG,Seguro,,287,293,modelo,omision,sin_prediccion,"ensión, los que sí tenían pensión del Issste, del Seguro, es universal. Es una recompensa, pequeña recompe"
+1640_5,PER,,MAN,18,21,modelo,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porq"
+1640_5,PER,,MAN,18,21,modelo,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porq"
+1640_5,PER,,L LÓPEZ,23,30,modelo,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porque es ben"
+1640_5,PER,,L LÓPEZ,23,30,modelo,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porque es ben"
+1640_5,ORG,Issste,Is,275,277,modelo,frontera,modelo," no tenían pensión, los que sí tenían pensión del Issste, del Seguro, es universal. Es una recompensa,"
+1685_4,MONTO,tres mil 600 pesos,,156,174,modelo,omision,sin_prediccion," este aumento. Cuando inició el programa eran los tres mil 600 pesos, porque estaba arriba de lo que era entonces el s"
+1685_4,FECHA,años 80,,848,855,modelo,omision,sin_prediccion,"alario. Nada más para que tengan una idea, en los años 80 un salario mínimo alcanzaba para comprar 50 kilos"
+1685_4,FECHA,este año,,1124,1132,modelo,omision,sin_prediccion,"ínimo 16 por ciento, como nunca había sucedido, y este año aumenta el salario mínimo 20"
+1685_4,PER,,MANUEL LÓPEZ,18,30,modelo,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Tres mil 748, que es el salario mínimo. "
+1685_4,PER,,MANUEL LÓPEZ,18,30,modelo,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Tres mil 748, que es el salario mínimo. "
+1870_19,MONTO,cinco mil pesos,,777,792,modelo,omision,sin_prediccion,"00 mil campesinos, se les está dando un jornal de cinco mil pesos mensuales, pero es para trabajar su propia tierra"
+1870_19,PER,,MANUEL LÓPEZ,18,30,modelo,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: eso. Atención especial a los jóvenes. Y 
+1870_19,PER,,MANUEL LÓPEZ,18,30,modelo,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: eso. Atención especial a los jóvenes. Y 
+2008_2,FECHA,año pasado,,65,75,modelo,omision,sin_prediccion,"ÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pasado como 65 mil millones de pesos?, 800 pipas diarias"
+2008_2,MONTO,65 mil millones de pesos,,81,105,modelo,omision,sin_prediccion,"OBRADOR: ¿Saben que se robaron el año pasado como 65 mil millones de pesos?, 800 pipas diarias se robaban. Se tenía hasta co"
+2008_2,PER,,MAN,18,21,modelo,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pa
+2008_2,PER,,MAN,18,21,modelo,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pa
+2030_1,MONTO,dos mil 550 pesos,,530,547,modelo,omision,sin_prediccion,"ya no mil160 pesos como era antes, sino el doble, dos mil 550 pesos. Y esto incluye a jubilados y a pensionados del I"
+2030_1,MONTO,dos mil 550 pesos,,911,928,modelo,omision,sin_prediccion,"as personas con discapacidad tengan su pensión de dos mil 550 pesos bimestrales, igual que la de los adultos mayores."
+2030_1,PER,,MANUEL LÓPEZ,18,30,modelo,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: de México tiene hambre y sed de justicia
+2030_1,PER,,MANUEL LÓPEZ,18,30,modelo,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: de México tiene hambre y sed de justicia
+2149_27,FECHA,este año,,437,445,modelo,omision,sin_prediccion,"finería de Dos Bocas. Y está en el presupuesto de este año, 50 mil millones de pesos están presupuestados co"
+2149_27,MONTO,50 mil millones de pesos,,447,471,modelo,omision,sin_prediccion," Dos Bocas. Y está en el presupuesto de este año, 50 mil millones de pesos están presupuestados con ese propósito. Quedamos "
+2149_27,PER,,MANUEL LÓPEZ,18,30,modelo,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético, ahora te"
+2149_27,PER,,MANUEL LÓPEZ,18,30,modelo,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético, ahora te"
+2149_27,PER,,…,1085,1086,modelo,espuria,modelo, a construir la refinería. ¿Lo otro que planteabas…?
+2202_5,FECHA,1978,,280,284,modelo,omision,sin_prediccion,"o de que no existe ningún problema, no sólo desde 1978, que no había tanto avance en la tecnología como "
+2202_5,PER,,MANUEL LÓPEZ,18,30,modelo,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Se acudió a organismos internacionales p
+2202_5,PER,,MANUEL LÓPEZ,18,30,modelo,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Se acudió a organismos internacionales p
+2202_5,PER,,Luis Cresencio,684,698,modelo,espuria,modelo, la vía aérea. Le comentaba al general secretario Luis Cresencio que era importante considerar que la base aérea d
+2250_60,MONTO,80 mil millones de pesos,,345,369,modelo,omision,sin_prediccion,"la compra de medicinas, se adquieren alrededor de 80 mil millones de pesos al año en medicinas, y los centros de salud y los"
+2250_60,ORG,,MAN,18,21,modelo,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: mil, casi un millón está salien"
+2250_60,ORG,,MAN,18,21,modelo,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: mil, casi un millón está salien"
+228_7,LOC,Estados Unidos Mexicanos,Estados Unidos Mexicanos,270,294,modelo,tipo,sin_prediccion,"l López Obrador, presidente constitucional de los Estados Unidos Mexicanos y comandante supremo de las Fuerzas Armadas. Corr"
+228_7,ORG,Corredor Interoceánico del Istmo de Tehuantepec,,340,387,modelo,omision,sin_prediccion,anos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Co
+228_7,LOC,Corredor Interoceánico del Istmo de Tehuantepec,,435,482,modelo,omision,sin_prediccion,"ec. Desde el sur de México renace el istmo con el Corredor Interoceánico del Istmo de Tehuantepec sectorizado a la Secretaría de Marina, así se cre"
+228_7,ORG,"Empresa Multimodal Interoceánica, S.A. de C.V.","Empresa Multimodal Interoceánica, S.A | C.V",537,583,modelo,frontera,sin_prediccion,"orizado a la Secretaría de Marina, así se crea la Empresa Multimodal Interoceánica, S.A. de C.V., integrada por las administraciones del Sistema P"
+228_7,ORG,"Empresa Multimodal Interoceánica, S.A. de C.V.","Empresa Multimodal Interoceánica, S.A | C.V",537,583,modelo,entidad_partida,sin_prediccion,"orizado a la Secretaría de Marina, así se crea la Empresa Multimodal Interoceánica, S.A. de C.V., integrada por las administraciones del Sistema P"
+228_7,ORG,administraciones del Sistema Portuario Nacional,Portuario Nacional,603,650,modelo,frontera,sin_prediccion,"al Interoceánica, S.A. de C.V., integrada por las administraciones del Sistema Portuario Nacional, mejor conocidas como Asiponas, de Salina Cruz, C"
+228_7,LOC,Océano Pacífico,,844,859,modelo,omision,sin_prediccion,con el sistema carretero nacional interconecta el Océano Pacífico con el Océano Atlántico a través del golfo de Méx
+228_7,LOC,Océano Atlántico,,867,883,modelo,omision,sin_prediccion,"o nacional interconecta el Océano Pacífico con el Océano Atlántico a través del golfo de México, en conjunto con el "
+228_7,LOC,golfo de México,México,897,912,modelo,frontera,sin_prediccion,"ano Pacífico con el Océano Atlántico a través del golfo de México, en conjunto con el establecimiento de 12 polos d"
+228_7,ORG,Estados Unidos Mexicanos,Estados Unidos Mexicanos,270,294,modelo,tipo,modelo,"l López Obrador, presidente constitucional de los Estados Unidos Mexicanos y comandante supremo de las Fuerzas Armadas. Corr"
+228_7,ORG,"Empresa Multimodal Interoceánica, S.A. de C.V.","Empresa Multimodal Interoceánica, S.A",537,574,modelo,frontera,modelo,"orizado a la Secretaría de Marina, así se crea la Empresa Multimodal Interoceánica, S.A. de C.V., integrada por las administraciones del "
+228_7,ORG,"Empresa Multimodal Interoceánica, S.A. de C.V.",C.V,579,582,modelo,frontera,modelo,"crea la Empresa Multimodal Interoceánica, S.A. de C.V., integrada por las administraciones del Sistema "
+228_7,ORG,administraciones del Sistema Portuario Nacional,Portuario Nacional,632,650,modelo,frontera,modelo,"., integrada por las administraciones del Sistema Portuario Nacional, mejor conocidas como Asiponas, de Salina Cruz, C"
+228_7,LOC,,Is,769,771,modelo,espuria,modelo,"ocas y Puerto Chiapas, además del ferrocarril del Istmo de Tehuantepec que con el sistema carretero na"
+228_7,LOC,,ntepec,783,789,modelo,espuria,modelo,"Chiapas, además del ferrocarril del Istmo de Tehuantepec que con el sistema carretero nacional interconect"
+228_7,LOC,golfo de México,México,906,912,modelo,frontera,modelo,"ico con el Océano Atlántico a través del golfo de México, en conjunto con el establecimiento de 12 polos d"
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,,0,71,modelo,en_marca,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión prin"
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,,0,71,modelo,omision,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión prin"
+326_25,ORG,SEDENA,,73,79,modelo,en_marca,sin_prediccion,"GENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión principal se"
+326_25,ORG,SEDENA,,73,79,modelo,omision,sin_prediccion,"GENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión principal se"
+326_25,ORG,SEDENA,,73,79,modelo,sigla_no_reconocida,sin_prediccion,"GENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión principal se"
+326_25,LOC,Tren Maya,Tren Maya,94,103,modelo,tipo,sin_prediccion,"ARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión principal será la de capacitación y "
+326_25,LOC,Tren Maya,Tren Maya,94,103,modelo,obra_LOC_vs_ORG,sin_prediccion,"ARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión principal será la de capacitación y "
+326_25,ORG,Tren Maya,Tren Maya,94,103,modelo,tipo,modelo,"ARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión principal será la de capacitación y "
+326_25,ORG,Tren Maya,Tren Maya,94,103,modelo,obra_LOC_vs_ORG,modelo,"ARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión principal será la de capacitación y "
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,,0,71,modelo,en_marca,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta u"
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,,0,71,modelo,omision,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta u"
+396_23,ORG,SEDENA,,73,79,modelo,en_marca,sin_prediccion,"GENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta un avance"
+396_23,ORG,SEDENA,,73,79,modelo,omision,sin_prediccion,"GENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta un avance"
+396_23,ORG,SEDENA,,73,79,modelo,sigla_no_reconocida,sin_prediccion,"GENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta un avance"
+396_23,LOC,Tren Maya,,534,543,modelo,omision,sin_prediccion,"al será el primer punto al que los visitantes del Tren Maya a la ciudad visiten, ya que a través de un modern"
+396_23,FECHA,noviembre del presente año,,769,795,modelo,omision,sin_prediccion,e tiene programada su inauguración para el mes de noviembre del presente año. Actualmente se ejecutan trabajos en el lago arti
+396_23,LOC,Tren Maya,,1031,1040,modelo,omision,sin_prediccion,"el parque. Por último, para la administración del Tren Maya, se construye la ciudad de Mérida el edificio más"
+420_10,PER,Víctor,,607,613,modelo,omision,sin_prediccion,"co del Bienestar. Aquí en Álamo hay una sucursal, Víctor, ya construida y operando, en todos los municipio"
+420_10,PER,,MAN,18,21,modelo,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a t
+420_10,PER,,MAN,18,21,modelo,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a t
+420_10,PER,,L LÓPEZ,23,30,modelo,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a tener todo
+420_10,PER,,L LÓPEZ,23,30,modelo,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a tener todo
+499_68,FECHA,este año,,913,921,modelo,omision,sin_prediccion,", en operación mil 500 sucursales y a mediados de este año vamos a llegar a dos mil 750 sucursales, va a ser"
+499_68,PER,,MANUEL LÓPEZ,18,30,modelo,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Están llevándose a cabo las contratacion
+499_68,PER,,MANUEL LÓPEZ,18,30,modelo,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Están llevándose a cabo las contratacion
+771_54,MONTO,cinco mil pesos,,673,688,modelo,omision,sin_prediccion,el campo el programa Sembrando Vida. Son creo que cinco mil pesos por jornal y son 440 mil sembradores de Sembrando
+771_54,MONTO,29 mil millones de pesos,,797,821,modelo,omision,sin_prediccion,"ra que cultiven sus parcelas. Es una inversión de 29 mil millones de pesos. Ese es el otro programa importante. Directo, no "
+771_54,PER,,MAN,18,21,modelo,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están"
+771_54,PER,,MAN,18,21,modelo,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están"
+771_54,PER,,L LÓPEZ,23,30,modelo,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están muy clar"
+771_54,PER,,L LÓPEZ,23,30,modelo,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están muy clar"
+928_2,FECHA,20 de septiembre,,91,107,modelo,omision,sin_prediccion,"nte supervisando el aeropuerto de Santa Lucía. El 20 de septiembre circuló información falsa, indicando que la torre"
+928_2,LOC,aeropuerto ‘Felipe Ángeles’,‘Felipe Ángeles,173,200,modelo,frontera,sin_prediccion,"ción falsa, indicando que la torre de control del aeropuerto ‘Felipe Ángeles’ estaba chueca, que estaba inclinada como la Torre"
+928_2,LOC,aeropuerto ‘Felipe Ángeles’,‘Felipe Ángeles,184,199,modelo,frontera,modelo," indicando que la torre de control del aeropuerto ‘Felipe Ángeles’ estaba chueca, que estaba inclinada como la Torr"
+928_2,LOC,,‘Felipe ‘Ángeles,305,321,modelo,espuria,modelo,"isa, en Italia. Es falso, la torre del aeropuerto ‘Felipe ‘Ángeles’ fue construida bajo altos estándares de calidad,"
+928_2,PER,,Felipe Calderón,1052,1067,modelo,espuria,modelo,"ue hicieron eco de esta pifia fue el expresidente Felipe Calderón, el senador Emilio Álvarez Icaza y Paola Migoya p"
+928_2,PER,,Emilio Álvarez Icaza,1080,1100,modelo,espuria,modelo,"a fue el expresidente Felipe Calderón, el senador Emilio Álvarez Icaza y Paola Migoya promotores del Frente Cívico Nacio"
+928_2,PER,,Paola Migoya,1103,1115,modelo,espuria,modelo,"elipe Calderón, el senador Emilio Álvarez Icaza y Paola Migoya promotores del Frente Cívico Nacional, entre otro"
+1133_87,PER,,MELINA VEGA,0,11,combinado,en_marca,modelo,"MELINA VEGA: Okey, vamos a aplicar su vacuna. El procedimient"
+1133_87,PER,,MELINA VEGA,0,11,combinado,espuria,modelo,"MELINA VEGA: Okey, vamos a aplicar su vacuna. El procedimient"
+1133_87,PER,,MELINA VEGA,133,144,combinado,espuria,modelo, que con su primera dosis. (APLICACIÓN DE VACUNA) MELINA VEGA: Es muy importante que nos haga saber si presenta
+1277_28,PER,,CAROLINA VARGAS,0,15,combinado,en_marca,modelo,"CAROLINA VARGAS, SERVIDORA DE LA NACIÓN: de hoy nos encontramos e"
+1277_28,PER,,CAROLINA VARGAS,0,15,combinado,espuria,modelo,"CAROLINA VARGAS, SERVIDORA DE LA NACIÓN: de hoy nos encontramos e"
+1277_28,PER,,SERVIDORA DE LA NACIÓN,17,39,combinado,en_marca,marca,"CAROLINA VARGAS, SERVIDORA DE LA NACIÓN: de hoy nos encontramos en la tercera y última jo"
+1277_28,PER,,SERVIDORA DE LA NACIÓN,17,39,combinado,espuria,marca,"CAROLINA VARGAS, SERVIDORA DE LA NACIÓN: de hoy nos encontramos en la tercera y última jo"
+1318_22,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Eso está pendiente, estamos también dialogando s"
+1318_22,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Eso está pendiente, estamos también dialogando s"
+1318_22,PER,,MANUEL LÓPEZ,18,30,combinado,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Eso está pendiente, estamos también dial"
+1318_22,PER,,MANUEL LÓPEZ,18,30,combinado,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Eso está pendiente, estamos también dial"
+1458_12,FECHA,lunes próximo,,81,94,combinado,omision,sin_prediccion,OBRADOR: Muy bien. Nada más informarles que ya el lunes próximo vamos a agregar el video del avance en las obras 
+1458_12,FECHA,15 días,,163,170,combinado,omision,sin_prediccion, video del avance en las obras del Tren Maya y en 15 días se agrega también un video sobre el avance en la 
+1458_12,LOC,Ferrocarril del Istmo,,237,258,combinado,omision,sin_prediccion,"n un video sobre el avance en la construcción del Ferrocarril del Istmo y los puertos; o sea, estos cuatro proyectos, aer"
+1458_12,LOC,aeropuerto ‘Felipe Ángeles’,,305,332,combinado,omision,sin_prediccion,"tmo y los puertos; o sea, estos cuatro proyectos, aeropuerto ‘Felipe Ángeles’, la refinería, el Tren Maya y las obras del Istmo"
+1458_12,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Muy bien. Nada más informarles que ya el lunes p
+1458_12,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Muy bien. Nada más informarles que ya el lunes p
+1458_12,PER,,MANUEL LÓPEZ,18,30,combinado,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Muy bien. Nada más informarles que ya el
+1458_12,PER,,MANUEL LÓPEZ,18,30,combinado,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Muy bien. Nada más informarles que ya el
+1458_12,LOC,Istmo de Tehuantepec,Is,377,379,combinado,frontera,modelo,"eles’, la refinería, el Tren Maya y las obras del Istmo de Tehuantepec se van a presentar todos los lu"
+1458_12,LOC,Istmo de Tehuantepec,de,383,385,combinado,frontera,modelo," la refinería, el Tren Maya y las obras del Istmo de Tehuantepec se van a presentar todos los lunes pa"
+1458_12,LOC,Istmo de Tehuantepec,huantepec,388,397,combinado,frontera,modelo,"efinería, el Tren Maya y las obras del Istmo de Tehuantepec se van a presentar todos los lunes para ir avanza"
+1527_0,FECHA,hace 40 años,,330,342,combinado,omision,sin_prediccion," refinería que se construyó fue la de Salina Cruz hace 40 años y durante todo este periodo se optó, se decidió p"
+1527_0,LOC,Refinería Dos Bocas,Ref | Dos Bocas | Dos Bocas,806,825,combinado,frontera,sin_prediccion,"rar jugo de naranja. Evaluación de trabajos de la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraíso, Tabasco, supe"
+1527_0,LOC,Refinería Dos Bocas,Dos Bocas | Bocas,913,932,combinado,frontera,sin_prediccion,"abasco, supervisamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la produ"
+1527_0,LOC,Refinería Dos Bocas,Dos Bocas | Bocas,913,932,combinado,entidad_partida,sin_prediccion,"abasco, supervisamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la produ"
+1527_0,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho gusto estar aquí en"
+1527_0,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho gusto estar aquí en"
+1527_0,PER,,MANUEL LÓPEZ,18,30,combinado,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho gusto estar"
+1527_0,PER,,MANUEL LÓPEZ,18,30,combinado,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho gusto estar"
+1527_0,ORG,Refinería Dos Bocas,Ref,806,809,combinado,solape_tipo_distinto,modelo,"rar jugo de naranja. Evaluación de trabajos de la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraís"
+1527_0,LOC,Refinería Dos Bocas,Dos Bocas,816,825,combinado,frontera,gazetteer_loc,"e naranja. Evaluación de trabajos de la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraíso, Tabasco, supe"
+1527_0,ORG,Refinería Dos Bocas,Dos Bocas,816,825,combinado,solape_tipo_distinto,modelo,"e naranja. Evaluación de trabajos de la Refinería Dos Bocas, desde Paraíso, Tabasco En Paraíso, Tabasco, supe"
+1527_0,LOC,Refinería Dos Bocas,Dos Bocas,923,932,combinado,frontera,gazetteer_loc,"pervisamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la produ"
+1527_0,LOC,Refinería Dos Bocas,Bocas,927,932,combinado,frontera,modelo,"isamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la produ"
+1640_5,FECHA,este año,,138,146,combinado,omision,sin_prediccion,"ro va a aumentar la pensión a los adultos mayores este año. Y es para todos, es universal, es para ricos, es"
+1640_5,ORG,Seguro,,287,293,combinado,omision,sin_prediccion,"ensión, los que sí tenían pensión del Issste, del Seguro, es universal. Es una recompensa, pequeña recompe"
+1640_5,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porque es bendito, pe"
+1640_5,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porque es bendito, pe"
+1640_5,PER,,MAN,18,21,combinado,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porq"
+1640_5,PER,,MAN,18,21,combinado,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porq"
+1640_5,PER,,L LÓPEZ,23,30,combinado,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porque es ben"
+1640_5,PER,,L LÓPEZ,23,30,combinado,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: va a ser aumento, poquito, porque es ben"
+1640_5,ORG,Issste,Is,275,277,combinado,frontera,modelo," no tenían pensión, los que sí tenían pensión del Issste, del Seguro, es universal. Es una recompensa,"
+1685_4,FECHA,años 80,,848,855,combinado,omision,sin_prediccion,"alario. Nada más para que tengan una idea, en los años 80 un salario mínimo alcanzaba para comprar 50 kilos"
+1685_4,FECHA,este año,,1124,1132,combinado,omision,sin_prediccion,"ínimo 16 por ciento, como nunca había sucedido, y este año aumenta el salario mínimo 20"
+1685_4,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Tres mil 748, que es el salario mínimo. Les voy "
+1685_4,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Tres mil 748, que es el salario mínimo. Les voy "
+1685_4,PER,,MANUEL LÓPEZ,18,30,combinado,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Tres mil 748, que es el salario mínimo. "
+1685_4,PER,,MANUEL LÓPEZ,18,30,combinado,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Tres mil 748, que es el salario mínimo. "
+1870_19,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: eso. Atención especial a los jóvenes. Y también 
+1870_19,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: eso. Atención especial a los jóvenes. Y también 
+1870_19,PER,,MANUEL LÓPEZ,18,30,combinado,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: eso. Atención especial a los jóvenes. Y 
+1870_19,PER,,MANUEL LÓPEZ,18,30,combinado,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: eso. Atención especial a los jóvenes. Y 
+2008_2,FECHA,año pasado,,65,75,combinado,omision,sin_prediccion,"ÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pasado como 65 mil millones de pesos?, 800 pipas diarias"
+2008_2,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pasado como 65 mil 
+2008_2,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pasado como 65 mil 
+2008_2,PER,,MAN,18,21,combinado,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pa
+2008_2,PER,,MAN,18,21,combinado,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: ¿Saben que se robaron el año pa
+2030_1,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: de México tiene hambre y sed de justicia’. Y eso
+2030_1,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: de México tiene hambre y sed de justicia’. Y eso
+2030_1,PER,,MANUEL LÓPEZ,18,30,combinado,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: de México tiene hambre y sed de justicia
+2030_1,PER,,MANUEL LÓPEZ,18,30,combinado,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: de México tiene hambre y sed de justicia
+2149_27,FECHA,este año,,437,445,combinado,omision,sin_prediccion,"finería de Dos Bocas. Y está en el presupuesto de este año, 50 mil millones de pesos están presupuestados co"
+2149_27,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético, ahora tenemos qu"
+2149_27,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético, ahora tenemos qu"
+2149_27,PER,,MANUEL LÓPEZ,18,30,combinado,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético, ahora te"
+2149_27,PER,,MANUEL LÓPEZ,18,30,combinado,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético, ahora te"
+2149_27,LOC,Sonda de Campeche,Campeche,619,627,combinado,frontera,gazetteer_loc,"ar todo el petróleo que se produce en la Sonda de Campeche y en los campos petroleros de tierra de Tabasco, "
+2149_27,PER,,…,1085,1086,combinado,espuria,modelo, a construir la refinería. ¿Lo otro que planteabas…?
+2202_5,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Se acudió a organismos internacionales para que 
+2202_5,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Se acudió a organismos internacionales para que 
+2202_5,PER,,MANUEL LÓPEZ,18,30,combinado,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Se acudió a organismos internacionales p
+2202_5,PER,,MANUEL LÓPEZ,18,30,combinado,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Se acudió a organismos internacionales p
+2202_5,PER,,Luis Cresencio,684,698,combinado,espuria,modelo, la vía aérea. Le comentaba al general secretario Luis Cresencio que era importante considerar que la base aérea d
+2250_60,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: mil, casi un millón está saliendo por Dos Bocas "
+2250_60,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: mil, casi un millón está saliendo por Dos Bocas "
+2250_60,ORG,,MAN,18,21,combinado,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: mil, casi un millón está salien"
+2250_60,ORG,,MAN,18,21,combinado,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: mil, casi un millón está salien"
+228_7,LOC,Estados Unidos Mexicanos,Estados Unidos | Estados Unidos Mexicanos,270,294,combinado,tipo,sin_prediccion,"l López Obrador, presidente constitucional de los Estados Unidos Mexicanos y comandante supremo de las Fuerzas Armadas. Corr"
+228_7,LOC,Estados Unidos Mexicanos,Estados Unidos | Estados Unidos Mexicanos,270,294,combinado,frontera,sin_prediccion,"l López Obrador, presidente constitucional de los Estados Unidos Mexicanos y comandante supremo de las Fuerzas Armadas. Corr"
+228_7,ORG,Corredor Interoceánico del Istmo de Tehuantepec,Corredor Interoceánico del Istmo de Tehuantepec,340,387,combinado,tipo,sin_prediccion,anos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Co
+228_7,ORG,Corredor Interoceánico del Istmo de Tehuantepec,Corredor Interoceánico del Istmo de Tehuantepec,340,387,combinado,obra_LOC_vs_ORG,sin_prediccion,anos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Co
+228_7,ORG,"Empresa Multimodal Interoceánica, S.A. de C.V.","Empresa Multimodal Interoceánica, S.A | C.V",537,583,combinado,frontera,sin_prediccion,"orizado a la Secretaría de Marina, así se crea la Empresa Multimodal Interoceánica, S.A. de C.V., integrada por las administraciones del Sistema P"
+228_7,ORG,"Empresa Multimodal Interoceánica, S.A. de C.V.","Empresa Multimodal Interoceánica, S.A | C.V",537,583,combinado,entidad_partida,sin_prediccion,"orizado a la Secretaría de Marina, así se crea la Empresa Multimodal Interoceánica, S.A. de C.V., integrada por las administraciones del Sistema P"
+228_7,ORG,administraciones del Sistema Portuario Nacional,Portuario Nacional,603,650,combinado,frontera,sin_prediccion,"al Interoceánica, S.A. de C.V., integrada por las administraciones del Sistema Portuario Nacional, mejor conocidas como Asiponas, de Salina Cruz, C"
+228_7,LOC,Océano Pacífico,,844,859,combinado,omision,sin_prediccion,con el sistema carretero nacional interconecta el Océano Pacífico con el Océano Atlántico a través del golfo de Méx
+228_7,LOC,Océano Atlántico,,867,883,combinado,omision,sin_prediccion,"o nacional interconecta el Océano Pacífico con el Océano Atlántico a través del golfo de México, en conjunto con el "
+228_7,LOC,golfo de México,México,897,912,combinado,frontera,sin_prediccion,"ano Pacífico con el Océano Atlántico a través del golfo de México, en conjunto con el establecimiento de 12 polos d"
+228_7,LOC,Estados Unidos Mexicanos,Estados Unidos,270,284,combinado,frontera,gazetteer_loc,"l López Obrador, presidente constitucional de los Estados Unidos Mexicanos y comandante supremo de las Fuerzas Arm"
+228_7,ORG,Estados Unidos Mexicanos,Estados Unidos Mexicanos,270,294,combinado,tipo,modelo,"l López Obrador, presidente constitucional de los Estados Unidos Mexicanos y comandante supremo de las Fuerzas Armadas. Corr"
+228_7,LOC,Corredor Interoceánico del Istmo de Tehuantepec,Corredor Interoceánico del Istmo de Tehuantepec,340,387,combinado,tipo,gazetteer_loc,anos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Co
+228_7,LOC,Corredor Interoceánico del Istmo de Tehuantepec,Corredor Interoceánico del Istmo de Tehuantepec,340,387,combinado,obra_LOC_vs_ORG,gazetteer_loc,anos y comandante supremo de las Fuerzas Armadas. Corredor Interoceánico del Istmo de Tehuantepec. Desde el sur de México renace el istmo con el Co
+228_7,ORG,"Empresa Multimodal Interoceánica, S.A. de C.V.","Empresa Multimodal Interoceánica, S.A",537,574,combinado,frontera,modelo,"orizado a la Secretaría de Marina, así se crea la Empresa Multimodal Interoceánica, S.A. de C.V., integrada por las administraciones del "
+228_7,ORG,"Empresa Multimodal Interoceánica, S.A. de C.V.",C.V,579,582,combinado,frontera,modelo,"crea la Empresa Multimodal Interoceánica, S.A. de C.V., integrada por las administraciones del Sistema "
+228_7,ORG,administraciones del Sistema Portuario Nacional,Portuario Nacional,632,650,combinado,frontera,modelo,"., integrada por las administraciones del Sistema Portuario Nacional, mejor conocidas como Asiponas, de Salina Cruz, C"
+228_7,LOC,Puerto Chiapas,Chiapas,733,740,combinado,frontera,gazetteer_loc,"de Salina Cruz, Coatzacoalcos, Dos Bocas y Puerto Chiapas, además del ferrocarril del Istmo de Tehuantepec "
+228_7,LOC,,Is,769,771,combinado,espuria,modelo,"ocas y Puerto Chiapas, además del ferrocarril del Istmo de Tehuantepec que con el sistema carretero na"
+228_7,LOC,,Istmo de Tehuantepec,769,789,combinado,espuria,gazetteer_loc,"ocas y Puerto Chiapas, además del ferrocarril del Istmo de Tehuantepec que con el sistema carretero nacional interconect"
+228_7,LOC,,ntepec,783,789,combinado,espuria,modelo,"Chiapas, además del ferrocarril del Istmo de Tehuantepec que con el sistema carretero nacional interconect"
+228_7,LOC,golfo de México,México,906,912,combinado,frontera,modelo,"ico con el Océano Atlántico a través del golfo de México, en conjunto con el establecimiento de 12 polos d"
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,0,71,combinado,frontera,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión prin"
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,0,71,combinado,en_marca,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión prin"
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,38,71,combinado,frontera,marca,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión prin"
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,38,71,combinado,en_marca,marca,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión prin"
+326_25,ORG,Tren Maya,Tren Maya,94,103,combinado,tipo,modelo,"ARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión principal será la de capacitación y "
+326_25,ORG,Tren Maya,Tren Maya,94,103,combinado,obra_LOC_vs_ORG,modelo,"ARÍA DE LA DEFENSA NACIONAL (SEDENA): mayoritaria Tren Maya, cuya misión principal será la de capacitación y "
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,0,71,combinado,frontera,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta u"
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,0,71,combinado,en_marca,sin_prediccion,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta u"
+396_23,FECHA,noviembre del presente año,,769,795,combinado,omision,sin_prediccion,e tiene programada su inauguración para el mes de noviembre del presente año. Actualmente se ejecutan trabajos en el lago arti
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,38,71,combinado,frontera,marca,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta u"
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,SECRETARÍA DE LA DEFENSA NACIONAL,38,71,combinado,en_marca,marca,"DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL (SEDENA): de 160 habitaciones, el cual presenta u"
+396_23,LOC,Tren Maya,Tren Maya,1155,1164,combinado,tipo,gazetteer_loc,"a la empresa de participación estatal mayoritaria Tren Maya. La obra presenta un avance de 45.43, se han gene"
+396_23,LOC,Tren Maya,Tren Maya,1155,1164,combinado,obra_LOC_vs_ORG,gazetteer_loc,"a la empresa de participación estatal mayoritaria Tren Maya. La obra presenta un avance de 45.43, se han gene"
+420_10,PER,Víctor,,607,613,combinado,omision,sin_prediccion,"co del Bienestar. Aquí en Álamo hay una sucursal, Víctor, ya construida y operando, en todos los municipio"
+420_10,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a tener todos su tar
+420_10,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a tener todos su tar
+420_10,PER,,MAN,18,21,combinado,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a t
+420_10,PER,,MAN,18,21,combinado,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a t
+420_10,PER,,L LÓPEZ,23,30,combinado,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a tener todo
+420_10,PER,,L LÓPEZ,23,30,combinado,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: manera directa. Por eso van a tener todo
+420_10,ORG,,Bienestar,314,323,combinado,espuria,gazetteer_org,"embrando y está en el programa Producción para el Bienestar saca de ahí, del banco, lo que le corresponde; el"
+499_68,FECHA,este año,,913,921,combinado,omision,sin_prediccion,", en operación mil 500 sucursales y a mediados de este año vamos a llegar a dos mil 750 sucursales, va a ser"
+499_68,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Están llevándose a cabo las contrataciones, no s"
+499_68,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Están llevándose a cabo las contrataciones, no s"
+499_68,PER,,MANUEL LÓPEZ,18,30,combinado,en_marca,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Están llevándose a cabo las contratacion
+499_68,PER,,MANUEL LÓPEZ,18,30,combinado,espuria,modelo,PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Están llevándose a cabo las contratacion
+771_54,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,en_marca,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están muy claros los o"
+771_54,PER,,ANDRÉS MANUEL LÓPEZ OBRADOR,11,38,combinado,espuria,marca,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están muy claros los o"
+771_54,PER,,MAN,18,21,combinado,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están"
+771_54,PER,,MAN,18,21,combinado,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están"
+771_54,PER,,L LÓPEZ,23,30,combinado,en_marca,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están muy clar"
+771_54,PER,,L LÓPEZ,23,30,combinado,espuria,modelo,"PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, hay diferencias, pero están muy clar"
+771_54,ORG,,Bienestar,381,390,combinado,espuria,gazetteer_org,"s programas de agricultura? El Producción para el Bienestar, eso va a dos millones de productores que reciben"
+928_2,LOC,aeropuerto ‘Felipe Ángeles’,‘Felipe Ángeles,173,200,combinado,frontera,sin_prediccion,"ción falsa, indicando que la torre de control del aeropuerto ‘Felipe Ángeles’ estaba chueca, que estaba inclinada como la Torre"
+928_2,LOC,aeropuerto ‘Felipe Ángeles’,‘Felipe Ángeles,184,199,combinado,frontera,modelo," indicando que la torre de control del aeropuerto ‘Felipe Ángeles’ estaba chueca, que estaba inclinada como la Torr"
+928_2,LOC,,‘Felipe ‘Ángeles,305,321,combinado,espuria,modelo,"isa, en Italia. Es falso, la torre del aeropuerto ‘Felipe ‘Ángeles’ fue construida bajo altos estándares de calidad,"
+928_2,PER,,Felipe Calderón,1052,1067,combinado,espuria,modelo,"ue hicieron eco de esta pifia fue el expresidente Felipe Calderón, el senador Emilio Álvarez Icaza y Paola Migoya p"
+928_2,PER,,Emilio Álvarez Icaza,1080,1100,combinado,espuria,modelo,"a fue el expresidente Felipe Calderón, el senador Emilio Álvarez Icaza y Paola Migoya promotores del Frente Cívico Nacio"
+928_2,PER,,Paola Migoya,1103,1115,combinado,espuria,modelo,"elipe Calderón, el senador Emilio Álvarez Icaza y Paola Migoya promotores del Frente Cívico Nacional, entre otro"

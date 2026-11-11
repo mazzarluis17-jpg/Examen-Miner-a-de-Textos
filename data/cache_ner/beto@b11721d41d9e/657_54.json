@@ -1,0 +1,108 @@
+{
+  "clave": "978c0369572313ceae8fea0d7a09180d9b855607b3a2d44ec91b26c6b4d26e94",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "1497bd310a20b6d74cdbb8e3526c5453404399771dda93e4852e1682607fd5d9",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "Yesenia Peralta",
+      "inicio": 45,
+      "fin": 60,
+      "confianza": 0.9971847534179688,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Business Energy",
+      "inicio": 65,
+      "fin": 80,
+      "confianza": 0.9923651218414307,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Taba",
+      "inicio": 82,
+      "fin": 86,
+      "confianza": 0.9619624614715576,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "sco",
+      "inicio": 86,
+      "fin": 89,
+      "confianza": 0.7241246700286865,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 232,
+      "fin": 241,
+      "confianza": 0.996983528137207,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tabasco",
+      "inicio": 388,
+      "fin": 395,
+      "confianza": 0.937809944152832,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 537,
+      "fin": 546,
+      "confianza": 0.9985244870185852,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 671,
+      "fin": 680,
+      "confianza": 0.9987397193908691,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Paraíso",
+      "inicio": 784,
+      "fin": 791,
+      "confianza": 0.9997311234474182,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tabasco",
+      "inicio": 877,
+      "fin": 884,
+      "confianza": 0.989325225353241,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.413613309000084,
+  "version_transformers": "5.22.1"
+}

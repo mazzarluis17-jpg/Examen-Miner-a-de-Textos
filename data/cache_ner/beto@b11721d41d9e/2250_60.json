@@ -1,0 +1,44 @@
+{
+  "clave": "ed7f9f7096ffdf5e54fab8dfcb548c45ed126005da2ceb69501aad2827d646dd",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "af0968d14582afd703365e8a57ca8f6197f2ae118a500d03b8ecbac0b8d259bc",
+  "crudas": [
+    {
+      "tipo": "ORG",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.5120798945426941,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 78,
+      "fin": 87,
+      "confianza": 0.9961919784545898,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.3394942180000271,
+  "version_transformers": "5.22.1"
+}

@@ -279,3 +279,23 @@ se identifican como ejecución autorizada posterior a D15, no como reproducción
 de v1 ni como sustitución de una cifra anterior. Registro correspondiente en
 `salida/09_cambios_post_congelamiento.csv`; quedan invalidadas solo las salidas
 IE pendientes, no H3–H6.
+
+## 2026-11-10 — Resultados H7 y reproducción de la corrección autorizada
+
+`2-vacios-auditados` produjo un solo descarte, `1812_0` LOC de comilla
+[945:946], conservado crudo. En los 98 pasajes restantes la salida coincide
+exactamente con v1. Segunda corrida NER: 99 cachés y cero inferencias; se
+conservan intactos todos los archivos humanos y las cachés previas. No hubo
+ajustes por Gold. La versión auxiliar se deriva de hashes de código para
+que un commit de datos no cambie el enriquecimiento.
+
+Evaluador original sobre 19 pasajes con entidades: F1 de reglas 0.6017,
+modelo 0.6766, combinado 0.7066 (`salida/resultados_ie.csv`). Complementaria
+sobre veinte IDs: combinado 0.7022, incluyendo los FP del pasaje vacío. Las
+cifras corresponden a la versión autorizada posterior D15; no existe F1
+anterior completo porque v1 abortó. Registro explícito en
+`salida/09_cambios_post_congelamiento.csv`. No se fabrica referencia previa.
+Alerta de F1 MONTO=1 con soporte nueve revisada por trazabilidad técnica;
+se conserva la cifra sin modificar etiquetas o reglas. Errores reales y
+categorías ausentes, figuras, manifiestos y efecto informativo de unión
+interpalabra documentados. Sin segundo NER, selección o ajuste con Gold.

@@ -1,0 +1,100 @@
+{
+  "clave": "94a6e5f79750bb026435fa47ca41a138c4e1997fce6787a525d5c473898da01a",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "102e894a08dbc99954295987144467c58f9f1cdf5590b886999b00e28e4bc7a5",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.9449322819709778,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "L LÓPEZ",
+      "inicio": 23,
+      "fin": 30,
+      "confianza": 0.6925215721130371,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 620,
+      "fin": 629,
+      "confianza": 0.9987683892250061,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tabasco",
+      "inicio": 650,
+      "fin": 657,
+      "confianza": 0.9699667096138,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 786,
+      "fin": 795,
+      "confianza": 0.998630702495575,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Campeche",
+      "inicio": 877,
+      "fin": 885,
+      "confianza": 0.7503752112388611,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Taba",
+      "inicio": 891,
+      "fin": 895,
+      "confianza": 0.9994027614593506,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "sco",
+      "inicio": 895,
+      "fin": 898,
+      "confianza": 0.7975256443023682,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 946,
+      "fin": 955,
+      "confianza": 0.9989528059959412,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.34996654499991564,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,44 @@
+{
+  "clave": "42847f9e54d9315d6bb3f3028a2b0c14c5a206136d777e7eeddc48cc9eb0b784",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "20f25e23a9fe3a425e1d7cfe211becfaafcc3f50e122d56679c0a1bb75d258c8",
+  "crudas": [
+    {
+      "tipo": "LOC",
+      "texto": "Mérida",
+      "inicio": 222,
+      "fin": 228,
+      "confianza": 0.9997480511665344,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Tren Maya",
+      "inicio": 309,
+      "fin": 318,
+      "confianza": 0.999798059463501,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 0.20036047899998266,
+  "version_transformers": "5.22.1"
+}

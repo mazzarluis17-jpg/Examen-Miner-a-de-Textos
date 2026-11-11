@@ -1,0 +1,76 @@
+{
+  "clave": "2fa36d2315658fe4bba144ddb6d362958cfab9e65fbbc47143b0b6017615441f",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "0723031e16b1090fd975539e80c4b8c8df317b315b068e08dfaf912784fa6528",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.6274634599685669,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Ánimo",
+      "inicio": 53,
+      "fin": 58,
+      "confianza": 0.7803488373756409,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Ricardo Mejía",
+      "inicio": 274,
+      "fin": 287,
+      "confianza": 0.9997479319572449,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Diego Prieto",
+      "inicio": 311,
+      "fin": 323,
+      "confianza": 0.9997689723968506,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Instituto Nacional de Antropología e Historia",
+      "inicio": 338,
+      "fin": 383,
+      "confianza": 0.9992386698722839,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Ricardo",
+      "inicio": 1022,
+      "fin": 1029,
+      "confianza": 0.9896418452262878,
+      "cortada": false
+    }
+  ],
+  "descartadas": 4,
+  "segundos": 0.3104267500000333,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,52 @@
+{
+  "clave": "01dabd44b5fd309390db8c977bb27babb2eb67b5f989f6b9f6a17de72243951b",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "8ec26830b1947dcc1a81856e978ddd96c8c39647c54cc550d4a712f8019dd7eb",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL",
+      "inicio": 18,
+      "fin": 24,
+      "confianza": 0.8856576085090637,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ciudad de México",
+      "inicio": 861,
+      "fin": 877,
+      "confianza": 0.9992750287055969,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Hidalgo",
+      "inicio": 1010,
+      "fin": 1017,
+      "confianza": 0.9996744394302368,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.38325446299995747,
+  "version_transformers": "5.22.1"
+}

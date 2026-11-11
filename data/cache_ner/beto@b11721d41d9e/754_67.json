@@ -1,0 +1,60 @@
+{
+  "clave": "2f362d6b81e3ae3e1c2babaaee33695e85d2eb759ebf8ee406ba45f0b21e6d83",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "d1821813069d0aa4f4406c4e13e9e159fb7207e6560269f26fd0457b8283709a",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.9850724339485168,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "UEL LÓPEZ",
+      "inicio": 21,
+      "fin": 30,
+      "confianza": 0.7599165439605713,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 173,
+      "fin": 182,
+      "confianza": 0.9990501403808594,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 227,
+      "fin": 236,
+      "confianza": 0.9989733099937439,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 0.15937181699996472,
+  "version_transformers": "5.22.1"
+}

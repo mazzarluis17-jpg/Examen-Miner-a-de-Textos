@@ -1,0 +1,124 @@
+{
+  "clave": "cfb0fd1e4a9e0378e13007c62ccf1cafd915fcda1d69329cde0df163061c37ef",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "15e6122bca95d89427ca2a058bff7c66f894aa06d01e2937e3c61c7b94c0200f",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.4918568730354309,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "L",
+      "inicio": 23,
+      "fin": 24,
+      "confianza": 0.5892375707626343,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Is",
+      "inicio": 408,
+      "fin": 410,
+      "confianza": 0.8121997714042664,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Is",
+      "inicio": 582,
+      "fin": 584,
+      "confianza": 0.98696368932724,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "ste",
+      "inicio": 585,
+      "fin": 588,
+      "confianza": 0.7718756794929504,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Seguro",
+      "inicio": 595,
+      "fin": 601,
+      "confianza": 0.6542513966560364,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Pe",
+      "inicio": 662,
+      "fin": 664,
+      "confianza": 0.9998435974121094,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "mex",
+      "inicio": 664,
+      "fin": 667,
+      "confianza": 0.9809741377830505,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Ejército",
+      "inicio": 685,
+      "fin": 693,
+      "confianza": 0.9998069405555725,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Comisión Federal de Electricidad",
+      "inicio": 713,
+      "fin": 745,
+      "confianza": 0.9997184872627258,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 867,
+      "fin": 873,
+      "confianza": 0.9997555613517761,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Istmo",
+      "inicio": 953,
+      "fin": 958,
+      "confianza": 0.8266381621360779,
+      "cortada": false
+    }
+  ],
+  "descartadas": 5,
+  "segundos": 0.34576230200013924,
+  "version_transformers": "5.22.1"
+}

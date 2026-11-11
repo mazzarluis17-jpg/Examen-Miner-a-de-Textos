@@ -1,0 +1,92 @@
+{
+  "clave": "76b669782e4919ce0e99f1be8425c49747ff9859433493e45bb9c8e2620d57f6",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "2cb6cb519eb0189859794f30fee6018d9959429b316222e1a6b6a7a9bd794c3a",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.633240818977356,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Is",
+      "inicio": 233,
+      "fin": 235,
+      "confianza": 0.9998370409011841,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "sste",
+      "inicio": 235,
+      "fin": 239,
+      "confianza": 0.9003207087516785,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Seguro",
+      "inicio": 245,
+      "fin": 251,
+      "confianza": 0.998420238494873,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Pe",
+      "inicio": 256,
+      "fin": 258,
+      "confianza": 0.9998307228088379,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "mex",
+      "inicio": 258,
+      "fin": 261,
+      "confianza": 0.9518834352493286,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Fuerzas Armadas",
+      "inicio": 270,
+      "fin": 285,
+      "confianza": 0.9997063875198364,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Europa",
+      "inicio": 1079,
+      "fin": 1085,
+      "confianza": 0.9996287822723389,
+      "cortada": false
+    }
+  ],
+  "descartadas": 1,
+  "segundos": 0.3511365269998805,
+  "version_transformers": "5.22.1"
+}

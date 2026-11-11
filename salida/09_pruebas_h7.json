@@ -1,0 +1,9 @@
+{
+  "pytest": "336 passed, 9 deselected",
+  "ruff": "All checks passed",
+  "regresion_v1_v2_pasajes_identicos": 98,
+  "descartes_auditados": 1,
+  "modelo_y_revision_sin_cambios": true,
+  "gold_sin_cambios": true,
+  "posterior_D15_autorizado": true
+}

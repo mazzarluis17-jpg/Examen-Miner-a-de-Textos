@@ -1,0 +1,60 @@
+{
+  "clave": "e5db0e93bc4ee6c033be24c90e9c5ebbafc0dd643271e8e62fb2e9fa1e9a493e",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "c2657d391afef90339052593538ced715157c4f29311d424609bfa902945d9ec",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.7199198007583618,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Taba",
+      "inicio": 541,
+      "fin": 545,
+      "confianza": 0.9993079900741577,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "sco",
+      "inicio": 545,
+      "fin": 548,
+      "confianza": 0.8541564345359802,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Chiapas",
+      "inicio": 554,
+      "fin": 561,
+      "confianza": 0.9998050332069397,
+      "cortada": false
+    }
+  ],
+  "descartadas": 3,
+  "segundos": 0.28021334200002457,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,92 @@
+{
+  "clave": "29b8bf32fa2a5df9c891572bda2629419a63b885edeb1a1b3b1633911d94e295",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "b1c43401fe7c4eb5a9cfaa59da04f88e35e5fa5fadee7957a86d039e0affad89",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "EG",
+      "inicio": 2,
+      "fin": 4,
+      "confianza": 0.8515474796295166,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "PRIETO HERNÁNDEZ",
+      "inicio": 6,
+      "fin": 22,
+      "confianza": 0.7909637689590454,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "IN",
+      "inicio": 92,
+      "fin": 94,
+      "confianza": 0.7244250774383545,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Museo del Puuc",
+      "inicio": 367,
+      "fin": 381,
+      "confianza": 0.9973823428153992,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Mérida",
+      "inicio": 542,
+      "fin": 548,
+      "confianza": 0.9996354579925537,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Yucatán",
+      "inicio": 550,
+      "fin": 557,
+      "confianza": 0.9972979426383972,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dzibilchaltún",
+      "inicio": 562,
+      "fin": 575,
+      "confianza": 0.9511093497276306,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "de Atención a Visitantes",
+      "inicio": 980,
+      "fin": 1004,
+      "confianza": 0.5852285027503967,
+      "cortada": false
+    }
+  ],
+  "descartadas": 6,
+  "segundos": 0.4786615919999804,
+  "version_transformers": "5.22.1"
+}

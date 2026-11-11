@@ -1,0 +1,116 @@
+{
+  "clave": "8ecbe39f6add195113442f026aacdb57afe790a327c129e32d3074047a71b536",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "79eb0deb9b81f4c84fef9e3e4bb3803fa2bb8541bbeaf7924b21b4e519d64a03",
+  "crudas": [
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 75,
+      "fin": 86,
+      "confianza": 0.9995237588882446,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "‘Felipe Ángeles",
+      "inicio": 184,
+      "fin": 199,
+      "confianza": 0.9820342659950256,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Torre de Pisa",
+      "inicio": 245,
+      "fin": 258,
+      "confianza": 0.9889445304870605,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Italia",
+      "inicio": 263,
+      "fin": 269,
+      "confianza": 0.9998052716255188,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "‘Felipe ‘Ángeles",
+      "inicio": 305,
+      "fin": 321,
+      "confianza": 0.9287148118019104,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 601,
+      "fin": 612,
+      "confianza": 0.9990394711494446,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 978,
+      "fin": 989,
+      "confianza": 0.9990649223327637,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Felipe Calderón",
+      "inicio": 1052,
+      "fin": 1067,
+      "confianza": 0.9995965361595154,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Emilio Álvarez Icaza",
+      "inicio": 1080,
+      "fin": 1100,
+      "confianza": 0.9996017217636108,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Paola Migoya",
+      "inicio": 1103,
+      "fin": 1115,
+      "confianza": 0.9661619067192078,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Frente Cívico Nacional",
+      "inicio": 1131,
+      "fin": 1153,
+      "confianza": 0.9996989369392395,
+      "cortada": false
+    }
+  ],
+  "descartadas": 4,
+  "segundos": 0.48528572600002917,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,212 @@
+{
+  "clave": "7d855364efca92d51b75927d6211c9ac3be21fb3ffd195ab6d2c815b0b1f1980",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "0d18c9213d175d9a915e2e9da06a20d5d80290fa3464f7e5a54fe9218abfaa9d",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "RA",
+      "inicio": 0,
+      "fin": 2,
+      "confianza": 0.9876682162284851,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "ÁNGELES",
+      "inicio": 17,
+      "fin": 24,
+      "confianza": 0.6308448910713196,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "COR",
+      "inicio": 47,
+      "fin": 50,
+      "confianza": 0.764046311378479,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "INTEROCEÁNICO",
+      "inicio": 56,
+      "fin": 69,
+      "confianza": 0.8537781238555908,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "TEHUANTEPEC",
+      "inicio": 83,
+      "fin": 94,
+      "confianza": 0.7637317180633545,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "CI",
+      "inicio": 96,
+      "fin": 98,
+      "confianza": 0.9933984279632568,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Gobierno de México",
+      "inicio": 261,
+      "fin": 279,
+      "confianza": 0.9996812343597412,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Ferrocarril del Istmo de Tehuantepec",
+      "inicio": 442,
+      "fin": 478,
+      "confianza": 0.9966201186180115,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Sali",
+      "inicio": 529,
+      "fin": 533,
+      "confianza": 0.9984943866729736,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "na Cruz",
+      "inicio": 533,
+      "fin": 540,
+      "confianza": 0.9934563636779785,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Co",
+      "inicio": 542,
+      "fin": 544,
+      "confianza": 0.999312162399292,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "atzacoalcos",
+      "inicio": 544,
+      "fin": 555,
+      "confianza": 0.9692193269729614,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Puerto Chiapas",
+      "inicio": 557,
+      "fin": 571,
+      "confianza": 0.9990209341049194,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 574,
+      "fin": 583,
+      "confianza": 0.9987764954566956,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Istmo de Tehuantepec",
+      "inicio": 846,
+      "fin": 866,
+      "confianza": 0.9845842719078064,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Co",
+      "inicio": 936,
+      "fin": 938,
+      "confianza": 0.9993022680282593,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "atzacoalcos",
+      "inicio": 938,
+      "fin": 949,
+      "confianza": 0.9853236079216003,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Sali",
+      "inicio": 952,
+      "fin": 956,
+      "confianza": 0.9977129697799683,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "na Cruz",
+      "inicio": 956,
+      "fin": 963,
+      "confianza": 0.9710016846656799,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Co",
+      "inicio": 1289,
+      "fin": 1291,
+      "confianza": 0.9993197917938232,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "atzacoalcos",
+      "inicio": 1291,
+      "fin": 1302,
+      "confianza": 0.9788728952407837,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Pale",
+      "inicio": 1305,
+      "fin": 1309,
+      "confianza": 0.997697651386261,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "nque",
+      "inicio": 1309,
+      "fin": 1313,
+      "confianza": 0.7814673185348511,
+      "cortada": false
+    }
+  ],
+  "descartadas": 6,
+  "segundos": 0.5407877970001209,
+  "version_transformers": "5.22.1"
+}

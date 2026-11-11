@@ -1,0 +1,52 @@
+{
+  "clave": "b8fd0b9f119632528ce3ac6324da6ad815cbeaaa27490ab36aff30cb254b79b0",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "8fbecf292d2ece53b66bfe016fecceb93b0590bc5bbffb6139889ff266484d40",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.6665785312652588,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Asociación Campesina Independiente Emiliano Zapata",
+      "inicio": 295,
+      "fin": 345,
+      "confianza": 0.9889889359474182,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Secretaría de la Defensa",
+      "inicio": 971,
+      "fin": 995,
+      "confianza": 0.9870766997337341,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 7.657391018999988,
+  "version_transformers": "5.22.1"
+}

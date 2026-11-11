@@ -1,0 +1,76 @@
+{
+  "clave": "c87d3479db652e8d905ae11ba1da27116eba5347c814ade906a861ed7865374a",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "5416177c3a6d215c75e96932b76d0115cefdaac5601f7b578cece43ca47d25ce",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.6223260164260864,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "España",
+      "inicio": 544,
+      "fin": 550,
+      "confianza": 0.9892662763595581,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 634,
+      "fin": 640,
+      "confianza": 0.9998660087585449,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "España",
+      "inicio": 674,
+      "fin": 680,
+      "confianza": 0.9998970031738281,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "España",
+      "inicio": 719,
+      "fin": 725,
+      "confianza": 0.9999037981033325,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ciudad Juárez",
+      "inicio": 1058,
+      "fin": 1071,
+      "confianza": 0.9994980096817017,
+      "cortada": false
+    }
+  ],
+  "descartadas": 1,
+  "segundos": 0.38664178200019705,
+  "version_transformers": "5.22.1"
+}

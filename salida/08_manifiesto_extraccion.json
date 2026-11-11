@@ -1,0 +1,31 @@
+{
+  "esquema": 1,
+  "productor": "scripts/08_extraer.py",
+  "commit": "b42ee6572c8de2c530234de9ae8969aa57b5bc6f",
+  "modelo": {
+    "modelo": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "f1_seleccion": null,
+    "f1_seleccion_alternativa": null,
+    "criterio": "tecnico",
+    "estado": "provisional_P06; pendiente congelacion D15; sin evaluacion humana",
+    "evidencia": "salida/07_verificacion_ner.json"
+  },
+  "version_posproceso": "2-vacios-auditados",
+  "posterior_D15": true,
+  "entradas": {
+    "salida/06_entidades_reglas.csv": "8dee1690395a8fc36360d375362e119c5fda8262afdbea36ee65aba3acb733b5",
+    "salida/entidades_beto.csv": "9aab622874522cb071b5feedd72f246d2fcf49159baa3f8f46f4aab40c5d4a86",
+    "data/modelo_ner.json": "3a8233b21f8d54588c7a8bb35af1704d2055f83b5ad2035665f729e57a689e0c",
+    "config/ner.yaml": "2a7072936a8409a4a6faea74b0a993c324aabb9f4856fe45ac5e4f048fcd62cd",
+    "src/mtx/fusion.py": "7caccccdec3b204f9b300d112d221c48373c4182dbba76be80257f011c42fb92",
+    "src/mtx/enriquecimiento.py": "2a350c5bea76ad2ffa668710f48212018e4149f49e024a031e575270e0326b92",
+    "scripts/08_extraer.py": "f3796deefc1cc6400e1798c15d93d2afa8b51a8f502cf175580e9924f9e9dac2",
+    "src/mtx/ner_posproceso_v2.py": "a7af49023ddecbcddb18757ae99b4413bf95985fe1236fd96bd61de26de289eb",
+    "scripts/07c_ner_auditado.py": "da449ebe9393e584646bd56b943d8b00562779e5fee66242dc01be52ab569cb5"
+  },
+  "pasajes": 99,
+  "entidades": 909,
+  "entidades_unicas": 901,
+  "discrepancias": 134
+}
