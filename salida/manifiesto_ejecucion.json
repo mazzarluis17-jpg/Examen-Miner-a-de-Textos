@@ -1,84 +1,70 @@
 {
   "esquema": 1,
-  "alcance": "Registro incremental; etapas IE y entrega pendientes",
-  "etapas": {
-    "H4": {
-      "esquema": 1,
-      "productor": "scripts/05_evaluar_ir.py",
-      "revision_juicios": 197,
-      "horizonte": "AP sobre top-10; denominador: relevantes del pool; MAP oficial del kit",
-      "procedencia_juicios": "Juicios personales de Luis en Excel, transferencia autorizada; H3 confirmado visualmente",
-      "entradas": {
-        "config/criterios_relevancia.md": "ae67ac2b0f1066dd71293c9ca8075aae9473ff1a9956e028c759ee6158fe9f87",
-        "config/criterios_relevancia_aprobacion.json": "cefb1b2329b83aa3a13ba77b579b58f2466f7f9bedc2db575aca1b36f1adce4e",
-        "config/limpieza.yaml": "7344b1122e7c588bf41aa9a966bd065d52c66d93e0bf0e54d1934024287194c0",
-        "config/stoplist_extra.txt": "cf32f09b99a7ac19f6a31bc7af23305ce7000383ae4c9cea1fe963a1fca98533",
-        "config/stopwords_es.txt": "6125eadf28ba664a60bf4296147bcbd40b80be93670056fdb229960ac15e2310",
-        "data/consultas.csv": "37377bcbeccede92aa2d99a9ca2d4f064d7f230f344b66836903d117e5a3e3b1",
-        "data/corpus_meta.json": "ce8bc42d7daf413d46181de5db3ef5d13c8ca622921ede73d09cd513b1f86338",
-        "data/pasajes.parquet": "766859a1ab322a449b6ce3ef9e25d15b95f275d140804f3935db7c1de632af0d",
-        "kit/data/discursos.parquet": "e42531f24c64f61eea10660aede0b67f8d67b0fd66c953d4bdc83701f0a0c80d",
-        "ranking.csv": "2da7bd09e1a590b00c720266d5ec082ce0a71188f23784fad2052521fa312c4e",
-        "salida/01_limpieza.json": "98dba284d0926e666c3e59772d1bf841dcb59dcbae011b6986c736627d880604",
-        "salida/04_pool.csv": "89d6ec41fe08338f5f6c16016c1dfeaa2c81e3718bf58037bae92108186d4ff7",
-        "salida/04_pool_meta.json": "a6c6d6385621f45f4571074206ad5cd083fe5359ccefe02513833b8f2b74795f",
-        "scripts/04_pool.py": "18e11337763eec52a6cd301bece85860e2fcc695ad672582099781edcd2f83ef",
-        "src/mtx/corpus.py": "a5096756b0e682ec3ed08938aef784f8b26d9d031cd3ed8b4cf24c6984a75fdf",
-        "src/mtx/indice.py": "dc2b45c73e7ab5cea312fd2453b1adef57cefe854d1a44b688f5cf2931780ede",
-        "src/mtx/pool.py": "6ad066123a2052abb9e76157936f5960a85380c89f8328eb49d3df43530953d9",
-        "src/mtx/preproceso.py": "926cf045e9427640e7811bf413b5cbdfa6cef9910e93eb14ef6cb9537628751f",
-        "src/mtx/ranking.py": "c7192545e09cdbfa24e27b8e46be8e3de9674d102b3eb4977fcb2a6a02f6eb2d",
-        "anotaciones/juicios_relevancia.csv": "cb3e4769ff430228bb78b3d06ce83272aa7b4a9a19e3ca72c48aec987b8a2860",
-        "anotaciones/juicios_relevancia_estado.json": "b9f6c32b4cb09ac684a75a7840dd34b3685bbd9b1a5e4eeba7c05470f530d698"
-      },
-      "auditoria": {
-        "df_alto": "df/N >= 0.10",
-        "longitud_larga": "tokens > mediana",
-        "nombres_y_siglas": "heurísticas descriptivas, sin modificar consultas ni rankings",
-        "sha256_sinonimos": "516771753e64f5a9e3e41c268560d5e10411967f2a4a097eae7cd52b8cb061c4"
-      },
-      "salidas": {
-        "juicios_relevancia.csv": "cb3e4769ff430228bb78b3d06ce83272aa7b4a9a19e3ca72c48aec987b8a2860",
-        "resultados_ir.csv": "b2fba483d768e436a973cec912f811f9c412ff2ee1ea6f37eb6d00c4a3ef2010",
-        "salida/resultados_ir.csv": "b2fba483d768e436a973cec912f811f9c412ff2ee1ea6f37eb6d00c4a3ef2010",
-        "salida/05_juicios_con_ventana.csv": "6d6e6bb9e0480cd65ed18d37c5aca4f932f203a042d03c7fd04ccfa88c4c45e4",
-        "salida/05_juicios_ventana_evaluador.csv": "2640f35316c74407926073a1959cff8999d54fcc51788355f84dcd04edcf3aad",
-        "salida/05_resultados_ir_ventana.csv": "3bd44e0703a25c370b10adf076605b82f182b7312a37ba0ccc6fd2888bf043fd",
-        "salida/05_soporte_ventana.csv": "f26a88c0efaf5414735f68b8448a69f6680c3be882528590cb02cb3067e32501",
-        "salida/05_ir_por_consulta.csv": "56e462c014f8fea5f4ddfcd6aa3c007fbc041b67b8b8577fc12921a987b86763",
-        "salida/05_ir_ganador_por_consulta.csv": "7681b01901f73aaf9deac3624eb4fb77b7d57ee722f6c76c251a17ebe5f50300",
-        "salida/05_etiquetas_consultas.csv": "27c25edf7910b34cd21298d8fc8201ce31f88d35e8b92d464df0fbf63d0cfd69",
-        "salida/05_comparacion_filtros.csv": "40325f93cc3fe45f4531c4a7f19429e3c3e9dfec4bff7a31e456054dee2d48dc",
-        "salida/05_pasajes_ganador.csv": "c0303945d7888f3c535404d31078c0839df26e12a036694a30c9c221f54d1c5a",
-        "salida/05_auditoria_h8.csv": "06255755f9cf2db86c96cff66b921f5d710baba3a7e7614f2b923809127cbc98",
-        "data/mejor_modelo.json": "bf4d694fe867b70b99b4dedbb94d6ac09536d10e464ad7e7aa242fa1f4fc71c0"
-      },
-      "figuras": [
-        "reporte/figuras/ir_map_por_modelo.html",
-        "reporte/figuras/ir_map_por_modelo.png",
-        "reporte/figuras/ir_ap_por_consulta.html",
-        "reporte/figuras/ir_ap_por_consulta.png",
-        "reporte/figuras/ir_con_vs_sin_filtro.html",
-        "reporte/figuras/ir_con_vs_sin_filtro.png"
-      ],
-      "avisos": [],
-      "alerta_map_bajo": false,
-      "seleccion_global": {
-        "modelo": "bm25_con_filtro",
-        "MAP": 0.615,
-        "alternativa": "tfidf_con_filtro",
-        "MAP_alternativa": 0.3998,
-        "diferencia_menor_0.01": false,
-        "empate_exacto": false,
-        "criterio": "mayor MAP oficial con filtro; empate a BM25",
-        "sha256_ranking": "2da7bd09e1a590b00c720266d5ec082ce0a71188f23784fad2052521fa312c4e",
-        "sha256_juicios": "cb3e4769ff430228bb78b3d06ce83272aa7b4a9a19e3ca72c48aec987b8a2860"
-      },
-      "codigo_sha256": {
-        "src/mtx/evaluacion.py": "46677b5eb72db9de74845a04c78947f3cf177ca4169785a43a718c40bbcf9ef5",
-        "src/mtx/adaptadores_kit.py": "89517a44be0b1d5d9993565f17da80272cc38d64b3da233aeb5470466c9a911d",
-        "scripts/05_evaluar_ir.py": "a7fe0e7fe12caa2f0bbcb15ab83980467181e7716bcc6fadd7482a44a17c79ca"
-      }
-    }
-  }
+  "productor": "scripts/09_evaluar_ie.py",
+  "modelo": {
+    "modelo": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "f1_seleccion": null,
+    "f1_seleccion_alternativa": null,
+    "criterio": "tecnico",
+    "estado": "provisional_P06; pendiente congelacion D15; sin evaluacion humana",
+    "evidencia": "salida/07_verificacion_ner.json"
+  },
+  "commit": "b42ee6572c8de2c530234de9ae8969aa57b5bc6f",
+  "reglas_congeladas": "d4ca0a773603d27ae45cb31b93cc4c77cf558c40",
+  "entradas": {
+    "gold_entidades.csv": "4a9d9afcbf67ae1d495c48d0972bcc79a306424bbf81684561d02a3032912a30",
+    "anotaciones/cierre_gold.json": "cb5629ca4275caceecf2d9b227e513e7311e0f7a6fc968d990d8ec1cfec90608",
+    "anotaciones/estado_gold.csv": "8aa4849df56c884b9d14b581c6b0f95b99e22bb6fddfed44dc632aa31ac22952",
+    "anotaciones/muestra_gold.csv": "cbaac558917bf3a581ac64f21b5862735bc877e27df3724322cf0a8c89b53bb1",
+    "entidades.csv": "44b8169ed01d91122ea66e92ceec56184b41a0ff16e88aebfb687f04948d2cb1",
+    "kit/evaluar.py": "b70c33ca2cd1436a7d26186786e8ca6685e7d4e3bab8820d054bf6bea891a90f",
+    "kit/corpus.py": "c959bcf5036a6449c81ef6e5b15a9c7b1ba68c22bbbec0a1475834c5f4573055",
+    "data/modelo_ner.json": "3a8233b21f8d54588c7a8bb35af1704d2055f83b5ad2035665f729e57a689e0c",
+    "data/mejor_modelo.json": "bf4d694fe867b70b99b4dedbb94d6ac09536d10e464ad7e7aa242fa1f4fc71c0",
+    "config/ner.yaml": "2a7072936a8409a4a6faea74b0a993c324aabb9f4856fe45ac5e4f048fcd62cd",
+    "src/mtx/reglas.py": "00a3be321c1f32a70b17d5a13e6e025961db2af6b020d72068745d9bdecddae7",
+    "src/mtx/ner_modelo.py": "1e5f5c30f847e026d84457b5aa8dc4e5b66e12440638d6c0c5ab7e7df9748a8d",
+    "src/mtx/fusion.py": "7caccccdec3b204f9b300d112d221c48373c4182dbba76be80257f011c42fb92",
+    "src/mtx/enriquecimiento.py": "2a350c5bea76ad2ffa668710f48212018e4149f49e024a031e575270e0326b92",
+    "src/mtx/ner_posproceso_v2.py": "a7af49023ddecbcddb18757ae99b4413bf95985fe1236fd96bd61de26de289eb",
+    "src/mtx/evaluacion_ie.py": "28dbcca1df6ee8dd8ea0655312c36ef6f2588cc7678d98544b33dd431b23ab4c",
+    "scripts/09_evaluar_ie.py": "440d85207c64d01bc5b9de008d61a735fc829f84e45756af61d413fd3afb83cf",
+    "config/gazetteer_extendido.csv": "dc32856e7a97c38f8260e4ffcbdd7941765e52c72df7c13179bac30c22171065",
+    "config/gazetteer_loc.csv": "35bafe2f4f8f35628863f27f11cdac3cfe75b02aabe4c568810f27155fe56244",
+    "config/gazetteer_prescrito.csv": "69a7726f8a5e781eff50421bfca15a8600096f43e36cefa37368015c19eadfe2",
+    "config/criterios_anotacion.md": "3ae1e19e1ff5032708fc6f6269792d3e31239c3314a3ad0108f67a15bd2ccb47"
+  },
+  "extraccion": {
+    "esquema": 1,
+    "productor": "scripts/08_extraer.py",
+    "commit": "b42ee6572c8de2c530234de9ae8969aa57b5bc6f",
+    "modelo": {
+      "modelo": "mrm8488/bert-spanish-cased-finetuned-ner",
+      "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+      "f1_seleccion": null,
+      "f1_seleccion_alternativa": null,
+      "criterio": "tecnico",
+      "estado": "provisional_P06; pendiente congelacion D15; sin evaluacion humana",
+      "evidencia": "salida/07_verificacion_ner.json"
+    },
+    "version_posproceso": "2-vacios-auditados",
+    "posterior_D15": true,
+    "entradas": {
+      "salida/06_entidades_reglas.csv": "8dee1690395a8fc36360d375362e119c5fda8262afdbea36ee65aba3acb733b5",
+      "salida/entidades_beto.csv": "9aab622874522cb071b5feedd72f246d2fcf49159baa3f8f46f4aab40c5d4a86",
+      "data/modelo_ner.json": "3a8233b21f8d54588c7a8bb35af1704d2055f83b5ad2035665f729e57a689e0c",
+      "config/ner.yaml": "2a7072936a8409a4a6faea74b0a993c324aabb9f4856fe45ac5e4f048fcd62cd",
+      "src/mtx/fusion.py": "7caccccdec3b204f9b300d112d221c48373c4182dbba76be80257f011c42fb92",
+      "src/mtx/enriquecimiento.py": "2a350c5bea76ad2ffa668710f48212018e4149f49e024a031e575270e0326b92",
+      "scripts/08_extraer.py": "f3796deefc1cc6400e1798c15d93d2afa8b51a8f502cf175580e9924f9e9dac2",
+      "src/mtx/ner_posproceso_v2.py": "a7af49023ddecbcddb18757ae99b4413bf95985fe1236fd96bd61de26de289eb",
+      "scripts/07c_ner_auditado.py": "da449ebe9393e584646bd56b943d8b00562779e5fee66242dc01be52ab569cb5"
+    },
+    "pasajes": 99,
+    "entidades": 909,
+    "entidades_unicas": 901,
+    "discrepancias": 134
+  },
+  "gold_procedencia": "Anotación humana externa de Luis; transferencia autorizada; cierre en app"
 }
