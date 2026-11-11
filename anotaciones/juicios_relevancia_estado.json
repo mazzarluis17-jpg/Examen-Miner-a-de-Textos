@@ -1,0 +1,27 @@
+{
+  "revision": 197,
+  "sha256": "cb3e4769ff430228bb78b3d06ce83272aa7b4a9a19e3ca72c48aec987b8a2860",
+  "anterior_revision": 196,
+  "anterior_sha256": "d58aa0cd54703ae5bec6b9cf0876dde7f21b0c50daf2b958b6a7d6fd1be52f01",
+  "fuentes": {
+    "config/criterios_relevancia.md": "ae67ac2b0f1066dd71293c9ca8075aae9473ff1a9956e028c759ee6158fe9f87",
+    "config/criterios_relevancia_aprobacion.json": "cefb1b2329b83aa3a13ba77b579b58f2466f7f9bedc2db575aca1b36f1adce4e",
+    "config/limpieza.yaml": "7344b1122e7c588bf41aa9a966bd065d52c66d93e0bf0e54d1934024287194c0",
+    "config/stoplist_extra.txt": "cf32f09b99a7ac19f6a31bc7af23305ce7000383ae4c9cea1fe963a1fca98533",
+    "config/stopwords_es.txt": "6125eadf28ba664a60bf4296147bcbd40b80be93670056fdb229960ac15e2310",
+    "data/consultas.csv": "37377bcbeccede92aa2d99a9ca2d4f064d7f230f344b66836903d117e5a3e3b1",
+    "data/corpus_meta.json": "ce8bc42d7daf413d46181de5db3ef5d13c8ca622921ede73d09cd513b1f86338",
+    "data/pasajes.parquet": "766859a1ab322a449b6ce3ef9e25d15b95f275d140804f3935db7c1de632af0d",
+    "kit/data/discursos.parquet": "e42531f24c64f61eea10660aede0b67f8d67b0fd66c953d4bdc83701f0a0c80d",
+    "ranking.csv": "2da7bd09e1a590b00c720266d5ec082ce0a71188f23784fad2052521fa312c4e",
+    "salida/01_limpieza.json": "98dba284d0926e666c3e59772d1bf841dcb59dcbae011b6986c736627d880604",
+    "salida/04_pool.csv": "89d6ec41fe08338f5f6c16016c1dfeaa2c81e3718bf58037bae92108186d4ff7",
+    "salida/04_pool_meta.json": "a6c6d6385621f45f4571074206ad5cd083fe5359ccefe02513833b8f2b74795f",
+    "scripts/04_pool.py": "18e11337763eec52a6cd301bece85860e2fcc695ad672582099781edcd2f83ef",
+    "src/mtx/corpus.py": "a5096756b0e682ec3ed08938aef784f8b26d9d031cd3ed8b4cf24c6984a75fdf",
+    "src/mtx/indice.py": "dc2b45c73e7ab5cea312fd2453b1adef57cefe854d1a44b688f5cf2931780ede",
+    "src/mtx/pool.py": "6ad066123a2052abb9e76157936f5960a85380c89f8328eb49d3df43530953d9",
+    "src/mtx/preproceso.py": "926cf045e9427640e7811bf413b5cbdfa6cef9910e93eb14ef6cb9537628751f",
+    "src/mtx/ranking.py": "c7192545e09cdbfa24e27b8e46be8e3de9674d102b3eb4977fcb2a6a02f6eb2d"
+  }
+}

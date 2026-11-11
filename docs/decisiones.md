@@ -18,6 +18,20 @@
 
 ## Decisiones posteriores
 
+- (2026-11-10) Luis aprobó explícitamente, sin modificaciones, el alcance de revisión
+  de once candidatos y el texto íntegro de `config/criterios_anotacion.md`.
+  SHA-256 de la propuesta de alcance:
+  `e7a97be6b2a106991d5833ae1465aa5a76adc67538145618bd36b5308b1b7884`.
+  SHA-256 de los criterios IE:
+  `3ae1e19e1ff5032708fc6f6269792d3e31239c3314a3ad0108f67a15bd2ccb47`.
+  Constancias en `config/alcance_gazetteer_aprobacion.json` y
+  `config/criterios_anotacion_aprobacion.json`. Se conservan ambos documentos
+  aprobados byte por byte, incluidos sus encabezados históricos de propuesta;
+  el estado vigente se acredita mediante esas constancias. La aprobación del
+  alcance no acepta ninguno de los once ni rechaza los otros 1,494. Streamlit queda
+  habilitado para revisión personal; no hay decisiones de candidatos, congelación,
+  muestra ni gold creados durante este registro.
+
 - (2026-11-10) Por instrucción de Luis se propone alcance acotado antes de D15,
   pendiente de aprobación explícita. Se conservan 1,505 candidatos; se proponen los
   once con coincidencias adicionales de sigla/nombre minado en cuerpos de los 99
@@ -175,3 +189,25 @@
   recortan espacios de extremos solo en los contextos de candidatos minados.
   No se modifica texto canónico ni offsets; minería regenerada y T11 con 200
   pasajes reales nuevamente verde. No hay congelación ni decisiones humanas.
+
+## 2026-11-10 — Cierre humano H5 y autorización de congelación
+
+Luis cerró personalmente la revisión en Streamlit: constancia
+`config/gazetteer_aprobacion.json`, fecha 2026-11-11T00:25:07.664368+00:00
+(10 de noviembre en CDMX), revisión 11. Once candidatos descartados por el
+alumno, cero ampliaciones; base original de 76 entradas intacta y 1,494
+candidatos fuera del alcance no revisados. Se conservan los gazetteers
+prescritos y LOC aprobados mediante ese cierre, además de la base del kit.
+Criterios IE y alcance cuentan con aprobación explícita y hashes vigentes.
+
+El alumno autorizó versionar los archivos necesarios y congelar H5. Se
+registran los archivos humanos existentes y respaldos con su contenido exacto
+para satisfacer el árbol limpio requerido por D15; no se crean etiquetas de
+relevancia ni revisiones humanas nuevas. Los juicios mantienen su procedencia
+Excel autorizada y revisión 197; no se atribuyen a captura directa en la app.
+Respaldo externo verificado en `/tmp/mtx-h5-congelacion-20261110-182613/`;
+se verifican las 21 entradas del manifiesto H4 sin reevaluar ni regenerar.
+La etiqueta `reglas-congeladas` se creará mediante el objetivo oficial tras
+pruebas; solo después la app preparará el manifiesto ciego semilla 42, sin
+consultar predicciones ni producir entidades gold. BETO permanece fijado por
+criterio técnico (D09); no se compara un segundo modelo ni se crea selección.

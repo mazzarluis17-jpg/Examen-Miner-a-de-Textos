@@ -1,0 +1,97 @@
+{
+  "revision": 11,
+  "decisiones": {
+    "COVID": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": "N DE LA SALUD: la Política Nacional de Vacunación contra la COVID-19 sigue avanzando, seguimos recibiendo vacunas, como lo mo"
+    },
+    "AMLO": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": "obras del aeropuerto Felipe Ángeles. Conferencia presidente AMLO El 18 de marzo de 1938 se tomó la decisión histórica de reg"
+    },
+    "III": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": " largo de las vías férreas. En lo que se refiere al Plan DN-III, Plan Marina y Plan de la Guardia Nacional para atención de"
+    },
+    "MELINA": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": "ente igual que con su primera dosis. (APLICACIÓN DE VACUNA) MELINA VEGA: Es muy importante que nos haga saber si presenta algu"
+    },
+    "VEGA": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": "ual que con su primera dosis. (APLICACIÓN DE VACUNA) MELINA VEGA: Es muy importante que nos haga saber si presenta alguna re"
+    },
+    "IVA": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": "s empresarios tienen descuentos en el pago de impuestos, el IVA no se paga al 16 por ciento, sino al ocho por ciento, el Im"
+    },
+    "SARS": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": "erdo con la Política Nacional de Vacunación contra el virus SARS-CoV-2 para la prevención de la COVID-19 en México."
+    },
+    "UMAS": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": "o mal hecho, esto fue en el periodo neoliberal. Esto de las UMAS es lo mismo, entonces nos toca ver cómo lo enfrentamos. Que"
+    },
+    "VACUNA": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": " exactamente igual que con su primera dosis. (APLICACIÓN DE VACUNA) MELINA VEGA: Es muy importante que nos haga saber si prese"
+    },
+    "VII": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": "ce sobre todo en el periodo clásico tardío hacia los siglos VII, VIII y IX de nuestra era, se va a construir, ya se está em"
+    },
+    "VIII": {
+      "accion": "descartar",
+      "nombre": "",
+      "etiqueta": null,
+      "variantes": "",
+      "evidencia": "bre todo en el periodo clásico tardío hacia los siglos VII, VIII y IX de nuestra era, se va a construir, ya se está empezand"
+    }
+  },
+  "fuentes": {
+    "config/alcance_gazetteer_aprobacion.json": "e0ad387e3a519e0337d8c688b2964751ffe2ffba8dc95d930fe3abf40c86447b",
+    "config/gazetteer_loc.csv": "35bafe2f4f8f35628863f27f11cdac3cfe75b02aabe4c568810f27155fe56244",
+    "config/gazetteer_prescrito.csv": "69a7726f8a5e781eff50421bfca15a8600096f43e36cefa37368015c19eadfe2",
+    "data/mejor_modelo.json": "bf4d694fe867b70b99b4dedbb94d6ac09536d10e464ad7e7aa242fa1f4fc71c0",
+    "data/pasajes.parquet": "766859a1ab322a449b6ce3ef9e25d15b95f275d140804f3935db7c1de632af0d",
+    "kit/gazetteer_dependencias.csv": "11e0fa1b32e6b1fb8baf304a0efb4815806a6b3dd944c49891978e8528b6b243",
+    "salida/06_revision_alcance.csv": "3165cb09043e8e476e24c08f5a927d5849c8c5f5d059476b40dcbf3160462475",
+    "salida/06_revision_alcance.json": "e7a97be6b2a106991d5833ae1465aa5a76adc67538145618bd36b5308b1b7884",
+    "salida/06_revision_auditoria.csv": "3e64701eb4d35ab8d9d109bd27c9ce0e0d4a7cab34291277f12b3d6172b43521",
+    "salida/06_revision_ocurrencias.csv": "7e601b5162c0b8d6c7d64edf9f2b2b6c3403f47e806997ce5a1e697f52f9165f",
+    "salida/06_siglas_candidatas.csv": "3fb31e24042e46ba49b1c38c0a4ab514d84245ed6d8bbbdcc45f0dc62af701b8",
+    "salida/ranking.csv": "2da7bd09e1a590b00c720266d5ec082ce0a71188f23784fad2052521fa312c4e"
+  },
+  "sha256_exportacion": "dc32856e7a97c38f8260e4ffcbdd7941765e52c72df7c13179bac30c22171065"
+}

@@ -2,6 +2,23 @@
 
 ## Completado
 
+- (2026-11-10) Cierre formal humano de Gazetteer verificado: once descartes,
+  cero ampliaciones, 76 entradas base conservadas. Aprobaciones IE y alcance
+  vigentes; 21 fuentes H4 intactas. Respaldo externo verificado de 302 archivos;
+  versionado autorizado de persistencia humana sin cambiar contenidos.
+
+- (2026-11-10) Verificada revisión Gazetteer revisión 11: once descartes humanos,
+  ninguna ampliación, fuentes y exportación compatibles; 76 entradas originales
+  conservadas. Falta el botón de cierre humano: no existe
+  `config/gazetteer_aprobacion.json`. No se congela ni se crea muestra H6 hasta
+  ese cierre explícito en la app, conforme al contrato de persistencia.
+
+- (2026-11-10) Luis aprobó explícitamente el alcance de once candidatos y los
+  criterios IE sin modificaciones. Constancias y hashes registrados en decisiones;
+  Gazetteer habilitado y comprobado sin pulsar botones de decisión. Cero candidatos
+  aceptados/rechazados por el asistente; fuera de alcance permanecen no revisados.
+  No se ejecuta congelación ni se crea muestra o gold.
+
 - Preparación prioritaria H5/H6 (2026-11-10): propuesta de alcance de once candidatos
   con coincidencias adicionales en cuerpos del ámbito ganador; originales 1,505
   intactos y exclusiones auditadas, sin convertirlas en rechazos humanos. Alcance
@@ -85,13 +102,11 @@
 
 ## Pendiente
 
-1. Aprobar o corregir el alcance de once candidatos y la propuesta íntegra de
-   `config/criterios_anotacion.md`. Tras aprobación, registrar constancias por hash;
-   el alumno revisa los once y cierra Gazetteer. P06 técnico y reglas están listos.
-2. Congelar solo tras lo anterior y un árbol registrado. No crear muestra real,
-   ejecutar inferencia ni abrir anotación H6 durante esta integración.
-3. Después: preparación de manifiesto ciego desde la app, H6 humano y H7–H9 según
-   el PRD. Usar `data/mejor_modelo.json` de H4; no seleccionar un ganador nuevo.
+1. Ejecutar congelación oficial tras registrar el árbol probado y aprobado.
+2. Preparar muestra ciega reproducible de veinte IDs desde la función oficial
+   de la app, sin predicciones ni anotaciones.
+3. H6: Luis anota los veinte pasajes y cierra gold personalmente. Después
+   H7–H9 según PRD, conservando ganador H4 y restricciones D15.
 4. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
 
 ## Decisiones
@@ -101,10 +116,9 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 ## Bloqueos
 
 - H3 confirmado por Luis y H4 cerrado; no son bloqueos pendientes de la rama H5.
-- H5 requiere revisión humana del gazetteer, criterios IE aprobados y congelación.
-  BETO sigue siendo el principal provisional por criterio técnico; no hay F1 ni
-  selección humana simulada. La app y cierre Gold están preparados, pero bloqueados
-  hasta completar H5 y crear el manifiesto ciego. No hay gold real.
+- H5 tiene todas las aprobaciones humanas vigentes. Resta ejecutar la etiqueta
+  oficial y preparar muestra antes de H6. BETO fijado por criterio técnico;
+  no hay gold ni selección humana simulada.
 - Entrega individual en GitHub según decisión documentada en H5. Publicación y
   acceso del profesor pendientes; no se cambia el remote ni se hace push aquí.
 - Índice, tokens y TF-IDF no se han reconstruido en Debian; no se requieren para
