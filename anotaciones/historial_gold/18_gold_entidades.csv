@@ -1,0 +1,122 @@
+passage_id,tipo,texto,inicio,fin
+326_25,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,0,71
+326_25,ORG,SEDENA,73,79
+326_25,LOC,Tren Maya,94,103
+396_23,ORG,DIRECCIÓN GENERAL DE INGENIEROS DE LA SECRETARÍA DE LA DEFENSA NACIONAL,0,71
+396_23,ORG,SEDENA,73,79
+396_23,LOC,Mérida,409,415
+396_23,LOC,parque La Plancha,460,477
+396_23,LOC,Tren Maya,534,543
+396_23,LOC,Umán,666,670
+396_23,LOC,Teya,673,677
+396_23,FECHA,noviembre del presente año,769,795
+396_23,LOC,Tren Maya,1031,1040
+396_23,LOC,Mérida,1068,1074
+396_23,ORG,Tren Maya,1155,1164
+228_7,LOC,México,27,33
+228_7,PER,Andrés Manuel López Obrador,208,235
+228_7,LOC,Estados Unidos Mexicanos,270,294
+228_7,ORG,Fuerzas Armadas,323,338
+228_7,ORG,Corredor Interoceánico del Istmo de Tehuantepec,340,387
+228_7,LOC,México,405,411
+228_7,LOC,Corredor Interoceánico del Istmo de Tehuantepec,435,482
+228_7,ORG,Secretaría de Marina,500,520
+228_7,ORG,"Empresa Multimodal Interoceánica, S.A. de C.V.",537,583
+228_7,ORG,administraciones del Sistema Portuario Nacional,603,650
+228_7,ORG,Asiponas,673,681
+228_7,LOC,Salina Cruz,686,697
+228_7,LOC,Coatzacoalcos,699,712
+228_7,LOC,Dos Bocas,714,723
+228_7,LOC,Puerto Chiapas,726,740
+228_7,LOC,Océano Pacífico,844,859
+228_7,LOC,Océano Atlántico,867,883
+228_7,LOC,golfo de México,897,912
+228_7,LOC,Coatzacoalcos,1144,1157
+228_7,LOC,Salina Cruz,1247,1258
+1458_12,FECHA,lunes próximo,81,94
+1458_12,LOC,Tren Maya,148,157
+1458_12,FECHA,15 días,163,170
+1458_12,LOC,Ferrocarril del Istmo,237,258
+1458_12,LOC,aeropuerto ‘Felipe Ángeles’,305,332
+1458_12,LOC,Tren Maya,351,360
+1458_12,LOC,Istmo de Tehuantepec,377,397
+1277_28,ORG,Brigada Correcaminos,137,157
+1277_28,PER,Edgar Jesús Zitle García,663,687
+1277_28,ORG,IMSS,722,726
+1277_28,LOC,Sonora,730,736
+2149_27,LOC,Dos Bocas,398,407
+2149_27,FECHA,este año,437,445
+2149_27,MONTO,50 mil millones de pesos,447,471
+2149_27,LOC,Sonda de Campeche,610,627
+2149_27,LOC,Tabasco,668,675
+2149_27,LOC,Veracruz,680,688
+2149_27,LOC,Dos Bocas,716,725
+2149_27,LOC,Dos Bocas,738,747
+2149_27,LOC,Dos Bocas,908,917
+1527_0,LOC,México,249,255
+1527_0,LOC,Salina Cruz,318,329
+1527_0,FECHA,hace 40 años,330,342
+1527_0,LOC,Refinería Dos Bocas,806,825
+1527_0,LOC,Paraíso,833,840
+1527_0,LOC,Tabasco,842,849
+1527_0,LOC,Paraíso,853,860
+1527_0,LOC,Tabasco,862,869
+1527_0,LOC,Refinería Dos Bocas,913,932
+928_2,LOC,Santa Lucía,75,86
+928_2,FECHA,20 de septiembre,91,107
+928_2,LOC,aeropuerto ‘Felipe Ángeles’,173,200
+928_2,LOC,Torre de Pisa,245,258
+928_2,LOC,Italia,263,269
+928_2,LOC,Santa Lucía,601,612
+928_2,LOC,Santa Lucía,978,989
+928_2,ORG,Frente Cívico Nacional,1131,1153
+2202_5,LOC,Santa Lucía,109,120
+2202_5,FECHA,1978,280,284
+2202_5,ORG,Fuerzas Armadas,479,494
+2202_5,LOC,Santa Lucía,750,761
+2202_5,LOC,Santa Lucía,815,826
+2202_5,PER,Salinas Carranza,861,877
+2202_5,ORG,Fuerza Aérea,929,941
+2202_5,LOC,Santa Lucía,972,983
+2202_5,PER,Felipe Ángeles,1014,1028
+2202_5,PER,Felipe Ángeles,1039,1053
+2202_5,ORG,Colegio Militar,1112,1127
+2202_5,ORG,Colegio Militar,1157,1172
+771_54,MONTO,cinco mil pesos,673,688
+771_54,MONTO,29 mil millones de pesos,797,821
+771_54,LOC,Guerrero,937,945
+771_54,LOC,Morelos,1009,1016
+771_54,LOC,Puebla,1020,1026
+771_54,LOC,Oaxaca,1028,1034
+771_54,LOC,Chiapas,1036,1043
+771_54,LOC,Zacatecas,1045,1054
+771_54,LOC,Durango,1056,1063
+771_54,LOC,Nayarit,1065,1072
+771_54,LOC,Veracruz,1085,1093
+1870_19,MONTO,cinco mil pesos,777,792
+1870_19,LOC,Tamaulipas,998,1008
+1870_19,LOC,Tamaulipas,1094,1104
+2250_60,LOC,Dos Bocas,78,87
+2250_60,MONTO,80 mil millones de pesos,345,369
+2008_2,FECHA,año pasado,65,75
+2008_2,MONTO,65 mil millones de pesos,81,105
+1640_5,FECHA,este año,138,146
+1640_5,ORG,Issste,275,281
+1640_5,ORG,Seguro,287,293
+1640_5,LOC,México,413,419
+1640_5,ORG,Congreso,601,609
+1640_5,LOC,Tamazula,1038,1046
+2030_1,LOC,México,43,49
+2030_1,LOC,Colima,340,346
+2030_1,MONTO,dos mil 550 pesos,530,547
+2030_1,ORG,Issste,596,602
+2030_1,ORG,Seguro,608,614
+2030_1,MONTO,dos mil 550 pesos,911,928
+1318_22,LOC,México,428,434
+1318_22,LOC,América Latina,496,510
+1318_22,LOC,México,556,562
+1318_22,PER,Carlos Pozos,1000,1012
+1685_4,MONTO,tres mil 600 pesos,156,174
+1685_4,LOC,México,460,466
+1685_4,FECHA,años 80,848,855
+1685_4,FECHA,este año,1124,1132

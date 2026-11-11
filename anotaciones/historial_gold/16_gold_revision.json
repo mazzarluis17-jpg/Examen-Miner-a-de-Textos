@@ -1,0 +1,19 @@
+{
+  "revision": 16,
+  "fuentes": {
+    "config/criterios_anotacion.md": "3ae1e19e1ff5032708fc6f6269792d3e31239c3314a3ad0108f67a15bd2ccb47",
+    "config/criterios_anotacion_aprobacion.json": "8dadc0531e7142ec7d3c890af3ab0470e941c4c77b885ab13982caf1c9507de3",
+    "config/protocolo.txt": "3dda620cbcbc994f52a1eb1cb9718206e3465b8dc24f71b79b3756986e7fac4f",
+    "config/gazetteer_aprobacion.json": "347dfd5a04d76caa83473543d21bfa500e539a44c633ffeb53134c09fc2af242",
+    "config/gazetteer_extendido.csv": "dc32856e7a97c38f8260e4ffcbdd7941765e52c72df7c13179bac30c22171065",
+    "data/modelo_ner.json": "3a8233b21f8d54588c7a8bb35af1704d2055f83b5ad2035665f729e57a689e0c",
+    "data/mejor_modelo.json": "bf4d694fe867b70b99b4dedbb94d6ac09536d10e464ad7e7aa242fa1f4fc71c0",
+    "data/pasajes.parquet": "766859a1ab322a449b6ce3ef9e25d15b95f275d140804f3935db7c1de632af0d",
+    "salida/ranking.csv": "2da7bd09e1a590b00c720266d5ec082ce0a71188f23784fad2052521fa312c4e",
+    "anotaciones/muestra_gold.csv": "cbaac558917bf3a581ac64f21b5862735bc877e27df3724322cf0a8c89b53bb1"
+  },
+  "archivos": {
+    "Evaluaci\u00f3n": "1dacad34772d44c63f7f0d1779460c63fe211276195e2ce483a306b0dabceb06",
+    "estados": "10ab6d6fca59cd10c86344ef6a4dfaeb47640a70dc291a80d964bf09418531a0"
+  }
+}

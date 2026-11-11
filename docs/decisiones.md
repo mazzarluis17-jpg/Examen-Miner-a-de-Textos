@@ -227,3 +227,23 @@ contenido y protocolo; no hay sustituciones. Auditoría en
 Los 302 archivos protegidos del respaldo mantienen sus hashes. El siguiente
 commit registra solo muestra y documentación posterior a D15, sin alterar
 reglas, criterios, configuración ni decisiones humanas.
+
+## 2026-11-10 — Cierre humano H6 verificado y comienzo de H7
+
+Luis cerró personalmente Gold en Streamlit: revisión 20, veinte pasajes revisados
+y 138 entidades, incluido `1133_87` cerrado sin entidades. Sello, fuentes, hashes
+y exportación oficial de raíz coinciden; `validar_gold()` sin errores. Las
+anotaciones proceden de trabajo humano en Excel auxiliar externo y transferencia
+autorizada con persistencia oficial; no se atribuyen a captura directa completa
+en Streamlit. Los auxiliares no se incluyen en Git ni entregables. Correcciones
+previas expresamente autorizadas: offsets [0:71] de dos ORG en las marcas de
+P01/P02 y conservación como ORG [340:387] del Corredor en P03, eliminando la
+LOC anidada [367:387]; ninguna otra entidad cambiada durante la transferencia.
+
+Respaldo externo previo H7 verificado en `/tmp/mtx-h7-protegidos-20261110-202712/`.
+Se versionan únicamente persistencia, historial, muestra y cierre oficiales.
+D15 permanece en `d4ca0a7`, anterior al primer commit gold. Se autoriza ahora
+la inferencia con el único BETO técnico ya fijado; no se selecciona ni se ajusta
+un modelo con Gold. H7 incorpora fusión exacta D12 y evaluación, manteniendo
+intactos reglas, posproceso, gazetteers y normalizador congelados. El
+enriquecimiento auxiliar prudente se añade aparte sin cambiar spans ni métricas.
