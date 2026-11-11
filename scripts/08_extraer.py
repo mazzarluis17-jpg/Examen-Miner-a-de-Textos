@@ -40,8 +40,15 @@ def main():
         for e in procesadas:
             puntajes[(f.passage_id, e["tipo"], e["inicio"], e["fin"])] = e["confianza"]
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=raiz, text=True).strip()
+    # Versión derivada de código y reglas: estable al añadir commits solo de datos/docs.
+    import hashlib
+    fuentes_version = ["src/mtx/fusion.py", "src/mtx/enriquecimiento.py",
+                       "src/mtx/ner_posproceso_v2.py", "src/mtx/ner_modelo.py",
+                       "src/mtx/reglas.py", "config/ner.yaml"]
+    version = hashlib.sha256(json.dumps({p: sha256_archivo(raiz/p) for p in
+                                       fuentes_version}, sort_keys=True).encode()).hexdigest()
     enriquecidas = enriquecer(publica, ctx["pasajes"], modelo["modelo"], modelo["revision"],
-                             commit, equivalencias, puntajes)
+                             version, equivalencias, puntajes)
     for nombre, tabla in [("entidades.csv", oficial), ("salida/entidades.csv", oficial),
             ("salida/entidades_unicas.csv", unica),
             ("salida/entidades_enriquecidas.csv", enriquecidas),
