@@ -51,6 +51,30 @@ def vista_metodo(pred, metodo):
     return pred[pred.metodo.isin([metodo, "ambos"])].drop_duplicates(CLAVE)
 
 
+def sin_union_interpalabra(crudas, pasajes):
+    """Ablación informativa: mismo recorte/v2 y unión intrapalabra, sin unir palabras."""
+    from mtx.ner_posproceso_v2 import posprocesar_auditado
+
+    textos = pasajes.set_index("passage_id").texto.to_dict()
+    filas = []
+    for (_, pid), grupo in crudas.groupby(["query_id", "passage_id"], sort=True):
+        procesadas = []
+        for entidad in grupo.sort_values(["inicio", "fin"]).to_dict("records"):
+            recortadas, _, _ = posprocesar_auditado(textos[pid], [entidad], pid)
+            if not recortadas:
+                continue
+            e = recortadas[0]
+            if (procesadas and procesadas[-1]["tipo"] == e["tipo"] and
+                    procesadas[-1]["fin"] == e["inicio"]):
+                previa = procesadas[-1]
+                previa["fin"] = e["fin"]
+                previa["texto"] = textos[pid][previa["inicio"]:e["fin"]]
+            else:
+                procesadas.append(e)
+        filas.extend(procesadas)
+    return pd.DataFrame(filas, columns=COLUMNAS)
+
+
 def detalle_ie(referencia, pred, ids):
     """Conjuntos como el kit; ids explícitos permiten medir pasajes gold vacíos."""
     ref = referencia[referencia.passage_id.isin(ids)].drop_duplicates(CLAVE)

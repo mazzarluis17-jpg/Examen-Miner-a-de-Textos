@@ -4,7 +4,12 @@ import pandas as pd
 import pytest
 
 from mtx.adaptadores_kit import ejecutar_evaluador
-from mtx.evaluacion_ie import analizar_errores, detalle_ie, validar_entidades
+from mtx.evaluacion_ie import (
+    analizar_errores,
+    detalle_ie,
+    sin_union_interpalabra,
+    validar_entidades,
+)
 from mtx.fusion import COLUMNAS
 
 
@@ -43,3 +48,15 @@ def test_contrato_rechaza_offset_o_metodo():
     validar_entidades(tabla,p)
     tabla.loc[0,'metodo']='desconocido'
     with pytest.raises(ValueError):validar_entidades(tabla,p)
+
+
+def test_ablacion_union_solo_interpalabra():
+    crudas=pd.DataFrame([
+        ['Q1',1,'1_0','ORG','Ban',0,3,'modelo'],
+        ['Q1',1,'1_0','ORG','co',3,5,'modelo'],
+        ['Q1',1,'1_0','ORG','Azul',6,10,'modelo']],columns=COLUMNAS)
+    pasajes=pd.DataFrame([{'passage_id': '1_0','texto': 'Banco Azul'}])
+    antes=crudas.copy(deep=True)
+    resultado=sin_union_interpalabra(crudas,pasajes)
+    assert resultado.texto.tolist()==['Banco','Azul']
+    pd.testing.assert_frame_equal(crudas,antes)

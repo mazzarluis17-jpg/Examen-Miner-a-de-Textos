@@ -15,6 +15,7 @@ from mtx.evaluacion import escribir_conservando
 from mtx.evaluacion_ie import (
     analizar_errores,
     detalle_ie,
+    sin_union_interpalabra,
     validar_entidades,
     verificar_cierre,
 )
@@ -69,6 +70,8 @@ def main():
     crudas = pd.read_csv(raiz/"salida/07_crudas_beto.csv", keep_default_na=False)
     efectos = []
     for etiqueta, tabla in [("crudo_sin_recorte_ni_union",crudas),
+                            ("recorte_sin_union_interpalabra",
+                             sin_union_interpalabra(crudas, ctx["pasajes"])),
                             ("posproceso_v2_posterior_D15",pred)]:
         f = detalle_ie(ref, tabla, evaluados_kit)
         f = f[f.metodo.eq("modelo")].copy()
