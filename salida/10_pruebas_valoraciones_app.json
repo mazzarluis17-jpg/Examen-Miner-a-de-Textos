@@ -1,0 +1,10 @@
+{
+  "pytest": "374 passed, 9 deselected",
+  "pruebas_nuevas": 14,
+  "ruff": "All checks passed",
+  "apertura_real": "0/10, campo vacío, sin errores ni archivos humanos nuevos",
+  "validacion_estricta_real": "rechazo esperado [VALIDAR] por diez valoraciones pendientes",
+  "cierre_10_sobre_10": "probado con fixtures sintéticas y comando estricto simulado; no se generan opiniones reales",
+  "respuestas_evidencias_intactas": true,
+  "h9_iniciado": false
+}

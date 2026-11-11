@@ -4,7 +4,14 @@ from pathlib import Path
 import streamlit as st
 
 from mtx import config
-from mtx.app import componentes, vista_estado, vista_gazetteer, vista_gold, vista_juicios
+from mtx.app import (
+    componentes,
+    vista_estado,
+    vista_gazetteer,
+    vista_gold,
+    vista_juicios,
+    vista_valoraciones,
+)
 
 
 @st.cache_resource(show_spinner="Verificando insumos locales…")
@@ -15,6 +22,9 @@ def contexto(raiz: str, firma: tuple):
 def main():
     st.set_page_config(page_title="Anotación humana · Minería de Textos", layout="wide")
     st.title("Anotación humana de relevancia")
+    if st.sidebar.toggle("Abrir valoraciones H8 (sin cargar juicios)"):
+        vista_valoraciones.mostrar(config.RAIZ)
+        return
     if st.sidebar.toggle("Abrir revisión Gazetteer (sin cargar juicios)"):
         vista_gazetteer.mostrar(config.RAIZ)
         return

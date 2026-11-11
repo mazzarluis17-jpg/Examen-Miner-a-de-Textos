@@ -358,3 +358,25 @@ Ruff limpio. Validación estricta de valoraciones falló deliberadamente con
 vacía se guarda en `salida/10_valoraciones_plantilla.yaml`; no se escribe
 `anotaciones/valoraciones.yaml`, ni se redactan opiniones. Sin valoraciones
 vigentes no se presenta R08 como entregable humano completo ni se inicia H9.
+
+## 2026-11-10 — Captura personal de valoraciones H8 en Streamlit
+
+Por autorización explícita se añade acceso directo en la app existente, sin
+cargar juicios ni cambiar vistas anteriores. El único campo humano es el
+texto `valoracion` del contrato; `tabla_sha256` se toma de la evidencia
+verificada al guardar. No se añaden calificaciones ni borradores de opinión.
+La captura guarda exactamente el texto suministrado, revisión y respaldos
+atómicos; dos sesiones o fuentes cambiadas bloquean la escritura.
+
+Al guardar diez valoraciones vigentes, el cierre técnico invoca el script H8
+estricto; no genera aprobación humana ni ejecuta H9 o Git. El registro de
+cierre se identifica como validación técnica. Los hashes del contenido
+respondido y de las evidencias se comprueban antes y después. Ningún cambio
+de opinión modifica respuestas, Gold, reglas o métricas H3–H7.
+
+Prueba real: 0/10 y campo vacío, sin crear archivos humanos. El comando estricto
+real se ejecuta y rechaza correctamente la ausencia de las diez valoraciones.
+La ruta exitosa 10/10 se prueba con fixtures sintéticas, sin introducir sus
+textos en el repositorio real. Suite 374 passed/9 deselected, incluidas catorce
+pruebas nuevas; Ruff limpio. Metadatos locales previos de ejecución H8 se
+conservaron en respaldo externo antes de comprobar la validación estricta.

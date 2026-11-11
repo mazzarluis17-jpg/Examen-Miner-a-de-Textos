@@ -2,6 +2,16 @@
 
 ## Completado
 
+- (2026-11-10) Interfaz rápida de valoraciones H8 implementada en Streamlit:
+  acceso directo sin juicios, una consulta, resumen/citas completas, texto humano
+  sin precarga, guardado y avance, reanudación y progreso 0/10 a 10/10. Persistencia
+  nativa con hash, revisión, cerrojo y respaldos; rechazo de concurrencia y fuentes
+  obsoletas. Al guardar la décima ejecuta validación estricta y registra cierre
+  técnico, sin iniciar H9 ni Git. Catorce pruebas nuevas, suite 374 passed/
+  9 deselected y Ruff limpio; app real comprobada 0/10 sin crear el YAML humano.
+  Faltan únicamente las diez valoraciones personales, no se inventan ni se versionan
+  opiniones inexistentes. Ver instrucciones en `docs/h8_respuestas.md`.
+
 - (2026-11-11) H8 técnico completo, commit de código `50daa88`: mapa Q1–Q10,
   respuestas de 16 columnas y diez tablas/todas con citas verificadas; exclusiones,
   auxiliares, alias verificados, deduplicación de ventanas/eventos y contradicciones.
@@ -142,13 +152,12 @@
 
 ## Pendiente
 
-1. Luis revisa `salida/tablas_respuesta/todas.md`, copia la plantilla vacía a
-   `anotaciones/valoraciones.yaml` y escribe personalmente las diez valoraciones
-   con sus hashes. H8 técnico no está bloqueado por ello; R08 humano sí pendiente.
-2. Ejecutar `make tablas` o `scripts/10_tablas.py --exigir-valoraciones` para
-   incorporar y comprobar las valoraciones vigentes, sin generarlas ni sugerirlas.
-3. Solo después, H9: reporte 4–6 páginas, presentación/demo, README y validación
-   reproducible final con los cortes de aprobación humana del PRD.
+1. Luis abre Streamlit y activa «Abrir valoraciones H8 (sin cargar juicios)»;
+   revisa cada consulta, escribe personalmente y pulsa Guardar valoración y continuar.
+2. Al completar diez, la app valida e incorpora las opiniones a las tablas sin
+   cambiar evidencia; después versionar YAML, revisiones, respaldos y cierre técnico
+   reales. El código no realiza commits automáticos ni fabrica opiniones.
+3. Solo después, H9 con los cortes de aprobación humana del PRD. No iniciado.
 4. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
 
 ## Decisiones

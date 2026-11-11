@@ -111,3 +111,45 @@ filas de evidencia de la consulta, incluso las que no caben entre los ocho
 valores presentados. Así un cambio de valores, estados o pasajes invalida la
 valoración. Un hash obsoleto muestra `[VALIDAR] pendiente del alumno`; nunca se
 actualiza silenciosamente el archivo humano ni se sustituye su texto.
+
+## Valoraciones desde Streamlit
+
+La ruta rápida reutiliza la aplicación existente:
+
+```bash
+uv run --no-sync streamlit run src/mtx/app/app.py
+```
+
+Activar **Abrir valoraciones H8 (sin cargar juicios)**. Se presenta una consulta
+a la vez con su pregunta, tablas de respuesta y citas. El desplegable de
+evidencia completa permite revisar documento, pasaje, fecha, hablante y offsets.
+No se carga NER ni se ejecuta extracción. No hay notas numéricas, opiniones
+sugeridas ni texto de valoración precargado.
+
+Escribir personalmente dos o tres líneas sobre credibilidad, faltantes y errores
+y pulsar **Guardar valoración y continuar**. Se avanza a la primera pendiente;
+el selector permite volver a una consulta. Guardar antes de salir o cambiar
+de consulta. Al reabrir, se recuperan texto y progreso. Una valoración cuyo hash
+ya no coincide no se cuenta como vigente; su texto anterior se conserva para
+revisión personal, sin aprobación automática del nuevo contenido.
+
+La app escribe `anotaciones/valoraciones.yaml` con el contrato existente, y
+`valoraciones_estado.json` con revisión y hash; conserva versiones en
+`historial_valoraciones/`. Usa cerrojo, escritura atómica con fsync y diario
+previo: concurrencia o interrupciones bloquean, sin sobrescritura silenciosa.
+No se modifica ningún archivo humano al abrir la sección.
+
+Al guardar la décima opinión vigente se ejecuta automáticamente
+`scripts/10_tablas.py --exigir-valoraciones`. Se verifica que el archivo humano,
+respuestas y cuerpos de tablas permanezcan intactos; solo se incorporan los
+bloques de valoración y metadatos de validación. `salida/10_cierre_h8.json` es
+un registro técnico, no una opinión ni una aprobación inventada. La pantalla
+muestra H8 validado cuando coinciden revisión, archivo humano y hashes. Si la
+validación se interrumpe, las opiniones siguen guardadas y existe un botón
+para reintentar. No se ejecuta H9 ni se realizan operaciones Git desde la app.
+
+El versionado de los archivos humanos se realiza después de que existan; el
+commit de infraestructura no incluye opiniones simuladas o plantillas como
+si fueran respuestas del alumno. Pruebas exclusivamente sintéticas verifican
+la transición 0/10 a 10/10 y la invocación del comando estricto. La prueba real
+de apertura permanece 0/10 sin crear el YAML humano.

@@ -2,7 +2,7 @@
   "esquema": 1,
   "productor": "scripts/10_tablas.py",
   "modelo": "bm25_con_filtro",
-  "commit_codigo": "50daa8809051de404adbfc9db5222674c08bf59d",
+  "commit_codigo": "c403c73109e055fb8db2f5dc05d421fdeff835e4",
   "entradas": {
     "data/consultas.csv": "37377bcbeccede92aa2d99a9ca2d4f064d7f230f344b66836903d117e5a3e3b1",
     "data/mejor_modelo.json": "bf4d694fe867b70b99b4dedbb94d6ac09536d10e464ad7e7aa242fa1f4fc71c0",

@@ -35,3 +35,4 @@ config/.gazetteer.lock
 
 anotaciones/.muestra.lock
 anotaciones/.gold.lock
+anotaciones/.valoraciones.lock
