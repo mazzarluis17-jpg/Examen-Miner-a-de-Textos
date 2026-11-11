@@ -1,0 +1,132 @@
+{
+  "clave": "b72cdc6e1eea41147f301800f6d542b7f5778204581a72b2eda1fb9ff1fde464",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "4964bb8ae965faf39aee459e6ce442ee9da05882bb5a520cf760bf1b2ee571dd",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.8218553066253662,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Base Aérea Militar de Santa Lucía",
+      "inicio": 174,
+      "fin": 207,
+      "confianza": 0.9946545958518982,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Felipe Ángeles",
+      "inicio": 282,
+      "fin": 296,
+      "confianza": 0.7818045616149902,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Base Aérea Militar de Santa Lucía",
+      "inicio": 304,
+      "fin": 337,
+      "confianza": 0.9449546933174133,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ciudad de México",
+      "inicio": 466,
+      "fin": 482,
+      "confianza": 0.9991965889930725,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ciudad de México",
+      "inicio": 535,
+      "fin": 551,
+      "confianza": 0.9991835951805115,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "lago de Texcoco",
+      "inicio": 771,
+      "fin": 786,
+      "confianza": 0.8537877202033997,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "'",
+      "inicio": 945,
+      "fin": 946,
+      "confianza": 0.5320305824279785,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Felipe Ángeles",
+      "inicio": 954,
+      "fin": 968,
+      "confianza": 0.8440337181091309,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Base Aérea Militar Santa Lucía",
+      "inicio": 976,
+      "fin": 1006,
+      "confianza": 0.9854692220687866,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Estado de México",
+      "inicio": 1013,
+      "fin": 1029,
+      "confianza": 0.9981196522712708,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ciudad de México",
+      "inicio": 1126,
+      "fin": 1142,
+      "confianza": 0.9989967346191406,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Toluca",
+      "inicio": 1167,
+      "fin": 1173,
+      "confianza": 0.9849411249160767,
+      "cortada": false
+    }
+  ],
+  "descartadas": 4,
+  "segundos": 0.24174854800003232,
+  "version_transformers": "5.22.1"
+}

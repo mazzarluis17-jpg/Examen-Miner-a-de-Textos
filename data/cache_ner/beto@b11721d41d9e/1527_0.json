@@ -1,0 +1,116 @@
+{
+  "clave": "dbc79c40d50768f1920db2d86ec9de7b32f29fcd1bc2f7b534dc5070f0f9e24e",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "a29ea0d7a2cff8bacee65e8cd0d87dc96809cc2f867c1f898b81434fc9e5f234",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MANUEL LÓPEZ",
+      "inicio": 18,
+      "fin": 30,
+      "confianza": 0.7176430225372314,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 249,
+      "fin": 255,
+      "confianza": 0.9998939037322998,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Sali",
+      "inicio": 318,
+      "fin": 322,
+      "confianza": 0.9982156753540039,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "na Cruz",
+      "inicio": 322,
+      "fin": 329,
+      "confianza": 0.9936704039573669,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Ref",
+      "inicio": 806,
+      "fin": 809,
+      "confianza": 0.7464879155158997,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Dos Bocas",
+      "inicio": 816,
+      "fin": 825,
+      "confianza": 0.7917640805244446,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Paraíso",
+      "inicio": 833,
+      "fin": 840,
+      "confianza": 0.999479353427887,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tabasco",
+      "inicio": 842,
+      "fin": 849,
+      "confianza": 0.9766402244567871,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Paraíso",
+      "inicio": 853,
+      "fin": 860,
+      "confianza": 0.9996281862258911,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tabasco",
+      "inicio": 862,
+      "fin": 869,
+      "confianza": 0.9068120121955872,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Bocas",
+      "inicio": 927,
+      "fin": 932,
+      "confianza": 0.6980447769165039,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 0.2699368709997998,
+  "version_transformers": "5.22.1"
+}

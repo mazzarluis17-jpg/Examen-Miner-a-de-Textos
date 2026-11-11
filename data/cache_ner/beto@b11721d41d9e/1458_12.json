@@ -1,0 +1,68 @@
+{
+  "clave": "7875bdbe4f304979fc673d070670d44241482a1d0a30feaeb4b7ddc30229de83",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "09a9be32a584b0ff2c9747b2129fcc89027fcdfe9808728873cf9a9347679842",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.7685648798942566,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "UEL LÓPEZ",
+      "inicio": 21,
+      "fin": 30,
+      "confianza": 0.689471423625946,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Is",
+      "inicio": 377,
+      "fin": 379,
+      "confianza": 0.5352004766464233,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "de",
+      "inicio": 383,
+      "fin": 385,
+      "confianza": 0.6071375608444214,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "huantepec",
+      "inicio": 388,
+      "fin": 397,
+      "confianza": 0.7996613383293152,
+      "cortada": false
+    }
+  ],
+  "descartadas": 6,
+  "segundos": 0.13793336300000192,
+  "version_transformers": "5.22.1"
+}

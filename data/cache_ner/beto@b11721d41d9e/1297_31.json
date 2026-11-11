@@ -1,0 +1,52 @@
+{
+  "clave": "934331109a0334c2967895ac15fda0a6aea9c69194e46deb084dd33ea783cc6b",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "29b06742c4019c7458efa70437cdbc455a35b96f790dcc3e6b05acf40d0ea7d0",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "Gatell",
+      "inicio": 267,
+      "fin": 273,
+      "confianza": 0.997889518737793,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Pfizer",
+      "inicio": 733,
+      "fin": 739,
+      "confianza": 0.8381773829460144,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "AstraZeneca",
+      "inicio": 751,
+      "fin": 762,
+      "confianza": 0.9970002770423889,
+      "cortada": false
+    }
+  ],
+  "descartadas": 3,
+  "segundos": 0.1939509920000546,
+  "version_transformers": "5.22.1"
+}

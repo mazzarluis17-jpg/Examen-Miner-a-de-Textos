@@ -1,0 +1,76 @@
+{
+  "clave": "fabb21b1de2bb77001859f4929ffc5f4da18cb833ac2a7beb311e69d084ba561",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "e2af0302201173d240c4a4d5846d9d5bf62181b896342761eef4ea85f935a7ac",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "H",
+      "inicio": 0,
+      "fin": 1,
+      "confianza": 0.9887446165084839,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "UGO LÓPEZ",
+      "inicio": 1,
+      "fin": 10,
+      "confianza": 0.699385941028595,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "GAT",
+      "inicio": 11,
+      "fin": 14,
+      "confianza": 0.7667418718338013,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "ELL",
+      "inicio": 14,
+      "fin": 17,
+      "confianza": 0.42655450105667114,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Luis Cresencio Sandoval",
+      "inicio": 384,
+      "fin": 407,
+      "confianza": 0.9993273615837097,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 1264,
+      "fin": 1270,
+      "confianza": 0.9997187256813049,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 47.257288460999916,
+  "version_transformers": "5.22.1"
+}

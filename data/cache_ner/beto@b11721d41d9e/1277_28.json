@@ -1,0 +1,84 @@
+{
+  "clave": "94926afd49db93c6eb2287ae297b62db77caf343ee4bc6407b3a5656a9c4d7ec",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "36b1c57438962216f80e7aab17766a330b7551250742aed9d39488bdbe2e28a1",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "CAR",
+      "inicio": 0,
+      "fin": 3,
+      "confianza": 0.9980939030647278,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "OLINA VARGAS",
+      "inicio": 3,
+      "fin": 15,
+      "confianza": 0.936163604259491,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Brigada Correcaminos",
+      "inicio": 137,
+      "fin": 157,
+      "confianza": 0.9074997901916504,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Edgar Jesús Zitle García",
+      "inicio": 663,
+      "fin": 687,
+      "confianza": 0.999610185623169,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "IMSS",
+      "inicio": 722,
+      "fin": 726,
+      "confianza": 0.9749512672424316,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Son",
+      "inicio": 730,
+      "fin": 733,
+      "confianza": 0.9995511174201965,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "ora",
+      "inicio": 733,
+      "fin": 736,
+      "confianza": 0.6570155024528503,
+      "cortada": false
+    }
+  ],
+  "descartadas": 1,
+  "segundos": 0.2502973790001306,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,58 @@
+passage_id,ganadora_tipo,ganadora_texto,ganadora_inicio,ganadora_fin,ganadora_metodo,ganadora_fuente,ganadora_en_marca,suprimida_tipo,suprimida_texto,suprimida_inicio,suprimida_fin,suprimida_metodo,suprimida_fuente,suprimida_en_marca
+1128_40,LOC,Corredor Interoceánico del Istmo de Tehuantepec,260,307,regla,gazetteer_loc,False,LOC,Corredor Interoceánico,260,282,regla,gazetteer_loc,False
+1128_40,LOC,Corredor Interoceánico del Istmo de Tehuantepec,260,307,regla,gazetteer_loc,False,LOC,Istmo de Tehuantepec,287,307,regla,gazetteer_loc,False
+1128_40,LOC,Baja California Sur,190,209,regla,gazetteer_loc,False,LOC,Baja California,190,205,regla,gazetteer_loc,False
+1253_5,FECHA,14 de febrero de 2021,256,277,regla,regex_fecha,False,FECHA,2021,273,277,regla,regex_fecha,False
+1293_76,ORG,Banco del Bienestar,938,957,regla,gazetteer_org,False,ORG,Bienestar,948,957,regla,gazetteer_org,False
+1342_19,LOC,Corredor Interoceánico del Istmo de Tehuantepec,14,61,regla,gazetteer_loc,False,LOC,Corredor Interoceánico,14,36,regla,gazetteer_loc,False
+1342_19,LOC,Corredor Interoceánico del Istmo de Tehuantepec,14,61,regla,gazetteer_loc,False,LOC,Istmo de Tehuantepec,41,61,regla,gazetteer_loc,False
+1342_19,FECHA,23 de noviembre de 2020,92,115,regla,regex_fecha,False,FECHA,2020,111,115,regla,regex_fecha,False
+1606_0,FECHA,18 de marzo de 1938,1125,1144,regla,regex_fecha,False,FECHA,1938,1140,1144,regla,regex_fecha,False
+1606_1,FECHA,18 de marzo de 1938,183,202,regla,regex_fecha,False,FECHA,1938,198,202,regla,regex_fecha,False
+1606_1,FECHA,18 de marzo de 2020,342,361,regla,regex_fecha,False,FECHA,2020,357,361,regla,regex_fecha,False
+2086_10,FECHA,noviembre de 1919,735,752,regla,regex_fecha,False,FECHA,1919,748,752,regla,regex_fecha,False
+216_81,LOC,corredor interoceánico del Istmo de Tehuantepec,582,629,regla,gazetteer_loc,False,LOC,corredor interoceánico,582,604,regla,gazetteer_loc,False
+216_81,LOC,corredor interoceánico del Istmo de Tehuantepec,582,629,regla,gazetteer_loc,False,LOC,Istmo de Tehuantepec,609,629,regla,gazetteer_loc,False
+228_7,LOC,Corredor Interoceánico del Istmo de Tehuantepec,340,387,regla,gazetteer_loc,False,LOC,Corredor Interoceánico,340,362,regla,gazetteer_loc,False
+228_7,LOC,Corredor Interoceánico del Istmo de Tehuantepec,435,482,regla,gazetteer_loc,False,LOC,Corredor Interoceánico,435,457,regla,gazetteer_loc,False
+228_7,LOC,Corredor Interoceánico del Istmo de Tehuantepec,340,387,regla,gazetteer_loc,False,LOC,Istmo de Tehuantepec,367,387,regla,gazetteer_loc,False
+228_7,LOC,Corredor Interoceánico del Istmo de Tehuantepec,435,482,regla,gazetteer_loc,False,LOC,Istmo de Tehuantepec,462,482,regla,gazetteer_loc,False
+278_3,ORG,Banco del Bienestar,682,701,regla,gazetteer_org,False,ORG,Bienestar,692,701,regla,gazetteer_org,False
+347_71,ORG,Banco del Bienestar,737,756,regla,gazetteer_org,False,ORG,Bienestar,747,756,regla,gazetteer_org,False
+354_33,LOC,CORREDOR INTEROCEÁNICO DEL ISTMO DE TEHUANTEPEC,47,94,regla,gazetteer_loc,True,LOC,CORREDOR INTEROCEÁNICO,47,69,regla,gazetteer_loc,True
+354_33,LOC,Corredor Interoceánico del Istmo de Tehuantepec,182,229,regla,gazetteer_loc,False,LOC,Corredor Interoceánico,182,204,regla,gazetteer_loc,False
+354_33,LOC,CORREDOR INTEROCEÁNICO DEL ISTMO DE TEHUANTEPEC,47,94,regla,gazetteer_loc,True,LOC,ISTMO DE TEHUANTEPEC,74,94,regla,gazetteer_loc,True
+354_33,LOC,Corredor Interoceánico del Istmo de Tehuantepec,182,229,regla,gazetteer_loc,False,LOC,Istmo de Tehuantepec,209,229,regla,gazetteer_loc,False
+354_33,LOC,CIIT,96,100,regla,gazetteer_loc,True,LOC,CIIT,96,100,regla,marca,True
+419_11,ORG,Banco del Bienestar,720,739,regla,gazetteer_org,False,ORG,Bienestar,730,739,regla,gazetteer_org,False
+419_11,ORG,Banco del Bienestar,815,834,regla,gazetteer_org,False,ORG,Bienestar,825,834,regla,gazetteer_org,False
+419_11,ORG,Banco del Bienestar,1034,1053,regla,gazetteer_org,False,ORG,Bienestar,1044,1053,regla,gazetteer_org,False
+419_11,ORG,Banco del Bienestar,1128,1147,regla,gazetteer_org,False,ORG,Bienestar,1138,1147,regla,gazetteer_org,False
+419_11,ORG,Banco del Bienestar,1212,1231,regla,gazetteer_org,False,ORG,Bienestar,1222,1231,regla,gazetteer_org,False
+420_10,ORG,Banco del Bienestar,97,116,regla,gazetteer_org,False,ORG,Bienestar,107,116,regla,gazetteer_org,False
+420_10,ORG,Banco del Bienestar,452,471,regla,gazetteer_org,False,ORG,Bienestar,462,471,regla,gazetteer_org,False
+420_10,ORG,Banco del Bienestar,554,573,regla,gazetteer_org,False,ORG,Bienestar,564,573,regla,gazetteer_org,False
+420_10,ORG,Banco del Bienestar,717,736,regla,gazetteer_org,False,ORG,Bienestar,727,736,regla,gazetteer_org,False
+420_10,ORG,Banco del Bienestar,856,875,regla,gazetteer_org,False,ORG,Bienestar,866,875,regla,gazetteer_org,False
+490_61,ORG,Banco del Bienestar,329,348,regla,gazetteer_org,False,ORG,Bienestar,339,348,regla,gazetteer_org,False
+490_61,ORG,Banco del Bienestar,719,738,regla,gazetteer_org,False,ORG,Bienestar,729,738,regla,gazetteer_org,False
+490_61,ORG,Banco del Bienestar,778,797,regla,gazetteer_org,False,ORG,Bienestar,788,797,regla,gazetteer_org,False
+490_61,ORG,Banco del Bienestar,1115,1134,regla,gazetteer_org,False,ORG,Bienestar,1125,1134,regla,gazetteer_org,False
+499_68,ORG,Banco del Bienestar,257,276,regla,gazetteer_org,False,ORG,Bienestar,267,276,regla,gazetteer_org,False
+499_68,ORG,Banco del Bienestar,412,431,regla,gazetteer_org,False,ORG,Bienestar,422,431,regla,gazetteer_org,False
+499_68,ORG,Banco del Bienestar,451,470,regla,gazetteer_org,False,ORG,Bienestar,461,470,regla,gazetteer_org,False
+499_68,ORG,Banco del Bienestar,685,704,regla,gazetteer_org,False,ORG,Bienestar,695,704,regla,gazetteer_org,False
+504_31,LOC,Corredor Interoceánico del Istmo de Tehuantepec,663,710,regla,gazetteer_loc,False,LOC,Corredor Interoceánico,663,685,regla,gazetteer_loc,False
+504_31,LOC,Corredor Interoceánico del Istmo de Tehuantepec,663,710,regla,gazetteer_loc,False,LOC,Istmo de Tehuantepec,690,710,regla,gazetteer_loc,False
+507_44,ORG,Banco del Bienestar,261,280,regla,gazetteer_org,False,ORG,Bienestar,271,280,regla,gazetteer_org,False
+507_44,ORG,Banco del Bienestar,440,459,regla,gazetteer_org,False,ORG,Bienestar,450,459,regla,gazetteer_org,False
+507_44,ORG,Banco del Bienestar,851,870,regla,gazetteer_org,False,ORG,Bienestar,861,870,regla,gazetteer_org,False
+525_29,ORG,Banco del Bienestar,400,419,regla,gazetteer_org,False,ORG,Bienestar,410,419,regla,gazetteer_org,False
+525_29,ORG,Banco del Bienestar,501,520,regla,gazetteer_org,False,ORG,Bienestar,511,520,regla,gazetteer_org,False
+525_29,ORG,Banco del Bienestar,636,655,regla,gazetteer_org,False,ORG,Bienestar,646,655,regla,gazetteer_org,False
+525_29,ORG,Banco del Bienestar,961,980,regla,gazetteer_org,False,ORG,Bienestar,971,980,regla,gazetteer_org,False
+549_11,ORG,Banco del Bienestar,162,181,regla,gazetteer_org,False,ORG,Bienestar,172,181,regla,gazetteer_org,False
+549_11,ORG,Banco del Bienestar,313,332,regla,gazetteer_org,False,ORG,Bienestar,323,332,regla,gazetteer_org,False
+549_11,ORG,Banco del Bienestar,1052,1071,regla,gazetteer_org,False,ORG,Bienestar,1062,1071,regla,gazetteer_org,False
+630_73,ORG,Banco del Bienestar,93,112,regla,gazetteer_org,False,ORG,Bienestar,103,112,regla,gazetteer_org,False
+630_73,ORG,Banco del Bienestar,921,940,regla,gazetteer_org,False,ORG,Bienestar,931,940,regla,gazetteer_org,False

@@ -1,0 +1,148 @@
+{
+  "clave": "ef3f3e6a67b07889fe9f6951805f483aa172f752894929162cd7d39b1c29badb",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "44b48161acdde10a3ef1e6727eea9a14d6aa23697a7517897d7f83e40b47b0cb",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "ANDRÉS MANUEL LÓPEZ",
+      "inicio": 11,
+      "fin": 30,
+      "confianza": 0.9331668019294739,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 141,
+      "fin": 152,
+      "confianza": 0.9993842244148254,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Felipe Ángeles",
+      "inicio": 168,
+      "fin": 182,
+      "confianza": 0.9598724842071533,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Luis Cresencio Sandoval",
+      "inicio": 208,
+      "fin": 231,
+      "confianza": 0.9997203350067139,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "José Rafael Ojeda Durán",
+      "inicio": 272,
+      "fin": 295,
+      "confianza": 0.9996628165245056,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Javier Jiménez Espriú",
+      "inicio": 332,
+      "fin": 353,
+      "confianza": 0.9995520710945129,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Ricardo Vallejo Suárez",
+      "inicio": 423,
+      "fin": 445,
+      "confianza": 0.9998258948326111,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Román Meyer",
+      "inicio": 486,
+      "fin": 497,
+      "confianza": 0.9916083216667175,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Hidalgo",
+      "inicio": 577,
+      "fin": 584,
+      "confianza": 0.9850112795829773,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Omar Fayad",
+      "inicio": 586,
+      "fin": 596,
+      "confianza": 0.9998180270195007,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Texcoco",
+      "inicio": 958,
+      "fin": 965,
+      "confianza": 0.986842155456543,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía Felipe Ángeles",
+      "inicio": 1009,
+      "fin": 1035,
+      "confianza": 0.8860687613487244,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Felipe Ángeles",
+      "inicio": 1078,
+      "fin": 1092,
+      "confianza": 0.9700762629508972,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "AMLO",
+      "inicio": 1117,
+      "fin": 1121,
+      "confianza": 0.6651578545570374,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Andrés Manuel López Obrador",
+      "inicio": 1242,
+      "fin": 1269,
+      "confianza": 0.9996784329414368,
+      "cortada": false
+    }
+  ],
+  "descartadas": 5,
+  "segundos": 0.2665843610000138,
+  "version_transformers": "5.22.1"
+}

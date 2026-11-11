@@ -1,0 +1,164 @@
+{
+  "clave": "ddf5f6bce44f003a9de15aeca49dd17f2f650e0578cf7ddecd6d8791623faa90",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "7a8df7e2cb00e0df7ef51a5ddc17133499e6b6226a42359b0c6a28b7e8607859",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.7570333480834961,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 67,
+      "fin": 78,
+      "confianza": 0.9993811845779419,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 114,
+      "fin": 125,
+      "confianza": 0.9993530511856079,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tol",
+      "inicio": 146,
+      "fin": 149,
+      "confianza": 0.9997361302375793,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "uca",
+      "inicio": 149,
+      "fin": 152,
+      "confianza": 0.943845272064209,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 200,
+      "fin": 211,
+      "confianza": 0.9994235038757324,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Claudia Sheinbaum",
+      "inicio": 359,
+      "fin": 376,
+      "confianza": 0.9996141195297241,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Alfredo del Mazo",
+      "inicio": 449,
+      "fin": 465,
+      "confianza": 0.9998073577880859,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Estado de México",
+      "inicio": 471,
+      "fin": 487,
+      "confianza": 0.8382413387298584,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 755,
+      "fin": 766,
+      "confianza": 0.9992799758911133,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tol",
+      "inicio": 927,
+      "fin": 930,
+      "confianza": 0.9997391104698181,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "uca",
+      "inicio": 930,
+      "fin": 933,
+      "confianza": 0.9955644607543945,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Ciudad de México",
+      "inicio": 935,
+      "fin": 951,
+      "confianza": 0.9992987513542175,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Santa Lucía",
+      "inicio": 954,
+      "fin": 965,
+      "confianza": 0.9993603229522705,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Ricardo Vallejo Suárez",
+      "inicio": 1089,
+      "fin": 1111,
+      "confianza": 0.9996694922447205,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Felipe Ángeles",
+      "inicio": 1149,
+      "fin": 1163,
+      "confianza": 0.991546630859375,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Felipe Ángeles",
+      "inicio": 1173,
+      "fin": 1187,
+      "confianza": 0.9989987015724182,
+      "cortada": false
+    }
+  ],
+  "descartadas": 0,
+  "segundos": 0.25590801200019087,
+  "version_transformers": "5.22.1"
+}

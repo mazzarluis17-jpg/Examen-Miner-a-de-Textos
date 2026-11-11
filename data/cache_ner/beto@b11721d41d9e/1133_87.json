@@ -1,0 +1,76 @@
+{
+  "clave": "322200d5baa568792e841b4ae9b678c7be1aa0c81a88b4a709de4e49ebe41569",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "4808b3165cfc8f91af86887a49def9e10c8d64336864313e3961b040df75cc46",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "ME",
+      "inicio": 0,
+      "fin": 2,
+      "confianza": 0.9839900732040405,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "LI",
+      "inicio": 2,
+      "fin": 4,
+      "confianza": 0.9932584762573242,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "NA VEGA",
+      "inicio": 4,
+      "fin": 11,
+      "confianza": 0.8387654423713684,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "ME",
+      "inicio": 133,
+      "fin": 135,
+      "confianza": 0.9644986987113953,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "LI",
+      "inicio": 135,
+      "fin": 137,
+      "confianza": 0.9944584369659424,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "NA VEGA",
+      "inicio": 137,
+      "fin": 144,
+      "confianza": 0.8785734176635742,
+      "cortada": false
+    }
+  ],
+  "descartadas": 3,
+  "segundos": 0.13370753900017007,
+  "version_transformers": "5.22.1"
+}

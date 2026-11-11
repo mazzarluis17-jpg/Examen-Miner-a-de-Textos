@@ -1,0 +1,124 @@
+{
+  "clave": "c9e2f91aa3b0b076bd6285a250548e5fe7471542aeff2fd55a70d592bf233289",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "fba6fecd2cf43ea2d7c918ac3de2f32eb6fb02ceee75e24e58a9c9ef42d70657",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "Shaila Rosagel",
+      "inicio": 63,
+      "fin": 77,
+      "confianza": 0.9773356914520264,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Grupo Healy",
+      "inicio": 95,
+      "fin": 106,
+      "confianza": 0.9996435642242432,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "El Imparcial",
+      "inicio": 108,
+      "fin": 120,
+      "confianza": 0.9991050958633423,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Son",
+      "inicio": 125,
+      "fin": 128,
+      "confianza": 0.999717652797699,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "ora",
+      "inicio": 128,
+      "fin": 131,
+      "confianza": 0.9633350372314453,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "La Crónica",
+      "inicio": 133,
+      "fin": 143,
+      "confianza": 0.9987818598747253,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Mexicali",
+      "inicio": 148,
+      "fin": 156,
+      "confianza": 0.9982539415359497,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Frontera",
+      "inicio": 160,
+      "fin": 168,
+      "confianza": 0.654218316078186,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tijuana",
+      "inicio": 173,
+      "fin": 180,
+      "confianza": 0.8767930865287781,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Baja California",
+      "inicio": 258,
+      "fin": 273,
+      "confianza": 0.9993796944618225,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Son",
+      "inicio": 278,
+      "fin": 281,
+      "confianza": 0.9996933937072754,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "ora",
+      "inicio": 281,
+      "fin": 284,
+      "confianza": 0.9876644015312195,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 0.35854952099998627,
+  "version_transformers": "5.22.1"
+}

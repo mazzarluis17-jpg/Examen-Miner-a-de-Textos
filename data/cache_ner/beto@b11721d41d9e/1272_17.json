@@ -1,0 +1,68 @@
+{
+  "clave": "b13cc4b5cc87b15486b45df9ce955bfcecd6122145ef4618c77439d1ddcdcdda",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "5be10e527df6a9367f052b75f6e5cfbe861b1bc012dee2bacf9728cc60a34889",
+  "crudas": [
+    {
+      "tipo": "LOC",
+      "texto": "huantepec",
+      "inicio": 120,
+      "fin": 129,
+      "confianza": 0.8195850849151611,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Media",
+      "inicio": 167,
+      "fin": 172,
+      "confianza": 0.9933597445487976,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "s Aguas",
+      "inicio": 172,
+      "fin": 179,
+      "confianza": 0.9916597604751587,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Salina Cruz",
+      "inicio": 182,
+      "fin": 193,
+      "confianza": 0.8434754014015198,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Gobierno de México",
+      "inicio": 432,
+      "fin": 450,
+      "confianza": 0.9997102618217468,
+      "cortada": false
+    }
+  ],
+  "descartadas": 3,
+  "segundos": 0.1490379069998653,
+  "version_transformers": "5.22.1"
+}

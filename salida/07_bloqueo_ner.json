@@ -1,0 +1,17 @@
+{
+  "estado": "bloqueado_por_posproceso_congelado",
+  "passage_id": "1812_0",
+  "entidad_cruda": {
+    "tipo": "LOC",
+    "texto": "'",
+    "inicio": 945,
+    "fin": 946,
+    "confianza": 0.5320305824279785,
+    "cortada": false
+  },
+  "error": "Span vacío después del recorte",
+  "modelo": "mrm8488/bert-spanish-cased-finetuned-ner",
+  "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+  "pasajes_cacheados": 36,
+  "accion": "Sin filtros adicionales, sin cambios a D15. Pendiente decisión expresa para versión posterior auditada."
+}

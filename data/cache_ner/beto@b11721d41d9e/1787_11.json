@@ -1,0 +1,52 @@
+{
+  "clave": "25788bb78d61e5d1ffc31957382e9534ad6893acdce26fffb0c7aec27eaea376",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "1a50fcb7a6bf6d1469ee6d6e386f7da0924a3d83584b73daeb3911afd24f8160",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "Rocío Nahle",
+      "inicio": 86,
+      "fin": 97,
+      "confianza": 0.9954136610031128,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Dos Bocas",
+      "inicio": 186,
+      "fin": 195,
+      "confianza": 0.9989175796508789,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Tabasco",
+      "inicio": 197,
+      "fin": 204,
+      "confianza": 0.9919795989990234,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 0.08983579000005193,
+  "version_transformers": "5.22.1"
+}

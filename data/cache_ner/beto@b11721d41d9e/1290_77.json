@@ -1,0 +1,92 @@
+{
+  "clave": "275e67b388ecb46fb2c392f882263fff427edbf6b66a3c2bc0dd29c78d99cf4a",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "2a387a5a8f5f77104090437dc9f356876769588babbfb4572ee225df22c61385",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "JORGE ALCOCER VARELA",
+      "inicio": 0,
+      "fin": 20,
+      "confianza": 0.8707138299942017,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "P",
+      "inicio": 240,
+      "fin": 241,
+      "confianza": 0.9994321465492249,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "fi",
+      "inicio": 241,
+      "fin": 243,
+      "confianza": 0.9734997153282166,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "zer",
+      "inicio": 243,
+      "fin": 246,
+      "confianza": 0.5315150618553162,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "P",
+      "inicio": 430,
+      "fin": 431,
+      "confianza": 0.9993139505386353,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "fi",
+      "inicio": 431,
+      "fin": 433,
+      "confianza": 0.8751819729804993,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "zer",
+      "inicio": 433,
+      "fin": 436,
+      "confianza": 0.5849167108535767,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "BioNTech",
+      "inicio": 437,
+      "fin": 445,
+      "confianza": 0.9259741306304932,
+      "cortada": false
+    }
+  ],
+  "descartadas": 1,
+  "segundos": 0.34734066200007874,
+  "version_transformers": "5.22.1"
+}

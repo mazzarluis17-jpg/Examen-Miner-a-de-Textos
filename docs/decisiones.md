@@ -247,3 +247,16 @@ la inferencia con el único BETO técnico ya fijado; no se selecciona ni se ajus
 un modelo con Gold. H7 incorpora fusión exacta D12 y evaluación, manteniendo
 intactos reglas, posproceso, gazetteers y normalizador congelados. El
 enriquecimiento auxiliar prudente se añade aparte sin cambiar spans ni métricas.
+
+## 2026-11-10 — Bloqueo H7 por contrato de posproceso congelado
+
+La inferencia real de la revisión BETO fija llegó a 36 pasajes cacheados y se
+detuvo en `1812_0`: LOC cruda de una comilla `[945:946]`, confianza
+0.5320305824279785. El recorte del posproceso congelado deja span vacío y
+lanza error explícito. No se descarta silenciosamente ni se filtra utilizando
+Gold; no se modifica `ner_modelo.py`, reglas, configuración ni normalización
+congeladas. Evidencia `salida/07_bloqueo_ner.json`; se conservan cachés crudas.
+Se solicita decisión al alumno para una eventual versión separada posterior a
+D15. Mientras tanto no se generan métricas oficiales incompletas ni se avanza H8.
+La infraestructura independiente H7 queda probada: 326 passed/9 deselected
+en suite rápida y Ruff limpio. Los resultados IE reales permanecen pendientes.

@@ -2,6 +2,15 @@
 
 ## Completado
 
+- (2026-11-10) H6 cerrado personalmente por Luis y verificado por hashes:
+  veinte pasajes revisados, 138 entidades, revisión 20; `1133_87` sin entidades.
+  Persistencia y cierre oficiales versionados en `ae00990`, sin Excel auxiliar.
+  Respaldo externo H7 verificado. Infraestructura H7 de fusión D12, enriquecimiento
+  auxiliar separado y evaluación oficial/complementaria preparada; pruebas
+  sintéticas nuevas aprobadas. Reglas ejecutadas con configuración congelada.
+  Inferencia BETO detenida por span de puntuación que queda vacío tras recorte;
+  no se filtra silenciosamente ni se modifica el posproceso congelado.
+
 - (2026-11-10) H5 cerrado: commit `d4ca0a7`, etiqueta oficial
   `reglas-congeladas`. Pruebas generales 294 passed/9 deselected, objetivo
   congelación 92 passed/1 deselected y Ruff limpio. Muestra H6 preparada con
@@ -111,10 +120,11 @@
 
 ## Pendiente
 
-1. Luis anota personalmente los veinte pasajes desde Gold (Evaluación) y
-   cierra cada pasaje, incluidos los que no contengan entidades.
-2. Cierre global humano al completar 20/20; no consultar predicciones antes.
-3. Después H7–H9 según PRD, conservando ganador H4 e insumos congelados D15.
+1. Resolver con Luis el bloqueo del posproceso congelado documentado en
+   `salida/07_bloqueo_ner.json`; no modificar D15 ni publicar métricas parciales.
+2. Tras decisión explícita, completar inferencia H7, fusión y evaluación oficial,
+   complementaria de veinte IDs, auditorías y figuras. No reajustar usando Gold.
+3. Después H8–H9 según PRD, conservando ganador H4 e insumos congelados.
 4. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
 
 ## Decisiones
@@ -124,9 +134,10 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 ## Bloqueos
 
 - H3 confirmado por Luis y H4 cerrado; no son bloqueos pendientes de la rama H5.
-- H5 cerrado y muestra H6 lista. Falta anotación humana de veinte pasajes y
-  cierre global. BETO fijado por criterio técnico; no hay gold ni selección
-  humana simulada.
+- H6 cerrado y validado. H7 bloqueado: en `1812_0` BETO emite LOC
+  `[945:946]` con texto de una comilla; `posprocesar()` congelado aborta tras
+  recortarla. Se solicita autorización para una versión separada auditada;
+  no se modifica el congelado ni se evalúa una extracción incompleta.
 - Entrega individual en GitHub según decisión documentada en H5. Publicación y
   acceso del profesor pendientes; no se cambia el remote ni se hace push aquí.
 - Índice, tokens y TF-IDF no se han reconstruido en Debian; no se requieren para

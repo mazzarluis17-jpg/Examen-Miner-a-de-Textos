@@ -1,0 +1,44 @@
+{
+  "clave": "f8c83f21b69f60d97eaa64200f90c99830012fe2dfc1b123a48a3fa7a9859b88",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "3cda979a69628231d420bc06ca0d9ff7aa0ad8ab4943e029930e392d10e68537",
+  "crudas": [
+    {
+      "tipo": "ORG",
+      "texto": "Gobierno de México",
+      "inicio": 58,
+      "fin": 76,
+      "confianza": 0.9993084073066711,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 418,
+      "fin": 424,
+      "confianza": 0.9996033310890198,
+      "cortada": false
+    }
+  ],
+  "descartadas": 2,
+  "segundos": 0.4021597749999728,
+  "version_transformers": "5.22.1"
+}

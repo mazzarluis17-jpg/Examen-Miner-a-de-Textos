@@ -1,0 +1,44 @@
+{
+  "clave": "03fc9eb2bb32d7b95fc4c040645fab0b6b5057bc1266b315dc5c1cdc0f24258a",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "f46fb0ae0fbb0a024645e937efac79b0ccee9d9ca7ac9b2e724deb5579a13330",
+  "crudas": [
+    {
+      "tipo": "LOC",
+      "texto": "Quintana Roo",
+      "inicio": 196,
+      "fin": 208,
+      "confianza": 0.9629893898963928,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Quintana Roo",
+      "inicio": 311,
+      "fin": 323,
+      "confianza": 0.9471707344055176,
+      "cortada": false
+    }
+  ],
+  "descartadas": 5,
+  "segundos": 0.12015542800008916,
+  "version_transformers": "5.22.1"
+}

@@ -1,0 +1,52 @@
+{
+  "clave": "d01b87863acf572b3d8521e1fb3a8026fb9df652c6a818f069f58230d7a36df6",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "abfe26f7dcb9935996081f61b831a5174aaeee63e20dbf7f64d9b47fccecb20d",
+  "crudas": [
+    {
+      "tipo": "PER",
+      "texto": "MAN",
+      "inicio": 18,
+      "fin": 21,
+      "confianza": 0.9626770615577698,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "UEL LÓPEZ",
+      "inicio": 21,
+      "fin": 30,
+      "confianza": 0.7439612746238708,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Guerrero",
+      "inicio": 254,
+      "fin": 262,
+      "confianza": 0.9966272115707397,
+      "cortada": false
+    }
+  ],
+  "descartadas": 9,
+  "segundos": 0.2562009619998662,
+  "version_transformers": "5.22.1"
+}

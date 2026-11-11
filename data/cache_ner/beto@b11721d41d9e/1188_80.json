@@ -1,0 +1,164 @@
+{
+  "clave": "4848b8326a8f202587f8ab4f270341302861172a6787421866605b7b1c92ac06",
+  "parametros": {
+    "slug": "beto",
+    "repo_id": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "revision": "b11721d41d9e948da32fcdabeeef4fb0f3ebcdf7",
+    "tokenizador": "mrm8488/bert-spanish-cased-finetuned-ner",
+    "max_length_real": 512,
+    "solapamiento": 64,
+    "lote": 8,
+    "aggregation_strategy": "simple",
+    "device": -1,
+    "mapa_etiquetas": {
+      "PER": "PER",
+      "PERSON": "PER",
+      "ORG": "ORG",
+      "LOC": "LOC",
+      "GPE": "LOC"
+    },
+    "version_posproceso": "1"
+  },
+  "texto_sha256": "466284575fcaf565f6a197f8ae1774dd730eae62c1ac1d11d4346b52d9d3d3b6",
+  "crudas": [
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 36,
+      "fin": 42,
+      "confianza": 0.996620774269104,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 240,
+      "fin": 246,
+      "confianza": 0.679825484752655,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Andrés Manuel López Obrador",
+      "inicio": 248,
+      "fin": 275,
+      "confianza": 0.9995331764221191,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Estados Unidos",
+      "inicio": 282,
+      "fin": 296,
+      "confianza": 0.998357892036438,
+      "cortada": false
+    },
+    {
+      "tipo": "PER",
+      "texto": "Joseph Biden",
+      "inicio": 298,
+      "fin": 310,
+      "confianza": 0.9990907311439514,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "CanSino Biologics",
+      "inicio": 476,
+      "fin": 493,
+      "confianza": 0.997877299785614,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Pfizer",
+      "inicio": 680,
+      "fin": 686,
+      "confianza": 0.9960312247276306,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "BioNTech",
+      "inicio": 687,
+      "fin": 695,
+      "confianza": 0.9699662923812866,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "AstraZeneca",
+      "inicio": 697,
+      "fin": 708,
+      "confianza": 0.9989385008811951,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "SinoVac",
+      "inicio": 710,
+      "fin": 717,
+      "confianza": 0.9893860220909119,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Sputnik V",
+      "inicio": 719,
+      "fin": 728,
+      "confianza": 0.9965294599533081,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Centro Nacional de Investigación de Epidemiología",
+      "inicio": 734,
+      "fin": 783,
+      "confianza": 0.9997351169586182,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "Microbiología Gamaleya",
+      "inicio": 786,
+      "fin": 808,
+      "confianza": 0.9898086190223694,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "CanSino Biologics",
+      "inicio": 814,
+      "fin": 831,
+      "confianza": 0.9559291005134583,
+      "cortada": false
+    },
+    {
+      "tipo": "ORG",
+      "texto": "ugmex",
+      "inicio": 932,
+      "fin": 937,
+      "confianza": 0.5810307860374451,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "Querétaro",
+      "inicio": 941,
+      "fin": 950,
+      "confianza": 0.9245181083679199,
+      "cortada": false
+    },
+    {
+      "tipo": "LOC",
+      "texto": "México",
+      "inicio": 1186,
+      "fin": 1192,
+      "confianza": 0.9997573494911194,
+      "cortada": false
+    }
+  ],
+  "descartadas": 8,
+  "segundos": 0.2932591340002091,
+  "version_transformers": "5.22.1"
+}
