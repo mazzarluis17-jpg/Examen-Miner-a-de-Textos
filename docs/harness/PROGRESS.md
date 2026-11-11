@@ -2,6 +2,19 @@
 
 ## Completado
 
+- (2026-11-11) H8 técnico completo, commit de código `50daa88`: mapa Q1–Q10,
+  respuestas de 16 columnas y diez tablas/todas con citas verificadas; exclusiones,
+  auxiliares, alias verificados, deduplicación de ventanas/eventos y contradicciones.
+  451 filas: 126 respaldadas, 322 ambiguas y tres campos no encontrados; detalle
+  en `salida/10_validacion_h8.json` y `10_cobertura_respuestas.csv`. Veintiún
+  artefactos idénticos en repetición; entradas y resultados H3–H7 intactos.
+  Pruebas: 360 passed/9 deselected, 24 de H8; Ruff limpio. Plantilla vacía de diez
+  valoraciones con hashes en `salida/10_valoraciones_plantilla.yaml`; no se escribe
+  ningún archivo humano. La validación estricta rechaza su ausencia como corresponde.
+  Compatibilidad de políticas nuevas con D15 probada sin cambiar archivos
+  congelados o etiquetas. H8 humano/R08 pendiente: Luis debe valorar las diez
+  tablas. No se inicia H9 ni se hace push.
+
 - (2026-11-10) H7 completo con corrección expresamente autorizada posterior D15:
   `2-vacios-auditados`, un descarte de span vacío y cachés crudas intactas.
   99 pasajes, 901 entidades únicas/909 asociaciones; evaluación literal del kit
@@ -129,9 +142,13 @@
 
 ## Pendiente
 
-1. H8: tablas de respuesta y evidencia del ganador H4, sin nuevas selecciones.
-2. Luis redacta las valoraciones humanas requeridas para cada consulta.
-3. H9: reporte 4–6 páginas, presentación/demo, README y validación final.
+1. Luis revisa `salida/tablas_respuesta/todas.md`, copia la plantilla vacía a
+   `anotaciones/valoraciones.yaml` y escribe personalmente las diez valoraciones
+   con sus hashes. H8 técnico no está bloqueado por ello; R08 humano sí pendiente.
+2. Ejecutar `make tablas` o `scripts/10_tablas.py --exigir-valoraciones` para
+   incorporar y comprobar las valoraciones vigentes, sin generarlas ni sugerirlas.
+3. Solo después, H9: reporte 4–6 páginas, presentación/demo, README y validación
+   reproducible final con los cortes de aprobación humana del PRD.
 4. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
 
 ## Decisiones
@@ -141,9 +158,10 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 ## Bloqueos
 
 - H3 confirmado por Luis y H4 cerrado; no son bloqueos pendientes de la rama H5.
-- H6 cerrado y H7 evaluado con v2 posterior a D15 autorizada. No quedan
-  bloqueos técnicos de extracción; pendientes las valoraciones humanas de H8
-  y aprobaciones de prosa/láminas H9. No hay selección NER simulada.
+- H8 técnico completo y reproducible; faltan exclusivamente las diez
+  valoraciones personales para completar H8/R08. No existe
+  `anotaciones/valoraciones.yaml`; no se fabrican opiniones ni aprobaciones.
+  H9 no iniciado. H6/H7, Gold cerrado y selección técnica NER intactos.
 - Entrega individual en GitHub según decisión documentada en H5. Publicación y
   acceso del profesor pendientes; no se cambia el remote ni se hace push aquí.
 - Índice, tokens y TF-IDF no se han reconstruido en Debian; no se requieren para

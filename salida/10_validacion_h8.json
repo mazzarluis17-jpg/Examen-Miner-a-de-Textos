@@ -1,0 +1,21 @@
+{
+  "h8_tecnico": "completo",
+  "valoraciones_validas": 0,
+  "valoraciones_pendientes": [
+    "Q1: [VALIDAR] pendiente del alumno",
+    "Q2: [VALIDAR] pendiente del alumno",
+    "Q3: [VALIDAR] pendiente del alumno",
+    "Q4: [VALIDAR] pendiente del alumno",
+    "Q5: [VALIDAR] pendiente del alumno",
+    "Q6: [VALIDAR] pendiente del alumno",
+    "Q7: [VALIDAR] pendiente del alumno",
+    "Q8: [VALIDAR] pendiente del alumno",
+    "Q9: [VALIDAR] pendiente del alumno",
+    "Q10: [VALIDAR] pendiente del alumno"
+  ],
+  "h8_completo": false,
+  "filas_respuesta": 451,
+  "consultas": 10,
+  "errores_tecnicos": [],
+  "nota": "Las tablas sin valoraciones personales aún no son entregables finales (R08)."
+}

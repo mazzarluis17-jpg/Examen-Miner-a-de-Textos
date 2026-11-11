@@ -19,6 +19,9 @@ uv run --no-sync python scripts/10_tablas.py
 make tablas
 ```
 
+Los contenidos se reproducen de forma determinista; tiempos y `commit_codigo`
+describen cada ejecución y pueden variar entre commits.
+
 La política está en `config/tablas_respuesta.yaml`, versión
 `h8-v2-vinculos-explicitos`. La política inicial se fijó antes de generar;
 se corrigió posteriormente la confusión técnica entre coocurrencia y relación.

@@ -1,0 +1,233 @@
+query_id,campo_respuesta,clave_valor,frecuencia_total,n_pasajes_distintos,n_discursos_distintos,n_eventos_distintos
+Q1,dependencias_y_empresas,cuxtal,1,1,1,1
+Q1,dependencias_y_empresas,grupo ica,1,1,1,1
+Q1,dependencias_y_empresas,ica,1,1,1,1
+Q1,dependencias_y_empresas,inah,1,1,1,1
+Q1,dependencias_y_empresas,instituto nacional de antropologia e historia,1,1,1,1
+Q1,dependencias_y_empresas,tren maya,3,3,2,2
+Q1,estados,campeche,1,1,1,1
+Q1,estados,chiapas,2,1,1,1
+Q1,estados,tabasco,1,1,1,1
+Q1,estados,yucatan,6,3,3,5
+Q10,dependencias_y_empresas,asiponas,1,1,1,1
+Q10,dependencias_y_empresas,bienestar,1,1,1,1
+Q10,dependencias_y_empresas,c.v,1,1,1,1
+Q10,dependencias_y_empresas,covid,1,1,1,1
+Q10,dependencias_y_empresas,eanico,1,1,1,1
+Q10,dependencias_y_empresas,ejercito nacional,1,1,1,1
+Q10,dependencias_y_empresas,"empresa multimodal interoceanica, s.a",1,1,1,1
+Q10,dependencias_y_empresas,estados unidos mexicanos,1,1,1,1
+Q10,dependencias_y_empresas,ferrocarril del istmo de tehuantepec,1,1,1,1
+Q10,dependencias_y_empresas,fiscalia general,1,1,1,1
+Q10,dependencias_y_empresas,fuerzas armadas,1,1,1,1
+Q10,dependencias_y_empresas,gobierno de mexico,3,3,3,3
+Q10,dependencias_y_empresas,guardia nacional,1,1,1,1
+Q10,dependencias_y_empresas,inah,1,1,1,1
+Q10,dependencias_y_empresas,leos mexic,1,1,1,1
+Q10,dependencias_y_empresas,pec,1,1,1,1
+Q10,dependencias_y_empresas,pemex,1,1,1,1
+Q10,dependencias_y_empresas,petroleos mexicanos,1,1,1,1
+Q10,dependencias_y_empresas,portuario nacional,1,1,1,1
+Q10,dependencias_y_empresas,secretaria de marina,3,3,3,3
+Q10,fechas_inauguracion,23 de noviembre de 2020,1,1,1,1
+Q10,lugares_conecta,asia,1,1,1,1
+Q10,lugares_conecta,atlantico,1,1,1,1
+Q10,lugares_conecta,baja california sur,1,1,1,1
+Q10,lugares_conecta,campeche,2,2,2,2
+Q10,lugares_conecta,cancun,1,1,1,1
+Q10,lugares_conecta,centro,1,1,1,1
+Q10,lugares_conecta,chetumal,1,1,1,1
+Q10,lugares_conecta,chiapas,2,2,2,2
+Q10,lugares_conecta,coatzacoalcos,8,5,4,8
+Q10,lugares_conecta,corredor interoceanico,5,3,2,5
+Q10,lugares_conecta,corredor interoceanico del istmo de tehuantepec,7,6,6,7
+Q10,lugares_conecta,de,1,1,1,1
+Q10,lugares_conecta,dos bocas,2,2,2,2
+Q10,lugares_conecta,el vizcaino,1,1,1,1
+Q10,lugares_conecta,escarcega,1,1,1,1
+Q10,lugares_conecta,estados unidos,2,2,2,2
+Q10,lugares_conecta,huantepec,3,3,3,3
+Q10,lugares_conecta,is,2,2,2,2
+Q10,lugares_conecta,istmo de tehuantepec,14,9,8,14
+Q10,lugares_conecta,laguna de pajaritos,1,1,1,1
+Q10,lugares_conecta,medias aguas,1,1,1,1
+Q10,lugares_conecta,merida,2,2,2,2
+Q10,lugares_conecta,mexico,3,1,1,3
+Q10,lugares_conecta,mo de tehuantepec,1,1,1,1
+Q10,lugares_conecta,ntepec,1,1,1,1
+Q10,lugares_conecta,oaxaca,1,1,1,1
+Q10,lugares_conecta,pacifico,1,1,1,1
+Q10,lugares_conecta,palenque,4,3,3,4
+Q10,lugares_conecta,pec,1,1,1,1
+Q10,lugares_conecta,pomuch,2,1,1,1
+Q10,lugares_conecta,poxila,1,1,1,1
+Q10,lugares_conecta,progreso,1,1,1,1
+Q10,lugares_conecta,puerto chiapas,2,2,2,2
+Q10,lugares_conecta,salina cruz,9,6,5,9
+Q10,lugares_conecta,sudamerica,1,1,1,1
+Q10,lugares_conecta,tren interoceanico,1,1,1,1
+Q10,lugares_conecta,tren maya,7,3,3,6
+Q10,lugares_conecta,…,1,1,1,1
+Q10,montos,tres mil millones de pesos,1,1,1,1
+Q2,dosis,2.7 millones de dosis,1,1,1,1
+Q2,dosis,383 mil 375 dosis,1,1,1,1
+Q2,dosis,385 mil 584 dosis,1,1,1,1
+Q2,dosis,940 mil 470 dosis,1,1,1,1
+Q2,dosis,mil 375 dosis,1,1,1,1
+Q2,dosis,mil 69 dosis,1,1,1,1
+Q2,farmaceuticas,astrazeneca,4,3,3,4
+Q2,farmaceuticas,biontech,2,2,2,2
+Q2,farmaceuticas,cansino,3,1,1,3
+Q2,farmaceuticas,gamaleya,1,1,1,1
+Q2,farmaceuticas,pfizer,4,3,3,4
+Q2,farmaceuticas,sinovac,2,2,2,2
+Q2,farmaceuticas,sputnik v,1,1,1,1
+Q2,fechas,14 de febrero de 2021,1,1,1,1
+Q2,fechas,27 de marzo,1,1,1,1
+Q2,fechas,28 de marzo,1,1,1,1
+Q2,funcionarios,edgar jesus zitle garcia,1,1,1,1
+Q2,funcionarios,gatell,1,1,1,1
+Q2,funcionarios,joseph biden,1,1,1,1
+Q2,funcionarios,luis cresencio sandoval,1,1,1,1
+Q2,funcionarios,melina vega,1,1,1,1
+Q2,funcionarios,shaila rosagel,1,1,1,1
+Q3,montos_inversion,50 mil millones de pesos,1,1,1,1
+Q3,organizaciones,animal politico,1,1,1,1
+Q3,organizaciones,business energy,1,1,1,1
+Q3,organizaciones,diario de yucatan,1,1,1,1
+Q3,organizaciones,dos bocas,1,1,1,1
+Q3,organizaciones,el universal,1,1,1,1
+Q3,organizaciones,grupo canton,1,1,1,1
+Q3,organizaciones,latinus,1,1,1,1
+Q3,organizaciones,pemex,2,1,1,1
+Q3,organizaciones,proceso,1,1,1,1
+Q3,organizaciones,ref,1,1,1,1
+Q3,organizaciones,reforma,2,1,1,2
+Q3,organizaciones,republica,1,1,1,1
+Q3,organizaciones,sco,1,1,1,1
+Q3,organizaciones,w radio,1,1,1,1
+Q3,responsables,carlos loret de mola,2,1,1,2
+Q3,responsables,loret,2,1,1,2
+Q3,responsables,rocio nahle,2,2,2,2
+Q3,responsables,yesenia peralta,1,1,1,1
+Q3,responsables,…,1,1,1,1
+Q4,costos,100 mil millones de pesos,1,1,1,1
+Q4,dependencia_constructora,colegio militar,2,1,1,1
+Q4,dependencia_constructora,estado de mexico,1,1,1,1
+Q4,dependencia_constructora,frente civico nacional,1,1,1,1
+Q4,dependencia_constructora,fuerza aerea,1,1,1,1
+Q4,dependencia_constructora,fuerzas armadas,1,1,1,1
+Q4,dependencia_constructora,mitre,1,1,1,1
+Q4,dependencia_constructora,secretaria de la defensa,3,1,1,2
+Q4,lugares,angeles,2,2,2,2
+Q4,lugares,base aerea de santa lucia,1,1,1,1
+Q4,lugares,base aerea militar de santa lucia,2,1,1,1
+Q4,lugares,base aerea militar santa lucia,1,1,1,1
+Q4,lugares,ciudad de mexico,7,4,4,7
+Q4,lugares,estado de mexico,2,2,2,2
+Q4,lugares,felipe angeles,7,5,3,6
+Q4,lugares,hidalgo,2,2,2,2
+Q4,lugares,italia,2,2,1,1
+Q4,lugares,lago de texcoco,2,2,2,2
+Q4,lugares,mexico,1,1,1,1
+Q4,lugares,miercoles,1,1,1,1
+Q4,lugares,morelos,1,1,1,1
+Q4,lugares,santa lucia,30,10,7,20
+Q4,lugares,santa lucia felipe angeles,2,2,1,1
+Q4,lugares,texcoco,3,2,2,3
+Q4,lugares,toluca,6,5,4,5
+Q4,lugares,torre de pisa,2,2,1,1
+Q4,lugares,‘felipe,1,1,1,1
+Q4,lugares,‘felipe angeles,1,1,1,1
+Q4,lugares,‘felipe angeles’,1,1,1,1
+Q4,lugares,‘felipe ‘angeles,1,1,1,1
+Q5,estados,campeche,1,1,1,1
+Q5,estados,chiapas,3,3,3,3
+Q5,estados,durango,1,1,1,1
+Q5,estados,guerrero,2,2,2,2
+Q5,estados,morelos,1,1,1,1
+Q5,estados,nayarit,1,1,1,1
+Q5,estados,oaxaca,1,1,1,1
+Q5,estados,puebla,1,1,1,1
+Q5,estados,quintana roo,2,1,1,2
+Q5,estados,tabasco,2,2,2,2
+Q5,estados,tamaulipas,2,1,1,1
+Q5,estados,veracruz,6,3,3,6
+Q5,estados,yucatan,1,1,1,1
+Q5,estados,zacatecas,1,1,1,1
+Q5,monto_por_beneficiario,29 mil millones de pesos,1,1,1,1
+Q5,monto_por_beneficiario,cinco mil pesos,4,4,4,4
+Q5,monto_por_beneficiario,tres mil millones de pesos,1,1,1,1
+Q5,secretaria_operadora,asociacion campesina independiente emiliano zapata,1,1,1,1
+Q5,secretaria_operadora,bienestar,3,2,2,3
+Q5,secretaria_operadora,organizacion campesina independiente emiliano,1,1,1,1
+Q5,secretaria_operadora,secretaria de la defensa,1,1,1,1
+Q6,litros,40 litros,1,1,1,1
+Q6,lugares,ciudad de mexico,2,2,2,2
+Q6,lugares,dos bocas,1,1,1,1
+Q6,lugares,hidalgo,2,2,2,2
+Q6,lugares,mexico,2,2,2,2
+Q6,lugares,michoacan,3,2,1,2
+Q6,lugares,torre de pemex,1,1,1,1
+Q6,organizaciones,corte,2,2,2,2
+Q6,organizaciones,interven,1,1,1,1
+Q6,organizaciones,modelo,1,1,1,1
+Q6,organizaciones,pemex,3,2,2,3
+Q6,perdidas,35 mil millones de pesos,2,2,2,2
+Q6,perdidas,56 mil millones de pesos,1,1,1,1
+Q6,perdidas,65 mil millones de pesos,4,4,4,4
+Q6,perdidas,80 mil millones de pesos,1,1,1,1
+Q6,perdidas,mil millones de pesos,1,1,1,1
+Q7,institucion_paga,banco del bienestar,1,1,1,1
+Q7,institucion_paga,bienestar,3,3,3,3
+Q7,institucion_paga,comision federal de electricidad,1,1,1,1
+Q7,institucion_paga,congreso,1,1,1,1
+Q7,institucion_paga,ejercito,1,1,1,1
+Q7,institucion_paga,estado,1,1,1,1
+Q7,institucion_paga,fuerzas armadas,1,1,1,1
+Q7,institucion_paga,is,4,3,3,4
+Q7,institucion_paga,issste,6,5,5,6
+Q7,institucion_paga,pemex,2,2,2,2
+Q7,institucion_paga,seguro,3,3,3,3
+Q7,institucion_paga,ste,1,1,1,1
+Q7,institucion_paga,uma,1,1,1,1
+Q7,montos_bimestrales,120 mil millones de pesos,1,1,1,1
+Q7,montos_bimestrales,350 mil millones de pesos,1,1,1,1
+Q7,montos_bimestrales,diez mil millones de pesos,1,1,1,1
+Q7,montos_bimestrales,dos mil 550 pesos,4,3,3,4
+Q7,montos_bimestrales,mil 160 pesos,2,2,2,2
+Q7,montos_bimestrales,mil 600 pesos,1,1,1,1
+Q8,montos_diarios,200 pesos,1,1,1,1
+Q8,montos_diarios,tres mil 600 pesos,1,1,1,1
+Q8,porcentajes,16 por ciento,7,5,5,7
+Q8,porcentajes,17 por ciento,1,1,1,1
+Q8,porcentajes,20 por ciento,3,3,3,3
+Q8,porcentajes,30 por ciento,1,1,1,1
+Q8,porcentajes,50 por ciento,1,1,1,1
+Q8,porcentajes,75 por ciento,1,1,1,1
+Q9,estados,chiapas,4,1,1,3
+Q9,estados,ciudad de mexico,1,1,1,1
+Q9,estados,jalisco,1,1,1,1
+Q9,estados,oaxaca,6,2,2,5
+Q9,estados,puebla,2,1,1,2
+Q9,estados,zacatecas,1,1,1,1
+Q9,institucion,azteca,2,1,1,1
+Q9,institucion,banco de bienestar,1,1,1,1
+Q9,institucion,banco del bienestar,32,10,10,23
+Q9,institucion,bancos del bienestar,5,2,2,3
+Q9,institucion,bienestar,11,5,5,9
+Q9,institucion,hacienda,1,1,1,1
+Q9,institucion,salud,1,1,1,1
+Q9,institucion,secretaria de la defensa,1,1,1,1
+Q9,montos,600 mil millones de pesos,2,2,2,2
+Q9,sucursales,129 sucursales,1,1,1,1
+Q9,sucursales,230 sucursales,1,1,1,1
+Q9,sucursales,262 sucursales,2,1,1,2
+Q9,sucursales,dos mil 296 sucursales,1,1,1,1
+Q9,sucursales,dos mil 700 sucursales,2,2,2,2
+Q9,sucursales,dos mil 740 sucursales,1,1,1,1
+Q9,sucursales,dos mil 750 sucursales,1,1,1,1
+Q9,sucursales,mil 500 sucursales,1,1,1,1
+Q9,sucursales,mil 900 sucursales,1,1,1,1
+Q9,sucursales,tres mil sucursales,3,3,3,3
+Q9,sucursales,tres sucursales,1,1,1,1

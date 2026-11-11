@@ -342,3 +342,19 @@ existía en `reglas-congeladas`. Todos esos archivos siguen protegidos frente
 a cambios y borrados; no se mueve la etiqueta ni se cambia ninguna aprobación
 o insumo de H3–H7. La compatibilidad de validación se prueba con un repositorio
 sintético; agregar una política posterior no equivale a alterar reglas.
+
+## 2026-11-11 — H8 técnico validado; valoración humana pendiente
+
+Se generan respuestas a las diez consultas según el mapa (34 campos en total),
+451 filas de respuestas: 126 respaldadas, 322 ambiguas y tres no encontradas;
+la cobertura detallada está en `salida/10_cobertura_respuestas.csv`. No se
+completan campos con conocimiento externo. Los resultados no son juicios de
+credibilidad humanos. No se modificaron insumos ni resultados H3–H7.
+
+Veintiún artefactos se reprodujeron con SHA-256 idéntico, incluido el manifiesto
+H8, las once tablas y la plantilla. Pruebas 360 passed/9 deselected, 24 de H8,
+Ruff limpio. Validación estricta de valoraciones falló deliberadamente con
+[VALIDAR] porque las diez entradas humanas siguen pendientes. La plantilla
+vacía se guarda en `salida/10_valoraciones_plantilla.yaml`; no se escribe
+`anotaciones/valoraciones.yaml`, ni se redactan opiniones. Sin valoraciones
+vigentes no se presenta R08 como entregable humano completo ni se inicia H9.

@@ -1,0 +1,53 @@
+{
+  "esquema": 1,
+  "productor": "scripts/10_tablas.py",
+  "modelo": "bm25_con_filtro",
+  "commit_codigo": "50daa8809051de404adbfc9db5222674c08bf59d",
+  "entradas": {
+    "data/consultas.csv": "37377bcbeccede92aa2d99a9ca2d4f064d7f230f344b66836903d117e5a3e3b1",
+    "data/mejor_modelo.json": "bf4d694fe867b70b99b4dedbb94d6ac09536d10e464ad7e7aa242fa1f4fc71c0",
+    "data/pasajes.parquet": "766859a1ab322a449b6ce3ef9e25d15b95f275d140804f3935db7c1de632af0d",
+    "salida/ranking.csv": "2da7bd09e1a590b00c720266d5ec082ce0a71188f23784fad2052521fa312c4e",
+    "salida/entidades_enriquecidas.csv": "d760e4d41984dfb32677a9ff6d795489bbf3655c1c6692a465c578a51d215696",
+    "salida/entidades.csv": "44b8169ed01d91122ea66e92ceec56184b41a0ff16e88aebfb687f04948d2cb1",
+    "salida/cantidades_auxiliares.csv": "e40d733b53a83f09d5abbaaefc11102346ec55134bc5eb72ca87e22e23accab7",
+    "salida/manifiesto_ejecucion.json": "01c3dfd45585d59602b0cf0998b88abe8010d4f891252e8823a71375abc463a1",
+    "config/tablas_respuesta.yaml": "7dd208775a0a9fb97050adeb8a9e335f276155b2a512d042b1ae0f4fcbd5d399",
+    "config/excluir_tablas.yaml": "5e74918dcf641ca7c0ae82d1a8240f4ebfb594e069a87a78b5aed396c04393ba",
+    "config/gazetteer_loc.csv": "35bafe2f4f8f35628863f27f11cdac3cfe75b02aabe4c568810f27155fe56244",
+    "kit/gazetteer_dependencias.csv": "11e0fa1b32e6b1fb8baf304a0efb4815806a6b3dd944c49891978e8528b6b243",
+    "src/mtx/respuestas.py": "84764959c77e2a339f5ee10925ab2d03b6fa461f88db9225dbf53643f8702e2f",
+    "scripts/10_tablas.py": "a56bc50b445129d4b79c5df989b064899834a470aa2af7daa805c9d0b88a6592"
+  },
+  "salidas": {
+    "salida/respuestas.csv": "218a30d5db5d43847c3b9fa76879c683573cdb94af6434aea79c5cda934e05db",
+    "salida/10_exclusiones.csv": "89c9f2507e8f8aae57d1b427dc6bfc19e3142f8cb9beee57eef5131db94e4e34",
+    "salida/10_agregados.csv": "7847d7d56f1be48b6d3d4aa0b06fce156ef7e5008e39daf9a0ce549b810cd256",
+    "salida/10_evidencias_completas.csv": "beb133b25a683d99eb9d4fca6659c6c73d3011c454a34db6058c711f95a96141",
+    "salida/10_cobertura_respuestas.csv": "9d5a22d4cf661a3cc74bf8463b16ec18aa324e11fd0e3a6f45090a3263dc430f",
+    "salida/tablas_respuesta/Q1.md": "3a242192e586374cdd58832508d75cb75fff9d6c3080913ddb8422af8eba6374",
+    "salida/tablas_respuesta/Q2.md": "c676996a7c2e7003d6edd0287d52940fb8b631b09f1f7b83f8e5f0687eeddc33",
+    "salida/tablas_respuesta/Q3.md": "6d91dfea3e5d7cbd6d887c66e96958376ef23258e338b4d3649d20e76e62ac38",
+    "salida/tablas_respuesta/Q4.md": "0d725ae96b30d24ff0235dd2bdeed066c31ba98417f5cd542d35d48e6def389b",
+    "salida/tablas_respuesta/Q5.md": "1d862d016484054840446505ce790947da98f9e8215ecb1bed72841f3a782e78",
+    "salida/tablas_respuesta/Q6.md": "1f3bf0405952991650c6c79708e281d5dfc5b0a79323f02c9fdba32a5f654178",
+    "salida/tablas_respuesta/Q7.md": "119b6429f67ff7bf570256b3acaa594df369d4096104097d3e77ac33c2ef299f",
+    "salida/tablas_respuesta/Q8.md": "a50cb7bd36acff47d60e66b83aa3e804ad0fba1a875ef151e897d73e19cd481a",
+    "salida/tablas_respuesta/Q9.md": "e162e963348d466f9a9741531b88855c2d31e6b4c49a94ce641bfa13d4c03a2a",
+    "salida/tablas_respuesta/Q10.md": "1d3fd416264ef1a20c96dee4db5ceb403b0da9d3dfcdcaa3bcbab409b249ddd7",
+    "salida/tablas_respuesta/todas.md": "b6879f32a20b663e2ee51727939abdb3af10bcb7dec920ce4b6129dc98488b1a"
+  },
+  "hashes_tablas": {
+    "Q1": "ef7624365c3c0568a21a983e469f12ab2bcdf640736a886195da16037ee2ef6d",
+    "Q2": "3a51f4e9914ebcb40c9c0a6b3488a2dda8cb7be4ac02de74ac4342882a9e544b",
+    "Q3": "6ffafcdb2bf269a7e42724539e5432ecddd63709fc8e26cb1b1087c8d9dc190a",
+    "Q4": "f1a2f8bec071447a44bb735a7036bf2a4489fc063610fe6ac5b42ca9a1fc0eae",
+    "Q5": "672d8bbb5d8bda41bd56f37739c4045a2bf6d3400b0a735a84bf3716b7c290fb",
+    "Q6": "b0a84c0ea7c7b1f65a682c62b8e87e39ec6e3a1e8fff10454a24f0fdc40c3980",
+    "Q7": "74848b2db97b89bcd8cf4b87651a4d8025dfaad27cefb2a15eefacbae7b16c2a",
+    "Q8": "5cd629196bd9271a6628af37e720c3d8151d4f66e38c009ea94a86335a90e945",
+    "Q9": "4194f727f68bde20ff4f6fe040bf1343ee27aef9f880f920fa13cf6b2da57f94",
+    "Q10": "6318c5a76f926c0144d2c90dbe1ca266af93d428052a45982070a3cab3837ef7"
+  },
+  "politica_sha256": "7dd208775a0a9fb97050adeb8a9e335f276155b2a512d042b1ae0f4fcbd5d399"
+}
