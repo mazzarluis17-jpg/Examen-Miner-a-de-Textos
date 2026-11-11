@@ -39,7 +39,7 @@ congelar:
 	$(PY) scripts/06b_congelar.py
 
 ner:
-	$(PY) scripts/07_ner.py
+	$(PY) scripts/07c_ner_auditado.py
 muestra-gold:
 	$(PY) scripts/08b_muestra_gold.py
 extraer:

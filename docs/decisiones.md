@@ -260,3 +260,22 @@ Se solicita decisión al alumno para una eventual versión separada posterior a
 D15. Mientras tanto no se generan métricas oficiales incompletas ni se avanza H8.
 La infraestructura independiente H7 queda probada: 326 passed/9 deselected
 en suite rápida y Ruff limpio. Los resultados IE reales permanecen pendientes.
+
+## 2026-11-10 — Corrección posterior D15 autorizada: 2-vacios-auditados
+
+Luis autoriza explícitamente descartar exclusivamente spans cuyo recorte de
+puntuación y espacios produce inicio >= fin. Se conserva sin modificar
+`src/mtx/ner_modelo.py` y la etiqueta `reglas-congeladas`; la nueva versión vive
+en `ner_posproceso_v2.py`, orquestada por `07c_ner_auditado.py`. Ninguna otra
+política de recorte, unión, etiquetas o confianza cambia. Se ejecuta el mismo
+posproceso congelado sobre las entidades no vacías. Los descartes guardan ID,
+tipo, límites y texto originales, motivo y versión; la caché cruda no se borra
+ni modifica. La corrección no consulta Gold ni cambia el modelo o sus pesos.
+
+El alumno ya cerró Gold antes de inferir; no se había obtenido ninguna métrica
+IE completa con v1 porque la ejecución abortó. Por tanto F1 anterior es no
+disponible, nunca cero inventado. Los resultados del evaluador original con v2
+se identifican como ejecución autorizada posterior a D15, no como reproducción
+de v1 ni como sustitución de una cifra anterior. Registro correspondiente en
+`salida/09_cambios_post_congelamiento.csv`; quedan invalidadas solo las salidas
+IE pendientes, no H3–H6.

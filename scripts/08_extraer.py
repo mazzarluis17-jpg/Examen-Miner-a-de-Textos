@@ -11,7 +11,7 @@ from mtx.enriquecimiento import enriquecer
 from mtx.evaluacion import escribir_conservando
 from mtx.evaluacion_ie import validar_entidades, verificar_cierre
 from mtx.fusion import fusionar
-from mtx.ner_modelo import posprocesar
+from mtx.ner_posproceso_v2 import VERSION, posprocesar_auditado
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
         datos = json.loads(ruta.read_text())
         if datos["texto_sha256"] != sha256_archivo_texto(f.texto):
             raise ValueError("Caché distinta del texto canónico")
-        procesadas, _ = posprocesar(f.texto, datos["crudas"], f.passage_id)
+        procesadas, _, _ = posprocesar_auditado(f.texto, datos["crudas"], f.passage_id)
         for e in procesadas:
             puntajes[(f.passage_id, e["tipo"], e["inicio"], e["fin"])] = e["confianza"]
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=raiz, text=True).strip()
@@ -49,9 +49,10 @@ def main():
         escribir_conservando(raiz / nombre, tabla.to_csv(index=False, lineterminator="\n").encode())
     entradas = ["salida/06_entidades_reglas.csv", f"salida/entidades_{parametros['slug']}.csv",
                 "data/modelo_ner.json", "config/ner.yaml", "src/mtx/fusion.py",
-                "src/mtx/enriquecimiento.py", "scripts/08_extraer.py"]
+                "src/mtx/enriquecimiento.py", "scripts/08_extraer.py",
+                "src/mtx/ner_posproceso_v2.py", "scripts/07c_ner_auditado.py"]
     manifiesto = {"esquema": 1, "productor": "scripts/08_extraer.py", "commit": commit,
-        "modelo": modelo, "entradas": {p: sha256_archivo(raiz/p) for p in entradas},
+        "modelo": modelo, "version_posproceso": VERSION, "posterior_D15": True, "entradas": {p: sha256_archivo(raiz/p) for p in entradas},
         "pasajes": ctx["pasajes"].passage_id.nunique(), "entidades": len(oficial),
         "entidades_unicas": len(unica), "discrepancias": len(solapes)}
     (raiz/"salida/08_manifiesto_extraccion.json").write_text(

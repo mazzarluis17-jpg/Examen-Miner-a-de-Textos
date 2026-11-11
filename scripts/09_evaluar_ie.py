@@ -69,7 +69,7 @@ def main():
     crudas = pd.read_csv(raiz/"salida/07_crudas_beto.csv", keep_default_na=False)
     efectos = []
     for etiqueta, tabla in [("crudo_sin_recorte_ni_union",crudas),
-                            ("posproceso_congelado",pred)]:
+                            ("posproceso_v2_posterior_D15",pred)]:
         f = detalle_ie(ref, tabla, evaluados_kit)
         f = f[f.metodo.eq("modelo")].copy()
         f["configuracion"] = etiqueta
@@ -99,7 +99,7 @@ def main():
         "anotaciones/muestra_gold.csv", "entidades.csv", "kit/evaluar.py", "kit/corpus.py",
         "data/modelo_ner.json", "data/mejor_modelo.json", "config/ner.yaml",
         "src/mtx/reglas.py", "src/mtx/ner_modelo.py", "src/mtx/fusion.py",
-        "src/mtx/enriquecimiento.py", "src/mtx/evaluacion_ie.py", "scripts/09_evaluar_ie.py",
+        "src/mtx/enriquecimiento.py", "src/mtx/ner_posproceso_v2.py", "src/mtx/evaluacion_ie.py", "scripts/09_evaluar_ie.py",
         "config/gazetteer_extendido.csv", "config/gazetteer_loc.csv",
         "config/gazetteer_prescrito.csv", "config/criterios_anotacion.md"]
     versiones = {p:sha256_archivo(raiz/p) for p in entradas}
