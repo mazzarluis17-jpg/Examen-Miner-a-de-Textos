@@ -2,6 +2,15 @@
 
 ## Completado
 
+- (2026-11-10) H5 cerrado: commit `d4ca0a7`, etiqueta oficial
+  `reglas-congeladas`. Pruebas generales 294 passed/9 deselected, objetivo
+  congelación 92 passed/1 deselected y Ruff limpio. Muestra H6 preparada con
+  función oficial de la app: veinte IDs únicos, dos por consulta, semilla 42,
+  reproducible byte a byte, hashes vigentes y sin sustituciones objetivas.
+  AppTest Gold muestra 0/20 sin errores; no existen entidades, estados ni cierre
+  gold. Evidencia técnica: `salida/08_preparacion_h6.json`. Los 302 archivos
+  protegidos mantienen sus hashes; no se consultaron predicciones ni hubo push.
+
 - (2026-11-10) Cierre formal humano de Gazetteer verificado: once descartes,
   cero ampliaciones, 76 entradas base conservadas. Aprobaciones IE y alcance
   vigentes; 21 fuentes H4 intactas. Respaldo externo verificado de 302 archivos;
@@ -102,11 +111,10 @@
 
 ## Pendiente
 
-1. Ejecutar congelación oficial tras registrar el árbol probado y aprobado.
-2. Preparar muestra ciega reproducible de veinte IDs desde la función oficial
-   de la app, sin predicciones ni anotaciones.
-3. H6: Luis anota los veinte pasajes y cierra gold personalmente. Después
-   H7–H9 según PRD, conservando ganador H4 y restricciones D15.
+1. Luis anota personalmente los veinte pasajes desde Gold (Evaluación) y
+   cierra cada pasaje, incluidos los que no contengan entidades.
+2. Cierre global humano al completar 20/20; no consultar predicciones antes.
+3. Después H7–H9 según PRD, conservando ganador H4 e insumos congelados D15.
 4. Revisar `salida/02_vocabulario_top.csv` para la discusión de la stoplist.
 
 ## Decisiones
@@ -116,9 +124,9 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 ## Bloqueos
 
 - H3 confirmado por Luis y H4 cerrado; no son bloqueos pendientes de la rama H5.
-- H5 tiene todas las aprobaciones humanas vigentes. Resta ejecutar la etiqueta
-  oficial y preparar muestra antes de H6. BETO fijado por criterio técnico;
-  no hay gold ni selección humana simulada.
+- H5 cerrado y muestra H6 lista. Falta anotación humana de veinte pasajes y
+  cierre global. BETO fijado por criterio técnico; no hay gold ni selección
+  humana simulada.
 - Entrega individual en GitHub según decisión documentada en H5. Publicación y
   acceso del profesor pendientes; no se cambia el remote ni se hace push aquí.
 - Índice, tokens y TF-IDF no se han reconstruido en Debian; no se requieren para

@@ -1,0 +1,130 @@
+{
+  "muestra_sha256": "cbaac558917bf3a581ac64f21b5862735bc877e27df3724322cf0a8c89b53bb1",
+  "semilla": 42,
+  "pasajes": 20,
+  "por_consulta": 2,
+  "pruebas": "294 passed, 9 deselected; congelación 92 passed, 1 deselected; Ruff limpio",
+  "app": "AppTest Gold sin errores: 0/20, sin decisiones ni entidades",
+  "auditoria_sustitucion": [
+    {
+      "query_id": "Q1",
+      "passage_id": "326_25",
+      "palabras_contenido": 47,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q1",
+      "passage_id": "396_23",
+      "palabras_contenido": 101,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q10",
+      "passage_id": "228_7",
+      "palabras_contenido": 105,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q10",
+      "passage_id": "1458_12",
+      "palabras_contenido": 34,
+      "proporcion_protocolo": 0.013333333333333334
+    },
+    {
+      "query_id": "Q2",
+      "passage_id": "1133_87",
+      "palabras_contenido": 42,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q2",
+      "passage_id": "1277_28",
+      "palabras_contenido": 62,
+      "proporcion_protocolo": 0.015873015873015872
+    },
+    {
+      "query_id": "Q3",
+      "passage_id": "2149_27",
+      "palabras_contenido": 79,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q3",
+      "passage_id": "1527_0",
+      "palabras_contenido": 104,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q4",
+      "passage_id": "928_2",
+      "palabras_contenido": 101,
+      "proporcion_protocolo": 0.005
+    },
+    {
+      "query_id": "Q4",
+      "passage_id": "2202_5",
+      "palabras_contenido": 98,
+      "proporcion_protocolo": 0.01
+    },
+    {
+      "query_id": "Q5",
+      "passage_id": "771_54",
+      "palabras_contenido": 94,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q5",
+      "passage_id": "1870_19",
+      "palabras_contenido": 96,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q6",
+      "passage_id": "2250_60",
+      "palabras_contenido": 60,
+      "proporcion_protocolo": 0.013793103448275862
+    },
+    {
+      "query_id": "Q6",
+      "passage_id": "2008_2",
+      "palabras_contenido": 94,
+      "proporcion_protocolo": 0.015
+    },
+    {
+      "query_id": "Q7",
+      "passage_id": "1640_5",
+      "palabras_contenido": 78,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q7",
+      "passage_id": "2030_1",
+      "palabras_contenido": 85,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q8",
+      "passage_id": "1318_22",
+      "palabras_contenido": 75,
+      "proporcion_protocolo": 0.005747126436781609
+    },
+    {
+      "query_id": "Q8",
+      "passage_id": "1685_4",
+      "palabras_contenido": 93,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q9",
+      "passage_id": "420_10",
+      "palabras_contenido": 88,
+      "proporcion_protocolo": 0.0
+    },
+    {
+      "query_id": "Q9",
+      "passage_id": "499_68",
+      "palabras_contenido": 89,
+      "proporcion_protocolo": 0.0
+    }
+  ]
+}

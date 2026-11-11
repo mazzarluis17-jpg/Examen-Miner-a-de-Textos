@@ -211,3 +211,19 @@ La etiqueta `reglas-congeladas` se creará mediante el objetivo oficial tras
 pruebas; solo después la app preparará el manifiesto ciego semilla 42, sin
 consultar predicciones ni producir entidades gold. BETO permanece fijado por
 criterio técnico (D09); no se compara un segundo modelo ni se crea selección.
+
+## 2026-11-10 — D15 ejecutada y muestra ciega H6 preparada
+
+`make congelar` creó la etiqueta anotada `reglas-congeladas` sobre `d4ca0a7`,
+antes de crear o versionar cualquier muestra o gold. Después se llamó a
+`app.preparacion_gold.preparar_muestra`, sin modificar la aplicación: semilla 42,
+emparejamiento global de veinte IDs únicos, dos por consulta del top-10 del
+ganador congelado. Manifiesto `anotaciones/muestra_gold.csv`, SHA-256
+`cbaac558917bf3a581ac64f21b5862735bc877e27df3724322cf0a8c89b53bb1`.
+No se consultaron predicciones ni se generaron entidades, estados cerrados o
+aprobaciones humanas. Los veinte pasajes superan los umbrales objetivos de
+contenido y protocolo; no hay sustituciones. Auditoría en
+`salida/08_preparacion_h6.json`; AppTest ciego 0/20 sin errores.
+Los 302 archivos protegidos del respaldo mantienen sus hashes. El siguiente
+commit registra solo muestra y documentación posterior a D15, sin alterar
+reglas, criterios, configuración ni decisiones humanas.
