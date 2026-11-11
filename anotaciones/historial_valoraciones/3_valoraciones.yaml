@@ -1,0 +1,21 @@
+Q1:
+  tabla_sha256: ef7624365c3c0568a21a983e469f12ab2bcdf640736a886195da16037ee2ef6d
+  valoracion: La respuesta es parcialmente satisfactoria, ya que identifica participantes
+    y estados relacionados con la construcción del Tren Maya mediante evidencias textuales.
+    Sin embargo, algunas relaciones son ambiguas y no se encontraron los montos solicitados.
+    Por ello, considero que la información es útil, pero insuficiente para responder
+    completamente la consulta.
+Q2:
+  tabla_sha256: 3a51f4e9914ebcb40c9c0a6b3488a2dda8cb7be4ac02de74ac4342882a9e544b
+  valoracion: La respuesta identifica varias farmacéuticas y cantidades de vacunas
+    mediante evidencia textual verificable. Sin embargo, incluye personas y fechas
+    cuya relación con la gestión de vacunación no está suficientemente justificada,
+    además de algunas cantidades extraídas parcialmente. Considero que la respuesta
+    es útil, pero requiere verificar las relaciones entre entidades y eventos.
+Q3:
+  tabla_sha256: 6ffafcdb2bf269a7e42724539e5432ecddd63709fc8e26cb1b1087c8d9dc190a
+  valoracion: 'La respuesta identifica a Rocío Nahle como responsable y presenta un
+    monto presupuestado de 50 mil millones de pesos. Sin embargo, incluye medios de
+    comunicación y periodistas sin participación demostrada en la construcción, además
+    de confundir algunas entidades y sus funciones. Considero que la respuesta es
+    parcialmente útil, pero presenta errores de asociación '

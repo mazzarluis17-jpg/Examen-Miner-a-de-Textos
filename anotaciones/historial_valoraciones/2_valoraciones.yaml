@@ -1,0 +1,14 @@
+Q1:
+  tabla_sha256: ef7624365c3c0568a21a983e469f12ab2bcdf640736a886195da16037ee2ef6d
+  valoracion: La respuesta es parcialmente satisfactoria, ya que identifica participantes
+    y estados relacionados con la construcción del Tren Maya mediante evidencias textuales.
+    Sin embargo, algunas relaciones son ambiguas y no se encontraron los montos solicitados.
+    Por ello, considero que la información es útil, pero insuficiente para responder
+    completamente la consulta.
+Q2:
+  tabla_sha256: 3a51f4e9914ebcb40c9c0a6b3488a2dda8cb7be4ac02de74ac4342882a9e544b
+  valoracion: La respuesta identifica varias farmacéuticas y cantidades de vacunas
+    mediante evidencia textual verificable. Sin embargo, incluye personas y fechas
+    cuya relación con la gestión de vacunación no está suficientemente justificada,
+    además de algunas cantidades extraídas parcialmente. Considero que la respuesta
+    es útil, pero requiere verificar las relaciones entre entidades y eventos.
