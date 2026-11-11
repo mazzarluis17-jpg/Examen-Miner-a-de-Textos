@@ -11,8 +11,9 @@ Recupera pasajes de conferencias presidenciales mediante TF-IDF y BM25, con y si
 filtro temporal. Extrae PER, ORG, LOC, FECHA y MONTO con reglas y BETO; produce
 respuestas con citas y estados de evidencia. Las relaciones ambiguas se conservan
 como ambiguas. Los juicios, Gold y valoraciones son humanos.
-El [reporte](reporte/reporte.pdf) está en el primer corte de revisión: es un
-esqueleto de cuatro páginas, **todavía no un reporte académico final aprobado**.
+El [reporte](reporte/reporte.pdf) contiene un borrador académico de seis páginas,
+con estructura aprobada por Luis. **La prosa y conclusiones del segundo corte
+están pendientes de revisión humana; el PDF aún no está aprobado como final**.
 La presentación tiene cinco láminas; falta su revisión y ensayo humano.
 
 ## 2. Requisitos
@@ -190,9 +191,10 @@ El profesor inició el repositorio mediante Claude Code. La continuación utiliz
 Codex para programación de src/mtx/, scripts/, tests/, herramientas de anotación,
 validación, depuración, generación reproducible de tablas y documentación técnica.
 El historial Git y docs/decisiones.md permiten seguir esas unidades de trabajo.
-README, guion y estructura del reporte de H9 fueron preparados por Codex a partir
-de los archivos de resultados. **La prosa académica y sus conclusiones están
-pendientes de los cortes de revisión del alumno**; no se afirma una validación
+README, guion y borrador académico de H9 fueron redactados por Codex a partir
+de los archivos de resultados. Luis aprobó la estructura y selección de tablas.
+**La prosa académica y sus conclusiones están pendientes del segundo corte
+de revisión del alumno**; no se afirma una validación
 que todavía no ocurrió.
 
 Luis realizó personalmente los juicios de relevancia y el Gold mediante archivos
@@ -225,3 +227,12 @@ responsabilidad del alumno; la guía técnica no acredita por sí misma comprens
 Las utilerías de presentación y validación siguen el PRD v3.0. No se atribuye al
 profesor una autorización adicional que no esté documentada. Véase uv.lock para
 las versiones exactas y requirements.txt para la exportación de ejecución.
+
+
+Referencias metodológicas del reporte: [BM25](https://doi.org/10.1561/1500000019),
+[BERT](https://aclanthology.org/N19-1423/) y
+[BETO](https://pml4dc.github.io/iclr2020/program/pml4dc_10.html).
+La figura editorial H9 se regenera con
+`uv run --no-sync python scripts/11_reporte.py --figuras`; requiere Chrome/Kaleido,
+no altera las figuras históricas y no recalcula rankings. Sin esa opción,
+`make reporte` lee la prosa existente y compila sin modificarla.

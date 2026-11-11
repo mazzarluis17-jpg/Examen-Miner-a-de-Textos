@@ -10,7 +10,7 @@
     "8_ie_oficial_complementaria": "verificado",
     "9_respuestas_valoraciones": "verificado",
     "10_snapshot": "verificado",
-    "11_reporte": "pendiente: primer corte sin prosa aprobada",
+    "11_reporte": "pendiente: estructura aprobada, prosa del corte 2 por revisar",
     "12_laminas_guion": "pendiente: aprobación y ensayo humano",
     "13_pruebas_clon": "verificado",
     "14_readme_dependencias": "verificado",
@@ -42,14 +42,14 @@
       "sha256": "6ee6475f0e8134609e88c0e1ae82e3a3a3e1d2602d21ff2b5518ff564ee2fbc1"
     }
   },
-  "paginas": 4,
+  "paginas": 6,
   "diapositivas": 5,
   "valoraciones": 10,
   "gold": 138,
   "evaluadores_oficiales": "idénticos byte a byte",
   "hash_pasajes": "2c92857b452350ef130e5598c2d508717aac5f1cafbc105991733a452822fff5",
   "pendiente": [
-    "Tres cortes de aprobación humana del reporte",
+    "Revisión humana de la prosa (corte 2) y aprobación del PDF final (corte 3)",
     "Aprobación de láminas y guion; ensayo humano medido ≤8 minutos",
     "Destino GitHub y acceso del profesor; publicación no autorizada",
     "Etiqueta v1.0-entrega después de todos los cierres"

@@ -436,3 +436,49 @@ Ruff sin hallazgos. Streamlit abrió sin excepciones ni escritura de etiquetas.
 El escaneo por patrones de credenciales y los archivos personales/grandes se
 registra en salida/11_integridad_seguridad.json. Sus comprobaciones no se
 presentan como una garantía universal de ausencia de secretos.
+
+## 2026-11-11 — Aprobación explícita del primer corte académico de H9
+
+Luis aprueba expresamente la estructura del reporte, de cuatro a seis páginas
+sin código, con distribución de seis páginas: portada/resumen/objetivos/corpus;
+preprocesamiento/índice/modelos; evaluación IR; extracción y evaluación IE;
+respuestas Q1–Q10/evidencia/errores; discusión/conclusiones/reproducción/referencias.
+Aprueba como tablas principales las cuatro variantes IR con P@5/P@10/MAP, los tres
+métodos IE con P/R/F1 y el resumen compacto de las diez consultas con limitaciones.
+Se conservan las ocho secciones lógicas del PRD, agrupándolas en esa distribución.
+
+La aprobación corresponde al corte 1 (estructura y selección de tablas), no a
+prosa o conclusiones aún no presentadas. Se prepara el corte 2 para revisión
+sección por sección, sin atribuir su aprobación al alumno. Se utiliza la identidad
+completa previamente confirmada: Luis Alfredo Ramírez Maza, Licenciatura en Ciencia
+de Datos, Universidad Nacional Autónoma de México, FES Acatlán. El mensaje reciente
+termina truncado en «UNAM F»; no se inventan datos nuevos ni se cambia la identidad
+completa ya autorizada. No se alteran artefactos congelados ni se hace push.
+
+## 2026-11-11 — Segundo corte del reporte académico de seis páginas
+
+Se prepara una propuesta de prosa, sección por sección, leyendo las métricas y
+los archivos de auditoría correspondientes. La aprobación de estructura no se
+extiende a estas conclusiones ni al PDF final. El borrador conserva ocho secciones
+lógicas agrupadas en seis páginas, fuente de 11 puntos y márgenes de 2.2 cm.
+Incluye seis tablas, fórmulas, cuatro términos con tres postings de ejemplo por
+cada uno, vistas IR oficial/temporal e IE oficial/complementaria diferenciadas.
+
+La tabla Q1–Q10 presenta ejemplos respaldados y límites, con referencias a pasaje
+y offsets. Q6 utiliza el campo pérdidas, Q9 una cifra de sucursales y Q10 Salina
+Cruz, por su correspondencia con los campos solicitados. Son filas existentes,
+no respuestas nuevas ni cambios de H8. Las valoraciones aparecen como extractos
+literales de ocho palabras, identificados como abreviados, remitiendo a las diez
+opiniones completas; no se generan calificaciones ni se altera su persistencia.
+
+Para legibilidad se genera una figura editorial separada h9_ir_ap.png desde
+05_ir_por_consulta.csv, con consultas en orden Q1–Q10 y valores idénticos a los
+oficiales; no se tocan figuras históricas. El nuevo compilador src/mtx/reporte.py
+lee reporte.md sin sobrescribir prosa y permite regenerar solo tablas y el bloque
+de métricas del README. La exportación de figuras es una opción explícita;
+compilar normalmente no requiere Chrome ni red.
+
+El PDF de seis páginas fue revisado visualmente, sin tablas cortadas ni cajas
+fuera del margen. Suite completa: 403 passed, 1 skipped en 25.16 s; Ruff limpio.
+Se preservan 442 archivos protegidos. La prosa y las conclusiones de este corte
+se entregan para revisión humana; no se declara H9 cerrado ni se publica nada.

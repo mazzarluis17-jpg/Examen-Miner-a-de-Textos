@@ -1,0 +1,201 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{fontspec,booktabs,graphicx,amsmath,tabularx,array}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setmainfont{DejaVu Serif}
+\usepackage{microtype}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.06}
+\begin{document}
+\begin{center}\Large\bfseries Examen 1 — Minería de Textos\end{center}
+\par
+Universidad Nacional Autónoma de México
+\par
+Facultad de Estudios Superiores Acatlán
+\par
+Licenciatura en Ciencia de Datos
+\par
+Alumno: Luis Alfredo Ramírez Maza
+\par
+Asignatura: Minería de Textos. Fecha: 11 de noviembre de 2026.
+\par
+Repositorio personal de GitHub: pendiente de publicación autorizada.
+\par
+\section*{1. Resumen y objetivos}
+\par
+Se desarrolla un sistema de recuperación y extracción de información sobre conferencias presidenciales. A partir de pasajes con identidad y texto verificables, se comparan TF-IDF y BM25, con y sin filtro temporal; posteriormente se combinan reglas y un reconocedor de entidades en español para construir respuestas con evidencia. El objetivo general es recuperar información pertinente y distinguir las menciones textuales de las relaciones que pueden justificarse. Los objetivos específicos son construir un índice invertido, evaluar los rankings con juicios humanos, evaluar entidades con un Gold independiente y conservar citas, offsets y trazabilidad de las respuestas.
+\par
+En esta colección, BM25 con filtro obtiene MAP de 0.6150 y el sistema combinado alcanza F1 oficial de 0.7066. La evidencia se conserva aunque la respuesta sea incompleta: de 451 filas, 126 están respaldadas en texto, 322 son ambiguas y tres carecen de evidencia suficiente. Estas cifras proceden de resultados\_\allowbreak{}ir.csv, resultados\_\allowbreak{}ie.csv y 10\_\allowbreak{}validacion\_\allowbreak{}h8.json en salida/\allowbreak{}. Las valoraciones de las respuestas corresponden al alumno y se distinguen de las métricas automáticas.
+\par
+\section*{2. Corpus, limpieza y segmentación}
+\par
+La fuente es carevies/\allowbreak{}discursos\_\allowbreak{}AMLO, revisión 2c463bb3d5\allowbreak{}bf58742b4d\allowbreak{}842917da12\allowbreak{}11c44d2e18 de Hugging Face [4]. Contiene 2,294 discursos entre el 2 de diciembre de 2018 y el 30 de septiembre de 2024. La conversión conserva el orden original y asigna identificadores estables. Los archivos de auditoría 01\_\allowbreak{}estadisticas\_\allowbreak{}corpus.json y 01\_\allowbreak{}limpieza.json documentan las operaciones de la tabla 1.
+\par
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\textbf{Tabla 1. Corpus y limpieza auditada}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Yr@{}}\toprule
+Operación & Conteo \\ \midrule
+Discursos originales & 2294 \\
+Duplicados exactos /\allowbreak{} casi duplicados & 4 /\allowbreak{} 1 \\
+Acotaciones retiradas /\allowbreak{} fechas reparadas & 7338 /\allowbreak{} 10 \\
+Ventana /\allowbreak{} paso /\allowbreak{} mínimo (palabras) & 200 /\allowbreak{} 150 /\allowbreak{} 40 \\
+Pasajes /\allowbreak{} ventanas cortas descartadas & 127739 /\allowbreak{} 63384 \\
+\bottomrule\end{tabularx}\end{minipage}\par\medskip
+\par
+Las marcas reales de interlocutor requieren canonización, pues su formato difiere del supuesto por el kit. Se conserva el texto canónico completo para citar y anotar; inicio\_\allowbreak{}cuerpo separa la marca del contenido que se indexa. Se mantienen las intervenciones de reporteros, pero el mínimo de longitud elimina el 64.94 \% de sus intervenciones cortas. Los reporteros representan el 15.53 \% de los pasajes conservados. Esto restringe las preguntas breves que el buscador puede recuperar y debe considerarse al interpretar su cobertura. No se realizó el experimento opcional de sensibilidad de ventanas.
+\par
+\newpage
+\par
+\section*{3. Preprocesamiento e índice invertido}
+\par
+El índice utiliza el cuerpo del pasaje: tokenización, normalización de caja y acentos, stopwords en español y stemming. La lista adicional elimina expresiones repetidas de la estenografía, como presidente, pregunta y gracias. La marca permanece visible en el texto, pero sus tokens quedan fuera del índice; cambiarla no debe alterar el ranking. Las transformaciones del índice no sustituyen el texto sobre el que se calculan los offsets de entidades.
+\par
+El índice registra la frecuencia de cada término por pasaje. Contiene 35,891 términos y 7,238,490 postings; la longitud media tras preprocesamiento es 72.21 tokens. La frecuencia documental se contrastó con CountVectorizer. La tabla 2 reproduce cuatro ejemplos de salida/\allowbreak{}02\_\allowbreak{}postings.md: cada pareja indica el identificador del pasaje y su frecuencia, con tres postings por término. El índice completo se reconstruye desde los textos y la configuración fijada.
+\par
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\textbf{Tabla 2. Muestras de postings}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}lrrY@{}}\toprule
+Término & df & idf BM25 & Pasaje: tf \\ \midrule
+tren & 5261 & 3.1896 & 442\_\allowbreak{}26: 13; 387\_\allowbreak{}18: 12; 1533\_\allowbreak{}6: 12 \\
+vacuna & 4552 & 3.3343 & 840\_\allowbreak{}10: 14; 984\_\allowbreak{}47: 13; 1010\_\allowbreak{}12: 13 \\
+refinería & 2069 & 4.1227 & 162\_\allowbreak{}65: 10; 254\_\allowbreak{}70: 10; 237\_\allowbreak{}67: 9 \\
+huachicol & 714 & 5.1862 & 2191\_\allowbreak{}4: 7; 2232\_\allowbreak{}25: 7; 2192\_\allowbreak{}5: 6 \\
+\bottomrule\end{tabularx}\end{minipage}\par\medskip
+\par
+\section*{4. Modelos y evaluación de recuperación}
+\par
+TF-IDF utiliza frecuencia sublineal, idf suavizada y normalización L2, equivalentes a las opciones sublinear\_\allowbreak{}tf y smooth\_\allowbreak{}idf de scikit-learn. La consulta se representa en el mismo espacio y se ordena por similitud coseno:
+\par
+\[w_{t,p}=(1+\ln tf_{t,p})\left(\ln\frac{1+N}{1+df_t}+1\right),\qquad \cos(q,p)=\frac{q\cdot p}{\|q\|_2\|p\|_2}.\]
+\par
+BM25 [1] pondera la rareza y satura la contribución de la frecuencia, ajustándola a la longitud del pasaje, con $k_1=1.5$ y $b=0.75$:
+\par
+\[\mathrm{idf}(t)=\ln\left(1+\frac{N-df_t+0.5}{df_t+0.5}\right),\quad
+s(q,p)=\sum_{t\in U(q)}\mathrm{idf}(t)\frac{tf_{t,p}(k_1+1)}{tf_{t,p}+k_1(1-b+b|p|/\mathrm{avgdl})}.\]
+\par
+La suma utiliza términos únicos de la consulta. A diferencia de BM25Okapi de rank\_\allowbreak{}bm25, cuya idf es $\ln\frac{N-df_t+0.5}{df_t+0.5}$ con piso $\varepsilon$ para términos muy frecuentes, la variante implementada suma uno dentro del logaritmo para conservar pesos positivos. El filtro temporal restringe las fechas inclusivas antes de seleccionar los diez primeros, sin cambiar los parámetros ni expandir consultas.
+\par
+La longitud tras preprocesamiento varía entre cuatro y seis tokens y no explica por sí sola qué modelo gana: Q4 favorece a BM25 y Q9 a TF-IDF, ambas con cinco. Alias como Dos Bocas/\allowbreak{}refinería Olmeca y AIFA/\allowbreak{}Santa Lucía limitan la coincidencia léxica. Embeddings podrían recuperar paráfrasis, pero no se ejecutó ese experimento y no se afirma una mejora numérica.
+\par
+\par
+\newpage
+\par
+\subsection*{Evaluación IR y selección del ganador}
+\par
+El pool reúne los top-10 de las cuatro variantes. Luis realizó personalmente 176 juicios temáticos: 113 relevantes y 63 no relevantes; su transferencia autorizada conserva la revisión 197 y la cobertura completa. La fecha no forma parte del juicio temático. El evaluador original calcula P@5, P@10 y AP@10; su denominador es el total de relevantes del pool de la consulta, incluidos los no recuperados:
+\par
+\[P@k=\frac{\sum_{r=1}^{k}rel(r)}{k},\qquad AP@10=\frac{\sum_{r=1}^{10}P@r\,rel(r)}{R_q},\qquad MAP=\frac{1}{10}\sum_{q=1}^{10}AP_q.\]
+\par
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\textbf{Tabla 3. IR oficial y con ventana (*)}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Yrrrrrr@{}}\toprule
+Variante & P@5 & P@10 & MAP & P@5* & P@10* & MAP* \\ \midrule
+BM25 con filtro & 0.7600 & 0.7700 & 0.6150 & 0.7600 & 0.7700 & 0.6622 \\
+BM25 sin filtro & 0.7600 & 0.7500 & 0.5922 & 0.6000 & 0.6200 & 0.5288 \\
+TF-IDF con filtro & 0.6600 & 0.5800 & 0.3998 & 0.6600 & 0.5800 & 0.4517 \\
+TF-IDF sin filtro & 0.6800 & 0.6000 & 0.4131 & 0.5600 & 0.5000 & 0.3593 \\
+\bottomrule\end{tabularx}\end{minipage}\par\medskip
+\par
+La vista oficial determina el ganador; la vista con ventana relabela técnicamente como no relevantes las filas fuera del intervalo y modifica el denominador. Se presenta como auditoría complementaria, sin sustituir los juicios originales. BM25 con filtro supera a TF-IDF con filtro en MAP oficial (0.6150 frente a 0.3998, tabla 3). La regla fijada selecciona el mayor MAP entre variantes con filtro y favorece a BM25 únicamente en empate; aquí no fue necesario desempatar.
+\par
+\par\noindent\includegraphics[width=\linewidth,height=5.5cm,keepaspectratio]{figuras/h9_ir_ap.png}\par\noindent Figura 1. AP oficial por consulta y variante. Fuente: salida/\allowbreak{}05\_\allowbreak{}ir\_\allowbreak{}por\_\allowbreak{}consulta.csv.\par
+\par
+La ventaja depende de la consulta: BM25 obtiene AP de 0.9091 frente a 0.1545 en Q1 y 0.9094 frente a 0.3095 en Q4. TF-IDF supera a BM25 en Q6 (0.3043 frente a 0.2785), Q7 (1.0000 frente a 0.9750) y Q9 (0.4431 frente a 0.3752). Q3 presenta AP bajo en ambos (0.1762 y 0.1903). Estas diferencias proceden de 05\_\allowbreak{}ir\_\allowbreak{}ganador\_\allowbreak{}por\_\allowbreak{}consulta.csv, sin atribuir causalidad a un rasgo aislado.
+\par
+\newpage
+\par
+\section*{5. Extracción con reglas, gazetteers y BETO}
+\par
+Las reglas detectan fechas y dinero sobre el texto completo; los gazetteers aportan ORG y LOC. Las colisiones se resuelven por longitud y prioridad. Las regex no cubren toda fecha escrita en palabras ni todo monto sin unidad inequívoca. La revisión humana de once candidatos no aprobó ampliaciones: se conservaron 76 entradas. Los 1,505 candidatos originales siguen auditados; los no seleccionados permanecen sin revisar.
+\par
+El NER es mrm8488/\allowbreak{}bert-spanish-cased-finetuned-ner, basado en BERT [2] y BETO [3], con revisión b11721d41d\allowbreak{}9e948da32f\allowbreak{}cdabeeef4f\allowbreak{}b0f3ebcdf7. Se eligió por criterios técnicos antes del Gold, sin comparar modelos sobre ese conjunto. El pipeline conserva cachés crudas, proyecta offsets de los fragmentos y une spans según la política documentada. No aporta FECHA ni MONTO; las cantidades no monetarias son auxiliares separados de las entidades oficiales.
+\par
+La normalización no modifica las fronteras anotadas: valida fechas, mantiene su precisión y representa dinero con unidades y moneda cuando hay evidencia. No convierte divisas ni suma inversiones entre eventos. La fusión une únicamente coincidencias exactas de tipo, inicio y fin; conserva discrepancias y solapes parciales para auditoría.
+\par
+\section*{6. Gold y evaluación de entidades}
+\par
+La muestra ciega fijada con semilla 42 contiene veinte pasajes únicos, dos por consulta. Luis anotó personalmente 138 entidades en un auxiliar externo, importadas con validación y autorización; cerró el Gold en Streamlit antes de mostrar predicciones. El pasaje 1133\_\allowbreak{}87 permanece revisado sin entidades. No se sustituyeron negativos ni se ajustaron reglas o pesos con etiquetas Gold.
+\par
+Una predicción es correcta solo si coincide exactamente en pasaje, tipo e inicio/\allowbreak{}fin, con inicio inclusivo y fin exclusivo. Se calculan $P=TP/(TP+FP)$, $R=TP/(TP+FN)$ y $F_1=2PR/(P+R)$.
+\par
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\textbf{Tabla 4. IE oficial global (19 pasajes con entidades)}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Yrrr@{}}\toprule
+Método & Precisión & Recall & F1 \\ \midrule
+regla & 0.7245 & 0.5145 & 0.6017 \\
+modelo & 0.6947 & 0.6594 & 0.6766 \\
+combinado & 0.6257 & 0.8116 & 0.7066 \\
+\bottomrule\end{tabularx}\end{minipage}\par\medskip
+\par
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\textbf{Tabla 5. IE oficial por tipo}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}lYYY@{}}\toprule
+Tipo & Reglas: P/\allowbreak{}R/\allowbreak{}F1 & BETO: P/\allowbreak{}R/\allowbreak{}F1 & Combinado: P/\allowbreak{}R/\allowbreak{}F1 \\ \midrule
+PER & 0.0000/\allowbreak{}0.0000/\allowbreak{}0.0000 & 0.2414/\allowbreak{}0.8750/\allowbreak{}0.3784 & 0.1591/\allowbreak{}0.8750/\allowbreak{}0.2692 \\
+ORG & 0.7895/\allowbreak{}0.4412/\allowbreak{}0.5660 & 0.7353/\allowbreak{}0.7353/\allowbreak{}0.7353 & 0.6829/\allowbreak{}0.8235/\allowbreak{}0.7467 \\
+LOC & 0.8491/\allowbreak{}0.6000/\allowbreak{}0.7031 & 0.8676/\allowbreak{}0.7867/\allowbreak{}0.8252 & 0.7952/\allowbreak{}0.8800/\allowbreak{}0.8354 \\
+FECHA & 1.0000/\allowbreak{}0.1667/\allowbreak{}0.2857 & 0.0000/\allowbreak{}0.0000/\allowbreak{}0.0000 & 1.0000/\allowbreak{}0.1667/\allowbreak{}0.2857 \\
+MONTO & 1.0000/\allowbreak{}1.0000/\allowbreak{}1.0000 & 0.0000/\allowbreak{}0.0000/\allowbreak{}0.0000 & 1.0000/\allowbreak{}1.0000/\allowbreak{}1.0000 \\
+\bottomrule\end{tabularx}\end{minipage}\par\medskip
+\par
+El kit oficial evalúa los diecinueve pasajes que tienen entidades Gold. La evaluación complementaria incluye los veinte y cuenta falsos positivos del pasaje vacío: F1 combinado de 0.7022, frente al oficial de 0.7066 (tabla 4). El recall combinado de 0.8116 acompaña una precisión de 0.6257; la unión recupera menciones adicionales y conserva falsos positivos. MONTO alcanza F1 de 1.0000 con nueve entidades; se documentó la alerta de trazabilidad, sin alterar el Gold ni generalizar ese resultado.
+\par
+\newpage
+\par
+\section*{7. Respuestas Q1–Q10 y evidencia}
+\par
+Las respuestas utilizan los top-10 del ganador, entidades y auxiliares de H7, sin convertir coocurrencias en relaciones demostradas. La tabla 6 muestra un ejemplo respaldado y un límite por consulta. Las tablas oficiales conservan todas las filas, citas, fechas y estados.
+\par
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\textbf{Tabla 6. Respuestas compactas y revisión humana}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}YYY@{}}\toprule
+Consulta, ejemplo y límite & Pasaje [inicio:fin] & Valoración humana (extracto) \\ \midrule
+Q1: Tren Maya. Tren Maya. Montos ausentes. & 396\_\allowbreak{}23 [796:1230] & «Por ello, considero que la información es útil,…» \\
+Q2: Vacunas. 383 mil 375 dosis. Relaciones por verificar. & 1188\_\allowbreak{}80 [393:1022] & «Considero que la respuesta es útil, pero requiere…» \\
+Q3: Dos Bocas. Rocío Nahle. Inversión ambigua. & 1787\_\allowbreak{}11 [0:259] & «Considero que la respuesta es parcialmente útil, pero…» \\
+Q4: AIFA. Santa Lucía. Constructor/\allowbreak{}costo ambiguos. & 1259\_\allowbreak{}59 [0:503] & «Considero que la respuesta es parcial y presenta…» \\
+Q5: Sembrando Vida. Veracruz. Operador ambiguo. & 1415\_\allowbreak{}16 [157:657] & «por lo que considero que la respuesta es…» \\
+Q6: Huachicol. 65 mil millones de pesos. Litros ambiguos. & 2115\_\allowbreak{}4 [592:924] & «Considero que la respuesta es parcialmente útil, pero…» \\
+Q7: Pensiones. dos mil 550 pesos. Fecha ausente. & 2030\_\allowbreak{}1 [548:1131] & «Por ello, considero que responde solo parcialmente la…» \\
+Q8: Salario mínimo. 16 por ciento. Empresas ausentes. & 1685\_\allowbreak{}4 [805:1161] & «Tampoco identifica organizaciones empresariales ni determina claramente los…» \\
+Q9: Banco del Bienestar. dos mil 296 sucursales. Eventos distintos. & 347\_\allowbreak{}71 [322:888] & «También incluye un monto de dispersión de apoyos…» \\
+Q10: Interoceánico. Salina Cruz. Costo total ambiguo. & 1272\_\allowbreak{}17 [0:312] & «Considero que la respuesta es parcialmente útil, pero…» \\
+\bottomrule\end{tabularx}\end{minipage}\par\medskip
+\par
+Los intervalos identifican fragmentos de evidencia verificables en los textos oficiales. Las valoraciones son extractos literales, abreviados con puntos suspensivos; sus diez textos completos permanecen en anotaciones/\allowbreak{}valoraciones.yaml y las tablas oficiales. Las 451 filas se distribuyen en 126 respaldadas, 322 ambiguas y tres sin evidencia. Recuperar una persona o un monto no demuestra automáticamente su función o concepto: costos, ahorros y presupuestos se conservan separados.
+\par
+\newpage
+\par
+\section*{8. Análisis de errores, discusión y reproducibilidad}
+\par
+El análisis conserva ejemplos reales de 09\_\allowbreak{}auditoria\_\allowbreak{}ie.json. En 1458\_\allowbreak{}12 se fragmenta Istmo de Tehuantepec, intervalo [377:397], en partes no equivalentes al span Gold. En 326\_\allowbreak{}25 el modelo omite SEDENA [73:79]. En 228\_\allowbreak{}7 la regla clasifica como LOC el Corredor Interoceánico del Istmo de Tehuantepec [340:387], mientras el Gold humano cerrado lo etiqueta ORG; se conserva esa discrepancia sin corregir etiquetas después de evaluar. En 1277\_\allowbreak{}28 la regla produce el falso PER SERVIDORA DE LA NACIÓN [17:39] dentro de la marca. Se observa el lugar del error, pero no se demuestra un efecto causal de las mayúsculas. No apareció un caso de monto sin unidad en las categorías auditadas.
+\par
+El posproceso 2-vacios-auditados, expresamente autorizado después de D15, descarta solo spans vacíos tras recortar puntuación y espacios. Se audita una comilla LOC de 1812\_\allowbreak{}0 [945:946], preservando la caché cruda y la versión congelada. La versión original abortó, sin F1 completo previo. Como análisis complementario del posproceso, el F1 del modelo crudo es 0.5292, con recorte sin unión interpalabra es 0.6667 y con el posproceso final es 0.6766 (09\_\allowbreak{}efecto\_\allowbreak{}posproceso.csv); no representa una selección retrospectiva de parámetros con Gold.
+\par
+\subsection*{Discusión y conclusiones propuestas para revisión}
+\par
+Los resultados respaldan elegir BM25 con filtro mediante la regla fijada para esta colección, sin implicar superioridad por consulta ni cobertura de todas las relaciones solicitadas. En IE, el combinado alcanza F1 oficial de 0.7066, frente a 0.6766 de BETO y 0.6017 de reglas, con el intercambio de precisión y recall de la tabla 4. Las respuestas conservan evidencia incompleta y ambigüedad. La muestra Gold pequeña limita la generalización. Estas conclusiones son propuestas pendientes de aprobación del alumno.
+\par
+\subsection*{Reproducibilidad y uso de IA}
+\par
+uv.lock fija el entorno y se registran revisiones y hashes de datos/\allowbreak{}modelo. En un clon sin entorno ni cachés previos se reconstruyeron corpus, índice y rankings: los 55 CSV comparados resultaron idénticos. README documenta comandos y mediciones; los evaluadores originales reutilizan las cachés NER versionadas.
+\par
+Claude Code inició el proyecto del profesor. Codex asistió en programación, pruebas, herramientas, tablas y redacción de este borrador. Luis realizó juicios, Gold, revisión de gazetteer y valoraciones; los auxiliares personales se importaron con autorización. La prosa y las conclusiones del segundo corte aún no están aprobadas.
+\par
+\subsection*{Referencias}
+\par
+[1] Robertson, S. y Zaragoza, H. (2009). The Probabilistic Relevance Framework: BM25 and Beyond. Foundations and Trends in Information Retrieval, 3(4), 333–389. DOI: 10.1561/\allowbreak{}1500000019.
+\par
+[2] Devlin, J., Chang, M.-W., Lee, K. y Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. NAACL-HLT, 4171–4186. https:/\allowbreak{}/\allowbreak{}aclanthology.org/\allowbreak{}N19-1423/\allowbreak{}.
+\par
+[3] Cañete, J. y colaboradores (2020). Spanish Pre-Trained BERT Model and Evaluation Data. PML4DC, ICLR. Programa oficial: pml4dc.github.io/\allowbreak{}iclr2020.
+\par
+[4] carevies. discursos\_\allowbreak{}AMLO. Hugging Face, revisión fijada en la sección 2. Modelo afinado: mrm8488/\allowbreak{}bert-spanish-cased-finetuned-ner, revisión fijada en la sección 5. Contratos y evaluación: kit original del examen y PRD unificado v3.0 incluidos en el repositorio.
+\end{document}

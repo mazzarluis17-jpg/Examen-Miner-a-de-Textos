@@ -482,3 +482,13 @@ en salida/09_auditoria_ie.json. No son propuestas de corrección del Gold.
 
 La demo obligatoria se ejecuta con `make demo Q=Q3`. Consulte laminas/guion.md
 para preguntas, tiempo presupuestado y registro pendiente del ensayo humano.
+
+## src/mtx/reporte.py
+
+Compila la prosa académica existente sin regenerar sus párrafos ni aprobarla.
+Entradas: reporte.md, plantilla.tex y fuentes de resultados/hashes documentadas.
+Salidas: PDF con límite de 4–6 páginas, tablas derivadas y auditoría del corte.
+La figura editorial H9 se reexporta solo con --figuras; no cambia AP ni figuras H4.
+Ejemplo: literal('Precisión & $k_1=1.5$') protege el ampersand y conserva la fórmula.
+Pruebas: tests/test_reporte.py valida fórmulas, código prohibido, revisiones largas,
+conservación de texto, marcadores README y equivalencia de datos de la figura.

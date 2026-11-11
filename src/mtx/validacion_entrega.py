@@ -163,7 +163,7 @@ def verificar(raiz=RAIZ):
         reproducido = (prueba.get("codigo_salida") == 0 and prueba.get("csv_distintos") == []
                        and len(prueba.get("hashes_csv", {})) >= 6
                        and all(sha(raiz / r) == h for r, h in prueba["hashes_csv"].items()))
-    pendientes = ["Tres cortes de aprobación humana del reporte",
+    pendientes = ["Revisión humana de la prosa (corte 2) y aprobación del PDF final (corte 3)",
                  "Aprobación de láminas y guion; ensayo humano medido ≤8 minutos",
                  "Destino GitHub y acceso del profesor; publicación no autorizada",
                  "Etiqueta v1.0-entrega después de todos los cierres"]
@@ -180,7 +180,7 @@ def verificar(raiz=RAIZ):
         "8_ie_oficial_complementaria": "verificado",
         "9_respuestas_valoraciones": "verificado",
         "10_snapshot": "verificado",
-        "11_reporte": "pendiente: primer corte sin prosa aprobada",
+        "11_reporte": "pendiente: estructura aprobada, prosa del corte 2 por revisar",
         "12_laminas_guion": "pendiente: aprobación y ensayo humano",
         "13_pruebas_clon": "verificado" if reproducido else "pendiente: reproducción desde cero",
         "14_readme_dependencias": "verificado",

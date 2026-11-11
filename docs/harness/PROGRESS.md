@@ -2,6 +2,19 @@
 
 ## Completado
 
+- (2026-11-11) Luis aprueba expresamente el primer corte de H9: distribución
+  académica en seis páginas y tablas IR, IE y Q1–Q10. Preparado el segundo corte:
+  reporte.md y PDF de seis páginas, ocho secciones, seis tablas, cuatro términos
+  con tres postings cada uno, fórmulas y comparación oficial/complementaria.
+  Figura editorial H9 legible desde AP congelados; figuras H4 intactas. Fuentes,
+  citas humanas literales y hashes auditados en salida/11_fuentes_reporte.json y
+  11_corte2_reporte.json. Compilador lee prosa sin sobrescribirla y actualiza solo
+  el bloque de métricas del README. Suite completa 403 passed/1 skipped; Ruff
+  limpio. Seis páginas revisadas visualmente, sin desbordamientos, 442 archivos
+  protegidos intactos. Pendiente: aprobación de prosa/conclusiones (corte 2),
+  PDF final (corte 3), láminas/ensayo y publicación autorizada. No push ni etiqueta.
+
+
 - (2026-11-11) H8 humano cerrado: diez valoraciones vigentes, revisión 10,
   validación estricta correcta y commit 245b1fc. H9 en curso: seis CSV comparados
   contra fuentes y evaluador oficial, hashes/offsets/coberturas válidos; respaldo
@@ -166,9 +179,9 @@
 
 ## Pendiente
 
-1. Aprobar el primer corte de reporte/reporte.pdf (esqueleto de cuatro páginas).
-   Se solicitó aprobación explícita; no se ha recibido. Después, redactar y validar
-   sección por sección, y pasar el tercer corte de PDF final de 4–6 páginas.
+1. Luis revisa la prosa de las ocho secciones y las conclusiones del borrador
+   de seis páginas (corte 2). La estructura y selección de tablas ya están aprobadas.
+   Después aplicar cambios solicitados y someter el PDF final al corte 3.
 2. Revisión personal de las cinco láminas y guion; ensayo humano cronometrado de
    ocho minutos o menos. Las latencias de la demo no acreditan ese ensayo.
 3. Completar make entrega estricto con los cierres académicos vigentes. La
@@ -183,11 +196,11 @@ Ver `docs/decisiones.md`. Las no obvias: el corpus real tiene otro formato de ma
 ## Bloqueos
 
 - El PRD y las skills requieren aprobación humana de los tres cortes de prosa y
-  de láminas/guion. El primer corte está preparado; no se inventan aprobaciones.
+  de láminas/guion. El primer corte fue aprobado; la prosa del segundo está preparada, aún sin aprobación.
 - Ensayo humano medido y acceso al futuro GitHub pendientes. No hay etiqueta final
   ni publicación. Ver docs/publicacion_github.md para las instrucciones autorizables.
 - H8 humano completo y versionado en 245b1fc; no faltan valoraciones. H3–H7,
   aprobaciones y Gold cerrado mantienen sus hashes.
 - Las cifras se reproducen desde el clon 6176a5f con instalación y descarga fijadas.
-  No se midió el tiempo total de la descarga; no se estima. El índice no fue
-  recalculado porque se usan rankings congelados, conforme al alcance de H9.
+  No se midió el tiempo total de la descarga; no se estima. El índice se reconstruyó solo en el clon temporal; los datos del proyecto
+  principal y los rankings oficiales permanecen intactos.

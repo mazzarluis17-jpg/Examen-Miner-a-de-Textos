@@ -1,0 +1,26 @@
+{
+  "corte_1": "aprobado explícitamente por Luis en esta sesión",
+  "corte_2": "borrador pendiente de revisión humana de prosa y conclusiones",
+  "corte_3": "pendiente",
+  "paginas": 6,
+  "secciones": 8,
+  "tablas": 6,
+  "sin_codigo": true,
+  "margenes_cm": 2.2,
+  "fuente_pt": 11,
+  "overfull_hbox": 0,
+  "archivos_protegidos_verificados": 442,
+  "archivos_protegidos_alterados": [],
+  "pytest_completo": {
+    "passed": 403,
+    "skipped": 1,
+    "segundos": 25.16
+  },
+  "ruff": "All checks passed!",
+  "hashes": {
+    "reporte/reporte.md": "e7553c129eaa9b9d66edfc62ca18a70e899ead3ad8659ec35f0f6e94aa576d9f",
+    "reporte/reporte.pdf": "04921ad694a91a8ec4e26d2cd9e538827654f111346e8abb8f42aeeabc9a1d72",
+    "src/mtx/reporte.py": "53233c6587a76e7cab2251d74a3dd8deb600b8e24672c619c697fb4ea29c2937",
+    "reporte/figuras/h9_ir_ap.png": "895f4ef28cc8530011837cc7d73035b952ed1b97cdd244425fc0448ec8bf8b2f"
+  }
+}

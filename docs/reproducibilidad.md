@@ -28,8 +28,12 @@ caso vacío, ni modificar las cachés crudas.
 
 Para cifras: make resultados. Para documentos: make reporte laminas. El compilador
 utilizado es XeLaTeX directo (vía permitida por la skill reporte-pdf); Pandoc no
-está instalado en este entorno. El primer corte es un esquema de cuatro páginas,
-sin prosa académica aprobada. No se sustituye un reporte final por este esquema.
+está instalado en este entorno. La estructura fue aprobada explícitamente por Luis. El segundo corte contiene
+un borrador de seis páginas, con prosa y conclusiones pendientes de revisión
+humana. scripts/11_reporte.py lee el Markdown existente, genera tablas y compila
+con reporte/plantilla.tex, sin sobrescribir sus párrafos. La opción --figuras
+regenera únicamente la figura editorial H9; los resultados y figuras de H4
+permanecen intactos. No se presenta este borrador como PDF final aprobado.
 make validar es estricto y devuelve error mientras los cierres de revisión,
 ensayo y publicación sigan pendientes. --permitir-pendientes enumera lo que sí
 se comprobó y lo que falta, sin afirmar que la entrega está cerrada.

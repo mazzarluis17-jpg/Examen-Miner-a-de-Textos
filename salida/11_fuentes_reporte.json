@@ -1,0 +1,29 @@
+{
+  "fuentes": {
+    "salida/01_estadisticas_corpus.json": "52255687dcc391ca1b7e49e8303ecd5a5536627f0cdab2e2b3f86f0e823e6ae7",
+    "salida/01_limpieza.json": "98dba284d0926e666c3e59772d1bf841dcb59dcbae011b6986c736627d880604",
+    "data/indice_meta.json": "7081f0233c1517ac253ed6ef457b829968be4f6d2c0ef27ad4260d47f71249f1",
+    "salida/02_memoria.json": "b24f32984dcfe3bb28f95a79676e312c22296b26c5fea22d6da4fb920b51df08",
+    "salida/02_postings.md": "5bb67cccefafd9872926fa0bf5a90de7cc6ec774a6bcd0ec359d73c3e26c543e",
+    "salida/resultados_ir.csv": "b2fba483d768e436a973cec912f811f9c412ff2ee1ea6f37eb6d00c4a3ef2010",
+    "salida/05_resultados_ir_ventana.csv": "3bd44e0703a25c370b10adf076605b82f182b7312a37ba0ccc6fd2888bf043fd",
+    "salida/05_ir_ganador_por_consulta.csv": "7681b01901f73aaf9deac3624eb4fb77b7d57ee722f6c76c251a17ebe5f50300",
+    "salida/resultados_ie.csv": "6ee6475f0e8134609e88c0e1ae82e3a3a3e1d2602d21ff2b5518ff564ee2fbc1",
+    "salida/09_evaluacion_20_ids.csv": "0848804559cfd9f20245d6460851521a0bfcfa7faa7823b400a4262d09600f2a",
+    "salida/09_auditoria_ie.json": "120bf455410f4914c3cee54ec8ad3ba68120a4574fda0450aae313891dc4cddd",
+    "salida/09_efecto_posproceso.csv": "c1bd881d31646680a7167d14ab315fb7ca47a53b6cf283cc29b376e20f9ba636",
+    "salida/respuestas.csv": "218a30d5db5d43847c3b9fa76879c683573cdb94af6434aea79c5cda934e05db",
+    "anotaciones/valoraciones.yaml": "a9abbe8c067b584a99bb24f8f14d9a808395b2f4f5157b963ade40e3033a6b1d",
+    "salida/11_reproducibilidad_clon.json": "ba734a041722da068fb9f693e5badf46f13d4a90f28027b145a9bde0ff2cbf69"
+  },
+  "indice": {
+    "N": 127739,
+    "vocabulario": 35891,
+    "avgdl": 72.20751688990833,
+    "construido": "2026-11-08T19:52:33",
+    "sha256_tokens": "a8c2c32e059e64cd09f4bf875107478dd543dda77450312db8215cd103120339",
+    "sha256_configuracion_preproceso": "78965295acba8a9052e15c9c053393a1f70e911912804c6196a0de5d8385e236",
+    "sha256_indice": "0945fd295b8eff68928efdda56f267da56482d10badc54ad90a23d141f00d765"
+  },
+  "estado": "corte 1 aprobado por Luis; corte 2 pendiente de revisión humana"
+}
