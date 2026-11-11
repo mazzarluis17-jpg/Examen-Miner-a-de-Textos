@@ -1,0 +1,456 @@
+version: h8-v2-vinculos-explicitos
+modelo: bm25_con_filtro
+contexto_caracteres: 60
+max_valores_tabla: 8
+farmaceuticas:
+- Birmex
+- Pfizer
+- BioNTech
+- AstraZeneca
+- CanSino
+- Sputnik V
+- Gamaleya
+- Sinovac
+- Moderna
+- Janssen
+- Johnson & Johnson
+- Abdala
+- Patria
+- COVAX
+consultas:
+  Q1:
+    anclas:
+    - tren maya
+    campos:
+      dependencias_y_empresas:
+        tipo: ORG
+        filtro: ''
+        patrones_contexto:
+        - particip|constru|contrat|empresa|trabaj|encarg|cargo|tramo
+        relacion: participación en el Tren Maya
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:participa|construye|construyen|contratad[ao]|trabaj[ao] de|a cargo de|encargad[ao]|realizad[ao]
+          por)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:participa|construye|construyen|trabaja|realiza|tiene
+          a su cargo)'
+      estados:
+        tipo: LOC
+        filtro: entidades_federativas
+        patrones_contexto:
+        - tren maya|tramo|constru|recorr|pas[ao]|conect
+        relacion: ubicación de obras del Tren Maya
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:en|desde|hasta|tramo|atraviesa|estado de|estados de)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:tramo|construcci[oó]n)'
+      montos:
+        tipo: MONTO
+        filtro: ''
+        patrones_contexto:
+        - inver|costo|presupuest|recurso|destin|ejerc
+        relacion: inversión en el Tren Maya
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:inversi[oó]n|invierte|invertir|costo|presupuesto|recursos|destinad)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:de inversi[oó]n|para el tren maya)'
+    pregunta: Qué dependencias y empresas participan, en qué estados y con qué montos
+  Q2:
+    anclas:
+    - vacun|covid
+    campos:
+      farmaceuticas:
+        tipo: ORG
+        filtro: farmaceuticas
+        patrones_contexto:
+        - entreg|lleg|recib|aplic|dosis|vacun|adqui|contrat
+        relacion: vacunas recibidas, adquiridas o aplicadas
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:vacuna|vacunas|dosis|contrato|laboratorio|farmac[eé]utica)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:vacuna|vacunas|entreg|lleg|dosis|fabric)'
+      funcionarios:
+        tipo: PER
+        filtro: ''
+        patrones_contexto:
+        - inform|explic|report|present|gesti|coordin|salud|vacun
+        relacion: gestión o información de vacunación
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:doctor|secretario|secretaria|general|presidente|coordinador|inform[oó]|explic[oó])[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:inform[oó]|explic[oó]|present[oó]|coordin)'
+      fechas:
+        tipo: FECHA
+        filtro: ''
+        patrones_contexto:
+        - entreg|lleg|recib|aplic|inici|vacun
+        relacion: fecha de evento de vacunación
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:lleg|entreg|recib|aplic|inici)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:lleg|entreg|recib|aplic|inici)'
+      dosis:
+        tipo: CANTIDAD
+        filtro: unidad:dosis
+        patrones_contexto:
+        - entreg|lleg|recib|aplic|adqui|vacun
+        relacion: cantidad de dosis de vacunación
+        unidad: dosis
+        exclusivo: false
+        patrones_vinculo:
+        - (?:lleg|recib|entreg|aplic|adqui)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:lleg|recib|entreg|aplic|adqui)'
+    pregunta: Qué farmacéuticas, qué funcionarios y qué fechas y cantidades de dosis
+  Q3:
+    anclas:
+    - dos bocas|refiner[ií]a olmeca
+    campos:
+      organizaciones:
+        tipo: ORG
+        filtro: ''
+        patrones_contexto:
+        - refin|constru|contrat|respons|encarg|cargo|empresa|inver
+        relacion: participación en la refinería de Dos Bocas
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:participa|construye|construyen|contratad[ao]|a cargo de|encargad[ao]|responsable|realizad[ao]
+          por)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:participa|construye|construyen|trabaja|realiza|encargad|responsable)'
+      responsables:
+        tipo: PER
+        filtro: ''
+        patrones_contexto:
+        - respons|encarg|cargo|dirig|secretari|coordin|constru
+        relacion: responsabilidad en Dos Bocas
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:secretari[ao]|responsable|encargad[ao]|coordina)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:encargad|responsable|coordina|dirige)'
+      montos_inversion:
+        tipo: MONTO
+        filtro: ''
+        patrones_contexto:
+        - inver|costo|presupuest|destin|recurso|ejerc
+        relacion: inversión en Dos Bocas
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:inversi[oó]n|invirti[oó]|invertir|costo|presupuesto|recursos|destinad)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:de inversi[oó]n|para la refiner[ií]a)'
+    pregunta: Qué organizaciones, qué personas responsables y qué montos de inversión
+  Q4:
+    anclas:
+    - santa luc[ií]a|felipe [aá]ngeles|\baifa\b
+    campos:
+      dependencia_constructora:
+        tipo: ORG
+        filtro: ''
+        patrones_contexto:
+        - constru|encarg|cargo|ingenier|ej[eé]rcito
+        relacion: construcción del AIFA o Santa Lucía
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:construye|construyen|construid[ao] por|a cargo de|encargad[ao])[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:construye|construyen|construy|est[aá] construyendo|a
+          cargo)'
+      lugares:
+        tipo: LOC
+        filtro: ''
+        patrones_contexto:
+        - constru|ubic|aeropuerto|santa luc[ií]a|conect|terreno
+        relacion: ubicación o conexión del AIFA
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:en|desde|hasta|entre|terreno de|ubicad|aeropuerto de)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:aeropuerto|conect)'
+      costos:
+        tipo: MONTO
+        filtro: ''
+        patrones_contexto:
+        - cost|inver|presupuest|ahorr|destin|recurso
+        relacion: costo del AIFA o Santa Lucía
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:costo|costar|cost[oó]|inversi[oó]n|presupuesto|recursos|ahorro)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:de inversi[oó]n|menos que|m[aá]s que)'
+    pregunta: Qué dependencia construye, qué lugares se mencionan y qué costos
+  Q5:
+    anclas:
+    - sembrando vida
+    campos:
+      secretaria_operadora:
+        tipo: ORG
+        filtro: ''
+        patrones_contexto:
+        - bienestar|opera|cargo|encarg|coordina
+        relacion: operación de Sembrando Vida
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:opera|a cargo de|encargad[ao]|responsable|coordinad[ao] por)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:opera|tiene a su cargo|es responsable|coordina)'
+      estados:
+        tipo: LOC
+        filtro: entidades_federativas
+        patrones_contexto:
+        - sembr|programa|apoy|benefici|trabaj|campesin
+        relacion: cobertura de Sembrando Vida
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:en|desde|hasta|estado de|estados de)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:programa|sembrando vida|sembrar)'
+      monto_por_beneficiario:
+        tipo: MONTO
+        filtro: ''
+        patrones_contexto:
+        - mensual|por sembrador|por beneficiario|al mes
+        relacion: apoyo individual de Sembrando Vida
+        unidad: ''
+        exclusivo: true
+        patrones_vinculo:
+        - (?:mensual|por beneficiario|por sembrador|al mes)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:mensual|por beneficiario|por sembrador|al mes)'
+    pregunta: Qué secretaría lo opera, en qué estados y con qué monto por beneficiario
+  Q6:
+    anclas:
+    - huachicol|combustible|gasolina|hidrocarburo
+    campos:
+      lugares:
+        tipo: LOC
+        filtro: ''
+        patrones_contexto:
+        - rob|recuper|p[eé]rdid|huachicol|ducto|combate
+        relacion: ubicación de evento de robo o recuperación
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:en|desde|hasta|estado de|ducto de|regi[oó]n de)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:robo|robado|recuper)'
+      organizaciones:
+        tipo: ORG
+        filtro: ''
+        patrones_contexto:
+        - rob|recuper|p[eé]rdid|huachicol|combate|operativ
+        relacion: intervención en combate al robo de combustible
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:opera|operativo|combate|a cargo de|encargad[ao]|participa)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:recuper|combate|interviene|participa|coordina)'
+      perdidas:
+        tipo: MONTO
+        filtro: ''
+        patrones_contexto:
+        - rob|p[eé]rdid|perd[ií]|sustra|huachicol
+        relacion: pérdida monetaria por robo de combustible
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:robo|roban|robaban|robado|robaron|p[eé]rdida|perd[ií]a|sustra)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:robado|robaban|robo|perdido|p[eé]rdida)'
+      litros:
+        tipo: CANTIDAD
+        filtro: unidad:litros
+        patrones_contexto:
+        - rob|recuper|p[eé]rdid|sustra|huachicol
+        relacion: litros robados o recuperados
+        unidad: litros
+        exclusivo: false
+        patrones_vinculo:
+        - (?:robo|roban|robaban|robado|robaron|recuper|decomis|sustra)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:robado|robaban|robo|recuper|sustra)'
+    pregunta: Qué lugares, qué organizaciones y qué cifras de pérdidas o litros
+  Q7:
+    anclas:
+    - pensi[oó]n|adultos? mayores?
+    campos:
+      montos_bimestrales:
+        tipo: MONTO
+        filtro: ''
+        patrones_contexto:
+        - bimestr
+        relacion: monto bimestral de pensión
+        unidad: ''
+        exclusivo: true
+        patrones_vinculo:
+        - (?:bimestr)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:bimestr)'
+      institucion_paga:
+        tipo: ORG
+        filtro: ''
+        patrones_contexto:
+        - pag|entreg|deposit|cobr|banco|bienestar
+        relacion: institución que entrega la pensión
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:paga|pagado por|depositad[ao] por|a trav[eé]s de|cobra en|sucursal del)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:paga|deposita|entrega|saca|retira|cobra)'
+      fechas_aumento:
+        tipo: FECHA
+        filtro: ''
+        patrones_contexto:
+        - aument
+        relacion: fecha de aumento de pensión
+        unidad: ''
+        exclusivo: true
+        patrones_vinculo:
+        - (?:aument|increment)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:aument|increment)'
+    pregunta: Qué montos bimestrales, qué institución paga y qué fechas de aumento
+  Q8:
+    anclas:
+    - salario|salarial
+    campos:
+      organizaciones_empresariales:
+        tipo: ORG
+        filtro: organizaciones_empresariales
+        patrones_contexto:
+        - acuerd|aument|salari|empres|aprobar|consens
+        relacion: participación empresarial en acuerdo salarial
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:acord|acuerdo con|acuerdo entre|particip|aprob|consens)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:acord|particip|aprob|consens)'
+      porcentajes:
+        tipo: PORCENTAJE
+        filtro: ''
+        patrones_contexto:
+        - aument|increment|salari|propuest|acuerd
+        relacion: aumento salarial anunciado o propuesto
+        unidad: '%'
+        exclusivo: false
+        patrones_vinculo:
+        - (?:salario|salarial)[^.!?]{0,60}(?:aument|increment)[^.!?]{0,35}{valor}
+        - (?:aument|increment)[^.!?]{0,35}{valor}[^.!?]{0,60}(?:salario|salarial)
+        - '{valor}[^.!?]{0,50}(?:aumento|incremento)[^.!?]{0,25}(?:salario|salarial)'
+        contextos_competidores:
+        - \biva\b
+        - inflaci[oó]n
+        - impuesto
+      montos_diarios:
+        tipo: MONTO
+        filtro: ''
+        patrones_contexto:
+        - diari|al d[ií]a
+        relacion: monto diario de salario mínimo
+        unidad: ''
+        exclusivo: true
+        patrones_vinculo:
+        - (?:diari|al d[ií]a)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:diari|al d[ií]a)'
+    pregunta: Qué organizaciones empresariales, qué porcentajes y qué montos diarios
+  Q9:
+    anclas:
+    - banco del bienestar|banco de bienestar
+    campos:
+      institucion:
+        tipo: ORG
+        filtro: ''
+        patrones_contexto:
+        - banco|sucursal|constru|oper|pag
+        relacion: institución de sucursales del Banco del Bienestar
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:sucursal|constru|opera|banco)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:constru|sucursal|opera|paga|cobrar)'
+      sucursales:
+        tipo: CANTIDAD
+        filtro: unidad:sucursales
+        patrones_contexto:
+        - sucursal|constru|inaug|oper|abr|apert
+        relacion: número de sucursales y estado de operación
+        unidad: sucursales
+        exclusivo: false
+        patrones_vinculo:
+        - (?:tiene|tenemos|constru|opera|inaug|apert|abr|habr[aá]|faltan)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:constru|opera|inaug|abiert|abiert|terminad)'
+      estados:
+        tipo: LOC
+        filtro: entidades_federativas
+        patrones_contexto:
+        - sucursal|banco|constru|inaug|oper
+        relacion: ubicación de sucursales del Banco del Bienestar
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:en|desde|hasta|estado de|estados de)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:sucursal|construcci[oó]n)'
+      montos:
+        tipo: MONTO
+        filtro: ''
+        patrones_contexto:
+        - inver|costo|presupuest|destin|recurso|constru
+        relacion: inversión en sucursales del Banco del Bienestar
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:inversi[oó]n|invirti[oó]|invertir|costo|presupuesto|recursos|destinad)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:de inversi[oó]n|para las sucursales)'
+    pregunta: Qué institución, cuántas sucursales, en qué estados y con qué montos
+  Q10:
+    anclas:
+    - interoce[aá]nico|ferrocarril del istmo|corredor.{0,25}istmo
+    campos:
+      dependencias_y_empresas:
+        tipo: ORG
+        filtro: ''
+        patrones_contexto:
+        - constru|oper|encarg|cargo|empresa|marina|particip
+        relacion: construcción u operación del corredor interoceánico
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:construye|construyen|a cargo de|encargad[ao]|responsable|administrad[ao]
+          por|operad[ao] por)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:construye|construyen|opera|administra|tiene a su
+          cargo)'
+      lugares_conecta:
+        tipo: LOC
+        filtro: ''
+        patrones_contexto:
+        - conect|unir|une|cruz|coatzacoalcos|puerto|oc[eé]ano|istmo|corredor
+        relacion: lugares conectados por el corredor interoceánico
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:conecta|conectar|entre|de|hasta|desde|puerto de)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:conecta|unir|une|puerto|oc[eé]ano)'
+      montos:
+        tipo: MONTO
+        filtro: ''
+        patrones_contexto:
+        - inver|costo|presupuest|destin|recurso
+        relacion: inversión en el corredor interoceánico
+        unidad: ''
+        exclusivo: false
+        patrones_vinculo:
+        - (?:inversi[oó]n|invirti[oó]|invertir|costo|presupuesto|recursos|destinad)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:de inversi[oó]n|para el corredor)'
+      fechas_inauguracion:
+        tipo: FECHA
+        filtro: ''
+        patrones_contexto:
+        - inaug|inici.{0,25}oper|apert|abrir
+        relacion: inauguración o inicio de operaciones del corredor
+        unidad: ''
+        exclusivo: true
+        patrones_vinculo:
+        - (?:inaugur|inici.{0,20}oper|apert|abrir)[^.!?]{0,65}{valor}
+        - '{valor}[^.!?]{0,65}(?:inaugur|inici.{0,20}oper|apert|abrir)'
+    pregunta: Qué dependencias y empresas, qué lugares conecta, qué montos y fechas
+      de inauguración

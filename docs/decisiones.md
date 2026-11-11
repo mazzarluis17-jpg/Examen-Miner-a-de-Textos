@@ -299,3 +299,46 @@ Alerta de F1 MONTO=1 con soporte nueve revisada por trazabilidad técnica;
 se conserva la cifra sin modificar etiquetas o reglas. Errores reales y
 categorías ausentes, figuras, manifiestos y efecto informativo de unión
 interpalabra documentados. Sin segundo NER, selección o ajuste con Gold.
+
+## 2026-11-11 — H8: mapa y reglas fijados antes de generar respuestas
+
+Se fijan `config/tablas_respuesta.yaml` y `config/excluir_tablas.yaml` antes
+de generar o inspeccionar tablas. Q1–Q8 reproducen PRD 6.13; Q9 usa institución,
+sucursales, estados y montos; Q10 dependencias/empresas, conexiones, montos e
+inauguración, conforme a las preguntas previamente congeladas. No se reextraen
+entidades ni se consultan fuentes externas. Solo se usan el top-10 de
+`bm25_con_filtro`, entidades enriquecidas y auxiliares de H7.
+
+La relación se busca en ±60 caracteres y oración contigua; se requiere ancla
+temática y patrón del campo. Coocurrencias, preguntas y relaciones no inequívocas
+quedan ambiguas. Los montos no se suman; pago anterior/nuevo, propuestas/anuncios
+y unidades diferentes no se confunden. Las ventanas solapadas no constituyen
+confirmaciones independientes; se conserva el hablante y no se elige una
+contradicción por mayoría. Se preservan todas las evidencias en CSV y se
+limita solo la presentación Markdown a ocho valores por campo.
+
+Las valoraciones solo las escribe Luis: se genera plantilla vacía en `salida/`,
+no se escribe en `anotaciones/`. Cada hash identifica el contenido técnico de
+la tabla antes del bloque de valoración para evitar autorreferencia. Cambios
+en evidencia completa también cambian ese hash, aunque queden fuera del corte.
+Se permite generar tablas sin valoraciones; H8 humano y el reporte no se
+consideran completos hasta obtener las diez valoraciones personales vigentes.
+
+## 2026-11-11 — Correcciones técnicas de relaciones H8 y compatibilidad D15
+
+La inspección de la primera generación mostró que coocurrencias de medios con
+Dos Bocas o de programas con Bienestar no prueban participación ni operación.
+Se registra política `h8-v2-vinculos-explicitos` antes de regenerar: además del
+mapa inicial se exige vínculo léxico con el valor, ancla en su oración o anáfora
+explícita, y se marcan ambiguas las fronteras fragmentadas/alternativas y los
+contextos competidores. No se crean, eliminan, retipifican ni retocan entidades
+de H7; son exclusivamente estados de evidencia de la presentación H8. Los
+hashes de políticas anterior y nueva están en `salida/10_cambios_politica.json`.
+No existían valoraciones humanas que invalidar.
+
+Para que nuevas políticas H8 no invaliden falsamente el Gold ya cerrado, el
+validador de congelación compara el inventario de archivos config que realmente
+existía en `reglas-congeladas`. Todos esos archivos siguen protegidos frente
+a cambios y borrados; no se mueve la etiqueta ni se cambia ninguna aprobación
+o insumo de H3–H7. La compatibilidad de validación se prueba con un repositorio
+sintético; agregar una política posterior no equivale a alterar reglas.

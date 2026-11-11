@@ -1,0 +1,11 @@
+[
+  {
+    "archivo": "config/tablas_respuesta.yaml",
+    "version_antes": "h8-v1",
+    "sha256_antes": "0a86dc8a78639a90feca82409b94c42efa565a8d567ea8064b4f37f501dfcaf4",
+    "version_despues": "h8-v2-vinculos-explicitos",
+    "sha256_despues": "7dd208775a0a9fb97050adeb8a9e335f276155b2a512d042b1ae0f4fcbd5d399",
+    "motivo": "Corrección técnica H8: la coocurrencia no prueba participación, operación o pago. Se exigen vínculos explícitos, ancla en oración o anáfora y límites no fragmentados. No se alteran predicciones H7 ni se optimiza contra Gold.",
+    "valoraciones_humanas_previas": 0
+  }
+]

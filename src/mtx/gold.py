@@ -34,8 +34,14 @@ def verificar_d15(raiz):
                          cwd=raiz, capture_output=True, text=True, check=False)
     if tag.returncode:
         raise ErrorAnotacion("Pendiente congelación D15 y aprobaciones antes del gold")
+    # H8 añade políticas de presentación, ajenas a los insumos congelados H5.
+    # Se protegen TODOS los archivos config que existían en la etiqueta, incluidas
+    # modificaciones y borrados, sin invalidar Gold por configuraciones posteriores.
+    config_congelada = subprocess.check_output([
+        "git", "ls-tree", "-r", "--name-only", "reglas-congeladas", "--", "config"
+    ], cwd=raiz, text=True).splitlines()
     rutas = ["src/mtx/reglas.py", "src/mtx/normalizacion.py", "src/mtx/ner_modelo.py",
-             "config", "data/modelo_ner.json", "data/mejor_modelo.json", "salida/06_revision_alcance.csv",
+             *config_congelada, "data/modelo_ner.json", "data/mejor_modelo.json", "salida/06_revision_alcance.csv",
              "salida/06_revision_alcance.json", "salida/06_siglas_candidatas.csv"]
     if subprocess.run(["git", "diff", "--quiet", "reglas-congeladas", "--", *rutas], cwd=raiz, check=False).returncode:
         raise ErrorAnotacion("Insumos distintos de reglas-congeladas; no se escribe gold")
