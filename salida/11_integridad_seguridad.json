@@ -1,0 +1,8 @@
+{
+  "archivos_protegidos": 442,
+  "protegidos_alterados": [],
+  "versionados_mayores_50MiB": [],
+  "auxiliares_personales_versionados": [],
+  "patrones_credenciales_en_archivos": [],
+  "alcance": "Escaneo de patrones y archivos actuales, no certificación de ausencia en todo el historial"
+}

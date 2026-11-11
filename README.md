@@ -1,69 +1,223 @@
-# Sistema de recuperación y extracción de información sobre discursos presidenciales
+# Examen 1 — Minería de Textos
 
-Examen 1 de Minería de Textos (Licenciatura en Ciencia de Datos). Sistema en
-Python que, sobre el corpus `carevies/discursos_AMLO` (versiones estenográficas
-de conferencias y discursos de 2018 a 2024), recupera los 10 pasajes más
-relevantes por consulta con TF-IDF y BM25 (con y sin filtro de fecha) y extrae
-entidades PER, ORG, LOC, FECHA y MONTO combinando reglas con gazetteer y un NER
-preentrenado para español.
+**Luis Alfredo Ramírez Maza** · Licenciatura en Ciencia de Datos  
+**Universidad Nacional Autónoma de México (UNAM)**  
+**Facultad de Estudios Superiores Acatlán (FES Acatlán)**  
+Asignatura: Minería de Textos · 11 de noviembre de 2026
 
-## Estado
+## 1. Qué hace el sistema
 
-H0 a H4 implementados; H3 confirmado visualmente por Luis. Corpus y pasajes
-recuperados con las huellas históricas; rankings y pool congelados. La evaluación
-oficial seleccionó BM25 con filtro para toda IE (D08); métricas en
-[`salida/resultados_ir.csv`](salida/resultados_ir.csv) y decisión versionada en
-[`data/mejor_modelo.json`](data/mejor_modelo.json).
+Recupera pasajes de conferencias presidenciales mediante TF-IDF y BM25, con y sin
+filtro temporal. Extrae PER, ORG, LOC, FECHA y MONTO con reglas y BETO; produce
+respuestas con citas y estados de evidencia. Las relaciones ambiguas se conservan
+como ambiguas. Los juicios, Gold y valoraciones son humanos.
+El [reporte](reporte/reporte.pdf) está en el primer corte de revisión: es un
+esqueleto de cuatro páginas, **todavía no un reporte académico final aprobado**.
+La presentación tiene cinco láminas; falta su revisión y ensayo humano.
 
-`make evaluar-ir` valida y evalúa sin recalcular rankings ni modificar juicios.
-Produce resultados oficiales, vista temporal complementaria, auditorías y figuras.
-Ver [procedimiento y resultados H4](docs/h4_evaluacion_ir.md). Los juicios fueron
-realizados personalmente en Excel y transferidos con autorización a Streamlit;
-no se atribuyen a captura íntegra directa en la interfaz.
+## 2. Requisitos
 
-Siguen H5 a H9: extracción, gold humano, evaluación IE, respuestas y entrega.
-El README final de diez secciones y la declaración completa de uso de IA siguen
-pendientes de H9. La suite rápida no usa red; `make test-lento` incluye los
-contratos sobre los datos reales recuperados.
+Python 3.11, uv, Git y memoria suficiente para el corpus y el índice. La ejecución
+usa Torch CPU. El entorno está fijado en uv.lock; requirements.txt es su exportación
+sin dependencias de desarrollo. XeLaTeX y la fuente DejaVu Serif son necesarios
+solo para compilar el reporte; la vía directa usada aquí no necesita Pandoc.
 
-Uso mínimo hoy (Linux, Python 3.11 y `uv`):
+Debian: instalar uv conforme a su documentación y, para el PDF,
+`sudo apt install texlive-xetex texlive-latex-extra fonts-dejavu`.
+En macOS se pueden utilizar uv y MacTeX; en Windows, uv y una distribución TeX
+con XeLaTeX. Todos los objetivos tienen alternativa Python, sin depender de make.
+La exportación de figuras de Plotly usa Chrome/Kaleido; las figuras de resultados
+ya están versionadas. No se requieren GPU ni descargas NER para reproducir cifras
+usando las cachés oficiales versionadas.
+
+## 3. Instalación desde cero y recuperación del corpus
+
+Una vez publicado el repositorio personal, sustituir la URL de este ejemplo por
+su dirección real; no utilizar el GitLab del profesor como destino de entrega.
 
 ```bash
-make setup      # entorno, torch CPU, Chrome para kaleido
-make contratos  # pruebas de contrato del kit (kit/ no se modifica)
-make corpus     # descarga el corpus, limpia y segmenta: data/pasajes.parquet
-make consultas  # data/consultas.csv = kit + Q9 + Q10
-make test       # pruebas rápidas, sin red
+git clone https://github.com/TU_USUARIO/text-mining-ir-er.git
+cd text-mining-ir-er
+git checkout desarrollo-luis
+uv sync --locked
+uv run --no-sync pytest -q tests/test_contratos_kit.py
+uv run --no-sync python scripts/00c_recuperar_snapshot.py
 ```
 
-## Documentos de referencia
+El último comando obtiene exclusivamente carevies/discursos_AMLO en la revisión
+2c463bb3d5bf58742b4d842917da1211c44d2e18. Reproduce la conversión del kit y la
+limpieza/segmentación existente, valida el SHA-256 binario del corpus y de los
+pasajes y el hash canónico de contenido antes de colocar los dos archivos ignorados
+en kit/data/discursos.parquet y data/pasajes.parquet. No reemplaza datos existentes
+ni modifica metadatos históricos. Si falta un hash o no coincide, se detiene;
+no se cambia de revisión ni se corrigen referencias para forzar coincidencias.
+En esta entrega congelada **no ejecutar el antiguo make corpus**, que vuelve a
+escribir metadatos y auditorías históricas. Consultar [reproducibilidad](docs/reproducibilidad.md).
 
-La aplicación de juicios de H3 arranca con:
+## 4. Reproducir resultados y abrir la aplicación
 
 ```bash
+uv run --no-sync python scripts/05_evaluar_ir.py
+uv run --no-sync python scripts/09_evaluar_ie.py
+uv run --no-sync python scripts/10_tablas.py --exigir-valoraciones
+uv run --no-sync python scripts/99_validar.py --permitir-pendientes
 uv run --no-sync streamlit run src/mtx/app/app.py
 ```
 
-También se puede usar `make app`. Lee los insumos locales sin red ni modelos NER.
-La anotación permanece bloqueada hasta aprobar explícitamente
-`config/criterios_relevancia.md` y registrar su hash. No se generan respuestas por
-defecto. Guarda después de cada acción, permite reanudar y rechaza sesiones
-desactualizadas. Ver [prueba manual y recuperación](docs/pruebas_app.md).
+`make resultados` equivale a los tres primeros scripts (tablas sin la opción
+estricta); no necesita TeX. `make entrega` añade contratos, reporte, láminas y
+validación estricta; se detiene mientras existan cierres humanos pendientes.
+`--permitir-pendientes` enumera esos pendientes, no certifica una entrega cerrada.
+Los evaluadores no cambian etiquetas y rechazan fuentes incompatibles.
+La aplicación permite consultar juicios, Gold cerrado, gazetteer y las diez
+valoraciones. La demo de resultados se ejecuta en terminal:
 
+```bash
+uv run --no-sync python scripts/13_demo.py --q Q3
+```
 
-| Archivo | Qué es |
-| --- | --- |
-| `PRD_unificado_examen1_mineria_textos.md` | Especificación completa (v3.0, 4 de noviembre de 2026). Fuente de verdad del proyecto |
-| `CLAUDE.md` / `AGENTS.md` | Orquestador para asistentes de programación: índice de skills, convenciones y qué no tocar |
-| `docs/harness/ARCHITECTURE.md` | Mapa de componentes, flujos de datos, congelaciones e invalidación |
-| `docs/harness/PROGRESS.md` | Estado del trabajo entre sesiones |
-| `docs/decisiones.md` | Fase 0 y cada decisión con fecha (formato real del corpus, fechas, plotly) |
-| `docs/contratos_kit.md` | Hashes y comportamiento verificado de `kit/` |
-| `.claude/skills/` | Skills por hito (H0 a H9); `.agents/skills/` las expone a otros agentes |
+Muestra consulta y ventana, ambos top-10 con filtro, pasajes completos, entidades y
+respuesta con citas. Lee artefactos cacheados; no consulta fuentes externas ni
+infiere nuevas entidades. La consulta libre fuera de las diez oficiales se rechaza
+para no presentar un experimento nuevo como resultado congelado.
 
-## Entregables previstos
+| Objetivo | Alternativa sin make |
+|---|---|
+| setup | uv sync --locked |
+| contratos | uv run --no-sync pytest -q tests/test_contratos_kit.py |
+| recuperar-datos | uv run --no-sync python scripts/00c_recuperar_snapshot.py |
+| indice / ranking | scripts/02_indice.py / scripts/03_ranking.py (solo reconstrucción controlada) |
+| pool | uv run --no-sync python scripts/04_pool.py |
+| evaluar-ir | uv run --no-sync python scripts/05_evaluar_ir.py |
+| ner / extraer | scripts/07c_ner_auditado.py / scripts/08_extraer.py |
+| evaluar-ie | uv run --no-sync python scripts/09_evaluar_ie.py |
+| tablas | uv run --no-sync python scripts/10_tablas.py --exigir-valoraciones |
+| reporte / laminas | scripts/11_reporte.py / scripts/12_laminas.py |
+| demo | uv run --no-sync python scripts/13_demo.py --q Q3 |
+| validar | uv run --no-sync python scripts/99_validar.py |
+| test / lint | uv run --no-sync pytest -q / uv run --no-sync ruff check src tests scripts |
 
-Seis CSV en la raíz (`ranking.csv`, `juicios_relevancia.csv`, `resultados_ir.csv`,
-`entidades.csv`, `gold_entidades.csv`, `resultados_ie.csv`), reporte PDF de 4 a
-6 páginas, presentación de 8 minutos con demo en vivo y `make entrega`
-reproducible desde un clon limpio.
+Los nombres abreviados scripts/... se invocan con `uv run --no-sync python`.
+Las mediciones ejecutadas en esta máquina y las verificaciones pendientes se
+registran en salida/11_* y docs/reproducibilidad.md, sin estimar tiempos de instalación.
+
+## 5. Flujo completo y decisiones humanas
+
+El desarrollo original sigue H0–H9: contratos, corpus, índice y cuatro rankings,
+pool y juicios temáticos, evaluación IR y ganador, reglas/gazetteer/NER congelados,
+muestra Gold ciega y cierre personal, extracción/evaluación IE, respuestas y
+valoraciones, reporte/presentación. El protocolo conserva la etiqueta
+reglas-congeladas y los registros de aprobación. No volver a sortear Gold ni
+reabrirlo para mejorar métricas. Las etiquetas existentes se reutilizan literalmente.
+Los flujos de anotación tienen guardado atómico, revisión y respaldos oficiales.
+Los Excel auxiliares personales no pertenecen al repositorio ni a los entregables.
+
+## 6. Organización del repositorio
+
+| Ruta | Función |
+|---|---|
+| kit/ | originales del profesor, inmutables y verificados por hashes |
+| src/mtx/ | carga, ranking, reglas, NER, fusión, evaluación, respuestas y app |
+| scripts/ | orquestación numerada, sin lógica duplicada de dominio |
+| config/ | limpieza, stopwords, gazetteers, criterios y aprobaciones |
+| data/ | consultas, metadatos, ganador, modelo y caché cruda NER versionada |
+| anotaciones/ | persistencia humana, estados, cierres e historiales oficiales |
+| salida/ | resultados, auditorías, manifiestos y diez tablas de respuesta |
+| reporte/ | Markdown, tablas, figuras y PDF |
+| laminas/ | presentación y guion |
+| tests/ | contratos y pruebas, con fixtures sintéticas |
+| docs/ | decisiones, contratos, arquitectura, progreso y defensa |
+
+Los seis CSV oficiales se entregan en la raíz y deben ser idénticos a sus fuentes
+en salida/ o anotaciones/. Se excluyen entornos, pesos, datos reconstruibles,
+cerrojos y archivos auxiliares de TeX; las cachés crudas NER **sí** son obligatorias.
+
+## 7. Decisiones y limitaciones
+
+Ver [decisiones](docs/decisiones.md), [PRD](PRD_unificado_examen1_mineria_textos.md)
+y [arquitectura](docs/harness/ARCHITECTURE.md). Ventanas por intervención 200/150/40,
+marca visible excluida del índice, stemming español e índice invertido, BM25 con
+idf positiva, k1=1.5 y b=0.75. El ganador se selecciona únicamente entre variantes
+con filtro por MAP; empate a BM25. Las fechas de evaluación humana son temáticas:
+el filtro se audita aparte. La evaluación IE exige coincidencia exacta del span.
+
+La versión 2-vacios-auditados es una corrección expresamente autorizada después
+de D15: descarta solo spans que quedan vacíos al recortar puntuación/espacios,
+conservando su predicción cruda y auditoría. La versión congelada no se altera;
+no existe una métrica completa previa porque el proceso original abortó.
+BETO no reconoce por sí mismo FECHA/MONTO. Los alias, fragmentación de entidades,
+marcas y confusión LOC/ORG limitan la precisión. La coocurrencia no demuestra
+relaciones institucionales ni causales. No se suman montos de eventos diferentes.
+
+## 8. Resultados principales
+
+<!-- resultados:inicio -->
+Métricas oficiales IR (promedios literales del evaluador):
+
+```csv
+modelo,P@5,P@10,MAP
+bm25_con_filtro,0.7600,0.7700,0.6150
+bm25_sin_filtro,0.7600,0.7500,0.5922
+tfidf_con_filtro,0.6600,0.5800,0.3998
+tfidf_sin_filtro,0.6800,0.6000,0.4131
+```
+
+F1 oficial combinado por tipo:
+
+```csv
+tipo,f1
+FECHA,0.2857
+LOC,0.8354
+MONTO,1.0000
+ORG,0.7467
+PER,0.2692
+```
+<!-- resultados:fin -->
+
+La evaluación oficial IE contiene los 19 pasajes con entidades; la complementaria
+incluye también el pasaje revisado vacío y obtiene F1 combinado 0.7022. No son
+intercambiables. Las respuestas producen 451 filas: 126 respaldadas, 322 ambiguas
+y tres sin evidencia. Las diez valoraciones son opiniones humanas, no métricas
+automáticas. Véanse salida/10_validacion_h8.json y anotaciones/valoraciones.yaml.
+
+## 9. Uso de IA
+
+El profesor inició el repositorio mediante Claude Code. La continuación utilizó
+Codex para programación de src/mtx/, scripts/, tests/, herramientas de anotación,
+validación, depuración, generación reproducible de tablas y documentación técnica.
+El historial Git y docs/decisiones.md permiten seguir esas unidades de trabajo.
+README, guion y estructura del reporte de H9 fueron preparados por Codex a partir
+de los archivos de resultados. **La prosa académica y sus conclusiones están
+pendientes de los cortes de revisión del alumno**; no se afirma una validación
+que todavía no ocurrió.
+
+Luis realizó personalmente los juicios de relevancia y el Gold mediante archivos
+auxiliares externos; su transferencia a la persistencia nativa fue autorizada y
+validada. Los cierres formales y las valoraciones de H8 se realizaron personalmente
+en Streamlit. Se preservan los registros de aprobación de criterios y gazetteer.
+No se atribuye la captura original de todos los juicios/Gold a la interfaz.
+El asistente no generó etiquetas humanas ni valoraciones y no utilizó el Gold para
+ajustar parámetros o elegir BETO. El código se verificó con contratos, pruebas,
+Ruff y comparación literal con el evaluador original. La defensa y el ensayo son
+responsabilidad del alumno; la guía técnica no acredita por sí misma comprensión.
+
+## 10. Dependencias y función
+
+| Dependencias | Función |
+|---|---|
+| pandas, numpy, pyarrow | tablas, operaciones y parquet |
+| scikit-learn | TF-IDF sublineal y normalización |
+| nltk, regex | stopwords, stemming y patrones |
+| datasets | recuperación del snapshot de Hugging Face |
+| transformers, torch CPU | BETO fijado por revisión |
+| streamlit | anotación y valoración humanas |
+| pyyaml | configuración y valoraciones |
+| rich | demo en terminal |
+| plotly, kaleido | figuras exportables |
+| python-pptx, pypdf | presentación y comprobación del PDF |
+| pytest, ruff | pruebas y análisis estático (desarrollo) |
+| rank_bm25 | contraste de fórmula en pruebas, no ranking oficial |
+
+Las utilerías de presentación y validación siguen el PRD v3.0. No se atribuye al
+profesor una autorización adicional que no esté documentada. Véase uv.lock para
+las versiones exactas y requirements.txt para la exportación de ejecución.

@@ -2,6 +2,19 @@
 
 ## Completado
 
+- (2026-11-11) H8 humano cerrado: diez valoraciones vigentes, revisión 10,
+  validación estricta correcta y commit 245b1fc. H9 en curso: seis CSV comparados
+  contra fuentes y evaluador oficial, hashes/offsets/coberturas válidos; respaldo
+  externo /tmp/mtx-h9-respaldo-humano.tar.gz de 442 archivos verificado. Ninguno
+  alterado. Scripts de recuperación fijada y demo local, README de diez secciones,
+  esqueleto PDF de cuatro páginas y cinco láminas preparados. Suite completa
+  393 passed/1 skipped (incluye pruebas lentas locales); Ruff limpio; Streamlit
+  abre sin excepciones. Prosa del reporte pendiente del primer corte obligatorio:
+  se solicitó aprobación y no se inventó. También faltan aprobación de láminas/
+  guion y ensayo humano medido, reconstrucción desde clon sin cachés y destino/
+  acceso GitHub. No hay push ni etiqueta de entrega final.
+
+
 - (2026-11-10) Interfaz rápida de valoraciones H8 implementada en Streamlit:
   acceso directo sin juicios, una consulta, resumen/citas completas, texto humano
   sin precarga, guardado y avance, reanudación y progreso 0/10 a 10/10. Persistencia

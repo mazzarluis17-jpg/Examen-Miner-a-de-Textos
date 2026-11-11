@@ -380,3 +380,41 @@ La ruta exitosa 10/10 se prueba con fixtures sintéticas, sin introducir sus
 textos en el repositorio real. Suite 374 passed/9 deselected, incluidas catorce
 pruebas nuevas; Ruff limpio. Metadatos locales previos de ejecución H8 se
 conservaron en respaldo externo antes de comprobar la validación estricta.
+
+## 2026-11-11 — H8 humano validado y límites de H9
+
+Las diez valoraciones personales guardadas por Luis se validan contra los hashes
+vigentes, revisión 10. El comando 10_tablas.py --exigir-valoraciones finaliza sin
+pendientes. Se versionan sus archivos originales, estados, historiales y cierre
+técnico sin modificar texto humano; commit 245b1fc. No se alteran las 451 respuestas.
+
+Se aplica la instrucción explícita de respetar el enunciado: reporte de 4 a 6
+páginas sin código y máximo cinco láminas, exposición de ocho minutos con demo
+consulta → top-10 → entidades → tabla. La copia local legible del enunciado es
+Examen_1___Minería_de_Textos__2026_ (1).pdf, fuera del repositorio; no se localizó
+el nombre con sufijo (1)(3). Sus páginas 3–4 confirman esos límites y GitHub como
+destino. La copia conserva fechas anteriores; la fecha de entrega académica de
+esta sesión es la expresamente comunicada por Luis: 11 de noviembre de 2026,
+antes de las 20:00 de México. No se inventa una modificación del documento original.
+
+La identidad académica se fija a Luis Alfredo Ramírez Maza, Licenciatura en
+Ciencia de Datos, UNAM, FES Acatlán. Se conserva el historial del proyecto y no se
+reescriben sus autores anteriores. La publicación será en un repositorio personal
+GitHub cuya URL y acceso aún no se han verificado. No se hace push ni se cambia
+el remote del profesor, y v1.0-entrega queda pendiente de los cierres obligatorios.
+
+Por ausencia de Pandoc y disponibilidad de XeLaTeX se utiliza compilación directa,
+alternativa permitida por la skill reporte-pdf, documentada en README. El primer
+corte compila cuatro páginas sin prosa académica aprobada. Se solicita aprobación
+explícita del esqueleto; no se redactan las secciones dependientes ni se registran
+aprobaciones, conclusiones o ensayos humanos inexistentes. Mientras tanto se
+implementan las comprobaciones, README y demo independientes. La consulta libre
+ajena a las diez congeladas se rechaza para no introducir experimentos ni nuevas
+funcionalidades durante H9; la demo obligatoria de Q3 es local y reproducible.
+
+La recuperación fijada se implementa en un script nuevo de H9; el script histórico
+01 no se modifica. Los datos ignorados solo se colocan si coinciden las huellas
+históricas, sin reescribir kit, metadatos, juicios, Gold o cachés NER. El validador
+H9 utiliza carpetas temporales para las evaluaciones oficiales y no copia sobre
+exportaciones distintas. El manifiesto histórico H7 se conserva; las verificaciones
+de entrega se registran aparte en salida/11_*.

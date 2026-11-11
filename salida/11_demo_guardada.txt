@@ -1,0 +1,597 @@
+SALIDA GUARDADA DE CONTINGENCIA, NO ES UNA DEMO EN VIVO
+──────────────────────────────────────────────────────────── Q3: refinería de Dos Bocas en Tabasco ─────────────────────────────────────────────────────────────
+Ventana inclusiva: 2019-01-01 a 2022-12-31
+Qué organizaciones, qué personas responsables y qué montos de inversión
+                                                                Top-10 con filtro: TF-IDF y BM25                                                                
+┏━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Rango ┃ TF-IDF: ID / fecha / posición / puntaje / fragmento                      ┃ BM25: ID / fecha / posición / puntaje / fragmento                         ┃
+┡━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ 1     │ 754_67 / 2022-06-27 / 67 / 0.510033                                      │ 754_67 / 2022-06-27 / 67 / 23.105550                                      │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, yo creo que sí va a haber    │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, yo creo que sí va a haber     │
+│       │ mañanera porque, aunque vamos                                            │ mañanera porque, aunque vamos                                             │
+│ 2     │ 2149_27 / 2019-03-13 / 27 / 0.469390                                     │ 2149_27 / 2019-03-13 / 27 / 22.751525                                     │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético,  │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético,   │
+│       │ ahora tenemos que producir p                                             │ ahora tenemos que producir p                                              │
+│ 3     │ 1759_60 / 2019-11-25 / 60 / 0.469300                                     │ 2033_3 / 2019-06-02 / 3 / 22.418301                                       │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Bueno, vamos a informar también  │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: esta manera poder ofrecer mejores │
+│       │ sobre el avance en la constr                                             │ precios de estos combustib                                                │
+│ 4     │ 1971_29 / 2019-07-10 / 29 / 0.452090                                     │ 745_5 / 2022-07-06 / 5 / 21.487116                                        │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: No, es fácil de convencer que    │ ANA ELIZABETH GARCÍA VILCHIS: la investidura, con el presidente de la     │
+│       │ hace falta la refinería de Dos                                           │ República, el presidente de to                                            │
+│ 5     │ 564_101 / 2022-12-23 / 101 / 0.446440                                    │ 657_54 / 2022-09-27 / 54 / 21.396777                                      │
+│       │ INTERLOCUTORA: Para terminar, señor presidente, Rocío Nahle comentó que  │ PREGUNTA: Buenos días, señor presidente. Soy Yesenia Peralta, de Business │
+│       │ hay 50 auditorías para lo qu                                             │ Energy, Tabasco. Traigo un                                                │
+│ 6     │ 2033_3 / 2019-06-02 / 3 / 0.431387                                       │ 2045_9 / 2019-05-26 / 9 / 21.251834                                       │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: esta manera poder ofrecer        │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: California y lo mismo 72 aviones  │
+│       │ mejores precios de estos combustib                                       │ y helicópteros para altos f                                               │
+│ 7     │ 1569_23 / 2020-04-15 / 23 / 0.423147                                     │ 834_74 / 2022-04-22 / 74 / 21.130720                                      │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: refinación de cada una de las    │ INTERLOCUTORA: Gracias, presidente; gracias, secretario. Y ahora nada más │
+│       │ seis refinerías. También esto                                            │ a manera de retomar un poc                                                │
+│ 8     │ 1787_11 / 2019-11-04 / 11 / 0.414239                                     │ 1787_11 / 2019-11-04 / 11 / 20.547665                                     │
+│       │ VOZ DE HOMBRE: En un video que compartió en redes sociales, la           │ VOZ DE HOMBRE: En un video que compartió en redes sociales, la secretaria │
+│       │ secretaria de Energía, Rocío Nahle, m                                    │ de Energía, Rocío Nahle, m                                                │
+│ 9     │ 662_58 / 2022-09-20 / 58 / 0.413914                                      │ 917_1 / 2022-01-19 / 1 / 20.476549                                        │
+│       │ INTERLOCUTORA: hacienda pública. En todo caso, esta campaña mediática    │ ANA ELIZABETH GARCÍA VILCHIS: Con su permiso, señor presidente. Hoy       │
+│       │ indica, sin presentar ningún d                                           │ traemos dos notas y una invitaci                                          │
+│ 10    │ 834_74 / 2022-04-22 / 74 / 0.410080                                      │ 1527_0 / 2020-06-05 / 0 / 20.146993                                       │
+│       │ INTERLOCUTORA: Gracias, presidente; gracias, secretario. Y ahora nada    │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho      │
+│       │ más a manera de retomar un poc                                           │ gusto estar aquí en esta constr                                           │
+└───────┴──────────────────────────────────────────────────────────────────────────┴───────────────────────────────────────────────────────────────────────────┘
+────────────────────────────────────────────────────────────────── Pasaje 754_67, 2022-06-27 ───────────────────────────────────────────────────────────────────
+PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, yo creo que sí va a haber mañanera porque, aunque vamos a ir Tabasco, vamos a ir a iniciar la etapa de prueba de la 
+refinería de Dos Bocas… Va a estar también el velero Cuauhtémoc en Dos Bocas. Es un día de fiesta, cumplimos 40 años del triunfo.
+PER [11:38] ANDRÉS MANUEL LÓPEZ OBRADOR (regla)
+PER [18:30] MANUEL LÓPEZ (modelo)
+LOC [105:112] Tabasco (regla)
+LOC [173:182] Dos Bocas (ambos)
+LOC [227:236] Dos Bocas (ambos)
+────────────────────────────────────────────────────────────────── Pasaje 2149_27, 2019-03-13 ──────────────────────────────────────────────────────────────────
+PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético, ahora tenemos que producir petróleo, tener materia prima para poderla procesar, para 
+poderla refinar y convertirla en gasolinas. Pero sí vamos a eso, vamos a la autosuficiencia, a que no se compre gasolina en el extranjero. Entonces, por eso la 
+rehabilitación de las seis refinerías y la construcción de la nueva refinería de Do
+PER [11:38] ANDRÉS MANUEL LÓPEZ OBRADOR (regla)
+PER [18:30] MANUEL LÓPEZ (modelo)
+LOC [398:407] Dos Bocas (ambos)
+MONTO [447:471] 50 mil millones de pesos (regla)
+LOC [610:627] Sonda de Campeche (modelo)
+LOC [619:627] Campeche (regla)
+LOC [668:675] Tabasco (ambos)
+LOC [680:688] Veracruz (ambos)
+LOC [716:725] Dos Bocas (ambos)
+LOC [738:747] Dos Bocas (ambos)
+LOC [908:917] Dos Bocas (ambos)
+PER [1085:1086] … (modelo)
+────────────────────────────────────────────────────────────────── Pasaje 2033_3, 2019-06-02 ───────────────────────────────────────────────────────────────────
+PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: esta manera poder ofrecer mejores precios de estos combustibles a los consumidores. En esta primera etapa del gobierno, 
+mientras rehabilitamos las seis refinerías y construimos esta nueva refinería, mantengo el compromiso de que no van a aumentar en términos reales los precios de
+las gasolinas, del diésel, del gas y de la luz. Y una vez rehabilitadas las sei
+PER [11:38] ANDRÉS MANUEL LÓPEZ OBRADOR (regla)
+PER [18:21] MAN (modelo)
+PER [23:30] L LÓPEZ (modelo)
+LOC [620:629] Dos Bocas (ambos)
+LOC [650:657] Tabasco (ambos)
+LOC [786:795] Dos Bocas (ambos)
+LOC [877:885] Campeche (ambos)
+LOC [891:898] Tabasco (ambos)
+LOC [946:955] Dos Bocas (ambos)
+─────────────────────────────────────────────────────────────────── Pasaje 745_5, 2022-07-06 ───────────────────────────────────────────────────────────────────
+ANA ELIZABETH GARCÍA VILCHIS: la investidura, con el presidente de la República, el presidente de todos los mexicanos. Pero, bueno, luego dicen que en México no
+hay libertad de expresión. Carlos Loret de Mola cayó en la chapuza de publicar fotografías como pruebas falsas de que la refinería de Dos Bocas aún no se ha 
+terminado de construir. Un día antes de la inauguración de la primera etapa de la 
+ORG [0:13] ANA ELIZABETH (modelo)
+ORG [70:79] República (modelo)
+LOC [151:157] México (modelo)
+PER [188:208] Carlos Loret de Mola (modelo)
+LOC [295:304] Dos Bocas (ambos)
+LOC [400:416] refinería Olmeca (regla)
+LOC [433:442] Dos Bocas (ambos)
+LOC [444:451] Paraíso (modelo)
+LOC [453:460] Tabasco (ambos)
+PER [462:482] Carlos Loret de Mola (modelo)
+ORG [552:559] Latinus (modelo)
+LOC [710:719] Dos Bocas (ambos)
+ORG [771:778] W Radio (modelo)
+PER [794:799] Loret (modelo)
+LOC [829:838] Dos Bocas (ambos)
+PER [1155:1160] Loret (modelo)
+────────────────────────────────────────────────────────────────── Pasaje 657_54, 2022-09-27 ───────────────────────────────────────────────────────────────────
+PREGUNTA: Buenos días, señor presidente. Soy Yesenia Peralta, de Business Energy, Tabasco. Traigo una pregunta muy importante para usted en esta mañana, dice: 
+Hemos seguido de cerca el trabajo que ha estado haciendo en la refinería Dos Bocas, en paraíso, también hemos visto el aumento de trabajo y el empleo en la 
+región. Eso ha traído un beneficio bastante importante para el pueblo de Tabasco, que
+PER [45:60] Yesenia Peralta (modelo)
+ORG [65:80] Business Energy (modelo)
+LOC [82:86] Taba (modelo)
+LOC [82:89] Tabasco (regla)
+ORG [86:89] sco (modelo)
+LOC [232:241] Dos Bocas (ambos)
+LOC [388:395] Tabasco (ambos)
+LOC [537:546] Dos Bocas (ambos)
+LOC [671:680] Dos Bocas (ambos)
+LOC [784:791] Paraíso (modelo)
+LOC [877:884] Tabasco (ambos)
+────────────────────────────────────────────────────────────────── Pasaje 2045_9, 2019-05-26 ───────────────────────────────────────────────────────────────────
+PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: California y lo mismo 72 aviones y helicópteros para altos funcionarios. Usaban los helicópteros hasta para ir a jugar 
+golf. Todo ese se terminó, todo eso significa tener recursos para fortalecer las actividades productivas, fundamentales. Entonces, así como se está apoyando a 
+Pemex estamos calculando y esa es la estrategia que Pemex cuando esté en plena pro
+PER [11:38] ANDRÉS MANUEL LÓPEZ OBRADOR (regla)
+ORG [318:323] Pemex (ambos)
+ORG [370:375] Pemex (ambos)
+LOC [955:964] Dos Bocas (ambos)
+LOC [966:973] Paraíso (modelo)
+LOC [975:982] Tabasco (ambos)
+LOC [1034:1043] Dos Bocas (ambos)
+LOC [1133:1141] Campeche (ambos)
+LOC [1157:1164] Tabasco (ambos)
+LOC [1210:1219] Dos Bocas (ambos)
+────────────────────────────────────────────────────────────────── Pasaje 834_74, 2022-04-22 ───────────────────────────────────────────────────────────────────
+INTERLOCUTORA: Gracias, presidente; gracias, secretario. Y ahora nada más a manera de retomar un poco lo que usted comentó en su informe de los 100 días y 
+aprovechando que estamos en Veracruz, este comentario que le hizo a la secretaria de Energía con respecto a la refinería de Dos Bocas si va a estar lista en 
+junio. Comentarle, presidente, que Grupo Cantón tuvo a bien visitar la refinería, las in
+ORG [0:5] INTER (modelo)
+PER [5:7] LO (modelo)
+LOC [183:191] Veracruz (ambos)
+LOC [279:288] Dos Bocas (ambos)
+ORG [347:359] Grupo Cantón (modelo)
+LOC [743:752] Dos Bocas (ambos)
+LOC [757:764] Tabasco (ambos)
+────────────────────────────────────────────────────────────────── Pasaje 1787_11, 2019-11-04 ──────────────────────────────────────────────────────────────────
+VOZ DE HOMBRE: En un video que compartió en redes sociales, la secretaria de Energía, Rocío Nahle, mostró diferentes puntos del predio en el que se construye lo
+que será la refinería de Dos Bocas, Tabasco, y en la que dejó claro que no hay ninguna inundación.
+PER [86:97] Rocío Nahle (modelo)
+LOC [186:195] Dos Bocas (ambos)
+LOC [197:204] Tabasco (ambos)
+─────────────────────────────────────────────────────────────────── Pasaje 917_1, 2022-01-19 ───────────────────────────────────────────────────────────────────
+ANA ELIZABETH GARCÍA VILCHIS: Con su permiso, señor presidente. Hoy traemos dos notas y una invitación. Una vez más, la refinería en Dos Bocas es objeto de 
+campañas de mentiras. Desde hace tres años son cotidianos los ataques en contra de la construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta 
+sección se han documento al menos cinco ocasiones en las que medios de comunicación como 
+PER [0:13] ANA ELIZABETH (modelo)
+PER [21:23] VI (modelo)
+ORG [25:28] HIS (modelo)
+LOC [133:142] Dos Bocas (ambos)
+LOC [274:283] Dos Bocas (ambos)
+LOC [285:292] Tabasco (ambos)
+ORG [400:407] Reforma (modelo)
+ORG [409:424] Animal Político (modelo)
+ORG [426:438] El Universal (modelo)
+LOC [539:548] Dos Bocas (ambos)
+ORG [657:664] Reforma (modelo)
+ORG [677:684] Proceso (modelo)
+ORG [686:703] Diario de Yucatán (modelo)
+LOC [696:703] Yucatán (regla)
+PER [934:945] Rocío Nahle (modelo)
+────────────────────────────────────────────────────────────────── Pasaje 1527_0, 2020-06-05 ───────────────────────────────────────────────────────────────────
+PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho gusto estar aquí en esta construcción, en esta obra que se está llevando a cabo para tener 
+una nueva refinería en nuestro país. De manera absurda se dejaron de hacer refinerías en México. Como sabemos, la última refinería que se construyó fue la de 
+Salina Cruz hace 40 años y durante todo este periodo se optó, se decidió por vende
+PER [11:38] ANDRÉS MANUEL LÓPEZ OBRADOR (regla)
+PER [18:30] MANUEL LÓPEZ (modelo)
+LOC [249:255] México (modelo)
+LOC [318:329] Salina Cruz (ambos)
+ORG [806:809] Ref (modelo)
+LOC [816:825] Dos Bocas (regla)
+ORG [816:825] Dos Bocas (modelo)
+LOC [833:840] Paraíso (modelo)
+LOC [842:849] Tabasco (ambos)
+LOC [853:860] Paraíso (modelo)
+LOC [862:869] Tabasco (ambos)
+LOC [923:932] Dos Bocas (regla)
+LOC [927:932] Bocas (modelo)
+──────────────────────────────────────────────── Tabla de respuesta: cada fila conserva su estado de evidencia ─────────────────────────────────────────────────
+montos_inversion: 50 mil millones de pesos | ambiguo
+2149_27 [295:726]  Entonces, por eso la rehabilitación de las seis refinerías y la construcción de la nueva refinería de Dos Bocas. Y está en el presupuesto de 
+este año, 50 mil millones de pesos están presupuestados con ese propósito. Quedamos que en tres años la vamos a terminar para utilizar todo el petróleo que se 
+produce en la Sonda de Campeche y en los campos petroleros de tierra de Tabasco, de Veracruz, y refinar ese petróleo en Dos Bocas.
+organizaciones: Ref | ambiguo
+1527_0 [683:999]  Lo decía en la campaña y lo repito ahora, es como vender naranjas y comprar jugo de naranja. Evaluación de trabajos de la Refinería Dos Bocas,
+desde Paraíso, Tabasco En Paraíso, Tabasco, supervisamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la producción
+extranjera.
+organizaciones: Dos Bocas | ambiguo
+1527_0 [683:999]  Lo decía en la campaña y lo repito ahora, es como vender naranjas y comprar jugo de naranja. Evaluación de trabajos de la Refinería Dos Bocas,
+desde Paraíso, Tabasco En Paraíso, Tabasco, supervisamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la producción
+extranjera.
+organizaciones: Pemex | ambiguo
+2045_9 [164:685]  Todo ese se terminó, todo eso significa tener recursos para fortalecer las actividades productivas, fundamentales. Entonces, así como se está 
+apoyando a Pemex estamos calculando y esa es la estrategia que Pemex cuando esté en plena producción, cuando mejoren las refinerías, cuando ya no tengamos que 
+comprar las gasolinas, porque ese es el propósito, ser autosuficientes. Imagínense si tenemos el petróleo y lo vendemos crudo, es como si vendiéramos naranja y 
+compráramos jugo de naranja si no producimos las gasolinas.
+organizaciones: Business Energy | ambiguo
+657_54 [0:322] PREGUNTA: Buenos días, señor presidente. Soy Yesenia Peralta, de Business Energy, Tabasco. Traigo una pregunta muy importante para usted en esta 
+mañana, dice: Hemos seguido de cerca el trabajo que ha estado haciendo en la refinería Dos Bocas, en paraíso, también hemos visto el aumento de trabajo y el 
+empleo en la región.
+organizaciones: sco | ambiguo
+657_54 [0:322] PREGUNTA: Buenos días, señor presidente. Soy Yesenia Peralta, de Business Energy, Tabasco. Traigo una pregunta muy importante para usted en esta 
+mañana, dice: Hemos seguido de cerca el trabajo que ha estado haciendo en la refinería Dos Bocas, en paraíso, también hemos visto el aumento de trabajo y el 
+empleo en la región.
+organizaciones: República | ambiguo
+745_5 [0:187] ANA ELIZABETH GARCÍA VILCHIS: la investidura, con el presidente de la República, el presidente de todos los mexicanos. Pero, bueno, luego dicen 
+que en México no hay libertad de expresión.
+organizaciones: Latinus | ambiguo
+745_5 [341:1161]  Un día antes de la inauguración de la primera etapa de la refinería Olmeca en el puerto de Dos Bocas, Paraíso, Tabasco, Carlos Loret de Mola 
+publicó información falsa. El presentador principal de la plataforma Latinus publicó en su cuenta de Twitter una serie de fotografías con la leyenda: ‘La pura 
+escenografía, afinan detalles para la primera etapa constructiva de Dos Bocas.’ Pero no paró ahí, en su programa transmitido por W Radio afirmó, cito a Loret: 
+‘Bueno, y mañana el show de Dos Bocas. Le ponían fotografías en redes de la forma en que están llegando tremendos ductos, tremendas tuberías, como si las 
+pudieran instalar de aquí a mañana, pero pues son para la escenografía, para el puro show, porque mañana se va a inaugurar una refinería que no refina y que va 
+a refinar hasta 2024 o más.’ Hasta aquí Loret.
+organizaciones: W Radio | ambiguo
+745_5 [341:1161]  Un día antes de la inauguración de la primera etapa de la refinería Olmeca en el puerto de Dos Bocas, Paraíso, Tabasco, Carlos Loret de Mola 
+publicó información falsa. El presentador principal de la plataforma Latinus publicó en su cuenta de Twitter una serie de fotografías con la leyenda: ‘La pura 
+escenografía, afinan detalles para la primera etapa constructiva de Dos Bocas.’ Pero no paró ahí, en su programa transmitido por W Radio afirmó, cito a Loret: 
+‘Bueno, y mañana el show de Dos Bocas. Le ponían fotografías en redes de la forma en que están llegando tremendos ductos, tremendas tuberías, como si las 
+pudieran instalar de aquí a mañana, pero pues son para la escenografía, para el puro show, porque mañana se va a inaugurar una refinería que no refina y que va 
+a refinar hasta 2024 o más.’ Hasta aquí Loret.
+organizaciones: Grupo Cantón | ambiguo
+834_74 [56:587]  Y ahora nada más a manera de retomar un poco lo que usted comentó en su informe de los 100 días y aprovechando que estamos en Veracruz, este 
+comentario que le hizo a la secretaria de Energía con respecto a la refinería de Dos Bocas si va a estar lista en junio. Comentarle, presidente, que Grupo 
+Cantón tuvo a bien visitar la refinería, las instalaciones, hacerlas públicas. Y preguntarle, la secretaria de Energía afirmó que estaría lista para la fecha 
+prevista y a su vez, presidente, que se iniciaría la producción de gasolina.
+organizaciones: Reforma | ambiguo
+917_1 [103:791]  Una vez más, la refinería en Dos Bocas es objeto de campañas de mentiras. Desde hace tres años son cotidianos los ataques en contra de la 
+construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se han documento al menos cinco ocasiones en las que medios de comunicación como 
+Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los
+proyectos que más molesta a la oposición. Por eso, no extraña que la semana pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, 
+publicaron fotografías sobre la supuesta nuca inundación de la refinería.
+organizaciones: Animal Político | ambiguo
+917_1 [103:791]  Una vez más, la refinería en Dos Bocas es objeto de campañas de mentiras. Desde hace tres años son cotidianos los ataques en contra de la 
+construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se han documento al menos cinco ocasiones en las que medios de comunicación como 
+Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los
+proyectos que más molesta a la oposición. Por eso, no extraña que la semana pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, 
+publicaron fotografías sobre la supuesta nuca inundación de la refinería.
+organizaciones: El Universal | ambiguo
+917_1 [103:791]  Una vez más, la refinería en Dos Bocas es objeto de campañas de mentiras. Desde hace tres años son cotidianos los ataques en contra de la 
+construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se han documento al menos cinco ocasiones en las que medios de comunicación como 
+Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los
+proyectos que más molesta a la oposición. Por eso, no extraña que la semana pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, 
+publicaron fotografías sobre la supuesta nuca inundación de la refinería.
+organizaciones: Reforma | ambiguo
+917_1 [177:813]  Desde hace tres años son cotidianos los ataques en contra de la construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se
+han documento al menos cinco ocasiones en las que medios de comunicación como Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre 
+supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los proyectos que más molesta a la oposición. Por eso, no extraña que la semana 
+pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, publicaron fotografías sobre la supuesta nuca inundación de la refinería. Aquí 
+vemos las notas.
+organizaciones: Proceso | ambiguo
+917_1 [177:813]  Desde hace tres años son cotidianos los ataques en contra de la construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se
+han documento al menos cinco ocasiones en las que medios de comunicación como Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre 
+supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los proyectos que más molesta a la oposición. Por eso, no extraña que la semana 
+pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, publicaron fotografías sobre la supuesta nuca inundación de la refinería. Aquí 
+vemos las notas.
+organizaciones: Diario de Yucatán | ambiguo
+917_1 [177:813]  Desde hace tres años son cotidianos los ataques en contra de la construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se
+han documento al menos cinco ocasiones en las que medios de comunicación como Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre 
+supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los proyectos que más molesta a la oposición. Por eso, no extraña que la semana 
+pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, publicaron fotografías sobre la supuesta nuca inundación de la refinería. Aquí 
+vemos las notas.
+responsables: Rocío Nahle | respaldado_en_texto
+1787_11 [0:259] VOZ DE HOMBRE: En un video que compartió en redes sociales, la secretaria de Energía, Rocío Nahle, mostró diferentes puntos del predio en el que
+se construye lo que será la refinería de Dos Bocas, Tabasco, y en la que dejó claro que no hay ninguna inundación.
+responsables: … | ambiguo
+2149_27 [1016:1087]  Entonces, sí vamos a construir la refinería. ¿Lo otro que planteabas…?
+responsables: Yesenia Peralta | ambiguo
+657_54 [0:322] PREGUNTA: Buenos días, señor presidente. Soy Yesenia Peralta, de Business Energy, Tabasco. Traigo una pregunta muy importante para usted en esta 
+mañana, dice: Hemos seguido de cerca el trabajo que ha estado haciendo en la refinería Dos Bocas, en paraíso, también hemos visto el aumento de trabajo y el 
+empleo en la región.
+responsables: Carlos Loret de Mola | ambiguo
+745_5 [118:509]  Pero, bueno, luego dicen que en México no hay libertad de expresión. Carlos Loret de Mola cayó en la chapuza de publicar fotografías como 
+pruebas falsas de que la refinería de Dos Bocas aún no se ha terminado de construir. Un día antes de la inauguración de la primera etapa de la refinería Olmeca 
+en el puerto de Dos Bocas, Paraíso, Tabasco, Carlos Loret de Mola publicó información falsa.
+responsables: Carlos Loret de Mola | ambiguo
+745_5 [187:839]  Carlos Loret de Mola cayó en la chapuza de publicar fotografías como pruebas falsas de que la refinería de Dos Bocas aún no se ha terminado de 
+construir. Un día antes de la inauguración de la primera etapa de la refinería Olmeca en el puerto de Dos Bocas, Paraíso, Tabasco, Carlos Loret de Mola publicó 
+información falsa. El presentador principal de la plataforma Latinus publicó en su cuenta de Twitter una serie de fotografías con la leyenda: ‘La pura 
+escenografía, afinan detalles para la primera etapa constructiva de Dos Bocas.’ Pero no paró ahí, en su programa transmitido por W Radio afirmó, cito a Loret: 
+‘Bueno, y mañana el show de Dos Bocas.
+responsables: Loret | ambiguo
+745_5 [341:1161]  Un día antes de la inauguración de la primera etapa de la refinería Olmeca en el puerto de Dos Bocas, Paraíso, Tabasco, Carlos Loret de Mola 
+publicó información falsa. El presentador principal de la plataforma Latinus publicó en su cuenta de Twitter una serie de fotografías con la leyenda: ‘La pura 
+escenografía, afinan detalles para la primera etapa constructiva de Dos Bocas.’ Pero no paró ahí, en su programa transmitido por W Radio afirmó, cito a Loret: 
+‘Bueno, y mañana el show de Dos Bocas. Le ponían fotografías en redes de la forma en que están llegando tremendos ductos, tremendas tuberías, como si las 
+pudieran instalar de aquí a mañana, pero pues son para la escenografía, para el puro show, porque mañana se va a inaugurar una refinería que no refina y que va 
+a refinar hasta 2024 o más.’ Hasta aquí Loret.
+responsables: Loret | ambiguo
+745_5 [509:1172]  El presentador principal de la plataforma Latinus publicó en su cuenta de Twitter una serie de fotografías con la leyenda: ‘La pura 
+escenografía, afinan detalles para la primera etapa constructiva de Dos Bocas.’ Pero no paró ahí, en su programa transmitido por W Radio afirmó, cito a Loret: 
+‘Bueno, y mañana el show de Dos Bocas. Le ponían fotografías en redes de la forma en que están llegando tremendos ductos, tremendas tuberías, como si las 
+pudieran instalar de aquí a mañana, pero pues son para la escenografía, para el puro show, porque mañana se va a inaugurar una refinería que no refina y que va 
+a refinar hasta 2024 o más.’ Hasta aquí Loret. Pero en el
+responsables: Rocío Nahle | ambiguo
+917_1 [813:1223]  En realidad, se trató de una foto editada de la subestación que se construye en la refinería. La secretaria de energía, Rocío Nahle, publicó 
+una fotografía del lugar para desmentir las versiones de la inundación. El diario señaló que se trataba de una fotografía tomada en el pasado; sin embargo, la 
+secretaria publicó otra foto estando en el sitio y donde claramente se ve que no había inundación en el mismo
+Latencia total: 0.225 s; sin red ni inferencia.
+──────────────────────────────────────────────────────────── Q3: refinería de Dos Bocas en Tabasco ─────────────────────────────────────────────────────────────
+Ventana inclusiva: 2019-01-01 a 2022-12-31
+Qué organizaciones, qué personas responsables y qué montos de inversión
+                                                                Top-10 con filtro: TF-IDF y BM25                                                                
+┏━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Rango ┃ TF-IDF: ID / fecha / posición / puntaje / fragmento                      ┃ BM25: ID / fecha / posición / puntaje / fragmento                         ┃
+┡━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ 1     │ 754_67 / 2022-06-27 / 67 / 0.510033                                      │ 754_67 / 2022-06-27 / 67 / 23.105550                                      │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, yo creo que sí va a haber    │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, yo creo que sí va a haber     │
+│       │ mañanera porque, aunque vamos                                            │ mañanera porque, aunque vamos                                             │
+│ 2     │ 2149_27 / 2019-03-13 / 27 / 0.469390                                     │ 2149_27 / 2019-03-13 / 27 / 22.751525                                     │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético,  │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético,   │
+│       │ ahora tenemos que producir p                                             │ ahora tenemos que producir p                                              │
+│ 3     │ 1759_60 / 2019-11-25 / 60 / 0.469300                                     │ 2033_3 / 2019-06-02 / 3 / 22.418301                                       │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Bueno, vamos a informar también  │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: esta manera poder ofrecer mejores │
+│       │ sobre el avance en la constr                                             │ precios de estos combustib                                                │
+│ 4     │ 1971_29 / 2019-07-10 / 29 / 0.452090                                     │ 745_5 / 2022-07-06 / 5 / 21.487116                                        │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: No, es fácil de convencer que    │ ANA ELIZABETH GARCÍA VILCHIS: la investidura, con el presidente de la     │
+│       │ hace falta la refinería de Dos                                           │ República, el presidente de to                                            │
+│ 5     │ 564_101 / 2022-12-23 / 101 / 0.446440                                    │ 657_54 / 2022-09-27 / 54 / 21.396777                                      │
+│       │ INTERLOCUTORA: Para terminar, señor presidente, Rocío Nahle comentó que  │ PREGUNTA: Buenos días, señor presidente. Soy Yesenia Peralta, de Business │
+│       │ hay 50 auditorías para lo qu                                             │ Energy, Tabasco. Traigo un                                                │
+│ 6     │ 2033_3 / 2019-06-02 / 3 / 0.431387                                       │ 2045_9 / 2019-05-26 / 9 / 21.251834                                       │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: esta manera poder ofrecer        │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: California y lo mismo 72 aviones  │
+│       │ mejores precios de estos combustib                                       │ y helicópteros para altos f                                               │
+│ 7     │ 1569_23 / 2020-04-15 / 23 / 0.423147                                     │ 834_74 / 2022-04-22 / 74 / 21.130720                                      │
+│       │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: refinación de cada una de las    │ INTERLOCUTORA: Gracias, presidente; gracias, secretario. Y ahora nada más │
+│       │ seis refinerías. También esto                                            │ a manera de retomar un poc                                                │
+│ 8     │ 1787_11 / 2019-11-04 / 11 / 0.414239                                     │ 1787_11 / 2019-11-04 / 11 / 20.547665                                     │
+│       │ VOZ DE HOMBRE: En un video que compartió en redes sociales, la           │ VOZ DE HOMBRE: En un video que compartió en redes sociales, la secretaria │
+│       │ secretaria de Energía, Rocío Nahle, m                                    │ de Energía, Rocío Nahle, m                                                │
+│ 9     │ 662_58 / 2022-09-20 / 58 / 0.413914                                      │ 917_1 / 2022-01-19 / 1 / 20.476549                                        │
+│       │ INTERLOCUTORA: hacienda pública. En todo caso, esta campaña mediática    │ ANA ELIZABETH GARCÍA VILCHIS: Con su permiso, señor presidente. Hoy       │
+│       │ indica, sin presentar ningún d                                           │ traemos dos notas y una invitaci                                          │
+│ 10    │ 834_74 / 2022-04-22 / 74 / 0.410080                                      │ 1527_0 / 2020-06-05 / 0 / 20.146993                                       │
+│       │ INTERLOCUTORA: Gracias, presidente; gracias, secretario. Y ahora nada    │ PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho      │
+│       │ más a manera de retomar un poc                                           │ gusto estar aquí en esta constr                                           │
+└───────┴──────────────────────────────────────────────────────────────────────────┴───────────────────────────────────────────────────────────────────────────┘
+────────────────────────────────────────────────────────────────── Pasaje 754_67, 2022-06-27 ───────────────────────────────────────────────────────────────────
+PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Sí, yo creo que sí va a haber mañanera porque, aunque vamos a ir Tabasco, vamos a ir a iniciar la etapa de prueba de la 
+refinería de Dos Bocas… Va a estar también el velero Cuauhtémoc en Dos Bocas. Es un día de fiesta, cumplimos 40 años del triunfo.
+PER [11:38] ANDRÉS MANUEL LÓPEZ OBRADOR (regla)
+PER [18:30] MANUEL LÓPEZ (modelo)
+LOC [105:112] Tabasco (regla)
+LOC [173:182] Dos Bocas (ambos)
+LOC [227:236] Dos Bocas (ambos)
+────────────────────────────────────────────────────────────────── Pasaje 2149_27, 2019-03-13 ──────────────────────────────────────────────────────────────────
+PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: el país y al sector energético, ahora tenemos que producir petróleo, tener materia prima para poderla procesar, para 
+poderla refinar y convertirla en gasolinas. Pero sí vamos a eso, vamos a la autosuficiencia, a que no se compre gasolina en el extranjero. Entonces, por eso la 
+rehabilitación de las seis refinerías y la construcción de la nueva refinería de Do
+PER [11:38] ANDRÉS MANUEL LÓPEZ OBRADOR (regla)
+PER [18:30] MANUEL LÓPEZ (modelo)
+LOC [398:407] Dos Bocas (ambos)
+MONTO [447:471] 50 mil millones de pesos (regla)
+LOC [610:627] Sonda de Campeche (modelo)
+LOC [619:627] Campeche (regla)
+LOC [668:675] Tabasco (ambos)
+LOC [680:688] Veracruz (ambos)
+LOC [716:725] Dos Bocas (ambos)
+LOC [738:747] Dos Bocas (ambos)
+LOC [908:917] Dos Bocas (ambos)
+PER [1085:1086] … (modelo)
+────────────────────────────────────────────────────────────────── Pasaje 2033_3, 2019-06-02 ───────────────────────────────────────────────────────────────────
+PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: esta manera poder ofrecer mejores precios de estos combustibles a los consumidores. En esta primera etapa del gobierno, 
+mientras rehabilitamos las seis refinerías y construimos esta nueva refinería, mantengo el compromiso de que no van a aumentar en términos reales los precios de
+las gasolinas, del diésel, del gas y de la luz. Y una vez rehabilitadas las sei
+PER [11:38] ANDRÉS MANUEL LÓPEZ OBRADOR (regla)
+PER [18:21] MAN (modelo)
+PER [23:30] L LÓPEZ (modelo)
+LOC [620:629] Dos Bocas (ambos)
+LOC [650:657] Tabasco (ambos)
+LOC [786:795] Dos Bocas (ambos)
+LOC [877:885] Campeche (ambos)
+LOC [891:898] Tabasco (ambos)
+LOC [946:955] Dos Bocas (ambos)
+─────────────────────────────────────────────────────────────────── Pasaje 745_5, 2022-07-06 ───────────────────────────────────────────────────────────────────
+ANA ELIZABETH GARCÍA VILCHIS: la investidura, con el presidente de la República, el presidente de todos los mexicanos. Pero, bueno, luego dicen que en México no
+hay libertad de expresión. Carlos Loret de Mola cayó en la chapuza de publicar fotografías como pruebas falsas de que la refinería de Dos Bocas aún no se ha 
+terminado de construir. Un día antes de la inauguración de la primera etapa de la 
+ORG [0:13] ANA ELIZABETH (modelo)
+ORG [70:79] República (modelo)
+LOC [151:157] México (modelo)
+PER [188:208] Carlos Loret de Mola (modelo)
+LOC [295:304] Dos Bocas (ambos)
+LOC [400:416] refinería Olmeca (regla)
+LOC [433:442] Dos Bocas (ambos)
+LOC [444:451] Paraíso (modelo)
+LOC [453:460] Tabasco (ambos)
+PER [462:482] Carlos Loret de Mola (modelo)
+ORG [552:559] Latinus (modelo)
+LOC [710:719] Dos Bocas (ambos)
+ORG [771:778] W Radio (modelo)
+PER [794:799] Loret (modelo)
+LOC [829:838] Dos Bocas (ambos)
+PER [1155:1160] Loret (modelo)
+────────────────────────────────────────────────────────────────── Pasaje 657_54, 2022-09-27 ───────────────────────────────────────────────────────────────────
+PREGUNTA: Buenos días, señor presidente. Soy Yesenia Peralta, de Business Energy, Tabasco. Traigo una pregunta muy importante para usted en esta mañana, dice: 
+Hemos seguido de cerca el trabajo que ha estado haciendo en la refinería Dos Bocas, en paraíso, también hemos visto el aumento de trabajo y el empleo en la 
+región. Eso ha traído un beneficio bastante importante para el pueblo de Tabasco, que
+PER [45:60] Yesenia Peralta (modelo)
+ORG [65:80] Business Energy (modelo)
+LOC [82:86] Taba (modelo)
+LOC [82:89] Tabasco (regla)
+ORG [86:89] sco (modelo)
+LOC [232:241] Dos Bocas (ambos)
+LOC [388:395] Tabasco (ambos)
+LOC [537:546] Dos Bocas (ambos)
+LOC [671:680] Dos Bocas (ambos)
+LOC [784:791] Paraíso (modelo)
+LOC [877:884] Tabasco (ambos)
+────────────────────────────────────────────────────────────────── Pasaje 2045_9, 2019-05-26 ───────────────────────────────────────────────────────────────────
+PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: California y lo mismo 72 aviones y helicópteros para altos funcionarios. Usaban los helicópteros hasta para ir a jugar 
+golf. Todo ese se terminó, todo eso significa tener recursos para fortalecer las actividades productivas, fundamentales. Entonces, así como se está apoyando a 
+Pemex estamos calculando y esa es la estrategia que Pemex cuando esté en plena pro
+PER [11:38] ANDRÉS MANUEL LÓPEZ OBRADOR (regla)
+ORG [318:323] Pemex (ambos)
+ORG [370:375] Pemex (ambos)
+LOC [955:964] Dos Bocas (ambos)
+LOC [966:973] Paraíso (modelo)
+LOC [975:982] Tabasco (ambos)
+LOC [1034:1043] Dos Bocas (ambos)
+LOC [1133:1141] Campeche (ambos)
+LOC [1157:1164] Tabasco (ambos)
+LOC [1210:1219] Dos Bocas (ambos)
+────────────────────────────────────────────────────────────────── Pasaje 834_74, 2022-04-22 ───────────────────────────────────────────────────────────────────
+INTERLOCUTORA: Gracias, presidente; gracias, secretario. Y ahora nada más a manera de retomar un poco lo que usted comentó en su informe de los 100 días y 
+aprovechando que estamos en Veracruz, este comentario que le hizo a la secretaria de Energía con respecto a la refinería de Dos Bocas si va a estar lista en 
+junio. Comentarle, presidente, que Grupo Cantón tuvo a bien visitar la refinería, las in
+ORG [0:5] INTER (modelo)
+PER [5:7] LO (modelo)
+LOC [183:191] Veracruz (ambos)
+LOC [279:288] Dos Bocas (ambos)
+ORG [347:359] Grupo Cantón (modelo)
+LOC [743:752] Dos Bocas (ambos)
+LOC [757:764] Tabasco (ambos)
+────────────────────────────────────────────────────────────────── Pasaje 1787_11, 2019-11-04 ──────────────────────────────────────────────────────────────────
+VOZ DE HOMBRE: En un video que compartió en redes sociales, la secretaria de Energía, Rocío Nahle, mostró diferentes puntos del predio en el que se construye lo
+que será la refinería de Dos Bocas, Tabasco, y en la que dejó claro que no hay ninguna inundación.
+PER [86:97] Rocío Nahle (modelo)
+LOC [186:195] Dos Bocas (ambos)
+LOC [197:204] Tabasco (ambos)
+─────────────────────────────────────────────────────────────────── Pasaje 917_1, 2022-01-19 ───────────────────────────────────────────────────────────────────
+ANA ELIZABETH GARCÍA VILCHIS: Con su permiso, señor presidente. Hoy traemos dos notas y una invitación. Una vez más, la refinería en Dos Bocas es objeto de 
+campañas de mentiras. Desde hace tres años son cotidianos los ataques en contra de la construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta 
+sección se han documento al menos cinco ocasiones en las que medios de comunicación como 
+PER [0:13] ANA ELIZABETH (modelo)
+PER [21:23] VI (modelo)
+ORG [25:28] HIS (modelo)
+LOC [133:142] Dos Bocas (ambos)
+LOC [274:283] Dos Bocas (ambos)
+LOC [285:292] Tabasco (ambos)
+ORG [400:407] Reforma (modelo)
+ORG [409:424] Animal Político (modelo)
+ORG [426:438] El Universal (modelo)
+LOC [539:548] Dos Bocas (ambos)
+ORG [657:664] Reforma (modelo)
+ORG [677:684] Proceso (modelo)
+ORG [686:703] Diario de Yucatán (modelo)
+LOC [696:703] Yucatán (regla)
+PER [934:945] Rocío Nahle (modelo)
+────────────────────────────────────────────────────────────────── Pasaje 1527_0, 2020-06-05 ───────────────────────────────────────────────────────────────────
+PRESIDENTE ANDRÉS MANUEL LÓPEZ OBRADOR: Amigas, amigos: Nos da mucho gusto estar aquí en esta construcción, en esta obra que se está llevando a cabo para tener 
+una nueva refinería en nuestro país. De manera absurda se dejaron de hacer refinerías en México. Como sabemos, la última refinería que se construyó fue la de 
+Salina Cruz hace 40 años y durante todo este periodo se optó, se decidió por vende
+PER [11:38] ANDRÉS MANUEL LÓPEZ OBRADOR (regla)
+PER [18:30] MANUEL LÓPEZ (modelo)
+LOC [249:255] México (modelo)
+LOC [318:329] Salina Cruz (ambos)
+ORG [806:809] Ref (modelo)
+LOC [816:825] Dos Bocas (regla)
+ORG [816:825] Dos Bocas (modelo)
+LOC [833:840] Paraíso (modelo)
+LOC [842:849] Tabasco (ambos)
+LOC [853:860] Paraíso (modelo)
+LOC [862:869] Tabasco (ambos)
+LOC [923:932] Dos Bocas (regla)
+LOC [927:932] Bocas (modelo)
+──────────────────────────────────────────────── Tabla de respuesta: cada fila conserva su estado de evidencia ─────────────────────────────────────────────────
+montos_inversion: 50 mil millones de pesos | ambiguo
+2149_27 [295:726]  Entonces, por eso la rehabilitación de las seis refinerías y la construcción de la nueva refinería de Dos Bocas. Y está en el presupuesto de 
+este año, 50 mil millones de pesos están presupuestados con ese propósito. Quedamos que en tres años la vamos a terminar para utilizar todo el petróleo que se 
+produce en la Sonda de Campeche y en los campos petroleros de tierra de Tabasco, de Veracruz, y refinar ese petróleo en Dos Bocas.
+organizaciones: Ref | ambiguo
+1527_0 [683:999]  Lo decía en la campaña y lo repito ahora, es como vender naranjas y comprar jugo de naranja. Evaluación de trabajos de la Refinería Dos Bocas,
+desde Paraíso, Tabasco En Paraíso, Tabasco, supervisamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la producción
+extranjera.
+organizaciones: Dos Bocas | ambiguo
+1527_0 [683:999]  Lo decía en la campaña y lo repito ahora, es como vender naranjas y comprar jugo de naranja. Evaluación de trabajos de la Refinería Dos Bocas,
+desde Paraíso, Tabasco En Paraíso, Tabasco, supervisamos el avance de las obras de la Refinería Dos Bocas. Con este desarrollo, no dependeremos de la producción
+extranjera.
+organizaciones: Pemex | ambiguo
+2045_9 [164:685]  Todo ese se terminó, todo eso significa tener recursos para fortalecer las actividades productivas, fundamentales. Entonces, así como se está 
+apoyando a Pemex estamos calculando y esa es la estrategia que Pemex cuando esté en plena producción, cuando mejoren las refinerías, cuando ya no tengamos que 
+comprar las gasolinas, porque ese es el propósito, ser autosuficientes. Imagínense si tenemos el petróleo y lo vendemos crudo, es como si vendiéramos naranja y 
+compráramos jugo de naranja si no producimos las gasolinas.
+organizaciones: Business Energy | ambiguo
+657_54 [0:322] PREGUNTA: Buenos días, señor presidente. Soy Yesenia Peralta, de Business Energy, Tabasco. Traigo una pregunta muy importante para usted en esta 
+mañana, dice: Hemos seguido de cerca el trabajo que ha estado haciendo en la refinería Dos Bocas, en paraíso, también hemos visto el aumento de trabajo y el 
+empleo en la región.
+organizaciones: sco | ambiguo
+657_54 [0:322] PREGUNTA: Buenos días, señor presidente. Soy Yesenia Peralta, de Business Energy, Tabasco. Traigo una pregunta muy importante para usted en esta 
+mañana, dice: Hemos seguido de cerca el trabajo que ha estado haciendo en la refinería Dos Bocas, en paraíso, también hemos visto el aumento de trabajo y el 
+empleo en la región.
+organizaciones: República | ambiguo
+745_5 [0:187] ANA ELIZABETH GARCÍA VILCHIS: la investidura, con el presidente de la República, el presidente de todos los mexicanos. Pero, bueno, luego dicen 
+que en México no hay libertad de expresión.
+organizaciones: Latinus | ambiguo
+745_5 [341:1161]  Un día antes de la inauguración de la primera etapa de la refinería Olmeca en el puerto de Dos Bocas, Paraíso, Tabasco, Carlos Loret de Mola 
+publicó información falsa. El presentador principal de la plataforma Latinus publicó en su cuenta de Twitter una serie de fotografías con la leyenda: ‘La pura 
+escenografía, afinan detalles para la primera etapa constructiva de Dos Bocas.’ Pero no paró ahí, en su programa transmitido por W Radio afirmó, cito a Loret: 
+‘Bueno, y mañana el show de Dos Bocas. Le ponían fotografías en redes de la forma en que están llegando tremendos ductos, tremendas tuberías, como si las 
+pudieran instalar de aquí a mañana, pero pues son para la escenografía, para el puro show, porque mañana se va a inaugurar una refinería que no refina y que va 
+a refinar hasta 2024 o más.’ Hasta aquí Loret.
+organizaciones: W Radio | ambiguo
+745_5 [341:1161]  Un día antes de la inauguración de la primera etapa de la refinería Olmeca en el puerto de Dos Bocas, Paraíso, Tabasco, Carlos Loret de Mola 
+publicó información falsa. El presentador principal de la plataforma Latinus publicó en su cuenta de Twitter una serie de fotografías con la leyenda: ‘La pura 
+escenografía, afinan detalles para la primera etapa constructiva de Dos Bocas.’ Pero no paró ahí, en su programa transmitido por W Radio afirmó, cito a Loret: 
+‘Bueno, y mañana el show de Dos Bocas. Le ponían fotografías en redes de la forma en que están llegando tremendos ductos, tremendas tuberías, como si las 
+pudieran instalar de aquí a mañana, pero pues son para la escenografía, para el puro show, porque mañana se va a inaugurar una refinería que no refina y que va 
+a refinar hasta 2024 o más.’ Hasta aquí Loret.
+organizaciones: Grupo Cantón | ambiguo
+834_74 [56:587]  Y ahora nada más a manera de retomar un poco lo que usted comentó en su informe de los 100 días y aprovechando que estamos en Veracruz, este 
+comentario que le hizo a la secretaria de Energía con respecto a la refinería de Dos Bocas si va a estar lista en junio. Comentarle, presidente, que Grupo 
+Cantón tuvo a bien visitar la refinería, las instalaciones, hacerlas públicas. Y preguntarle, la secretaria de Energía afirmó que estaría lista para la fecha 
+prevista y a su vez, presidente, que se iniciaría la producción de gasolina.
+organizaciones: Reforma | ambiguo
+917_1 [103:791]  Una vez más, la refinería en Dos Bocas es objeto de campañas de mentiras. Desde hace tres años son cotidianos los ataques en contra de la 
+construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se han documento al menos cinco ocasiones en las que medios de comunicación como 
+Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los
+proyectos que más molesta a la oposición. Por eso, no extraña que la semana pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, 
+publicaron fotografías sobre la supuesta nuca inundación de la refinería.
+organizaciones: Animal Político | ambiguo
+917_1 [103:791]  Una vez más, la refinería en Dos Bocas es objeto de campañas de mentiras. Desde hace tres años son cotidianos los ataques en contra de la 
+construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se han documento al menos cinco ocasiones en las que medios de comunicación como 
+Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los
+proyectos que más molesta a la oposición. Por eso, no extraña que la semana pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, 
+publicaron fotografías sobre la supuesta nuca inundación de la refinería.
+organizaciones: El Universal | ambiguo
+917_1 [103:791]  Una vez más, la refinería en Dos Bocas es objeto de campañas de mentiras. Desde hace tres años son cotidianos los ataques en contra de la 
+construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se han documento al menos cinco ocasiones en las que medios de comunicación como 
+Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los
+proyectos que más molesta a la oposición. Por eso, no extraña que la semana pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, 
+publicaron fotografías sobre la supuesta nuca inundación de la refinería.
+organizaciones: Reforma | ambiguo
+917_1 [177:813]  Desde hace tres años son cotidianos los ataques en contra de la construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se
+han documento al menos cinco ocasiones en las que medios de comunicación como Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre 
+supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los proyectos que más molesta a la oposición. Por eso, no extraña que la semana 
+pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, publicaron fotografías sobre la supuesta nuca inundación de la refinería. Aquí 
+vemos las notas.
+organizaciones: Proceso | ambiguo
+917_1 [177:813]  Desde hace tres años son cotidianos los ataques en contra de la construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se
+han documento al menos cinco ocasiones en las que medios de comunicación como Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre 
+supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los proyectos que más molesta a la oposición. Por eso, no extraña que la semana 
+pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, publicaron fotografías sobre la supuesta nuca inundación de la refinería. Aquí 
+vemos las notas.
+organizaciones: Diario de Yucatán | ambiguo
+917_1 [177:813]  Desde hace tres años son cotidianos los ataques en contra de la construcción de la refinería en Dos Bocas, Tabasco, tan sólo en esta sección se
+han documento al menos cinco ocasiones en las que medios de comunicación como Reforma, Animal Político, El Universal y plataformas digitales han mentido sobre 
+supuestas inundaciones en la construcción de la refinería Dos Bocas, uno de los proyectos que más molesta a la oposición. Por eso, no extraña que la semana 
+pasada el periódico Reforma, la revista Proceso, Diario de Yucatán, entre otros, publicaron fotografías sobre la supuesta nuca inundación de la refinería. Aquí 
+vemos las notas.
+responsables: Rocío Nahle | respaldado_en_texto
+1787_11 [0:259] VOZ DE HOMBRE: En un video que compartió en redes sociales, la secretaria de Energía, Rocío Nahle, mostró diferentes puntos del predio en el que
+se construye lo que será la refinería de Dos Bocas, Tabasco, y en la que dejó claro que no hay ninguna inundación.
+responsables: … | ambiguo
+2149_27 [1016:1087]  Entonces, sí vamos a construir la refinería. ¿Lo otro que planteabas…?
+responsables: Yesenia Peralta | ambiguo
+657_54 [0:322] PREGUNTA: Buenos días, señor presidente. Soy Yesenia Peralta, de Business Energy, Tabasco. Traigo una pregunta muy importante para usted en esta 
+mañana, dice: Hemos seguido de cerca el trabajo que ha estado haciendo en la refinería Dos Bocas, en paraíso, también hemos visto el aumento de trabajo y el 
+empleo en la región.
+responsables: Carlos Loret de Mola | ambiguo
+745_5 [118:509]  Pero, bueno, luego dicen que en México no hay libertad de expresión. Carlos Loret de Mola cayó en la chapuza de publicar fotografías como 
+pruebas falsas de que la refinería de Dos Bocas aún no se ha terminado de construir. Un día antes de la inauguración de la primera etapa de la refinería Olmeca 
+en el puerto de Dos Bocas, Paraíso, Tabasco, Carlos Loret de Mola publicó información falsa.
+responsables: Carlos Loret de Mola | ambiguo
+745_5 [187:839]  Carlos Loret de Mola cayó en la chapuza de publicar fotografías como pruebas falsas de que la refinería de Dos Bocas aún no se ha terminado de 
+construir. Un día antes de la inauguración de la primera etapa de la refinería Olmeca en el puerto de Dos Bocas, Paraíso, Tabasco, Carlos Loret de Mola publicó 
+información falsa. El presentador principal de la plataforma Latinus publicó en su cuenta de Twitter una serie de fotografías con la leyenda: ‘La pura 
+escenografía, afinan detalles para la primera etapa constructiva de Dos Bocas.’ Pero no paró ahí, en su programa transmitido por W Radio afirmó, cito a Loret: 
+‘Bueno, y mañana el show de Dos Bocas.
+responsables: Loret | ambiguo
+745_5 [341:1161]  Un día antes de la inauguración de la primera etapa de la refinería Olmeca en el puerto de Dos Bocas, Paraíso, Tabasco, Carlos Loret de Mola 
+publicó información falsa. El presentador principal de la plataforma Latinus publicó en su cuenta de Twitter una serie de fotografías con la leyenda: ‘La pura 
+escenografía, afinan detalles para la primera etapa constructiva de Dos Bocas.’ Pero no paró ahí, en su programa transmitido por W Radio afirmó, cito a Loret: 
+‘Bueno, y mañana el show de Dos Bocas. Le ponían fotografías en redes de la forma en que están llegando tremendos ductos, tremendas tuberías, como si las 
+pudieran instalar de aquí a mañana, pero pues son para la escenografía, para el puro show, porque mañana se va a inaugurar una refinería que no refina y que va 
+a refinar hasta 2024 o más.’ Hasta aquí Loret.
+responsables: Loret | ambiguo
+745_5 [509:1172]  El presentador principal de la plataforma Latinus publicó en su cuenta de Twitter una serie de fotografías con la leyenda: ‘La pura 
+escenografía, afinan detalles para la primera etapa constructiva de Dos Bocas.’ Pero no paró ahí, en su programa transmitido por W Radio afirmó, cito a Loret: 
+‘Bueno, y mañana el show de Dos Bocas. Le ponían fotografías en redes de la forma en que están llegando tremendos ductos, tremendas tuberías, como si las 
+pudieran instalar de aquí a mañana, pero pues son para la escenografía, para el puro show, porque mañana se va a inaugurar una refinería que no refina y que va 
+a refinar hasta 2024 o más.’ Hasta aquí Loret. Pero en el
+responsables: Rocío Nahle | ambiguo
+917_1 [813:1223]  En realidad, se trató de una foto editada de la subestación que se construye en la refinería. La secretaria de energía, Rocío Nahle, publicó 
+una fotografía del lugar para desmentir las versiones de la inundación. El diario señaló que se trataba de una fotografía tomada en el pasado; sin embargo, la 
+secretaria publicó otra foto estando en el sitio y donde claramente se ve que no había inundación en el mismo
+Latencia total: 0.150 s; sin red ni inferencia.

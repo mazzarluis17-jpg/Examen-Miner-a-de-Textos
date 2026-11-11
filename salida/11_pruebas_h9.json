@@ -1,0 +1,21 @@
+{
+  "pytest_rapido": {
+    "passed": 385,
+    "deselected": 9,
+    "segundos": 28.28
+  },
+  "pytest_completo": {
+    "passed": 393,
+    "skipped": 1,
+    "segundos": 26.03
+  },
+  "skip": "Prueba histórica de app bloqueada: los criterios de relevancia ya fueron aprobados",
+  "ruff": "All checks passed!",
+  "streamlit_excepciones": 0,
+  "requirements_coherente_uv_lock": true,
+  "uv_lock_sha256": "50a72f958c52baca80cd8c04875a0257ae2b7301aee456496b8b0a32cca3bb98",
+  "reporte_paginas": 4,
+  "laminas": 5,
+  "revision_visual": "Esqueleto: 4 páginas revisadas; cinco láminas revisadas, corregido desbordamiento de postings",
+  "cierre_academico": "pendiente de aprobación humana y ensayo, no certificado"
+}

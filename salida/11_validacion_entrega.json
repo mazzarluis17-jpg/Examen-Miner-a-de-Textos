@@ -1,0 +1,41 @@
+{
+  "csv": {
+    "ranking.csv": {
+      "filas": 400,
+      "sha256": "2da7bd09e1a590b00c720266d5ec082ce0a71188f23784fad2052521fa312c4e"
+    },
+    "juicios_relevancia.csv": {
+      "filas": 176,
+      "sha256": "cb3e4769ff430228bb78b3d06ce83272aa7b4a9a19e3ca72c48aec987b8a2860"
+    },
+    "resultados_ir.csv": {
+      "filas": 44,
+      "sha256": "b2fba483d768e436a973cec912f811f9c412ff2ee1ea6f37eb6d00c4a3ef2010"
+    },
+    "entidades.csv": {
+      "filas": 909,
+      "sha256": "44b8169ed01d91122ea66e92ceec56184b41a0ff16e88aebfb687f04948d2cb1"
+    },
+    "gold_entidades.csv": {
+      "filas": 138,
+      "sha256": "4a9d9afcbf67ae1d495c48d0972bcc79a306424bbf81684561d02a3032912a30"
+    },
+    "resultados_ie.csv": {
+      "filas": 18,
+      "sha256": "6ee6475f0e8134609e88c0e1ae82e3a3a3e1d2602d21ff2b5518ff564ee2fbc1"
+    }
+  },
+  "paginas": 4,
+  "diapositivas": 5,
+  "valoraciones": 10,
+  "gold": 138,
+  "evaluadores_oficiales": "idénticos byte a byte",
+  "hash_pasajes": "2c92857b452350ef130e5598c2d508717aac5f1cafbc105991733a452822fff5",
+  "pendiente": [
+    "Tres cortes de aprobación humana del reporte",
+    "Aprobación de láminas y guion; ensayo humano medido ≤8 minutos",
+    "Reconstrucción completa desde clon sin entorno ni cachés",
+    "Destino GitHub y acceso del profesor; publicación no autorizada",
+    "Etiqueta v1.0-entrega después de todos los cierres"
+  ]
+}

@@ -80,3 +80,7 @@ limpiar:
 .PHONY: minar-siglas
 minar-siglas: data/pasajes.parquet
 	$(PY) scripts/06_reglas.py --minar
+
+.PHONY: recuperar-datos
+recuperar-datos:
+	$(PY) scripts/00c_recuperar_snapshot.py
