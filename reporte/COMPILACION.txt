@@ -1,0 +1,2 @@
+Ejecutar dos veces: xelatex -interaction=nonstopmode -halt-on-error reporte.tex
+Se requieren los paquetes LaTeX indicados en el preámbulo y las tipografías allí especificadas.
